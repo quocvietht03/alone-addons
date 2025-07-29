@@ -3155,7 +3155,7 @@
           background: #4B915A;
           border-radius: 5px;
           color: #fff;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 12px;
           line-height: 15px;
           text-transform: uppercase;
@@ -3166,9 +3166,9 @@
         line-height: 30px;
         color: #292937;
         margin-top: 0px;
-        margin-bottom: 0px;
-        font-weight: 700;
-        padding: 30px 40px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        padding: 30px 40px 0 30px;
         a {
           color: inherit;
         }
@@ -3182,7 +3182,7 @@
         padding: 20px 40px;
       }
       &__date {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         line-height: 17px;
         color: #4B915A;
@@ -3226,7 +3226,8 @@
 
       @media( max-width: $break-xs - 0.02 ) {
         &__title {
-          padding: 20px 15px;
+          padding: 20px 15px 0;
+          margin-bottom: 20px;
         }
         &__content-meta{
           padding: 15px;

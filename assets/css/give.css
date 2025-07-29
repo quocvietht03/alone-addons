@@ -3709,7 +3709,7 @@ body .mfp-active {
       position: relative;
       display: inline-block;
       font-size: inherit;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.5;
       text-transform: uppercase; }
       .elementor-give-forms--skin-grid-tronador.elementor-filter-wrap .elementor-filter li a {
@@ -3789,7 +3789,7 @@ body .mfp-active {
     text-align: left;
     margin-top: 30px;
     padding: 0 40px;
-    font-weight: 700; }
+    font-weight: 500; }
     .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-card__meta-date svg {
       display: inline-block;
       fill: #4B915A;
@@ -3820,9 +3820,12 @@ body .mfp-active {
   .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-card__raised {
     padding: 15px 0;
     color: #4B915A;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 26px; }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5; }
+    .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-card__raised span {
+      font-weight: 600;
+      font-size: 18px; }
   .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-card__progress-bar {
     position: relative; }
   .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-goal-progress {

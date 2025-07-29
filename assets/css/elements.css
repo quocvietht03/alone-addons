@@ -2656,7 +2656,7 @@
       background: #4B915A;
       border-radius: 5px;
       color: #fff;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase; }
@@ -2665,9 +2665,9 @@
     line-height: 30px;
     color: #292937;
     margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 700;
-    padding: 30px 40px; }
+    margin-bottom: 30px;
+    font-weight: 600;
+    padding: 30px 40px 0 30px; }
     .elementor-posts--skin-grid-tronador .elementor-post__title a {
       color: inherit; }
   .elementor-posts--skin-grid-tronador .elementor-post__content-meta {
@@ -2678,7 +2678,7 @@
     align-items: center;
     padding: 20px 40px; }
   .elementor-posts--skin-grid-tronador .elementor-post__date {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #4B915A;
@@ -2713,7 +2713,8 @@
       margin-top: -2px; }
   @media (max-width: 575.98px) {
     .elementor-posts--skin-grid-tronador .elementor-post__title {
-      padding: 20px 15px; }
+      padding: 20px 15px 0;
+      margin-bottom: 20px; }
     .elementor-posts--skin-grid-tronador .elementor-post__content-meta {
       padding: 15px; }
     .elementor-posts--skin-grid-tronador .elementor-post__cat-links {

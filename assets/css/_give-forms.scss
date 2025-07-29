@@ -2363,7 +2363,7 @@
           position: relative;
           display: inline-block;
           font-size: inherit;
-          font-weight: 700;
+          font-weight: 500;
           line-height: 1.5;
           text-transform: uppercase;
           a {
@@ -2465,7 +2465,7 @@
           text-align: left;
           margin-top: 30px;
           padding: 0 40px;
-          font-weight: 700;
+          font-weight: 500;
           svg {
             display: inline-block;
             fill: #4B915A;
@@ -2500,11 +2500,15 @@
         }
       }
       .give-card__raised {
-          padding: 15px 0;
-          color: #4B915A;
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 26px;
+        padding: 15px 0;
+        color: #4B915A;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        span {
+          font-weight: 600;
+          font-size: 18px;
+        }
       }
       .give-card__progress-bar{
         position: relative;

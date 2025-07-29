@@ -3,7 +3,7 @@
  * Plugin Name: Bearsthemes Addons
  * Description: Extra custom post type and elements for Elementor.
  * Plugin URI:  https://bearsthemes.com/bearsthemes-addons/
- * Version:     3.0.0
+ * Version:     3.3.0
  * Author:      Bearsthemes
  * Author URI:  https://bearsthemes.com/
  * Text Domain: bearsthemes-addons
@@ -30,7 +30,7 @@ final class Bearsthemes_Addons {
 	 * @since 2.0.0
 	 * @var string The plugin version.
 	 */
-	const VERSION = '3.0.0';
+	const VERSION = '3.1.0';
 
 	/**
 	 * Minimum Elementor Version
@@ -38,7 +38,7 @@ final class Bearsthemes_Addons {
 	 * @since 2.0.0
 	 * @var string Minimum Elementor version required to run the plugin.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.0.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.10.0';
 
 	/**
 	 * Minimum PHP Version
@@ -46,7 +46,7 @@ final class Bearsthemes_Addons {
 	 * @since 2.0.0
 	 * @var string Minimum PHP version required to run the plugin.
 	 */
-	const MINIMUM_PHP_VERSION = '7.0';
+	const MINIMUM_PHP_VERSION = '7.4';
 
 	/**
 	 * Constructor
