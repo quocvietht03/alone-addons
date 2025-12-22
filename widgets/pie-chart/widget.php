@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Pie_Chart;
+namespace AloneAddons\Widgets\Pie_Chart;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -14,7 +14,7 @@ class Be_Pie_Chart extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Pie Chart', 'bearsthemes-addons' );
+		return __( 'Be Pie Chart', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -22,35 +22,35 @@ class Be_Pie_Chart extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'elementor-waypoints', 'jquery-progressbar', 'bearsthemes-addons' ];
+		return [ 'elementor-waypoints', 'jquery-progressbar', 'alone-addons' ];
 	}
 
 	protected function register_layout_section_controls() {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'This is the heading', 'bearsthemes-addons' ),
+				'default' => __( 'This is the heading', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'percentage',
 			[
-				'label' => __( 'Percentage', 'bearsthemes-addons' ),
+				'label' => __( 'Percentage', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'%' => [
@@ -68,10 +68,10 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'inner_text',
 			[
-				'label' => __( 'Inner Text', 'bearsthemes-addons' ),
+				'label' => __( 'Inner Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'This is ineer text', 'bearsthemes-addons' ),
+				'default' => __( 'This is ineer text', 'alone-addons' ),
 			]
 		);
 
@@ -83,7 +83,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -91,7 +91,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -99,7 +99,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -120,7 +120,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'heading_percentage_style',
 			[
-				'label' => __( 'Percentage', 'bearsthemes-addons' ),
+				'label' => __( 'Percentage', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -128,7 +128,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'percentage_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -149,7 +149,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'heading_inner_text_style',
 			[
-				'label' => __( 'Inner Text', 'bearsthemes-addons' ),
+				'label' => __( 'Inner Text', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -157,7 +157,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'inner_text_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -183,7 +183,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->start_controls_section(
 			'section_progress',
 			[
-				'label' => __( 'Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Progress', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -191,13 +191,13 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'progress_easing',
 			[
-				'label' => __( 'Easing', 'bearsthemes-addons' ),
+				'label' => __( 'Easing', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'linear',
 				'options' => [
-					'linear' => __( 'Linear', 'bearsthemes-addons' ),
-					'easeOut' => __( 'EaseOut', 'bearsthemes-addons' ),
-					'bounce' => __( 'Bounce', 'bearsthemes-addons' ),
+					'linear' => __( 'Linear', 'alone-addons' ),
+					'easeOut' => __( 'EaseOut', 'alone-addons' ),
+					'bounce' => __( 'Bounce', 'alone-addons' ),
 				],
 			]
 		);
@@ -205,7 +205,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'progress_duration',
 			[
-				'label' => __( 'Duration', 'bearsthemes-addons' ),
+				'label' => __( 'Duration', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 800,
@@ -222,7 +222,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'progress_color_from',
 			[
-				'label' => __( 'from Color', 'bearsthemes-addons' ),
+				'label' => __( 'from Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#FFEA82',
 			]
@@ -231,7 +231,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'progress_color_to',
 			[
-				'label' => __( 'to Color', 'bearsthemes-addons' ),
+				'label' => __( 'to Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ED6A5A',
 			]
@@ -240,7 +240,7 @@ class Be_Pie_Chart extends Widget_Base {
 		$this->add_control(
 			'progress_trailcolor',
 			[
-				'label' => __( 'Trail Color', 'bearsthemes-addons' ),
+				'label' => __( 'Trail Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#EEEEEE',
 			]

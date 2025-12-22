@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Video_Box\Skins;
+namespace AloneAddons\Widgets\Video_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -23,7 +23,7 @@ class Skin_Cholatse extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Cholatse', 'bearsthemes-addons' );
+		return __( 'Cholatse', 'alone-addons' );
 	}
 
 	public function register_design_title_section_controls( Widget_Base $widget ) {
@@ -32,7 +32,7 @@ class Skin_Cholatse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Background Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Background Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -40,7 +40,7 @@ class Skin_Cholatse extends Skin_Base {
 		$this->add_control(
 			'background_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

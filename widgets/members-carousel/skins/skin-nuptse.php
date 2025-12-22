@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Members_Carousel\Skins;
+namespace AloneAddons\Widgets\Members_Carousel\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -30,7 +30,7 @@ class Skin_Nuptse extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Nuptse', 'bearsthemes-addons' );
+		return __( 'Nuptse', 'alone-addons' );
 	}
 
 
@@ -40,7 +40,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_responsive_control(
 			'sliders_per_view',
 			[
-				'label' => __( 'Slides Per View', 'bearsthemes-addons' ),
+				'label' => __( 'Slides Per View', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -60,7 +60,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'posts_count',
 			[
-				'label' => __( 'Posts count', 'bearsthemes-addons' ),
+				'label' => __( 'Posts count', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
@@ -69,10 +69,10 @@ class Skin_Nuptse extends Skin_Base {
     $this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -93,10 +93,10 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -104,10 +104,10 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'show_position',
 			[
-				'label' => __( 'Position', 'bearsthemes-addons' ),
+				'label' => __( 'Position', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -115,10 +115,10 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'show_socials',
 			[
-				'label' => __( 'Socials', 'bearsthemes-addons' ),
+				'label' => __( 'Socials', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -130,7 +130,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => __( 'Space Between', 'bearsthemes-addons' ),
+				'label' => __( 'Space Between', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -148,19 +148,19 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -178,7 +178,7 @@ class Skin_Nuptse extends Skin_Base {
     $this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -186,7 +186,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -204,7 +204,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -222,7 +222,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -240,7 +240,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -259,7 +259,7 @@ class Skin_Nuptse extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -274,7 +274,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-member' => 'background-color: {{VALUE}}',
@@ -285,7 +285,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-member' => 'border-color: {{VALUE}}',
@@ -297,7 +297,7 @@ class Skin_Nuptse extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -312,7 +312,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-member:hover' => 'background-color: {{VALUE}}',
@@ -323,7 +323,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-member:hover' => 'border-color: {{VALUE}}',
@@ -345,7 +345,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_nuptse_show_thumbnail!'=> '',
@@ -356,7 +356,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -369,7 +369,7 @@ class Skin_Nuptse extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -385,7 +385,7 @@ class Skin_Nuptse extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -410,7 +410,7 @@ class Skin_Nuptse extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -418,7 +418,7 @@ class Skin_Nuptse extends Skin_Base {
     $this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_nuptse_show_title!' => '',
@@ -429,7 +429,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -456,7 +456,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'heading_position_style',
 			[
-				'label' => __( 'Position', 'bearsthemes-addons' ),
+				'label' => __( 'Position', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_nuptse_show_position!' => '',
@@ -467,7 +467,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'position_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -494,7 +494,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'heading_socials_style',
 			[
-				'label' => __( 'Socials', 'bearsthemes-addons' ),
+				'label' => __( 'Socials', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_nuptse_show_socials!' => '',
@@ -507,14 +507,14 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_socials_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'socials_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -528,14 +528,14 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_socials_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'socials_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

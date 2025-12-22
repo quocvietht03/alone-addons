@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Posts\Skins;
+namespace AloneAddons\Widgets\Posts\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -30,7 +30,7 @@ class Skin_List_Changla extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'List Changla', 'bearsthemes-addons' );
+		return __( 'List Changla', 'alone-addons' );
 	}
 
 
@@ -40,7 +40,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5,
 			]
@@ -48,10 +48,10 @@ class Skin_List_Changla extends Skin_Base {
     $this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -72,7 +72,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.76,
@@ -96,10 +96,10 @@ class Skin_List_Changla extends Skin_Base {
     $this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -107,10 +107,10 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'show_meta',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' 	=> Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default'  => 'yes',
 			]
 		);
@@ -118,10 +118,10 @@ class Skin_List_Changla extends Skin_Base {
     $this->add_control(
 			'show_author',
 			[
-				'label' => __( 'Author', 'bearsthemes-addons' ),
+				'label' => __( 'Author', 'alone-addons' ),
 				'type' 	=> Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default'  => 'yes',
 			]
 		);
@@ -134,19 +134,19 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -165,7 +165,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_list_changla_show_thumbnail!' => '',
@@ -176,7 +176,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'thumbnail_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -189,7 +189,7 @@ class Skin_List_Changla extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -205,7 +205,7 @@ class Skin_List_Changla extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -230,7 +230,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content_feature',
 			[
-				'label' => __( 'Content Feature', 'bearsthemes-addons' ),
+				'label' => __( 'Content Feature', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -238,7 +238,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'heading_title_feature_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_changla_show_title!' => '',
@@ -249,7 +249,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'title_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -264,7 +264,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'title_feature_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -291,7 +291,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'heading_meta_feature_style',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_changla_show_meta!' => '',
@@ -302,7 +302,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'meta_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -317,7 +317,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'meta_feature_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -345,7 +345,7 @@ class Skin_List_Changla extends Skin_Base {
     	$this->add_control(
 			'heading_author_feature_style',
 			[
-				'label' => __( 'Author', 'bearsthemes-addons' ),
+				'label' => __( 'Author', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_changla_show_author!' => '',
@@ -356,7 +356,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'author_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -371,7 +371,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'author_feature_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -404,7 +404,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -412,7 +412,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_changla_show_title!' => '',
@@ -423,7 +423,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -438,7 +438,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -465,7 +465,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'heading_meta_style',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_changla_show_meta!' => '',
@@ -476,7 +476,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'meta_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -491,7 +491,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'meta_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -519,7 +519,7 @@ class Skin_List_Changla extends Skin_Base {
     	$this->add_control(
 			'heading_author_style',
 			[
-				'label' => __( 'Author', 'bearsthemes-addons' ),
+				'label' => __( 'Author', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_changla_show_author!' => '',
@@ -530,7 +530,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'author_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -545,7 +545,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'author_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -622,7 +622,7 @@ class Skin_List_Changla extends Skin_Base {
                 <?php
                 echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">'.
                   get_avatar( get_the_author_meta( 'ID' ), 40 ) .
-                  '<span>' . esc_html__('Posted by ', 'bearsthemes-addons') . '</span>' . get_the_author() .
+                  '<span>' . esc_html__('Posted by ', 'alone-addons') . '</span>' . get_the_author() .
                 '</a>';
                 ?>
               </div>
@@ -672,7 +672,7 @@ class Skin_List_Changla extends Skin_Base {
             <div class="elementor-post__author">
               <?php
               echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">'.
-                '<span>' . esc_html__('Posted by ', 'bearsthemes-addons') . '</span>' . get_the_author() .
+                '<span>' . esc_html__('Posted by ', 'alone-addons') . '</span>' . get_the_author() .
               '</a>';
               ?>
             </div>

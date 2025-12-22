@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Icon_Box\Skins;
+namespace AloneAddons\Widgets\Icon_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -24,7 +24,7 @@ class Skin_Ampato extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Ampato', 'bearsthemes-addons' );
+		return __( 'Ampato', 'alone-addons' );
 	}
 
   public function register_layout_section_controls( Widget_Base $widget ) {
@@ -38,16 +38,16 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'read_more_text',
 			[
-				'label' => __( 'Read More Text', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Read More', 'bearsthemes-addons' ),
+				'default' => __( 'Read More', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'read_more_link',
 			[
-				'label' => __( 'Read More Link', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '#',
 			]
@@ -63,7 +63,7 @@ class Skin_Ampato extends Skin_Base {
     $this->add_responsive_control(
 			'padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -81,7 +81,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'background_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -98,7 +98,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -106,7 +106,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -129,14 +129,14 @@ class Skin_Ampato extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_icon_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -151,14 +151,14 @@ class Skin_Ampato extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_icon_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -181,7 +181,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -189,7 +189,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -198,7 +198,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -210,7 +210,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -231,7 +231,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'heading_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -239,7 +239,7 @@ class Skin_Ampato extends Skin_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -260,7 +260,7 @@ class Skin_Ampato extends Skin_Base {
     	$this->add_control(
 			'heading_read_more_style',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -279,14 +279,14 @@ class Skin_Ampato extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_read_more_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'read_more_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -298,7 +298,7 @@ class Skin_Ampato extends Skin_Base {
     $this->add_control(
 			'read_more_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -310,7 +310,7 @@ class Skin_Ampato extends Skin_Base {
     $this->add_control(
 			'read_more_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -324,14 +324,14 @@ class Skin_Ampato extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_read_more_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'read_more_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -343,7 +343,7 @@ class Skin_Ampato extends Skin_Base {
     $this->add_control(
 			'read_more_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -355,7 +355,7 @@ class Skin_Ampato extends Skin_Base {
     $this->add_control(
 			'read_more_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

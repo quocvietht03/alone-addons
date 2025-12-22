@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Image_Box;
+namespace AloneAddons\Widgets\Image_Box;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -16,7 +16,7 @@ class Be_Image_Box extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Image Box', 'bearsthemes-addons' );
+		return __( 'Be Image Box', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class Be_Image_Box extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_skins() {
@@ -46,14 +46,14 @@ class Be_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'image',
 			[
-				'label' => __( 'Choose Image', 'bearsthemes-addons' ),
+				'label' => __( 'Choose Image', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -64,17 +64,17 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'This is the heading', 'bearsthemes-addons' ),
+				'default' => __( 'This is the heading', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title_link',
 			[
-				'label' => __( 'Title Link', 'bearsthemes-addons' ),
+				'label' => __( 'Title Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'default' => '#',
@@ -84,9 +84,9 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'desc',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 			]
 		);
 
@@ -97,7 +97,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -105,19 +105,19 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -134,7 +134,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -145,7 +145,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -158,7 +158,7 @@ class Be_Image_Box extends Widget_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -174,7 +174,7 @@ class Be_Image_Box extends Widget_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -198,7 +198,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -209,7 +209,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -217,7 +217,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -229,7 +229,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -250,7 +250,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'heading_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -258,7 +258,7 @@ class Be_Image_Box extends Widget_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

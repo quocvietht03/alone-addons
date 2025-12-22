@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Language_Switcher;
+namespace AloneAddons\Widgets\Language_Switcher;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -17,7 +17,7 @@ class Be_Language_Switcher extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Language Switcher', 'bearsthemes-addons' );
+		return __( 'Be Language Switcher', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -25,14 +25,14 @@ class Be_Language_Switcher extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
   protected function register_layout_section_controls() {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
@@ -40,14 +40,14 @@ class Be_Language_Switcher extends Widget_Base {
 
 		$repeater->add_control(
 			'list_country', [
-				'label' => __( 'Country', 'bearsthemes-addons' ),
+				'label' => __( 'Country', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'en',
         'options' => [
-					'en' => esc_html__( 'English', 'bearsthemes-addons' ),
-					'fr' => esc_html__( 'France', 'bearsthemes-addons' ),
-					'es' => esc_html__( 'Spanish', 'bearsthemes-addons' ),
-					'de' => esc_html__( 'German', 'bearsthemes-addons' ),
+					'en' => esc_html__( 'English', 'alone-addons' ),
+					'fr' => esc_html__( 'France', 'alone-addons' ),
+					'es' => esc_html__( 'Spanish', 'alone-addons' ),
+					'de' => esc_html__( 'German', 'alone-addons' ),
 				],
 			]
 		);
@@ -55,7 +55,7 @@ class Be_Language_Switcher extends Widget_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Language', 'bearsthemes-addons' ),
+				'label' => __( 'Language', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
@@ -84,7 +84,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -92,7 +92,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->add_control(
 			'heading_current_country_style',
 			[
-				'label' => __( 'Current Country', 'bearsthemes-addons' ),
+				'label' => __( 'Current Country', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -100,7 +100,7 @@ class Be_Language_Switcher extends Widget_Base {
 		$this->add_control(
 			'curent_country_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -112,7 +112,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->add_control(
 			'curent_country_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -133,7 +133,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->add_control(
 			'curent_country_min_height',
 			[
-				'label' => __( 'Min Height', 'bearsthemes-addons' ),
+				'label' => __( 'Min Height', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -151,7 +151,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->add_control(
 			'heading_list_country_style',
 			[
-				'label' => __( 'List Country', 'bearsthemes-addons' ),
+				'label' => __( 'List Country', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -177,14 +177,14 @@ class Be_Language_Switcher extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'list_country_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -196,7 +196,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->add_control(
 			'list_country_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -209,14 +209,14 @@ class Be_Language_Switcher extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'list_country_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -228,7 +228,7 @@ class Be_Language_Switcher extends Widget_Base {
     $this->add_control(
 			'list_country_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -256,10 +256,10 @@ class Be_Language_Switcher extends Widget_Base {
 		}
 
     $list_country = array(
-      'en' => esc_html__( 'English', 'bearsthemes-addons' ),
-      'fr' => esc_html__( 'France', 'bearsthemes-addons' ),
-      'es' => esc_html__( 'Spanish', 'bearsthemes-addons' ),
-      'de' => esc_html__( 'German', 'bearsthemes-addons' ),
+      'en' => esc_html__( 'English', 'alone-addons' ),
+      'fr' => esc_html__( 'France', 'alone-addons' ),
+      'es' => esc_html__( 'Spanish', 'alone-addons' ),
+      'de' => esc_html__( 'German', 'alone-addons' ),
     );
 
     $currentItem = array();
@@ -281,7 +281,7 @@ class Be_Language_Switcher extends Widget_Base {
             <?php
               echo '<img src="'. plugin_dir_url( __DIR__ ) . 'language-switcher/flags/' . $key . '.png" alt="' . $value . '">';
               echo '<span>' . $value . '</span>';
-              echo bearsthemes_addons_get_icon_svg( 'chevron-down', 14 );
+              echo alone_addons_get_icon_svg( 'chevron-down', 14 );
             ?>
           </a>
         <?php } ?>

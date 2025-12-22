@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Sponsors;
+namespace AloneAddons\Widgets\Sponsors;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -20,7 +20,7 @@ class Be_Sponsors extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Sponsors', 'bearsthemes-addons' );
+		return __( 'Be Sponsors', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -28,14 +28,14 @@ class Be_Sponsors extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_layout_section_controls() {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
@@ -43,7 +43,7 @@ class Be_Sponsors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_image', [
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -53,16 +53,16 @@ class Be_Sponsors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_title', [
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Sponsor name' , 'bearsthemes-addons' ),
+				'default' => __( 'Sponsor name' , 'alone-addons' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
 			'list_age', [
-				'label' => __( 'Age', 'bearsthemes-addons' ),
+				'label' => __( 'Age', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '3 Years',
 			]
@@ -70,7 +70,7 @@ class Be_Sponsors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_gender', [
-				'label' => __( 'Gender', 'bearsthemes-addons' ),
+				'label' => __( 'Gender', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => 'Female',
 			]
@@ -79,7 +79,7 @@ class Be_Sponsors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_waiting', [
-				'label' => __( 'Waiting', 'bearsthemes-addons' ),
+				'label' => __( 'Waiting', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '4 Months',
 			]
@@ -88,48 +88,48 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'List of Sponsors', 'bearsthemes-addons' ),
+				'label' => __( 'List of Sponsors', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Sponsor name #1', 'bearsthemes-addons' ),
+						'list_title' => __( 'Sponsor name #1', 'alone-addons' ),
 						'list_age' => '3 Years',
 						'list_gender' => 'Female',
 						'list_waiting' => '4 Months',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Sponsor name #2', 'bearsthemes-addons' ),
+						'list_title' => __( 'Sponsor name #2', 'alone-addons' ),
 						'list_age' => '3 Years',
 						'list_gender' => 'Female',
 						'list_waiting' => '4 Months',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Sponsor name #3', 'bearsthemes-addons' ),
+						'list_title' => __( 'Sponsor name #3', 'alone-addons' ),
 						'list_age' => '3 Years',
 						'list_gender' => 'Female',
 						'list_waiting' => '4 Months',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Sponsor name #4', 'bearsthemes-addons' ),
+						'list_title' => __( 'Sponsor name #4', 'alone-addons' ),
 						'list_age' => '3 Years',
 						'list_gender' => 'Female',
 						'list_waiting' => '4 Months',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Sponsor name #5', 'bearsthemes-addons' ),
+						'list_title' => __( 'Sponsor name #5', 'alone-addons' ),
 						'list_age' => '3 Years',
 						'list_gender' => 'Female',
 						'list_waiting' => '4 Months',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Sponsor name #6', 'bearsthemes-addons' ),
+						'list_title' => __( 'Sponsor name #6', 'alone-addons' ),
 						'list_age' => '3 Years',
 						'list_gender' => 'Female',
 						'list_waiting' => '4 Months',
@@ -142,10 +142,10 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -157,7 +157,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -165,7 +165,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sponsors-table,
@@ -180,7 +180,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -202,7 +202,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_thumbnail!' => '',
@@ -213,7 +213,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -226,7 +226,7 @@ class Be_Sponsors extends Widget_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -242,7 +242,7 @@ class Be_Sponsors extends Widget_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -266,7 +266,7 @@ class Be_Sponsors extends Widget_Base {
     $this->start_controls_section(
 			'section_design_header',
 			[
-				'label' => __( 'Header', 'bearsthemes-addons' ),
+				'label' => __( 'Header', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -274,7 +274,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'header_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -286,7 +286,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'header_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sponsors-table .elementor-header' => 'background-color: {{VALUE}}',
@@ -315,7 +315,7 @@ class Be_Sponsors extends Widget_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -323,7 +323,7 @@ class Be_Sponsors extends Widget_Base {
 		$this->add_control(
 			'content_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -362,10 +362,10 @@ class Be_Sponsors extends Widget_Base {
 		?>
 			<div class="<?php echo esc_attr( $classes ); ?>">
 				<div class="elementor-header">
-					<div class="elementor-header__title"><?php esc_html_e( 'Name', 'bearsthemes-addons' ) ?></div>
-					<div class="elementor-header__age"><?php esc_html_e( 'Age', 'bearsthemes-addons' ) ?></div>
-					<div class="elementor-header__gender"><?php esc_html_e( 'Gender', 'bearsthemes-addons' ) ?></div>
-					<div class="elementor-header__wating"><?php esc_html_e( 'Waiting', 'bearsthemes-addons' ) ?></div>
+					<div class="elementor-header__title"><?php esc_html_e( 'Name', 'alone-addons' ) ?></div>
+					<div class="elementor-header__age"><?php esc_html_e( 'Age', 'alone-addons' ) ?></div>
+					<div class="elementor-header__gender"><?php esc_html_e( 'Gender', 'alone-addons' ) ?></div>
+					<div class="elementor-header__wating"><?php esc_html_e( 'Waiting', 'alone-addons' ) ?></div>
 				</div>
 		<?php
 	}

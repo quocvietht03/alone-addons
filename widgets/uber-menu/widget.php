@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Uber_Menu;
+namespace AloneAddons\Widgets\Uber_Menu;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -23,7 +23,7 @@ class Be_Uber_Menu extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Uber Menu Bears', 'bearsthemes-addons' );
+		return __( 'Uber Menu Bears', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -31,11 +31,11 @@ class Be_Uber_Menu extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'jquery-magnific-popup', 'bearsthemes-addons' ];
+		return [ 'jquery-magnific-popup', 'alone-addons' ];
 	}
 
 	protected function get_supported_post_ids() {
@@ -61,7 +61,7 @@ class Be_Uber_Menu extends Widget_Base {
     $this->start_controls_section(
 			'menu_section',
 			[
-				'label' => __( 'Menu', 'bearsthemes-addons' ),
+				'label' => __( 'Menu', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -69,11 +69,11 @@ class Be_Uber_Menu extends Widget_Base {
     $this->add_control(
 			'assign',
 			[
-				'label' => __( 'Assign', 'bearsthemes-addons' ),
+				'label' => __( 'Assign', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'menu' => __( 'Menu', 'bearsthemes-addons' ),
-					'theme_location' => __( 'Theme Location', 'bearsthemes-addons' ),
+					'menu' => __( 'Menu', 'alone-addons' ),
+					'theme_location' => __( 'Theme Location', 'alone-addons' ),
 				],
 				'default' => 'menu',
 			]
@@ -90,7 +90,7 @@ class Be_Uber_Menu extends Widget_Base {
     $this->add_control(
 			'menu',
 			[
-				'label' => __( 'Menu', 'bearsthemes-addons' ),
+				'label' => __( 'Menu', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $menu_ops,
         'default' => 0,
@@ -105,7 +105,7 @@ class Be_Uber_Menu extends Widget_Base {
     $this->add_control(
 			'theme_location',
 			[
-				'label' => __( 'Theme Location', 'bearsthemes-addons' ),
+				'label' => __( 'Theme Location', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $theme_location_ops,
         'condition' => [
@@ -123,7 +123,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'config',
 			[
-				'label' => __( 'Configuration', 'bearsthemes-addons' ),
+				'label' => __( 'Configuration', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $config_ops,
         'default' => 'main',
@@ -133,10 +133,10 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'show_button_donate',
 			[
-				'label' => __( 'Button Donate', 'bearsthemes-addons' ),
+				'label' => __( 'Button Donate', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -145,10 +145,10 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
       'form_button_text',
       [
-        'label' => __( 'Button Text', 'bearsthemes-addons' ),
+        'label' => __( 'Button Text', 'alone-addons' ),
         'label_block' => true,
         'type' => Controls_Manager::TEXT,
-        'default' => __( 'Donate Now', 'bearsthemes-addons' ),
+        'default' => __( 'Donate Now', 'alone-addons' ),
 				'condition' => [
 					'show_button_donate!'=> '',
 				],
@@ -158,7 +158,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_id',
 			[
-				'label' => __( 'Form Id', 'bearsthemes-addons' ),
+				'label' => __( 'Form Id', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $this->get_supported_post_ids(),
 				'condition' => [
@@ -170,10 +170,10 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'show_navigation_search',
 			[
-				'label' => __( 'Navigation Search', 'bearsthemes-addons' ),
+				'label' => __( 'Navigation Search', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -181,10 +181,10 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'show_navigation_cart',
 			[
-				'label' => __( 'Navigation Cart', 'bearsthemes-addons' ),
+				'label' => __( 'Navigation Cart', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -192,10 +192,10 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'show_navigation_user',
 			[
-				'label' => __( 'Navigation User', 'bearsthemes-addons' ),
+				'label' => __( 'Navigation User', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -207,7 +207,7 @@ class Be_Uber_Menu extends Widget_Base {
     $this->start_controls_section(
       'section_design_layout',
       [
-        'label' => __( 'Layout', 'bearsthemes-addons' ),
+        'label' => __( 'Layout', 'alone-addons' ),
         'tab' => Controls_Manager::TAB_STYLE,
       ]
     );
@@ -215,23 +215,23 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'flex-start' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'flex-end' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 					'space-between' => [
-						'title' => __( 'Justified', 'bearsthemes-addons' ),
+						'title' => __( 'Justified', 'alone-addons' ),
 						'icon' => 'eicon-text-align-justify',
 					],
 				],
@@ -244,7 +244,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'heading_menu_color_style',
 			[
-				'label' => __( 'Menu Top Level', 'bearsthemes-addons' ),
+				'label' => __( 'Menu Top Level', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -264,14 +264,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_uber_menu_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'uber_menu_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -283,7 +283,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'uber_menu_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -297,14 +297,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_uber_menu_hover',
 			[
-				'label' => __( 'Hover, Active', 'bearsthemes-addons' ),
+				'label' => __( 'Hover, Active', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'uber_menu_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .site-menu-wrap-bears ul.ubermenu-nav li.ubermenu-current-menu-ancestor.ubermenu-item-level-0>a.ubermenu-target, {{WRAPPER}} .site-menu-wrap-bears ul.ubermenu-nav li.ubermenu-item-level-0>a.ubermenu-target:hover, {{WRAPPER}} .site-menu-wrap-bears ul.ubermenu-nav li.ubermenu-item-level-0>a.ubermenu-target:focus, {{WRAPPER}} .site-menu-wrap-bears .ubermenu-item-level-0:hover > .ubermenu-target, {{WRAPPER}} .site-menu-wrap-bears ul.ubermenu-nav .ubermenu-item-level-0.ubermenu-active > .ubermenu-target, .ubermenu-mobile-modal ul.ubermenu-nav li.ubermenu-current-menu-ancestor.ubermenu-item-level-0>a.ubermenu-target, .ubermenu-mobile-modal ul.ubermenu-nav li.ubermenu-item-level-0>a.ubermenu-target:hover, .ubermenu-mobile-modal ul.ubermenu-nav li.ubermenu-item-level-0>a.ubermenu-target:focus, .ubermenu-mobile-modal .ubermenu-item-level-0:hover > .ubermenu-target, .ubermenu-mobile-modal ul.ubermenu-nav .ubermenu-item-level-0.ubermenu-active > .ubermenu-target' => 'color: {{VALUE}};',
@@ -315,7 +315,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'uber_menu_bg_hover_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -332,7 +332,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'heading_menu_sub_style',
 			[
-				'label' => __( 'Menu Sub Level', 'bearsthemes-addons' ),
+				'label' => __( 'Menu Sub Level', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -352,14 +352,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_uber_sub_menu_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'uber_sub_menu_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -372,7 +372,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
       'uber_sub_menu_bg_color',
       [
-        'label' => __( 'Background Color', 'bearsthemes-addons' ),
+        'label' => __( 'Background Color', 'alone-addons' ),
         'type' => Controls_Manager::COLOR,
         'default' => '',
         'selectors' => [
@@ -386,14 +386,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_uber_sub_menu_hover',
 			[
-				'label' => __( 'Hover, Active', 'bearsthemes-addons' ),
+				'label' => __( 'Hover, Active', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'uber_sub_menu_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .site-menu-wrap-bears .ubermenu-main ul .ubermenu-submenu li a.ubermenu-target:hover,{{WRAPPER}} .site-menu-wrap-bears .ubermenu-main ul .ubermenu-submenu li.ubermenu-current_page_item a.ubermenu-target, .ubermenu-mobile-modal ul .ubermenu-submenu li a.ubermenu-target:hover,.ubermenu-mobile-modal ul .ubermenu-submenu li.ubermenu-current_page_item a.ubermenu-target' => 'color: {{VALUE}};',
@@ -404,7 +404,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
       'uber_sub_menu_bg_hover_color',
       [
-        'label' => __( 'Background Color', 'bearsthemes-addons' ),
+        'label' => __( 'Background Color', 'alone-addons' ),
         'type' => Controls_Manager::COLOR,
         'default' => '',
         'selectors' => [
@@ -421,7 +421,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'heading_mega_style',
 			[
-				'label' => __( 'Mega Menu', 'bearsthemes-addons' ),
+				'label' => __( 'Mega Menu', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -429,7 +429,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'uber_bg_color',
 			[
-				'label' => __( 'Background Mega Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Mega Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -441,7 +441,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'uber_tab_active_color',
 			[
-				'label' => __( 'Tabs Active Color', 'bearsthemes-addons' ),
+				'label' => __( 'Tabs Active Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -455,7 +455,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'uber_tab_active_bg_color',
 			[
-				'label' => __( 'Background Tabs Active', 'bearsthemes-addons' ),
+				'label' => __( 'Background Tabs Active', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -476,7 +476,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'border_radius_mega',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -496,7 +496,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'heading_menu_icon_style',
 			[
-				'label' => __( 'Menu Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Menu Icon', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -505,10 +505,10 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'font_size_menu_icon',
 			[
-				'label' => __( 'Font size', 'bearsthemes-addons' ),
+				'label' => __( 'Font size', 'alone-addons' ),
 				'label_block' => true,
 				'type' => Controls_Manager::TEXT,
-				'default' => __( '15px', 'bearsthemes-addons' ),
+				'default' => __( '15px', 'alone-addons' ),
 				'selectors' => [
 					'{{WRAPPER}} .site-menu-wrap-bears ul.ubermenu-nav .ubermenu-submenu li a.ubermenu-target i.fas' => 'font-size: {{VALUE}};',
 				],
@@ -520,14 +520,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_uber_icon_menu_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'uber_menu_icon_color',
 			[
-				'label' => __( 'Icon Color', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -541,14 +541,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_uber_icon_menu_hover',
 			[
-				'label' => __( 'Hover, Active', 'bearsthemes-addons' ),
+				'label' => __( 'Hover, Active', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'uber_icon_menu_hover_color',
 			[
-				'label' => __( 'Icon Color', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .site-menu-wrap-bears .ubermenu-main ul .ubermenu-submenu li a.ubermenu-target:hover i.fas' => 'color: {{VALUE}};',
@@ -568,7 +568,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_button',
 			[
-				'label' => __( 'Button Donate', 'bearsthemes-addons' ),
+				'label' => __( 'Button Donate', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_button_donate!'=> '',
@@ -591,14 +591,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -611,7 +611,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -626,14 +626,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn:hover, {{WRAPPER}} .give-btn:focus' => 'color: {{VALUE}};',
@@ -647,7 +647,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -660,7 +660,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'border_border!' => '',
@@ -689,7 +689,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -711,7 +711,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'text_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -725,7 +725,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'text_margin',
 			[
-				'label' => __( 'Margin', 'bearsthemes-addons' ),
+				'label' => __( 'Margin', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -744,7 +744,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_form',
 			[
-				'label' => __( 'Give Form', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_button_donate!'=> '',
@@ -755,7 +755,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -768,7 +768,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -796,7 +796,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -805,7 +805,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -818,8 +818,8 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -832,7 +832,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -843,14 +843,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -862,7 +862,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -876,14 +876,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'.give-form[data-style="elementor-give-uber-menu"] .give-submit:hover' => 'color: {{VALUE}};',
@@ -894,7 +894,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -914,7 +914,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_icon_layout',
 			[
-				'label' => __( 'Design Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Design Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -930,7 +930,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'border_radius_navi',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -950,7 +950,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'navi_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -963,7 +963,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'navi_margin',
 			[
-				'label' => __( 'Margin', 'bearsthemes-addons' ),
+				'label' => __( 'Margin', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -977,7 +977,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_cart',
 			[
-				'label' => __( 'Cart Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Cart Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_navigation_cart!'=> '',
@@ -988,7 +988,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_cart_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -1010,14 +1010,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_cart_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_cart_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1029,7 +1029,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_cart_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1043,14 +1043,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_cart_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_cart_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1061,7 +1061,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_cart_bg_hover_color',
 			[
-				'label' => __( 'Background Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Background Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1077,7 +1077,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'cart_counter_bg_color',
 			[
-				'label' => __( 'Background Cart Counter', 'bearsthemes-addons' ),
+				'label' => __( 'Background Cart Counter', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1090,7 +1090,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'cart_counter_color',
 			[
-				'label' => __( 'Color Cart Counter', 'bearsthemes-addons' ),
+				'label' => __( 'Color Cart Counter', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1104,7 +1104,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_icon_search',
 			[
-				'label' => __( 'Icon Search', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Search', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_navigation_search!'=> '',
@@ -1115,7 +1115,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -1137,14 +1137,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_search_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_search_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1156,7 +1156,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_search_background_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1170,14 +1170,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_search_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_search_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1188,7 +1188,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_search_bg_hover_color',
 			[
-				'label' => __( 'Background Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Background Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1206,7 +1206,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_icon_user',
 			[
-				'label' => __( 'Icon User', 'bearsthemes-addons' ),
+				'label' => __( 'Icon User', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_navigation_user!'=> '',
@@ -1217,7 +1217,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_user_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -1239,14 +1239,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_user_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_user_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1258,7 +1258,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_user_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1272,14 +1272,14 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_user_search_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_user_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1290,7 +1290,7 @@ class Be_Uber_Menu extends Widget_Base {
 		$this->add_control(
 			'icon_user_bg_hover_color',
 			[
-				'label' => __( 'Background Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Background Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Sermone;
+namespace AloneAddons\Widgets\Sermone;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -18,7 +18,7 @@ class Be_Sermone extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Sermone', 'bearsthemes-addons' );
+		return __( 'Be Sermone', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -26,11 +26,11 @@ class Be_Sermone extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_skins() {
@@ -129,14 +129,14 @@ class Be_Sermone extends Widget_Base {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -159,7 +159,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 				'condition' => [
@@ -171,10 +171,10 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 				'condition' => [
@@ -199,7 +199,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.66,
@@ -224,10 +224,10 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -238,10 +238,10 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'show_meta',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -252,10 +252,10 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'show_excerpt',
 			[
-				'label' => __( 'Excerpt', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -266,7 +266,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'excerpt_length',
 			[
-				'label' => __( 'Excerpt Length', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt Length', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => apply_filters( 'excerpt_length', 30 ),
 				'condition' => [
@@ -279,7 +279,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'excerpt_more',
 			[
-				'label' => __( 'Excerpt More', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt More', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => apply_filters( 'excerpt_more', '' ),
 				'condition' => [
@@ -292,10 +292,10 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'show_read_more',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -306,9 +306,9 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'read_more_text',
 			[
-				'label' => __( 'Read More Text', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Read More »', 'bearsthemes-addons' ),
+				'default' => __( 'Read More »', 'alone-addons' ),
 				'condition' => [
 					'_skin' => '',
 					'show_read_more!' => '',
@@ -323,7 +323,7 @@ class Be_Sermone extends Widget_Base {
 		$this->start_controls_section(
 			'section_query',
 			[
-				'label' => __( 'Query', 'bearsthemes-addons' ),
+				'label' => __( 'Query', 'alone-addons' ),
 			]
 		);
 
@@ -339,7 +339,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'ids',
 			[
-				'label' => __( 'Ids', 'bearsthemes-addons' ),
+				'label' => __( 'Ids', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_ids(),
 				'label_block' => true,
@@ -350,7 +350,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'preacher',
 			[
-				'label' => __( 'Preacher', 'bearsthemes-addons' ),
+				'label' => __( 'Preacher', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_preacher_taxonomies(),
 				'label_block' => true,
@@ -361,7 +361,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'series',
 			[
-				'label' => __( 'Series', 'bearsthemes-addons' ),
+				'label' => __( 'Series', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_series_taxonomies(),
 				'label_block' => true,
@@ -372,7 +372,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'topics',
 			[
-				'label' => __( 'Topics', 'bearsthemes-addons' ),
+				'label' => __( 'Topics', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_topics_taxonomies(),
 				'label_block' => true,
@@ -383,7 +383,7 @@ class Be_Sermone extends Widget_Base {
     $this->add_control(
 			'books',
 			[
-				'label' => __( 'Books', 'bearsthemes-addons' ),
+				'label' => __( 'Books', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_books_taxonomies(),
 				'label_block' => true,
@@ -404,7 +404,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'ids_exclude',
 			[
-				'label' => __( 'Ids', 'bearsthemes-addons' ),
+				'label' => __( 'Ids', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_ids(),
 				'label_block' => true,
@@ -415,7 +415,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'preacher_exclude',
 			[
-				'label' => __( 'Preacher', 'bearsthemes-addons' ),
+				'label' => __( 'Preacher', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_preacher_taxonomies(),
 				'label_block' => true,
@@ -426,7 +426,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'series_exclude',
 			[
-				'label' => __( 'Series', 'bearsthemes-addons' ),
+				'label' => __( 'Series', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_series_taxonomies(),
 				'label_block' => true,
@@ -437,7 +437,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'topics_exclude',
 			[
-				'label' => __( 'Topics', 'bearsthemes-addons' ),
+				'label' => __( 'Topics', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_topics_taxonomies(),
 				'label_block' => true,
@@ -448,7 +448,7 @@ class Be_Sermone extends Widget_Base {
     $this->add_control(
 			'books_exclude',
 			[
-				'label' => __( 'Books', 'bearsthemes-addons' ),
+				'label' => __( 'Books', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_books_taxonomies(),
 				'label_block' => true,
@@ -459,10 +459,10 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'offset',
 			[
-				'label' => __( 'Offset', 'bearsthemes-addons' ),
+				'label' => __( 'Offset', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 0,
-				'description' => __( 'Use this setting to skip over posts (e.g. \'2\' to skip over 2 posts).', 'bearsthemes-addons' ),
+				'description' => __( 'Use this setting to skip over posts (e.g. \'2\' to skip over 2 posts).', 'alone-addons' ),
 			]
 		);
 
@@ -473,14 +473,14 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'orderby',
 			[
-				'label' => __( 'Order By', 'bearsthemes-addons' ),
+				'label' => __( 'Order By', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'post_date',
 				'options' => [
-					'post_date' => __( 'Date', 'bearsthemes-addons' ),
-					'post_title' => __( 'Title', 'bearsthemes-addons' ),
-					'menu_order' => __( 'Menu Order', 'bearsthemes-addons' ),
-					'rand' => __( 'Random', 'bearsthemes-addons' ),
+					'post_date' => __( 'Date', 'alone-addons' ),
+					'post_title' => __( 'Title', 'alone-addons' ),
+					'menu_order' => __( 'Menu Order', 'alone-addons' ),
+					'rand' => __( 'Random', 'alone-addons' ),
 				],
 			]
 		);
@@ -488,12 +488,12 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'order',
 			[
-				'label' => __( 'Order', 'bearsthemes-addons' ),
+				'label' => __( 'Order', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'desc',
 				'options' => [
-					'asc' => __( 'ASC', 'bearsthemes-addons' ),
-					'desc' => __( 'DESC', 'bearsthemes-addons' ),
+					'asc' => __( 'ASC', 'alone-addons' ),
+					'desc' => __( 'DESC', 'alone-addons' ),
 				],
 			]
 		);
@@ -505,7 +505,7 @@ class Be_Sermone extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -513,7 +513,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Columns Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 30,
@@ -536,7 +536,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -559,19 +559,19 @@ class Be_Sermone extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -591,7 +591,7 @@ class Be_Sermone extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -602,7 +602,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -620,7 +620,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -638,7 +638,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -656,7 +656,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -676,7 +676,7 @@ class Be_Sermone extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -691,7 +691,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon' => 'background-color: {{VALUE}}',
@@ -702,7 +702,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon' => 'border-color: {{VALUE}}',
@@ -714,7 +714,7 @@ class Be_Sermone extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -729,7 +729,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon:hover' => 'background-color: {{VALUE}}',
@@ -740,7 +740,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon:hover' => 'border-color: {{VALUE}}',
@@ -759,7 +759,7 @@ class Be_Sermone extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -771,7 +771,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -784,7 +784,7 @@ class Be_Sermone extends Widget_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -800,7 +800,7 @@ class Be_Sermone extends Widget_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -823,7 +823,7 @@ class Be_Sermone extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -834,7 +834,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_title!' => '',
@@ -845,7 +845,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -860,7 +860,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -887,7 +887,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'heading_meta_style',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_meta!' => '',
@@ -898,7 +898,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'meta_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -925,7 +925,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'heading_excerpt_style',
 			[
-				'label' => __( 'Excerpt', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_excerpt!' => '',
@@ -936,7 +936,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'excerpt_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -963,7 +963,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'heading_read_more_style',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_read_more!' => '',
@@ -974,7 +974,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'read_more_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -989,7 +989,7 @@ class Be_Sermone extends Widget_Base {
 		$this->add_control(
 			'read_more_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1196,7 +1196,7 @@ class Be_Sermone extends Widget_Base {
 					<?php the_post_thumbnail( $settings['thumbnail_size'] ); ?>
 
 					<a href="<?php the_permalink() ?>" class="sermone-quickview elementor-sermon__quickview" data-sermone-quickview="<?php the_ID() ?>">
-	          <?php echo bearsthemes_addons_get_icon_svg( 'search', 16 ); ?>
+	          <?php echo alone_addons_get_icon_svg( 'search', 16 ); ?>
 	        </a>
 				</div>
 			<?php } ?>
@@ -1209,8 +1209,8 @@ class Be_Sermone extends Widget_Base {
 				?>
 				<?php if( '' !== $settings['show_meta'] ) { ?>
 					<ul class="elementor-sermon__meta">
-						<li><?php echo __( 'On ', 'bearsthemes-addons' ) . sermone_date_format( '', sermone_get_field( 'sermon_date_preached', get_the_ID() ) ); ?></li>
-	          <li><?php echo get_the_term_list( get_the_ID(), 'sermone_preacher', __( 'by ', 'bearsthemes-addons' ), ', ', '.' ); ?></li>
+						<li><?php echo __( 'On ', 'alone-addons' ) . sermone_date_format( '', sermone_get_field( 'sermon_date_preached', get_the_ID() ) ); ?></li>
+	          <li><?php echo get_the_term_list( get_the_ID(), 'sermone_preacher', __( 'by ', 'alone-addons' ), ', ', '.' ); ?></li>
 	        </ul>
 				<?php } ?>
 

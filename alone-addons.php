@@ -1,18 +1,18 @@
 <?php
 /**
- * Plugin Name: Bearsthemes Addons
+ * Plugin Name: Alone Addons
  * Description: Extra custom post type and elements for Elementor.
- * Plugin URI:  https://bearsthemes.com/bearsthemes-addons/
+ * Plugin URI:  https://alonethemes.com/
  * Version:     3.3.0
- * Author:      Bearsthemes
- * Author URI:  https://bearsthemes.com/
- * Text Domain: bearsthemes-addons
+ * Author:      Beplusthemes
+ * Author URI:  https://beplusthemes.com/
+ * Text Domain: alone-addons
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
- * Main Bearsthemes Addons Class
+ * Main Alone Addons Class
  *
  * The init class that runs the Hello World plugin.
  * Intended To make sure that the plugin's minimum requirements are met.
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Any custom code should go inside Plugin Class in the plugin.php file.
  * @since 1.0.0
  */
-final class Bearsthemes_Addons {
+final class Alone_Addons {
 
 	/**
 	 * Plugin Version
@@ -73,7 +73,7 @@ final class Bearsthemes_Addons {
 	 * @access public
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'bearsthemes-addons' );
+		load_plugin_textdomain( 'alone-addons' );
 	}
 
 
@@ -93,7 +93,7 @@ final class Bearsthemes_Addons {
 	public function init() {
 
 		// Enqueue scripts
-		add_action( 'wp_enqueue_scripts', array( $this, 'bearsthemes_enqueue_scripts' ), 999 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'alone_enqueue_scripts' ), 999 );
 
 		// Check if Elementor installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -130,21 +130,21 @@ final class Bearsthemes_Addons {
 	/**
 	 * Enqueue scripts
 	 */
-	public function bearsthemes_enqueue_scripts() {
-		wp_enqueue_script( 'bearsthemes-swiper', plugins_url( '/assets/js/swiper.min.js', __FILE__ ), [ 'jquery' ], false, true );
-		wp_enqueue_style( 'bearsthemes-swiper', plugins_url( '/assets/css/swiper.min.css', __FILE__ ) );
+	public function alone_enqueue_scripts() {
+		wp_enqueue_script( 'alone-swiper', plugins_url( '/assets/js/swiper.min.js', __FILE__ ), [ 'jquery' ], false, true );
+		wp_enqueue_style( 'alone-swiper', plugins_url( '/assets/css/swiper.min.css', __FILE__ ) );
 		wp_enqueue_style( 'tooltipster', plugins_url( '/assets/css/tooltipster.css', __FILE__ ) );
 		wp_enqueue_style( 'magnific-popup', plugins_url( '/assets/css/magnific-popup.css', __FILE__ ) );
 
-		wp_enqueue_style( 'bearsthemes-addons-elements', plugins_url( '/assets/css/elements.css', __FILE__ ) );
+		wp_enqueue_style( 'alone-addons-elements', plugins_url( '/assets/css/elements.css', __FILE__ ) );
 
-		wp_enqueue_style( 'bearsthemes-addons-woocommerce', plugins_url( '/assets/css/woocommerce.css', __FILE__ ) );
+		wp_enqueue_style( 'alone-addons-woocommerce', plugins_url( '/assets/css/woocommerce.css', __FILE__ ) );
 
-		wp_enqueue_style( 'bearsthemes-addons-give', plugins_url( '/assets/css/give.css', __FILE__ ) );
+		wp_enqueue_style( 'alone-addons-give', plugins_url( '/assets/css/give.css', __FILE__ ) );
 
-		wp_enqueue_style( 'bearsthemes-addons-events', plugins_url( '/assets/css/events.css', __FILE__ ) );
+		wp_enqueue_style( 'alone-addons-events', plugins_url( '/assets/css/events.css', __FILE__ ) );
 
-		wp_enqueue_style( 'bearsthemes-addons-sermone', plugins_url( '/assets/css/sermone.css', __FILE__ ) );
+		wp_enqueue_style( 'alone-addons-sermone', plugins_url( '/assets/css/sermone.css', __FILE__ ) );
 
 	}
 
@@ -163,9 +163,9 @@ final class Bearsthemes_Addons {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'bearsthemes-addons' ),
-			'<strong>' . esc_html__( 'Bearsthemes Addons', 'bearsthemes-addons' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'bearsthemes-addons' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'alone-addons' ),
+			'<strong>' . esc_html__( 'Alone Addons', 'alone-addons' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'alone-addons' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -186,9 +186,9 @@ final class Bearsthemes_Addons {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'bearsthemes-addons' ),
-			'<strong>' . esc_html__( 'Bearsthemes Addons', 'bearsthemes-addons' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'bearsthemes-addons' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'alone-addons' ),
+			'<strong>' . esc_html__( 'Alone Addons', 'alone-addons' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'alone-addons' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -210,9 +210,9 @@ final class Bearsthemes_Addons {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'bearsthemes-addons' ),
-			'<strong>' . esc_html__( 'Bearsthemes Addons', 'bearsthemes-addons' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'bearsthemes-addons' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'alone-addons' ),
+			'<strong>' . esc_html__( 'Alone Addons', 'alone-addons' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'alone-addons' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
 
@@ -220,10 +220,10 @@ final class Bearsthemes_Addons {
 	}
 }
 
-function bearsthemes_addons_load_textdomain() {
-	load_plugin_textdomain( 'bearsthemes-addons', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+function alone_addons_load_textdomain() {
+	load_plugin_textdomain( 'alone-addons', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
-add_action( 'plugins_loaded', 'bearsthemes_addons_load_textdomain' );
+add_action( 'plugins_loaded', 'alone_addons_load_textdomain' );
 
-// Instantiate Bearsthemes_Addons.
-new Bearsthemes_Addons();
+// Instantiate Alone_Addons.
+new Alone_Addons();

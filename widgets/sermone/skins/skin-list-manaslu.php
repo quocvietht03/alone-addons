@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Sermone\Skins;
+namespace AloneAddons\Widgets\Sermone\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -29,7 +29,7 @@ class Skin_List_Manaslu extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'List Manaslu', 'bearsthemes-addons' );
+		return __( 'List Manaslu', 'alone-addons' );
 	}
 
 
@@ -39,7 +39,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
@@ -48,10 +48,10 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -72,10 +72,10 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -83,10 +83,10 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'show_meta',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -94,10 +94,10 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->add_control(
 			'show_excerpt',
 			[
-				'label' => __( 'Excerpt', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -105,7 +105,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'excerpt_length',
 			[
-				'label' => __( 'Excerpt Length', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt Length', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => apply_filters( 'cerredo_excerpt_length', 15 ),
 				'condition' => [
@@ -117,7 +117,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'excerpt_more',
 			[
-				'label' => __( 'Excerpt More', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt More', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => apply_filters( 'excerpt_more', '' ),
 				'condition' => [
@@ -129,10 +129,10 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->add_control(
 			'show_quickview',
 			[
-				'label' => __( 'Quickview', 'bearsthemes-addons' ),
+				'label' => __( 'Quickview', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -144,7 +144,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -164,19 +164,19 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -194,7 +194,7 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -202,7 +202,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -220,7 +220,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -238,7 +238,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -256,7 +256,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -276,7 +276,7 @@ class Skin_List_Manaslu extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -291,7 +291,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon' => 'background-color: {{VALUE}}',
@@ -302,7 +302,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon' => 'border-color: {{VALUE}}',
@@ -314,7 +314,7 @@ class Skin_List_Manaslu extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -329,7 +329,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon:hover' => 'background-color: {{VALUE}}',
@@ -340,7 +340,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon:hover' => 'border-color: {{VALUE}}',
@@ -361,7 +361,7 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_list_manaslu_show_thumbnail!' => '',
@@ -372,7 +372,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'overlay_bg_color',
 			[
-				'label' => __( 'Overlay Color', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-sermon__overlay' => 'background-color: {{VALUE}}',
@@ -384,7 +384,7 @@ class Skin_List_Manaslu extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -400,7 +400,7 @@ class Skin_List_Manaslu extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -425,7 +425,7 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -433,7 +433,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_manaslu_show_title!' => '',
@@ -444,7 +444,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -459,7 +459,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -486,7 +486,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'heading_meta_style',
 			[
-				'label' => __( 'Meta', 'bearsthemes-addons' ),
+				'label' => __( 'Meta', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_manaslu_show_meta!' => '',
@@ -497,7 +497,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'meta_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -513,7 +513,7 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->add_control(
 			'meta_link_color',
 			[
-				'label' => __( 'Link Color', 'bearsthemes-addons' ),
+				'label' => __( 'Link Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -528,7 +528,7 @@ class Skin_List_Manaslu extends Skin_Base {
     $this->add_control(
 			'meta_link_color_hover',
 			[
-				'label' => __( 'Link Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Link Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -557,7 +557,7 @@ class Skin_List_Manaslu extends Skin_Base {
     	$this->add_control(
 			'heading_excerpt_style',
 			[
-				'label' => __( 'Excerpt', 'bearsthemes-addons' ),
+				'label' => __( 'Excerpt', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_manaslu_show_excerpt!' => '',
@@ -568,7 +568,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'excerpt_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -595,7 +595,7 @@ class Skin_List_Manaslu extends Skin_Base {
    		$this->add_control(
 			'heading_quickview_style',
 			[
-				'label' => __( 'Quickview', 'bearsthemes-addons' ),
+				'label' => __( 'Quickview', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
         		'condition' => [
 					'skin_list_manaslu_show_quickview!' => '',
@@ -606,7 +606,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'quickview_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -621,7 +621,7 @@ class Skin_List_Manaslu extends Skin_Base {
 		$this->add_control(
 			'quickview_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -652,7 +652,7 @@ class Skin_List_Manaslu extends Skin_Base {
             <div class="elementor-sermon__thumbnail">
   						<div class="elementor-sermon__overlay"></div>
               <?php
-                echo '<a class="elementor-sermon__read-more" href="' . get_the_permalink() . '">' . bearsthemes_addons_get_icon_svg( 'arrow-right', 20 ) . '</a>';
+                echo '<a class="elementor-sermon__read-more" href="' . get_the_permalink() . '">' . alone_addons_get_icon_svg( 'arrow-right', 20 ) . '</a>';
               ?>
   						<?php the_post_thumbnail( $this->parent->get_instance_value_skin('thumbnail_size') ); ?>
     				</div>
@@ -673,15 +673,15 @@ class Skin_List_Manaslu extends Skin_Base {
   						<ul class="elementor-sermon__meta">
   							<li>
   								<?php
-  									echo __( 'Posted on ', 'bearsthemes-addons' ) .
+  									echo __( 'Posted on ', 'alone-addons' ) .
   											 sermone_date_format( '', sermone_get_field( 'sermon_date_preached', get_the_ID() ) );
   								?>
   							</li>
   		          <li>
   								<?php
-                    echo get_the_term_list( get_the_ID(), 'sermone_series', __( 'Part of a series ', 'bearsthemes-addons' ), ', ', ', ' ) .
-                         get_the_term_list( get_the_ID(), 'sermone_topics', __( 'in topic ', 'bearsthemes-addons' ), ', ', ' & ' ) .
-                         get_the_term_list( get_the_ID(), 'sermone_books', __( 'book ', 'bearsthemes-addons' ), ', ', '.' );
+                    echo get_the_term_list( get_the_ID(), 'sermone_series', __( 'Part of a series ', 'alone-addons' ), ', ', ', ' ) .
+                         get_the_term_list( get_the_ID(), 'sermone_topics', __( 'in topic ', 'alone-addons' ), ', ', ' & ' ) .
+                         get_the_term_list( get_the_ID(), 'sermone_books', __( 'book ', 'alone-addons' ), ', ', '.' );
                   ?>
   							</li>
   		        </ul>
@@ -696,9 +696,9 @@ class Skin_List_Manaslu extends Skin_Base {
             <?php if( '' !== $this->parent->get_instance_value_skin( 'show_quickview' ) ) { ?>
               <a href="<?php the_permalink() ?>" class="sermone-quickview elementor-sermon__quickview" data-sermone-quickview="<?php the_ID() ?>">
                 <?php
-                echo '<span class="video">' . bearsthemes_addons_get_icon_svg( 'video-camera', 16 ) . '</span>' .
-                     '<span class="audio">' . bearsthemes_addons_get_icon_svg( 'headphones', 16 ) . '</span>' .
-                     '<span class="download">' . bearsthemes_addons_get_icon_svg( 'download-file', 16 ) . '</span>';
+                echo '<span class="video">' . alone_addons_get_icon_svg( 'video-camera', 16 ) . '</span>' .
+                     '<span class="audio">' . alone_addons_get_icon_svg( 'headphones', 16 ) . '</span>' .
+                     '<span class="download">' . alone_addons_get_icon_svg( 'download-file', 16 ) . '</span>';
                 ?>
               </a>
             <?php } ?>

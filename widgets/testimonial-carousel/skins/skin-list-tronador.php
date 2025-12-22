@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Testimonial_Carousel\Skins;
+namespace AloneAddons\Widgets\Testimonial_Carousel\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -30,7 +30,7 @@ class Skin_List_Tronador extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'List Tronador', 'bearsthemes-addons' );
+		return __( 'List Tronador', 'alone-addons' );
 	}
 
 	public function register_layout_section_controls( Widget_Base $widget ) {
@@ -40,15 +40,15 @@ class Skin_List_Tronador extends Skin_Base {
 
 		$repeater->add_control(
 			'list_content', [
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.' , 'bearsthemes-addons' ),
+				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_image', [
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -58,53 +58,53 @@ class Skin_List_Tronador extends Skin_Base {
 
 		$repeater->add_control(
 			'list_name', [
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Name' , 'bearsthemes-addons' ),
+				'default' => __( 'Name' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_job', [
-				'label' => __( 'Job', 'bearsthemes-addons' ),
+				'label' => __( 'Job', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Job' , 'bearsthemes-addons' ),
+				'default' => __( 'Job' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_donated', [
-				'label' => __( 'Donated', 'bearsthemes-addons' ),
+				'label' => __( 'Donated', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( '$250' , 'bearsthemes-addons' ),
+				'default' => __( '$250' , 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Slides', 'bearsthemes-addons' ),
+				'label' => __( 'Slides', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #1', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #1', 'alone-addons' ),
 						'list_job' => 'Job #1',
 						'list_donated' => '$250',
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #2', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #2', 'alone-addons' ),
 						'list_job' => 'Job #2',
 						'list_donated' => '$250',
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #3', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #3', 'alone-addons' ),
 						'list_job' => 'Job #3',
 						'list_donated' => '$250',
 					],
@@ -131,19 +131,19 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -161,7 +161,7 @@ class Skin_List_Tronador extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -169,7 +169,7 @@ class Skin_List_Tronador extends Skin_Base {
     $this->add_control(
 			'heading_content_style',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -177,7 +177,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'content_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -198,7 +198,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'heading_name_style',
 			[
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -206,7 +206,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'name_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -227,7 +227,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'heading_job_style',
 			[
-				'label' => __( 'Job', 'bearsthemes-addons' ),
+				'label' => __( 'Job', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -235,7 +235,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'job_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -256,7 +256,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'heading_donated_style',
 			[
-				'label' => __( 'Donated', 'bearsthemes-addons' ),
+				'label' => __( 'Donated', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -264,7 +264,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'donated_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -291,7 +291,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -299,7 +299,7 @@ class Skin_List_Tronador extends Skin_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -339,7 +339,7 @@ class Skin_List_Tronador extends Skin_Base {
 
 				<div class="elementor-testimonial__content-wrap">
           <?php
-            echo bearsthemes_addons_get_icon_svg( 'quote-right', 56 );
+            echo alone_addons_get_icon_svg( 'quote-right', 56 );
 						if( '' !== $item['list_job'] ) {
 							echo '<div class="elementor-testimonial__job">' . $item['list_job'] . '</div>';
 						}
@@ -350,7 +350,7 @@ class Skin_List_Tronador extends Skin_Base {
   						echo '<div class="elementor-testimonial__content">"' . $item['list_content'] . '"</div>';
   					}
 						if( '' !== $item['list_donated'] ) {
-							echo '<div class="elementor-testimonial__donated">'. esc_html__('Donated Amount: ', 'bearsthemes-addons') . '<span>' . $item['list_donated'] .'</span></div>';
+							echo '<div class="elementor-testimonial__donated">'. esc_html__('Donated Amount: ', 'alone-addons') . '<span>' . $item['list_donated'] .'</span></div>';
 						}
 					?>
 				</div>

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Video_Box\Skins;
+namespace AloneAddons\Widgets\Video_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -24,7 +24,7 @@ class Skin_Baruntse extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Baruntse', 'bearsthemes-addons' );
+		return __( 'Baruntse', 'alone-addons' );
 	}
 
 
@@ -34,10 +34,10 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'Housing Assistance Because of Acts of Violence', 'bearsthemes-addons' ),
+				'default' => __( 'Housing Assistance Because of Acts of Violence', 'alone-addons' ),
 			]
 		);
 
@@ -49,7 +49,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -57,7 +57,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -65,7 +65,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

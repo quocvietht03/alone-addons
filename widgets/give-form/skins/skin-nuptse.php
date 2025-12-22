@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Form\Skins;
+namespace AloneAddons\Widgets\Give_Form\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -25,7 +25,7 @@ class Skin_Nuptse extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Nuptse', 'bearsthemes-addons' );
+		return __( 'Nuptse', 'alone-addons' );
 	}
 
 
@@ -40,26 +40,26 @@ class Skin_Nuptse extends Skin_Base {
     $this->add_control(
 			'header_sub_title',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'We\'re Near to Our', 'bearsthemes-addons' ),
+				'default' => __( 'We\'re Near to Our', 'alone-addons' ),
 			]
 		);
 		$this->add_control(
 			'header_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Campaign', 'bearsthemes-addons' ),
+				'default' => __( 'Campaign', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'header_desc',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Fundraising for children in war.', 'bearsthemes-addons' ),
+				'default' => __( 'Fundraising for children in war.', 'alone-addons' ),
 			]
 		);
 
@@ -73,7 +73,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -81,7 +81,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -99,7 +99,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -117,7 +117,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -135,7 +135,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form' => 'background-color: {{VALUE}}',
@@ -146,7 +146,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form' => 'border-color: {{VALUE}}',
@@ -163,7 +163,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -171,7 +171,7 @@ class Skin_Nuptse extends Skin_Base {
     $this->add_control(
 			'heading_header_sub_title_style',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -179,7 +179,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'header_sub_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -192,7 +192,7 @@ class Skin_Nuptse extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_sub_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__sub-title',
 			]
@@ -201,7 +201,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'heading_header_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -209,7 +209,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'header_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -222,7 +222,7 @@ class Skin_Nuptse extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__title',
 			]
@@ -231,7 +231,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'heading_header_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -239,7 +239,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'header_desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -252,7 +252,7 @@ class Skin_Nuptse extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_desc_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__desc',
 			]
@@ -261,7 +261,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'heading_form_style',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -270,7 +270,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -304,7 +304,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -317,7 +317,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -326,7 +326,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -339,8 +339,8 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -355,7 +355,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -366,14 +366,14 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -386,7 +386,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -401,14 +401,14 @@ class Skin_Nuptse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} form[id*=give-form] .give-btn-modal:hover,
@@ -420,7 +420,7 @@ class Skin_Nuptse extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Totals;
+namespace AloneAddons\Widgets\Give_Totals;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -17,7 +17,7 @@ class Be_Give_Totals extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Give Totals', 'bearsthemes-addons' );
+		return __( 'Be Give Totals', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -25,11 +25,11 @@ class Be_Give_Totals extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'elementor-waypoints', 'jquery-progressbar', 'bearsthemes-addons' ];
+		return [ 'elementor-waypoints', 'jquery-progressbar', 'alone-addons' ];
 	}
 
 	protected function register_skins() {
@@ -86,14 +86,14 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'heading_give_total',
 			[
-				'label' => __( 'Give Total', 'bearsthemes-addons' ),
+				'label' => __( 'Give Total', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -102,7 +102,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'total_goal',
 			[
-				'label' => __( 'Total Goal', 'bearsthemes-addons' ),
+				'label' => __( 'Total Goal', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5000,
 			]
@@ -111,10 +111,10 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'custom_total_earnings',
 			[
-				'label' => __( 'Custom Total Earnings', 'bearsthemes-addons' ),
+				'label' => __( 'Custom Total Earnings', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -122,7 +122,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'total_earnings',
 			[
-				'label' => __( 'Total Earnings', 'bearsthemes-addons' ),
+				'label' => __( 'Total Earnings', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 1200,
 				'condition' => [
@@ -134,7 +134,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'ids',
 			[
-				'label' => __( 'Ids', 'bearsthemes-addons' ),
+				'label' => __( 'Ids', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_post_ids(),
 				'label_block' => true,
@@ -148,7 +148,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'category',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_taxonomies(),
 				'label_block' => true,
@@ -162,7 +162,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'heading_give_form',
 			[
-				'label' => __( 'Give Form', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -171,7 +171,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_id',
 			[
-				'label' => __( 'Form Id', 'bearsthemes-addons' ),
+				'label' => __( 'Form Id', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $this->get_supported_post_ids(),
 			]
@@ -184,7 +184,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -192,19 +192,19 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -221,7 +221,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Give Total', 'bearsthemes-addons' ),
+				'label' => __( 'Give Total', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -232,7 +232,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'heading_goal_progress_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -240,7 +240,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -254,7 +254,7 @@ class Be_Give_Totals extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_main_typography',
-				'label' => __( 'Main Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Main Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress .income,
 				 							 {{WRAPPER}} .give-goal-progress .goal-text',
@@ -264,7 +264,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -277,7 +277,7 @@ class Be_Give_Totals extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress',
 			]
@@ -286,7 +286,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'heading_message',
 			[
-				'label' => __( 'Message', 'bearsthemes-addons' ),
+				'label' => __( 'Message', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -294,7 +294,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'mesage_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -319,7 +319,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_section(
 			'section_give_form',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -330,7 +330,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -364,7 +364,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -377,7 +377,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -386,7 +386,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -399,8 +399,8 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -415,7 +415,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -426,14 +426,14 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -446,7 +446,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -461,14 +461,14 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} form[id*=give-form] .give-btn-modal:hover,
@@ -480,7 +480,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -501,7 +501,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->start_controls_section(
 			'section_goal_progress',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -509,11 +509,11 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'custom_goal_progress',
 			[
-				'label' => __( 'Custom Goal Progress', 'bearsthemes-addons' ),
-				'description' => __( 'Check this to custom goal progress in give forms.', 'bearsthemes-addons' ),
+				'label' => __( 'Custom Goal Progress', 'alone-addons' ),
+				'description' => __( 'Check this to custom goal progress in give forms.', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'On', 'bearsthemes-addons' ),
-				'label_off' => __( 'Off', 'bearsthemes-addons' ),
+				'label_on' => __( 'On', 'alone-addons' ),
+				'label_off' => __( 'Off', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -521,13 +521,13 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_easing',
 			[
-				'label' => __( 'Easing', 'bearsthemes-addons' ),
+				'label' => __( 'Easing', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'linear',
 				'options' => [
-					'linear' => __( 'Linear', 'bearsthemes-addons' ),
-					'easeOut' => __( 'EaseOut', 'bearsthemes-addons' ),
-					'bounce' => __( 'Bounce', 'bearsthemes-addons' ),
+					'linear' => __( 'Linear', 'alone-addons' ),
+					'easeOut' => __( 'EaseOut', 'alone-addons' ),
+					'bounce' => __( 'Bounce', 'alone-addons' ),
 				],
 				'condition' => [
 					'custom_goal_progress!' => '',
@@ -538,7 +538,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_duration',
 			[
-				'label' => __( 'Duration', 'bearsthemes-addons' ),
+				'label' => __( 'Duration', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 800,
@@ -558,7 +558,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_color_from',
 			[
-				'label' => __( 'from Color', 'bearsthemes-addons' ),
+				'label' => __( 'from Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#FFEA82',
 				'condition' => [
@@ -570,7 +570,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_color_to',
 			[
-				'label' => __( 'to Color', 'bearsthemes-addons' ),
+				'label' => __( 'to Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ED6A5A',
 				'condition' => [
@@ -582,7 +582,7 @@ class Be_Give_Totals extends Widget_Base {
 		$this->add_control(
 			'goal_progress_trailcolor',
 			[
-				'label' => __( 'Trail Color', 'bearsthemes-addons' ),
+				'label' => __( 'Trail Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#EEEEEE',
 				'condition' => [
@@ -659,14 +659,14 @@ class Be_Give_Totals extends Widget_Base {
 			'ids'          => $settings['ids'], // integer|array.
 			'cats'         => $settings['category'], // integer|array.
 			'tags'         => 0, // integer|array.
-			'message'      => apply_filters( 'give_totals_message', __( 'Hey! We\'ve raised {total} of the {total_goal} we are trying to raise for this campaign!', 'bearsthemes-addons' ) ),
+			'message'      => apply_filters( 'give_totals_message', __( 'Hey! We\'ve raised {total} of the {total_goal} we are trying to raise for this campaign!', 'alone-addons' ) ),
 			'link'         => '', // URL.
-			'link_text'    => __( 'Donate Now', 'bearsthemes-addons' ), // string,
+			'link_text'    => __( 'Donate Now', 'alone-addons' ), // string,
 			'progress_bar' => true, // boolean.
 			'show_text' => true, // boolean.
 			'show_bar' => true, // boolean.
-			'income_text' => __( 'of', 'bearsthemes-addons' ),
-			'goal_text' => __( 'raised', 'bearsthemes-addons' ),
+			'income_text' => __( 'of', 'alone-addons' ),
+			'goal_text' => __( 'raised', 'alone-addons' ),
 			'custom_goal_progress' => $settings['custom_goal_progress'],
 		);
 
@@ -683,7 +683,7 @@ class Be_Give_Totals extends Widget_Base {
 			'height' => '12px',
 		);
 
-		echo bearsthemes_addons_give_totals ( $args, $bar_opts );
+		echo alone_addons_give_totals ( $args, $bar_opts );
 
 		if( !empty( $settings['form_id'] ) ) {
 			if( !Template::getActiveID($settings['form_id']) ) {

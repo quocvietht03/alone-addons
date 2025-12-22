@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Donors\Skins;
+namespace AloneAddons\Widgets\Donors\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -30,7 +30,7 @@ class Skin_Saltoro extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Saltoro', 'bearsthemes-addons' );
+		return __( 'Saltoro', 'alone-addons' );
 	}
 
 
@@ -41,7 +41,7 @@ class Skin_Saltoro extends Skin_Base {
 
 		$repeater->add_control(
 			'list_image', [
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -51,16 +51,16 @@ class Skin_Saltoro extends Skin_Base {
 
 		$repeater->add_control(
 			'list_title', [
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'This is donor name' , 'bearsthemes-addons' ),
+				'default' => __( 'This is donor name' , 'alone-addons' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
 			'list_price', [
-				'label' => __( 'Price', 'bearsthemes-addons' ),
+				'label' => __( 'Price', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '$1,200',
 				'label_block' => true,
@@ -69,7 +69,7 @@ class Skin_Saltoro extends Skin_Base {
 
 		$repeater->add_control(
 			'list_url', [
-				'label' => __( 'Custom Link', 'bearsthemes-addons' ),
+				'label' => __( 'Custom Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '#',
 			]
@@ -78,43 +78,43 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Slides', 'bearsthemes-addons' ),
+				'label' => __( 'Slides', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'James Jacksin', 'bearsthemes-addons' ),
+						'list_title' => __( 'James Jacksin', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Qlark Thom', 'bearsthemes-addons' ),
+						'list_title' => __( 'Qlark Thom', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Willim Jackson', 'bearsthemes-addons' ),
+						'list_title' => __( 'Willim Jackson', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Carly Rokki', 'bearsthemes-addons' ),
+						'list_title' => __( 'Carly Rokki', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Ulimes Nom', 'bearsthemes-addons' ),
+						'list_title' => __( 'Ulimes Nom', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'Ilimes Taylor', 'bearsthemes-addons' ),
+						'list_title' => __( 'Ilimes Taylor', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
@@ -126,7 +126,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '4',
 				'tablet_default' => '2',
@@ -146,10 +146,10 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -169,7 +169,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -193,10 +193,10 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -204,10 +204,10 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'show_price',
 			[
-				'label' => __( 'Price', 'bearsthemes-addons' ),
+				'label' => __( 'Price', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -219,7 +219,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -227,7 +227,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -245,7 +245,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -263,7 +263,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -281,7 +281,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -300,7 +300,7 @@ class Skin_Saltoro extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -315,7 +315,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor' => 'background-color: {{VALUE}}',
@@ -326,7 +326,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor' => 'border-color: {{VALUE}}',
@@ -338,7 +338,7 @@ class Skin_Saltoro extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -353,7 +353,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor:hover' => 'background-color: {{VALUE}}',
@@ -364,7 +364,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor:hover' => 'border-color: {{VALUE}}',
@@ -385,7 +385,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_saltoro_show_thumbnail!' => '',
@@ -396,7 +396,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -409,7 +409,7 @@ class Skin_Saltoro extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -425,7 +425,7 @@ class Skin_Saltoro extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -444,7 +444,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'overlay_color',
 			[
-				'label' => __( 'Overlay Color', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -465,7 +465,7 @@ class Skin_Saltoro extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -473,7 +473,7 @@ class Skin_Saltoro extends Skin_Base {
     $this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_saltoro_show_title!' => '',
@@ -484,7 +484,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -499,7 +499,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -527,7 +527,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'heading_price_style',
 			[
-				'label' => __( 'Price', 'bearsthemes-addons' ),
+				'label' => __( 'Price', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_saltoro_show_price!' => '',
@@ -538,7 +538,7 @@ class Skin_Saltoro extends Skin_Base {
 		$this->add_control(
 			'price_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -589,7 +589,7 @@ class Skin_Saltoro extends Skin_Base {
 							}
 
 							if( !empty( $item['list_price'] ) && '' !== $this->parent->get_instance_value_skin('show_price') ) {
-								echo '<div class="elementor-donor__price"><span>' . esc_html__( 'Donated: ', 'bearsthemes-addons' ) . '</span> ' . $item['list_price'] . '</div>';
+								echo '<div class="elementor-donor__price"><span>' . esc_html__( 'Donated: ', 'alone-addons' ) . '</span> ' . $item['list_price'] . '</div>';
 							}
 						 ?>
 					</div>

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Forms\Skins;
+namespace AloneAddons\Widgets\Give_Forms\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -31,7 +31,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Grid Vaccine', 'bearsthemes-addons' );
+		return __( 'Grid Vaccine', 'alone-addons' );
 	}
 
 
@@ -41,7 +41,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -61,7 +61,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
@@ -70,10 +70,10 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
       'show_thumbnail',
       [
-        'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+        'label' => __( 'Thumbnail', 'alone-addons' ),
         'type'  => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons' ),
-        'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+        'label_on' => __( 'Show', 'alone-addons' ),
+        'label_off' => __( 'Hide', 'alone-addons' ),
         'default'  => 'yes',
         'separator' => 'before',
       ]
@@ -94,7 +94,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_responsive_control(
       'item_ratio',
       [
-        'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+        'label' => __( 'Image Ratio', 'alone-addons' ),
         'type' => Controls_Manager::SLIDER,
         'default' => [
           'size' => 0.66,
@@ -118,10 +118,10 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
       'show_title',
       [
-        'label' => __( 'Title', 'bearsthemes-addons'),
+        'label' => __( 'Title', 'alone-addons'),
         'type' => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons'),
-        'label_off' => __( 'Hide', 'bearsthemes-addons'),
+        'label_on' => __( 'Show', 'alone-addons'),
+        'label_off' => __( 'Hide', 'alone-addons'),
         'default' => 'yes',
       ]
     );
@@ -129,10 +129,10 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'show_category',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type'  => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -140,10 +140,10 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'show_date',
 			[
-				'label' => __( 'Date', 'bearsthemes-addons' ),
+				'label' => __( 'Date', 'alone-addons' ),
 				'type'  => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -151,10 +151,10 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
       'show_goal_progress',
       [
-        'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+        'label' => __( 'Goal Progress', 'alone-addons' ),
         'type' => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons'),
-        'label_off' => __( 'Hide', 'bearsthemes-addons'),
+        'label_on' => __( 'Show', 'alone-addons'),
+        'label_off' => __( 'Hide', 'alone-addons'),
         'default' => 'yes',
       ]
     );
@@ -162,10 +162,10 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'show_donation_button',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -173,9 +173,9 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_label',
 			[
-				'label' => __( 'Donation button Label', 'bearsthemes-addons' ),
+				'label' => __( 'Donation button Label', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Donate Now', 'bearsthemes-addons' ),
+				'default' => __( 'Donate Now', 'alone-addons' ),
 				'condition' => [
 					'skin_grid_vaccine_show_donation_button!' => '',
 				],
@@ -190,7 +190,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Columns Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 30,
@@ -210,7 +210,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -230,19 +230,19 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -260,7 +260,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->start_controls_section(
       'section_design_box',
       [
-        'label' => __( 'Box', 'bearsthemes-addons' ),
+        'label' => __( 'Box', 'alone-addons' ),
         'tab' => Controls_Manager::TAB_STYLE,
       ]
     );
@@ -268,7 +268,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -286,7 +286,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -304,7 +304,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -323,7 +323,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -338,7 +338,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form,
@@ -350,7 +350,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form' => 'border-color: {{VALUE}}',
@@ -362,7 +362,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -377,7 +377,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form:hover,
@@ -389,7 +389,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form:hover' => 'border-color: {{VALUE}}',
@@ -411,7 +411,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_grid_vaccine_show_thumbnail!' => '',
@@ -422,7 +422,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'thumbnail_border_radius',
       [
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -441,7 +441,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -457,7 +457,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -483,7 +483,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -491,7 +491,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_vaccine_show_title!' => '',
@@ -502,7 +502,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -517,7 +517,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -544,7 +544,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'heading_category_style',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_vaccine_show_category!' => '',
@@ -555,7 +555,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'category_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-card__category' => 'color: {{VALUE}};',
@@ -569,7 +569,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
      'category_color_hover',
      [
-       'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+       'label' => __( 'Color Hover', 'alone-addons' ),
        'type' => Controls_Manager::COLOR,
        'selectors' => [
          '{{WRAPPER}} .give-card__category a:hover' => 'color: {{VALUE}};',
@@ -584,7 +584,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'category_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-card__category',
 				'condition' => [
@@ -596,7 +596,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'heading_date_style',
 			[
-				'label' => __( 'Date', 'bearsthemes-addons' ),
+				'label' => __( 'Date', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_vaccine_show_date!' => '',
@@ -607,7 +607,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'date_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-card__meta li' => 'color: {{VALUE}};',
@@ -622,7 +622,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'date_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-card__date',
 				'condition' => [
@@ -634,7 +634,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
     $this->add_control(
 			'heading_goal_progress_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_vaccine_show_goal_progress!' => '',
@@ -645,7 +645,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_primary_color',
 			[
-				'label' => __( 'Primary Color', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -662,7 +662,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_primary_typography',
-				'label' => __( 'Primary Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress .income,
 				 							 {{WRAPPER}} .give-goal-progress .goal-text',
@@ -675,7 +675,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -691,7 +691,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress',
 				'condition' => [
@@ -703,7 +703,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'heading_donation_button_style',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_vaccine_show_donation_button!' => '',
@@ -727,7 +727,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -749,7 +749,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -771,7 +771,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -794,7 +794,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 				'condition' => [
 					'skin_grid_vaccine_show_donation_button!' => '',
 				],
@@ -804,7 +804,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -817,7 +817,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal' => 'background-color: {{VALUE}};',
@@ -829,7 +829,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal,
@@ -842,7 +842,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 				'condition' => [
 					'skin_grid_vaccine_show_donation_button!' => '',
 				],
@@ -852,7 +852,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -865,7 +865,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal:hover' => 'background-color: {{VALUE}};',
@@ -877,7 +877,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'donation_button_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal:hover,
@@ -899,7 +899,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_form',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_grid_vaccine_show_donation_button!' => '',
@@ -910,7 +910,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -938,7 +938,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -950,7 +950,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -959,7 +959,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -971,8 +971,8 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -986,7 +986,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -997,14 +997,14 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1016,7 +1016,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1030,14 +1030,14 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'.give-form[data-style="elementor-give-forms--vaccine"] .give-submit:hover' => 'color: {{VALUE}};',
@@ -1048,7 +1048,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1071,7 +1071,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->start_controls_section(
 			'section_goal_progress',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_grid_vaccine_show_goal_progress!' => '',
@@ -1082,11 +1082,11 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'custom_goal_progress',
 			[
-				'label' => __( 'Custom Goal Progress', 'bearsthemes-addons' ),
-				'description' => __( 'Check this to custom goal progress in give forms.', 'bearsthemes-addons' ),
+				'label' => __( 'Custom Goal Progress', 'alone-addons' ),
+				'description' => __( 'Check this to custom goal progress in give forms.', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'On', 'bearsthemes-addons' ),
-				'label_off' => __( 'Off', 'bearsthemes-addons' ),
+				'label_on' => __( 'On', 'alone-addons' ),
+				'label_off' => __( 'Off', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -1094,13 +1094,13 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_easing',
 			[
-				'label' => __( 'Easing', 'bearsthemes-addons' ),
+				'label' => __( 'Easing', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'linear',
 				'options' => [
-					'linear' => __( 'Linear', 'bearsthemes-addons' ),
-					'easeOut' => __( 'EaseOut', 'bearsthemes-addons' ),
-					'bounce' => __( 'Bounce', 'bearsthemes-addons' ),
+					'linear' => __( 'Linear', 'alone-addons' ),
+					'easeOut' => __( 'EaseOut', 'alone-addons' ),
+					'bounce' => __( 'Bounce', 'alone-addons' ),
 				],
 				'condition' => [
 					'skin_grid_vaccine_custom_goal_progress!' => '',
@@ -1111,7 +1111,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_duration',
 			[
-				'label' => __( 'Duration', 'bearsthemes-addons' ),
+				'label' => __( 'Duration', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 800,
@@ -1131,7 +1131,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_color_from',
 			[
-				'label' => __( 'from Color', 'bearsthemes-addons' ),
+				'label' => __( 'from Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#FFEA82',
 				'condition' => [
@@ -1143,7 +1143,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_color_to',
 			[
-				'label' => __( 'to Color', 'bearsthemes-addons' ),
+				'label' => __( 'to Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ED6A5A',
 				'condition' => [
@@ -1155,7 +1155,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_trailcolor',
 			[
-				'label' => __( 'Trail Color', 'bearsthemes-addons' ),
+				'label' => __( 'Trail Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#EEEEEE',
 				'condition' => [
@@ -1167,7 +1167,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1179,7 +1179,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 		$this->add_control(
 			'goal_progress_background',
 			[
-				'label' => __( 'Background', 'bearsthemes-addons' ),
+				'label' => __( 'Background', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-goal-progress svg' => 'background: {{VALUE}};',
@@ -1244,8 +1244,8 @@ class Skin_Grid_Vaccine extends Skin_Base {
 						$args = array(
 							'show_text' => true,
 							'show_bar' => true,
-							'income_text' => __( 'Raised', 'bearsthemes-addons' ),
-							'goal_text' => __( 'Goal', 'bearsthemes-addons' ),
+							'income_text' => __( 'Raised', 'alone-addons' ),
+							'goal_text' => __( 'Goal', 'alone-addons' ),
 							'custom_goal_progress' => $this->parent->get_instance_value_skin('custom_goal_progress'),
 
 						);
@@ -1263,7 +1263,7 @@ class Skin_Grid_Vaccine extends Skin_Base {
 							'height' => '14px',
 						);
 
-						bearsthemes_addons_goal_progress( $form_id, $args, $bar_opts );
+						alone_addons_goal_progress( $form_id, $args, $bar_opts );
 						}
 					?>
 

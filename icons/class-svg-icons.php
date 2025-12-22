@@ -4,7 +4,7 @@
  *
  */
 
-class BearsthemesAddons_SVG_Icons {
+class AloneAddons_SVG_Icons {
 
 	/**
 	 * Gets the SVG code for a given icon.

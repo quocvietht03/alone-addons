@@ -4,7 +4,7 @@
  *
 **/
 
-function bearsthemes_addons_goal_progress($form_id, $args, $bar_opts) {
+function alone_addons_goal_progress($form_id, $args, $bar_opts) {
   $form        = new \Give_Donate_Form( $form_id );
   $goal_option = give_get_meta( $form->ID, '_give_goal_option', true );
 
@@ -168,7 +168,7 @@ function bearsthemes_addons_goal_progress($form_id, $args, $bar_opts) {
 
             echo sprintf(
               /* translators: 1: amount of income raised 2: goal target amount. */
-              __( '<span class="raised-income"><span class="income" data-amounts="%1$s">%2$s</span> %5$s</span> <span class="raised-goal"><span class="goal-text" data-amounts="%3$s">%4$s</span> %6$s</span>', 'bearsthemes-addons' ),
+              __( '<span class="raised-income"><span class="income" data-amounts="%1$s">%2$s</span> %5$s</span> <span class="raised-goal"><span class="goal-text" data-amounts="%3$s">%4$s</span> %6$s</span>', 'alone-addons' ),
               esc_attr( wp_json_encode( $income_amounts, JSON_PRETTY_PRINT ) ),
               esc_attr( $formatted_income ),
               esc_attr( wp_json_encode( $goal_amounts, JSON_PRETTY_PRINT ) ),
@@ -180,7 +180,7 @@ function bearsthemes_addons_goal_progress($form_id, $args, $bar_opts) {
           elseif ( 'percentage' === $goal_format ) :
 
             echo sprintf( /* translators: %s: percentage of the amount raised compared to the goal target */
-              __( '<span class="give-percentage">%s%%</span> funded', 'bearsthemes-addons' ),
+              __( '<span class="give-percentage">%s%%</span> funded', 'alone-addons' ),
               round( $progress )
             );
 
@@ -191,7 +191,7 @@ function bearsthemes_addons_goal_progress($form_id, $args, $bar_opts) {
                 '<span class="income">%1$s</span> of <span class="goal-text">%2$s</span> donation',
                 '<span class="income">%1$s</span> of <span class="goal-text">%2$s</span> donations',
                 $goal,
-                'bearsthemes-addons'
+                'alone-addons'
               ),
               give_format_amount( $income, array( 'decimal' => false ) ),
               give_format_amount( $goal, array( 'decimal' => false ) )
@@ -204,7 +204,7 @@ function bearsthemes_addons_goal_progress($form_id, $args, $bar_opts) {
                 '<span class="income">%1$s</span> of <span class="goal-text">%2$s</span> donor',
                 '<span class="income">%1$s</span> of <span class="goal-text">%2$s</span> donors',
                 $goal,
-                'bearsthemes-addons'
+                'alone-addons'
               ),
               give_format_amount( $income, array( 'decimal' => false ) ),
               give_format_amount( $goal, array( 'decimal' => false ) )
@@ -235,7 +235,7 @@ function bearsthemes_addons_goal_progress($form_id, $args, $bar_opts) {
   echo '</div>';
 }
 
-function bearsthemes_addons_goal_totals_progress( $args, $bar_opts ) {
+function alone_addons_goal_totals_progress( $args, $bar_opts ) {
   // Total Earnings.
   $total = give_maybe_sanitize_amount( $args['total_earnings'] );
 
@@ -296,7 +296,7 @@ function bearsthemes_addons_goal_totals_progress( $args, $bar_opts ) {
     			<?php
           echo sprintf(
             /* translators: 1: amount of income raised 2: goal target amount. */
-            __( '<span class="raised-income"><span class="income">%1$s</span> %3$s</span> <span class="raised-goal"><span class="goal-text">%2$s</span> %4$s</span>', 'bearsthemes-addons' ),
+            __( '<span class="raised-income"><span class="income">%1$s</span> %3$s</span> <span class="raised-goal"><span class="goal-text">%2$s</span> %4$s</span>', 'alone-addons' ),
             esc_html( $total ),
             esc_html( $total_goal ),
             esc_html( $args['income_text'] ),
@@ -327,7 +327,7 @@ function bearsthemes_addons_goal_totals_progress( $args, $bar_opts ) {
 
 }
 
-function bearsthemes_addons_give_totals ( $args, $bar_opts ) {
+function alone_addons_give_totals ( $args, $bar_opts ) {
   // Total Earnings.
   $total = give_maybe_sanitize_amount( $args['total_earnings'] );
 
@@ -489,7 +489,7 @@ function bearsthemes_addons_give_totals ( $args, $bar_opts ) {
         'custom_goal_progress' => filter_var( $args['custom_goal_progress'], FILTER_VALIDATE_BOOLEAN ),
       );
 
-			bearsthemes_addons_goal_totals_progress( $bar_args, $bar_opts );
+			alone_addons_goal_totals_progress( $bar_args, $bar_opts );
 		}
 
 		echo sprintf(
@@ -525,7 +525,7 @@ function bearsthemes_addons_give_totals ( $args, $bar_opts ) {
 }
 
 //////////
-function bearsthemes_addons_goal_totals_progress_circle( $args, $bar_opts ) {
+function alone_addons_goal_totals_progress_circle( $args, $bar_opts ) {
   // Total Earnings.
   $total = give_maybe_sanitize_amount( $args['total_earnings'] );
 
@@ -601,7 +601,7 @@ function bearsthemes_addons_goal_totals_progress_circle( $args, $bar_opts ) {
         <?php
         echo sprintf(
           /* translators: 1: amount of income raised 2: goal target amount. */
-          __( '<span class="raised-income">%3$s<span class="income">%1$s</span></span> <span class="raised-goal">%4$s<span class="goal-text">%2$s</span></span>', 'bearsthemes-addons' ),
+          __( '<span class="raised-income">%3$s<span class="income">%1$s</span></span> <span class="raised-goal">%4$s<span class="goal-text">%2$s</span></span>', 'alone-addons' ),
           esc_html( $total ),
           esc_html( $total_goal ),
           esc_html( $args['income_text'] ),
@@ -616,7 +616,7 @@ function bearsthemes_addons_goal_totals_progress_circle( $args, $bar_opts ) {
   echo '</div>';
 
 }
-function bearsthemes_addons_give_totals_circle ( $args, $bar_opts ) {
+function alone_addons_give_totals_circle ( $args, $bar_opts ) {
   // Total Earnings.
   $total = give_maybe_sanitize_amount( $args['total_earnings'] );
 
@@ -778,7 +778,7 @@ function bearsthemes_addons_give_totals_circle ( $args, $bar_opts ) {
         'custom_goal_progress' => filter_var( $args['custom_goal_progress'], FILTER_VALIDATE_BOOLEAN ),
       );
 
-			bearsthemes_addons_goal_totals_progress_circle( $bar_args, $bar_opts );
+			alone_addons_goal_totals_progress_circle( $bar_args, $bar_opts );
 		}
 
 		echo sprintf(
@@ -815,7 +815,7 @@ function bearsthemes_addons_give_totals_circle ( $args, $bar_opts ) {
 
 ///////////
 
-function bearsthemes_addons_goal_totals_progress_box( $args, $bar_opts ) {
+function alone_addons_goal_totals_progress_box( $args, $bar_opts ) {
   // Total Earnings.
   $total = give_maybe_sanitize_amount( $args['total_earnings'] );
 
@@ -875,7 +875,7 @@ function bearsthemes_addons_goal_totals_progress_box( $args, $bar_opts ) {
         <div class="bt-price">
           <?php
             echo '<div class="bt-goal">'.$total_goal.'</div>'.
-              '<div class="bt-collected">'.$progress.esc_html__('% Donation Collected', 'bearsthemes-addons').'</div>';
+              '<div class="bt-collected">'.$progress.esc_html__('% Donation Collected', 'alone-addons').'</div>';
           ?>
         </div>
         <div class="bt-progress">
@@ -893,7 +893,7 @@ function bearsthemes_addons_goal_totals_progress_box( $args, $bar_opts ) {
 
 }
 
-function bearsthemes_addons_give_totals_box ( $args, $bar_opts ) {
+function alone_addons_give_totals_box ( $args, $bar_opts ) {
   // Total Earnings.
   $total = give_maybe_sanitize_amount( $args['total_earnings'] );
 
@@ -1055,7 +1055,7 @@ function bearsthemes_addons_give_totals_box ( $args, $bar_opts ) {
         'custom_goal_progress' => filter_var( $args['custom_goal_progress'], FILTER_VALIDATE_BOOLEAN ),
       );
 
-			bearsthemes_addons_goal_totals_progress_box( $bar_args, $bar_opts );
+			alone_addons_goal_totals_progress_box( $bar_args, $bar_opts );
 		}
 
 		echo sprintf(

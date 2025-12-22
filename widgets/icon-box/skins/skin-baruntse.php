@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Icon_Box\Skins;
+namespace AloneAddons\Widgets\Icon_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -22,7 +22,7 @@ class Skin_Baruntse extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Baruntse', 'bearsthemes-addons' );
+		return __( 'Baruntse', 'alone-addons' );
 	}
 
 
@@ -32,7 +32,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -40,7 +40,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -61,7 +61,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'icon_size_wrap',
 			[
-				'label' => __( 'Wrap Size', 'bearsthemes-addons' ),
+				'label' => __( 'Wrap Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -83,14 +83,14 @@ class Skin_Baruntse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_icon_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -103,7 +103,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'icon_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -118,14 +118,14 @@ class Skin_Baruntse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_icon_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -138,7 +138,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'icon_background_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -162,7 +162,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -170,7 +170,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -188,7 +188,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'content_background_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -200,7 +200,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -209,7 +209,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -221,7 +221,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -242,7 +242,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'heading_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -250,7 +250,7 @@ class Skin_Baruntse extends Skin_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

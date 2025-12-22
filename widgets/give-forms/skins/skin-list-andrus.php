@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Forms\Skins;
+namespace AloneAddons\Widgets\Give_Forms\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -30,7 +30,7 @@ class Skin_List_Andrus extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'List Andrus', 'bearsthemes-addons' );
+		return __( 'List Andrus', 'alone-addons' );
 	}
 
 
@@ -40,7 +40,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 4,
 			]
@@ -49,10 +49,10 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
       'show_thumbnail',
       [
-        'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+        'label' => __( 'Thumbnail', 'alone-addons' ),
         'type'  => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons' ),
-        'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+        'label_on' => __( 'Show', 'alone-addons' ),
+        'label_off' => __( 'Hide', 'alone-addons' ),
         'default'  => 'yes',
         'separator' => 'before',
       ]
@@ -73,10 +73,10 @@ class Skin_List_Andrus extends Skin_Base {
     $this->add_control(
       'show_title',
       [
-        'label' => __( 'Title', 'bearsthemes-addons'),
+        'label' => __( 'Title', 'alone-addons'),
         'type' => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons'),
-        'label_off' => __( 'Hide', 'bearsthemes-addons'),
+        'label_on' => __( 'Show', 'alone-addons'),
+        'label_off' => __( 'Hide', 'alone-addons'),
         'default' => 'yes',
         'separator' => 'before',
       ]
@@ -85,10 +85,10 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'show_category',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type'  => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -96,10 +96,10 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
       'show_goal_progress',
       [
-        'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+        'label' => __( 'Goal Progress', 'alone-addons' ),
         'type' => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons'),
-        'label_off' => __( 'Hide', 'bearsthemes-addons'),
+        'label_on' => __( 'Show', 'alone-addons'),
+        'label_off' => __( 'Hide', 'alone-addons'),
         'default' => 'yes',
       ]
     );
@@ -107,10 +107,10 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'show_donation_button',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -123,7 +123,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 30,
@@ -143,19 +143,19 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -173,7 +173,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_list_andrus_show_thumbnail!' => '',
@@ -185,7 +185,7 @@ class Skin_List_Andrus extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -201,7 +201,7 @@ class Skin_List_Andrus extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -228,7 +228,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content_feature',
 			[
-				'label' => __( 'Content Feature', 'bearsthemes-addons' ),
+				'label' => __( 'Content Feature', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -236,7 +236,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_title_feature_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_andrus_show_title!' => '',
@@ -247,7 +247,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->add_control(
 			'title_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -262,7 +262,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->add_control(
 			'title_feature_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -289,7 +289,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_category_feature_style',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_andrus_show_category!' => '',
@@ -300,7 +300,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'category_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form-feature .give-card__category' => 'color: {{VALUE}};',
@@ -314,7 +314,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'category_feature_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form-feature .give-card__category a' => 'color: {{VALUE}};',
@@ -329,7 +329,7 @@ class Skin_List_Andrus extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'category_feature_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-give-form-feature .give-card__category',
 				'condition' => [
@@ -341,7 +341,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_goal_progress_feature_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_andrus_show_goal_progress!' => '',
@@ -352,7 +352,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'goal_progress_feature_primary_color',
 			[
-				'label' => __( 'Primary Color', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -369,7 +369,7 @@ class Skin_List_Andrus extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_feature_primary_typography',
-				'label' => __( 'Primary Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-give-form-feature .give-goal-progress .income,
 				 							 {{WRAPPER}} .elementor-give-form-feature .give-goal-progress .goal-text',
@@ -382,7 +382,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'goal_progress_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -398,7 +398,7 @@ class Skin_List_Andrus extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_feature_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-give-form-feature .give-goal-progress',
 				'condition' => [
@@ -410,7 +410,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_donation_button_feature_style',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -428,7 +428,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_feature_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -447,7 +447,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_feature_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -467,14 +467,14 @@ class Skin_List_Andrus extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_feature_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donation_button_feature_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -487,7 +487,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_feature_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form-feature .give-btn-modal' => 'background-color: {{VALUE}};',
@@ -499,7 +499,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_feature_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form-feature .give-btn-modal,
@@ -512,14 +512,14 @@ class Skin_List_Andrus extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_feature_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donation_button_feature_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -532,7 +532,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_feature_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form-feature .give-btn-modal:hover' => 'background-color: {{VALUE}};',
@@ -544,7 +544,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_feature_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form-feature .give-btn-modal:hover,
@@ -566,7 +566,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -574,7 +574,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_andrus_show_title!' => '',
@@ -585,7 +585,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -600,7 +600,7 @@ class Skin_List_Andrus extends Skin_Base {
     $this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -627,7 +627,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_category_style',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_andrus_show_category!' => '',
@@ -638,7 +638,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'category_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form .give-card__category' => 'color: {{VALUE}};',
@@ -652,7 +652,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'category_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form .give-card__category a' => 'color: {{VALUE}};',
@@ -667,7 +667,7 @@ class Skin_List_Andrus extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'category_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-give-form .give-card__category',
 				'condition' => [
@@ -679,7 +679,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_goal_progress_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_andrus_show_goal_progress!' => '',
@@ -690,7 +690,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'goal_progress_primary_color',
 			[
-				'label' => __( 'Primary Color', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -707,7 +707,7 @@ class Skin_List_Andrus extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_primary_typography',
-				'label' => __( 'Primary Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-give-form .give-goal-progress .income,
 				 							 {{WRAPPER}} .elementor-give-form .give-goal-progress .goal-text',
@@ -720,7 +720,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'goal_progress_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -736,7 +736,7 @@ class Skin_List_Andrus extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-give-form .give-goal-progress',
 				'condition' => [
@@ -748,7 +748,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'heading_donation_button_style',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -756,7 +756,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'donation_button_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -776,14 +776,14 @@ class Skin_List_Andrus extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donation_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form .give-btn-modal' => 'background-color: {{VALUE}};',
@@ -796,14 +796,14 @@ class Skin_List_Andrus extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donation_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form .give-btn-modal:hover' => 'background-color: {{VALUE}};',
@@ -825,7 +825,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_form',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_list_andrus_show_donation_button!' => '',
@@ -836,7 +836,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -864,7 +864,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -876,7 +876,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -885,7 +885,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -897,8 +897,8 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -912,7 +912,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -923,14 +923,14 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -942,7 +942,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -956,14 +956,14 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'.give-form[data-style="elementor-give-form--list-andrus"] .give-submit:hover' => 'color: {{VALUE}};',
@@ -974,7 +974,7 @@ class Skin_List_Andrus extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1018,7 +1018,7 @@ class Skin_List_Andrus extends Skin_Base {
 					<div class="give-card__body">
 						<?php
 							if( '' !== $this->parent->get_instance_value_skin( 'show_category' ) ){
-								the_terms( $post_id, 'give_posts_category', '<div class="give-card__category">'. esc_html__( 'Project In: ', 'bearsthemes-addons' ) , ',', '</div>' );
+								the_terms( $post_id, 'give_posts_category', '<div class="give-card__category">'. esc_html__( 'Project In: ', 'alone-addons' ) , ',', '</div>' );
 							}
 
 							if( '' !== $this->parent->get_instance_value_skin( 'show_title' ) ){
@@ -1036,8 +1036,8 @@ class Skin_List_Andrus extends Skin_Base {
 								$args = array(
 									'show_text' => true,
 									'show_bar' => false,
-									'income_text' => __( 'Raised', 'bearsthemes-addons' ),
-									'goal_text' => __( 'Goal', 'bearsthemes-addons' ),
+									'income_text' => __( 'Raised', 'alone-addons' ),
+									'goal_text' => __( 'Goal', 'alone-addons' ),
 									'custom_goal_progress' => $this->parent->get_instance_value_skin('custom_goal_progress'),
 
 								);
@@ -1055,15 +1055,15 @@ class Skin_List_Andrus extends Skin_Base {
 									'height' => '20px',
 								);
 
-								bearsthemes_addons_goal_progress( $form_id, $args, $bar_opts );
+								alone_addons_goal_progress( $form_id, $args, $bar_opts );
 							}
 
 							if( '' !== $this->parent->get_instance_value_skin( 'show_donation_button' ) ) {
 								if( !Template::getActiveID($form_id) ) {
 									if ( $this->parent->get_is_edit_mode() ) {
-										echo '<div class="root-data-givewp-embed"><button type="button" class="givewp-donation-form-modal__open">' . __('Donate Now', 'bearsthemes-addons') . '</button></div>';
+										echo '<div class="root-data-givewp-embed"><button type="button" class="givewp-donation-form-modal__open">' . __('Donate Now', 'alone-addons') . '</button></div>';
 									} else {
-										echo do_shortcode('[give_form id="' . $form_id . '" display_style="modal" continue_button_title="' . __('Donate Now', 'bearsthemes-addons') . '"]');
+										echo do_shortcode('[give_form id="' . $form_id . '" display_style="modal" continue_button_title="' . __('Donate Now', 'alone-addons') . '"]');
 									}
 								} else {
 									// Maybe display the form donate button.
@@ -1073,7 +1073,7 @@ class Skin_List_Andrus extends Skin_Base {
 										'show_goal' => false, // boolean.
 										'show_content' => 'none', //above, below, or none
 										'display_style' => 'button', //modal, button, and reveal
-										'continue_button_title' => __('Donate Now', 'bearsthemes-addons') //string
+										'continue_button_title' => __('Donate Now', 'alone-addons') //string
 			
 									);
 			
@@ -1119,9 +1119,9 @@ class Skin_List_Andrus extends Skin_Base {
 								if( '' !== $this->parent->get_instance_value_skin( 'show_donation_button' ) ) {
 									if( !Template::getActiveID($form_id) ) {
 										if ( $this->parent->get_is_edit_mode() ) {
-											echo '<div class="root-data-givewp-embed"><button type="button" class="givewp-donation-form-modal__open">' . __('Donate Now', 'bearsthemes-addons') . '</button></div>';
+											echo '<div class="root-data-givewp-embed"><button type="button" class="givewp-donation-form-modal__open">' . __('Donate Now', 'alone-addons') . '</button></div>';
 										} else {
-											echo do_shortcode('[give_form id="' . $form_id . '" display_style="modal" continue_button_title="' . __('Donate Now', 'bearsthemes-addons') . '"]');
+											echo do_shortcode('[give_form id="' . $form_id . '" display_style="modal" continue_button_title="' . __('Donate Now', 'alone-addons') . '"]');
 										}
 									} else {
 										// Maybe display the form donate button.
@@ -1131,7 +1131,7 @@ class Skin_List_Andrus extends Skin_Base {
 											'show_goal' => false, // boolean.
 											'show_content' => 'none', //above, below, or none
 											'display_style' => 'button', //modal, button, and reveal
-											'continue_button_title' => __('Donate Now', 'bearsthemes-addons') //string
+											'continue_button_title' => __('Donate Now', 'alone-addons') //string
 				
 										);
 				
@@ -1151,7 +1151,7 @@ class Skin_List_Andrus extends Skin_Base {
 					<div class="give-card__body">
 						<?php
 							if( '' !== $this->parent->get_instance_value_skin( 'show_category' ) ){
-								the_terms( $post_id, 'give_posts_category', '<div class="give-card__category">'. esc_html__( 'Project In: ', 'bearsthemes-addons' ) , ',', '</div>' );
+								the_terms( $post_id, 'give_posts_category', '<div class="give-card__category">'. esc_html__( 'Project In: ', 'alone-addons' ) , ',', '</div>' );
 							}
 
 							if( '' !== $this->parent->get_instance_value_skin( 'show_title' ) ){
@@ -1169,8 +1169,8 @@ class Skin_List_Andrus extends Skin_Base {
 								$args = array(
 									'show_text' => true,
 									'show_bar' => false,
-									'income_text' => __( 'Raised', 'bearsthemes-addons' ),
-									'goal_text' => __( 'Goal', 'bearsthemes-addons' ),
+									'income_text' => __( 'Raised', 'alone-addons' ),
+									'goal_text' => __( 'Goal', 'alone-addons' ),
 									'custom_goal_progress' => $this->parent->get_instance_value_skin('custom_goal_progress'),
 
 								);
@@ -1188,7 +1188,7 @@ class Skin_List_Andrus extends Skin_Base {
 									'height' => '20px',
 								);
 
-								bearsthemes_addons_goal_progress( $form_id, $args, $bar_opts );
+								alone_addons_goal_progress( $form_id, $args, $bar_opts );
 							}
 
 						?>

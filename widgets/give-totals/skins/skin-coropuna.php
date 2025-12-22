@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Totals\Skins;
+namespace AloneAddons\Widgets\Give_Totals\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -27,7 +27,7 @@ class Skin_Coropuna extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Coropuna', 'bearsthemes-addons' );
+		return __( 'Coropuna', 'alone-addons' );
 	}
 
 
@@ -42,26 +42,26 @@ class Skin_Coropuna extends Skin_Base {
     $this->add_control(
 			'header_sub_title',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'We\'re Near to Our', 'bearsthemes-addons' ),
+				'default' => __( 'We\'re Near to Our', 'alone-addons' ),
 			]
 		);
 		$this->add_control(
 			'header_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Campaign', 'bearsthemes-addons' ),
+				'default' => __( 'Campaign', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'header_desc',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'The long journey to end poverty begins with a child.', 'bearsthemes-addons' ),
+				'default' => __( 'The long journey to end poverty begins with a child.', 'alone-addons' ),
 			]
 		);
 
@@ -75,25 +75,25 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'socials_title',
 			[
-				'label' => __( 'Socials Title', 'bearsthemes-addons' ),
+				'label' => __( 'Socials Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Share Us At:', 'bearsthemes-addons' ),
+				'default' => __( 'Share Us At:', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'socials_list',
 			[
-				'label' => __( 'Socials List', 'bearsthemes-addons' ),
+				'label' => __( 'Socials List', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => true,
 				'options' => [
-					'facebook'  => __( 'Facebook', 'bearsthemes-addons' ),
-					'twitter' => __( 'Twitter', 'bearsthemes-addons' ),
-          'pinterest' => __( 'Pinterest', 'bearsthemes-addons' ),
-          'linkedin' => __( 'Linkedin', 'bearsthemes-addons' ),
-          'google' => __( 'Google', 'bearsthemes-addons' ),
-          'mail' => __( 'Mail', 'bearsthemes-addons' ),
+					'facebook'  => __( 'Facebook', 'alone-addons' ),
+					'twitter' => __( 'Twitter', 'alone-addons' ),
+          'pinterest' => __( 'Pinterest', 'alone-addons' ),
+          'linkedin' => __( 'Linkedin', 'alone-addons' ),
+          'google' => __( 'Google', 'alone-addons' ),
+          'mail' => __( 'Mail', 'alone-addons' ),
 				],
 				'default' => [ 'facebook', 'twitter', 'pinterest', 'linkedin' ],
 			]
@@ -110,7 +110,7 @@ class Skin_Coropuna extends Skin_Base {
     $this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -118,7 +118,7 @@ class Skin_Coropuna extends Skin_Base {
     $this->add_control(
 			'box_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -130,7 +130,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -153,7 +153,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_totals',
 			[
-				'label' => __( 'Give Total', 'bearsthemes-addons' ),
+				'label' => __( 'Give Total', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -161,7 +161,7 @@ class Skin_Coropuna extends Skin_Base {
     $this->add_control(
 			'heading_header_sub_title_style',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -169,7 +169,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'header_sub_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -182,7 +182,7 @@ class Skin_Coropuna extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_sub_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__sub-title',
 			]
@@ -191,7 +191,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'heading_header_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -199,7 +199,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'header_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -212,7 +212,7 @@ class Skin_Coropuna extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__title',
 			]
@@ -221,7 +221,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'heading_header_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -229,7 +229,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'header_desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -242,7 +242,7 @@ class Skin_Coropuna extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_desc_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__desc',
 			]
@@ -251,7 +251,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'heading_goal_progress_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -259,7 +259,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'goal_progress_primary_color',
 			[
-				'label' => __( 'Primary Color', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -273,7 +273,7 @@ class Skin_Coropuna extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_primary_typography',
-				'label' => __( 'Primary Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress .income,
 				 							 {{WRAPPER}} .give-goal-progress .goal-text',
@@ -283,7 +283,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'goal_progress_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -296,7 +296,7 @@ class Skin_Coropuna extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress',
 			]
@@ -311,7 +311,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_form',
 			[
-				'label' => __( 'Give Form', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'form_id!'=> '',
@@ -322,7 +322,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'heading_form',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -331,7 +331,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -365,7 +365,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -378,7 +378,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -387,7 +387,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -400,8 +400,8 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -416,7 +416,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -427,14 +427,14 @@ class Skin_Coropuna extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -447,7 +447,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -462,14 +462,14 @@ class Skin_Coropuna extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} form[id*=give-form] .give-btn-modal:hover,
@@ -481,7 +481,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -504,7 +504,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_socials',
 			[
-				'label' => __( 'Socials', 'bearsthemes-addons' ),
+				'label' => __( 'Socials', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -512,7 +512,7 @@ class Skin_Coropuna extends Skin_Base {
     $this->add_control(
 			'heading_socials_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -520,7 +520,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'socials_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -533,7 +533,7 @@ class Skin_Coropuna extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'socials_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-socials__title',
 			]
@@ -542,7 +542,7 @@ class Skin_Coropuna extends Skin_Base {
     $this->add_control(
 			'heading_socials_list_style',
 			[
-				'label' => __( 'List', 'bearsthemes-addons' ),
+				'label' => __( 'List', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -551,14 +551,14 @@ class Skin_Coropuna extends Skin_Base {
 
 		$this->start_controls_tab( 'social_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'socials_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-gt-socials__list a svg' => 'fill: {{VALUE}}',
@@ -569,7 +569,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'social_background_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-gt-socials__list a' => 'background-color: {{VALUE}}',
@@ -581,14 +581,14 @@ class Skin_Coropuna extends Skin_Base {
 
 		$this->start_controls_tab( 'socials_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
     $this->add_control(
 			'socials_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-gt-socials__list a svg' => 'fill: {{VALUE}}',
@@ -599,7 +599,7 @@ class Skin_Coropuna extends Skin_Base {
 		$this->add_control(
 			'social_background_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-gt-socials__list a' => 'background-color: {{VALUE}}',
@@ -628,14 +628,14 @@ class Skin_Coropuna extends Skin_Base {
 			'ids'          => $settings['ids'], // integer|array.
 			'cats'         => $settings['category'], // integer|array.
 			'tags'         => 0, // integer|array.
-			'message'      => '', // apply_filters( 'give_totals_message', __( 'Hey! We\'ve raised {total} of the {total_goal} we are trying to raise for this campaign!', 'bearsthemes-addons' ) ),
+			'message'      => '', // apply_filters( 'give_totals_message', __( 'Hey! We\'ve raised {total} of the {total_goal} we are trying to raise for this campaign!', 'alone-addons' ) ),
 			'link'         => '', // URL.
-			'link_text'    => __( 'Donate Now', 'bearsthemes-addons' ), // string,
+			'link_text'    => __( 'Donate Now', 'alone-addons' ), // string,
 			'progress_bar' => true, // boolean.
 			'show_text' => true, // boolean.
 			'show_bar' => true, // boolean.
-			'income_text' => __( 'Raised:', 'bearsthemes-addons' ),
-			'goal_text' => __( 'Goal:', 'bearsthemes-addons' ),
+			'income_text' => __( 'Raised:', 'alone-addons' ),
+			'goal_text' => __( 'Goal:', 'alone-addons' ),
 			'custom_goal_progress' => $settings['custom_goal_progress'],
 		);
 
@@ -670,7 +670,7 @@ class Skin_Coropuna extends Skin_Base {
 						echo '<div class="elementor-gt-header__desc">' . $this->parent->get_instance_value_skin('header_desc') . '</div>';
 					}
 
-					echo bearsthemes_addons_give_totals ( $args, $bar_opts );
+					echo alone_addons_give_totals ( $args, $bar_opts );
 
 				?>
 			</div>
@@ -714,17 +714,17 @@ class Skin_Coropuna extends Skin_Base {
           if( !empty( $this->parent->get_instance_value_skin('socials_list') ) ) {
             $socials_html = '';
 
-            $socials['facebook'] ='<a href="https://www.facebook.com/sharer/sharer.php?u=' . esc_url( get_permalink( $settings['form_id'] ) ) . '" class="facebook" target="_blank">' . bearsthemes_addons_get_social_icon_svg('facebook', 14) . '</a>';
+            $socials['facebook'] ='<a href="https://www.facebook.com/sharer/sharer.php?u=' . esc_url( get_permalink( $settings['form_id'] ) ) . '" class="facebook" target="_blank">' . alone_addons_get_social_icon_svg('facebook', 14) . '</a>';
 
-            $socials['twitter'] = '<a href="https://twitter.com/home?status=' . esc_url( get_permalink( $settings['form_id'] ) ) . '" class="twitter" target="_blank">' . bearsthemes_addons_get_social_icon_svg('twitter', 14) . '</a>';
+            $socials['twitter'] = '<a href="https://twitter.com/home?status=' . esc_url( get_permalink( $settings['form_id'] ) ) . '" class="twitter" target="_blank">' . alone_addons_get_social_icon_svg('twitter', 14) . '</a>';
 
-            $socials['pinterest'] = '<a href="https://pinterest.com/pin/create/button/?url=' . esc_url( get_permalink( $settings['form_id'] ) ) . '&amp;media=&amp;description=" class="pinterest" target="_blank">' . bearsthemes_addons_get_social_icon_svg('pinterest', 14) . '</a>';
+            $socials['pinterest'] = '<a href="https://pinterest.com/pin/create/button/?url=' . esc_url( get_permalink( $settings['form_id'] ) ) . '&amp;media=&amp;description=" class="pinterest" target="_blank">' . alone_addons_get_social_icon_svg('pinterest', 14) . '</a>';
 
-            $socials['linkedin'] = '<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=' . esc_url( get_permalink( $settings['form_id'] ) ) . '&amp;title=&amp;summary=&amp;source=' . get_the_permalink( $settings['form_id'] ) . '" class="linkedin" target="_blank">' . bearsthemes_addons_get_social_icon_svg('linkedin', 14) . '</a>';
+            $socials['linkedin'] = '<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=' . esc_url( get_permalink( $settings['form_id'] ) ) . '&amp;title=&amp;summary=&amp;source=' . get_the_permalink( $settings['form_id'] ) . '" class="linkedin" target="_blank">' . alone_addons_get_social_icon_svg('linkedin', 14) . '</a>';
 
-            $socials['google'] = '<a href="https://plus.google.com/share?url=' . esc_url( get_permalink( $settings['form_id'] ) ) . '" class="google" target="_blank">' . bearsthemes_addons_get_social_icon_svg('google-plus', 14) . '</a>';
+            $socials['google'] = '<a href="https://plus.google.com/share?url=' . esc_url( get_permalink( $settings['form_id'] ) ) . '" class="google" target="_blank">' . alone_addons_get_social_icon_svg('google-plus', 14) . '</a>';
 
-            $socials['mail'] = '<a href="mailto:info@websiteplanet.com?&amp;subject=' . esc_url( get_permalink( $settings['form_id'] ) ) . '&amp;body=Hi guys, %0AJust wanted to say you created an amazing theme, i love it. Well done!' . get_the_permalink( $settings['form_id'] ) . '" class="mail">' . bearsthemes_addons_get_social_icon_svg('mail', 14) . '</a>';
+            $socials['mail'] = '<a href="mailto:info@websiteplanet.com?&amp;subject=' . esc_url( get_permalink( $settings['form_id'] ) ) . '&amp;body=Hi guys, %0AJust wanted to say you created an amazing theme, i love it. Well done!' . get_the_permalink( $settings['form_id'] ) . '" class="mail">' . alone_addons_get_social_icon_svg('mail', 14) . '</a>';
 
             foreach ($this->parent->get_instance_value_skin('socials_list') as $key => $value) {
               $socials_html .= $socials[$value];

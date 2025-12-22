@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Forms_Carousel\Skins;
+namespace AloneAddons\Widgets\Give_Forms_Carousel\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -32,7 +32,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Grid Changtse', 'bearsthemes-addons' );
+		return __( 'Grid Changtse', 'alone-addons' );
 	}
 
 
@@ -42,7 +42,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_responsive_control(
 			'sliders_per_view',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -62,7 +62,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'posts_count',
 			[
-				'label' => __( 'Posts Count', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Count', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
@@ -71,10 +71,10 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
       'show_thumbnail',
       [
-        'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+        'label' => __( 'Thumbnail', 'alone-addons' ),
         'type'  => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons' ),
-        'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+        'label_on' => __( 'Show', 'alone-addons' ),
+        'label_off' => __( 'Hide', 'alone-addons' ),
         'default'  => 'yes',
         'separator' => 'before',
       ]
@@ -95,7 +95,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.66,
@@ -119,10 +119,10 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons'),
+				'label' => __( 'Title', 'alone-addons'),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons'),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons'),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -131,10 +131,10 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'show_date',
 			[
-				'label' => __( 'Date', 'bearsthemes-addons'),
+				'label' => __( 'Date', 'alone-addons'),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons'),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons'),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -142,10 +142,10 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'show_goal_progress',
 			[
-				'label' => __( 'Goal', 'bearsthemes-addons' ),
+				'label' => __( 'Goal', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons'),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons'),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -153,9 +153,9 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'goal_text',
 			[
-				'label' => __( 'Goal Text', 'bearsthemes-addons'),
+				'label' => __( 'Goal Text', 'alone-addons'),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Donation Needed', 'bearsthemes-addons' ),
+				'default' => __( 'Donation Needed', 'alone-addons' ),
 				'condition' => [
 					'skin_grid_changtse_show_goal_progress!'=> '',
 				],
@@ -165,10 +165,10 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'show_donation_button',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -180,7 +180,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => __( 'Space Between', 'bearsthemes-addons' ),
+				'label' => __( 'Space Between', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -198,19 +198,19 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -228,7 +228,7 @@ class Skin_Grid_Changtse extends Skin_Base {
     $this->start_controls_section(
       'section_design_box',
       [
-        'label' => __( 'Box', 'bearsthemes-addons' ),
+        'label' => __( 'Box', 'alone-addons' ),
         'tab' => Controls_Manager::TAB_STYLE,
       ]
     );
@@ -236,7 +236,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -254,7 +254,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -272,7 +272,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -290,7 +290,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -310,7 +310,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -325,7 +325,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form .give-card__body' => 'background-color: {{VALUE}}',
@@ -336,7 +336,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form' => 'border-color: {{VALUE}}',
@@ -348,7 +348,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -363,7 +363,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form .give-card__body:hover' => 'background-color: {{VALUE}}',
@@ -374,7 +374,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form:hover' => 'border-color: {{VALUE}}',
@@ -396,7 +396,7 @@ class Skin_Grid_Changtse extends Skin_Base {
     $this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_grid_changtse_show_thumbnail!' => '',
@@ -407,7 +407,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'thumbnail_overlay',
 			[
-				'label' => __( 'Color Overlay', 'bearsthemes-addons' ),
+				'label' => __( 'Color Overlay', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -420,7 +420,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -436,7 +436,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -462,7 +462,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -470,7 +470,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_changtse_show_title!' => '',
@@ -481,7 +481,7 @@ class Skin_Grid_Changtse extends Skin_Base {
     $this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -496,7 +496,7 @@ class Skin_Grid_Changtse extends Skin_Base {
     $this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -523,7 +523,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'heading_date_style',
 			[
-				'label' => __( 'Date', 'bearsthemes-addons' ),
+				'label' => __( 'Date', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_changtse_show_date!' => '',
@@ -534,7 +534,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'date_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -550,7 +550,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'date_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -578,7 +578,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'heading_goal_style',
 			[
-				'label' => __( 'Goal Style', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Style', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_changtse_show_goal_progress!' => '',
@@ -588,7 +588,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'goal_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -614,7 +614,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'goal_text_style',
 			[
-				'label' => __( 'Goal Text Style', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Text Style', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_changtse_show_goal_progress!' => '',
@@ -624,7 +624,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'goal_text_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -651,7 +651,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'heading_donation_button_style',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_changtse_show_donation_button!' => '',
@@ -662,7 +662,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -684,7 +684,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -707,7 +707,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 				'condition' => [
 					'skin_grid_changtse_show_donation_button!' => '',
 				],
@@ -717,7 +717,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -730,7 +730,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal' => 'background-color: {{VALUE}};',
@@ -742,7 +742,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal,
@@ -755,7 +755,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 				'condition' => [
 					'skin_grid_changtse_show_donation_button!' => '',
 				],
@@ -765,7 +765,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -778,7 +778,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal:hover,
@@ -790,7 +790,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'donation_button_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal:hover,
@@ -812,7 +812,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_form',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_grid_changtse_show_donation_button!' => '',
@@ -823,7 +823,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -851,7 +851,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -863,7 +863,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -872,7 +872,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -884,8 +884,8 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -899,7 +899,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -910,14 +910,14 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -929,7 +929,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -943,14 +943,14 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'.give-form[data-style="elementor-give-forms-carousel--changtse"] .give-submit:hover' => 'color: {{VALUE}};',
@@ -961,7 +961,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1017,7 +1017,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 							<div class="give-card__date">
 		            <?php
 									echo
-										bearsthemes_addons_get_icon_svg('calendar', 14) .
+										alone_addons_get_icon_svg('calendar', 14) .
 										'<time class="entry-date published" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' . esc_html( get_the_date() ) . '</time>';
 								?>
 		          </div>
@@ -1040,9 +1040,9 @@ class Skin_Grid_Changtse extends Skin_Base {
 						if( '' !== $this->parent->get_instance_value_skin( 'show_donation_button' ) ) {
 							if( !Template::getActiveID($form_id) ) {
 								if ( $this->parent->get_is_edit_mode() ) {
-									echo '<div class="root-data-givewp-embed"><button type="button" class="givewp-donation-form-modal__open">' . __('Donate Now', 'bearsthemes-addons') . '</button></div>';
+									echo '<div class="root-data-givewp-embed"><button type="button" class="givewp-donation-form-modal__open">' . __('Donate Now', 'alone-addons') . '</button></div>';
 								} else {
-									echo do_shortcode('[give_form id="' . $form_id . '" display_style="modal" continue_button_title="' . __('Donate Now', 'bearsthemes-addons') . '"]');
+									echo do_shortcode('[give_form id="' . $form_id . '" display_style="modal" continue_button_title="' . __('Donate Now', 'alone-addons') . '"]');
 								}
 							} else {
 								// Maybe display the form donate button.
@@ -1052,7 +1052,7 @@ class Skin_Grid_Changtse extends Skin_Base {
 									'show_goal' => false, // boolean.
 									'show_content' => 'none', //above, below, or none
 									'display_style' => 'button', //modal, button, and reveal
-									'continue_button_title' => __('Donate Now', 'bearsthemes-addons') //string
+									'continue_button_title' => __('Donate Now', 'alone-addons') //string
 		
 								);
 		

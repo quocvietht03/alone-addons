@@ -2,7 +2,7 @@
 /**
  * Custom elementor
  *
- * @package Bearsthemes
+ * @package Alone
  */
 
 // Heading
@@ -11,7 +11,7 @@ add_action( 'elementor/element/heading/section_title/after_section_end', functio
   $element->start_controls_section(
 		'heading_custom_section',
 		[
-			'label' => __( 'Custom', 'bearsthemes-addons' ),
+			'label' => __( 'Custom', 'alone-addons' ),
 		]
 	);
 
@@ -19,7 +19,7 @@ add_action( 'elementor/element/heading/section_title/after_section_end', functio
 		'heading_max_width',
 		[
 			'type' => \Elementor\Controls_Manager::SLIDER,
-			'label' => __( 'Max Width', 'bearsthemes-addons' ),
+			'label' => __( 'Max Width', 'alone-addons' ),
       'size_units' => [ 'px', '%' ],
 			'range' => [
 				'px' => [
@@ -45,10 +45,10 @@ add_action( 'elementor/element/heading/section_title/after_section_end', functio
   $element->add_responsive_control(
 		'heading_auto_left',
 		[
-			'label' => __( 'Auto Left', 'bearsthemes-addons' ),
+			'label' => __( 'Auto Left', 'alone-addons' ),
 			'type' => \Elementor\Controls_Manager::SWITCHER,
-			'label_on' => __( 'On', 'bearsthemes-addons' ),
-			'label_off' => __( 'Off', 'bearsthemes-addons' ),
+			'label_on' => __( 'On', 'alone-addons' ),
+			'label_off' => __( 'Off', 'alone-addons' ),
 			'return_value' => 'auto',
 			'default' => '',
       'selectors' => [
@@ -60,10 +60,10 @@ add_action( 'elementor/element/heading/section_title/after_section_end', functio
   $element->add_responsive_control(
 		'heading_auto_right',
 		[
-			'label' => __( 'Auto Right', 'bearsthemes-addons' ),
+			'label' => __( 'Auto Right', 'alone-addons' ),
 			'type' => \Elementor\Controls_Manager::SWITCHER,
-			'label_on' => __( 'On', 'bearsthemes-addons' ),
-			'label_off' => __( 'Off', 'bearsthemes-addons' ),
+			'label_on' => __( 'On', 'alone-addons' ),
+			'label_off' => __( 'Off', 'alone-addons' ),
 			'return_value' => 'auto',
 			'default' => '',
       'selectors' => [
@@ -82,7 +82,7 @@ add_action( 'elementor/element/text-editor/section_editor/after_section_end', fu
   $element->start_controls_section(
 		'text_editor_custom_section',
 		[
-			'label' => __( 'Custom', 'bearsthemes-addons' ),
+			'label' => __( 'Custom', 'alone-addons' ),
 		]
 	);
 
@@ -90,7 +90,7 @@ add_action( 'elementor/element/text-editor/section_editor/after_section_end', fu
 		'text_editor_max_width',
 		[
 			'type' => \Elementor\Controls_Manager::SLIDER,
-			'label' => __( 'Max Width', 'bearsthemes-addons' ),
+			'label' => __( 'Max Width', 'alone-addons' ),
       'size_units' => [ 'px', '%' ],
 			'range' => [
 				'px' => [
@@ -116,10 +116,10 @@ add_action( 'elementor/element/text-editor/section_editor/after_section_end', fu
   $element->add_responsive_control(
 		'text_editor_auto_left',
 		[
-			'label' => __( 'Auto Left', 'bearsthemes-addons' ),
+			'label' => __( 'Auto Left', 'alone-addons' ),
 			'type' => \Elementor\Controls_Manager::SWITCHER,
-			'label_on' => __( 'On', 'bearsthemes-addons' ),
-			'label_off' => __( 'Off', 'bearsthemes-addons' ),
+			'label_on' => __( 'On', 'alone-addons' ),
+			'label_off' => __( 'Off', 'alone-addons' ),
 			'return_value' => 'auto',
 			'default' => '',
       'selectors' => [
@@ -131,10 +131,10 @@ add_action( 'elementor/element/text-editor/section_editor/after_section_end', fu
   $element->add_responsive_control(
 		'text_editor_auto_right',
 		[
-			'label' => __( 'Auto Right', 'bearsthemes-addons' ),
+			'label' => __( 'Auto Right', 'alone-addons' ),
 			'type' => \Elementor\Controls_Manager::SWITCHER,
-			'label_on' => __( 'On', 'bearsthemes-addons' ),
-			'label_off' => __( 'Off', 'bearsthemes-addons' ),
+			'label_on' => __( 'On', 'alone-addons' ),
+			'label_off' => __( 'Off', 'alone-addons' ),
 			'return_value' => 'auto',
 			'default' => '',
       'selectors' => [
@@ -153,7 +153,7 @@ add_action( 'elementor/element/button/section_button/after_section_end', functio
   $element->start_controls_section(
 		'button_custom_section',
 		[
-			'label' => __( 'Custom', 'bearsthemes-addons' ),
+			'label' => __( 'Custom', 'alone-addons' ),
 		]
 	);
 
@@ -161,7 +161,7 @@ add_action( 'elementor/element/button/section_button/after_section_end', functio
 		'button_min_width',
 		[
 			'type' => \Elementor\Controls_Manager::SLIDER,
-			'label' => __( 'Min Width', 'bearsthemes-addons' ),
+			'label' => __( 'Min Width', 'alone-addons' ),
       'size_units' => [ 'px', '%' ],
 			'range' => [
 				'px' => [
@@ -191,7 +191,7 @@ add_action( 'elementor/element/slides/section_slides/before_section_end', functi
 		'slides_content_width',
 		[
 			'type' => \Elementor\Controls_Manager::SLIDER,
-			'label' => __( 'Content Width', 'bearsthemes-addons' ),
+			'label' => __( 'Content Width', 'alone-addons' ),
       'size_units' => [ 'px', '%' ],
 			'range' => [
 				'px' => [

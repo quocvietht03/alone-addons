@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Icon_Box\Skins;
+namespace AloneAddons\Widgets\Icon_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -23,7 +23,7 @@ class Skin_Pumori extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Pumori', 'bearsthemes-addons' );
+		return __( 'Pumori', 'alone-addons' );
 	}
 
   public function register_layout_section_controls( Widget_Base $widget ) {
@@ -37,16 +37,16 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'read_more_text',
 			[
-				'label' => __( 'Read More Text', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Explore', 'bearsthemes-addons' ),
+				'default' => __( 'Explore', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'read_more_link',
 			[
-				'label' => __( 'Read More Link', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '#',
 			]
@@ -62,7 +62,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -70,7 +70,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -91,7 +91,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'icon_size_wrap',
 			[
-				'label' => __( 'Wrap Size', 'bearsthemes-addons' ),
+				'label' => __( 'Wrap Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -113,14 +113,14 @@ class Skin_Pumori extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_icon_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -133,7 +133,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'icon_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -148,14 +148,14 @@ class Skin_Pumori extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_icon_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -168,7 +168,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'icon_background_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -191,7 +191,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -199,7 +199,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -207,7 +207,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -219,7 +219,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -240,7 +240,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'heading_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -248,7 +248,7 @@ class Skin_Pumori extends Skin_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -269,7 +269,7 @@ class Skin_Pumori extends Skin_Base {
     $this->add_control(
 			'heading_read_more_style',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -277,7 +277,7 @@ class Skin_Pumori extends Skin_Base {
     $this->add_control(
 			'read_more_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -289,7 +289,7 @@ class Skin_Pumori extends Skin_Base {
     $this->add_control(
 			'read_more_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -336,7 +336,7 @@ class Skin_Pumori extends Skin_Base {
       if( $this->parent->get_instance_value_skin('read_more_text') ) {
 				echo '<a class="elementor-icon-box__read-more" href="' . esc_url( $this->parent->get_instance_value_skin('read_more_link') ) . '">' .
 								'<span>' . $this->parent->get_instance_value_skin('read_more_text') . '</span>' .
-                bearsthemes_addons_get_icon_svg( 'arrow-long-right', 16 ) .
+                alone_addons_get_icon_svg( 'arrow-long-right', 16 ) .
 						 '</a>';
 			}
 

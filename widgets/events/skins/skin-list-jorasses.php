@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Events\Skins;
+namespace AloneAddons\Widgets\Events\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -29,7 +29,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'List Jorasses', 'bearsthemes-addons' );
+		return __( 'List Jorasses', 'alone-addons' );
 	}
 
 
@@ -39,7 +39,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
@@ -48,10 +48,10 @@ class Skin_List_Jorasses extends Skin_Base {
     $this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -72,7 +72,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.5,
@@ -96,10 +96,10 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -107,10 +107,10 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'show_date',
 			[
-				'label' => __( 'Date', 'bearsthemes-addons' ),
+				'label' => __( 'Date', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -118,10 +118,10 @@ class Skin_List_Jorasses extends Skin_Base {
     $this->add_control(
 			'show_address',
 			[
-				'label' => __( 'Address', 'bearsthemes-addons' ),
+				'label' => __( 'Address', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -129,10 +129,10 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'show_read_more',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 			]
 		);
@@ -140,9 +140,9 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'read_more_text',
 			[
-				'label' => __( 'Read More Text', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Get A Ticket', 'bearsthemes-addons' ),
+				'default' => __( 'Get A Ticket', 'alone-addons' ),
 				'condition' => [
 					'skin_list_jorasses_show_read_more!' => '',
 				],
@@ -156,7 +156,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -176,19 +176,19 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -206,7 +206,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -214,7 +214,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -232,7 +232,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -250,7 +250,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -268,7 +268,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -288,7 +288,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -303,7 +303,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event' => 'background-color: {{VALUE}}',
@@ -314,7 +314,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event' => 'border-color: {{VALUE}}',
@@ -326,7 +326,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -341,7 +341,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event:hover' => 'background-color: {{VALUE}}',
@@ -352,7 +352,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event:hover' => 'border-color: {{VALUE}}',
@@ -373,7 +373,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_list_jorasses_show_thumbnail!' => '',
@@ -384,7 +384,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -397,7 +397,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -413,7 +413,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -438,7 +438,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -446,7 +446,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_jorasses_show_title!' => '',
@@ -457,7 +457,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -472,7 +472,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -499,7 +499,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'heading_date_style',
 			[
-				'label' => __( 'Date', 'bearsthemes-addons' ),
+				'label' => __( 'Date', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_jorasses_show_date!' => '',
@@ -510,7 +510,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'date_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -525,7 +525,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'date_background_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -552,7 +552,7 @@ class Skin_List_Jorasses extends Skin_Base {
     $this->add_control(
 			'heading_address_style',
 			[
-				'label' => __( 'Address', 'bearsthemes-addons' ),
+				'label' => __( 'Address', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_jorasses_show_address!' => '',
@@ -563,7 +563,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'address_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -590,7 +590,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'heading_read_more_style',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_list_jorasses_show_read_more!' => '',
@@ -613,7 +613,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'read_more_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -636,7 +636,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 		$this->start_controls_tab( 'read_more_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
         'condition' => [
 					'skin_list_jorasses_show_read_more!' => '',
 				],
@@ -646,7 +646,7 @@ class Skin_List_Jorasses extends Skin_Base {
     $this->add_control(
 			'read_more_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -661,7 +661,7 @@ class Skin_List_Jorasses extends Skin_Base {
     $this->add_control(
 			'read_more_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event__read-more' => 'background-color: {{VALUE}}',
@@ -675,7 +675,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'read_more_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event__read-more' => 'border-color: {{VALUE}}',
@@ -690,7 +690,7 @@ class Skin_List_Jorasses extends Skin_Base {
 
 		$this->start_controls_tab( 'read_more_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
         'condition' => [
 					'skin_list_jorasses_show_read_more!' => '',
 				],
@@ -700,7 +700,7 @@ class Skin_List_Jorasses extends Skin_Base {
     $this->add_control(
 			'read_more_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -714,7 +714,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'read_more_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event__read-more' => 'background-color: {{VALUE}}',
@@ -728,7 +728,7 @@ class Skin_List_Jorasses extends Skin_Base {
 		$this->add_control(
 			'read_more_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-event__read-more:hover' => 'border-color: {{VALUE}}',
@@ -783,7 +783,7 @@ class Skin_List_Jorasses extends Skin_Base {
             $venue_id = get_post_meta( get_the_ID(), '_EventVenueID', true);
             if( $venue_id && '' !== $this->parent->get_instance_value_skin( 'show_address' ) ) {
               echo '<div class="elementor-event__address">' .
-                bearsthemes_addons_get_icon_svg( 'map-marker', 24 );
+                alone_addons_get_icon_svg( 'map-marker', 24 );
                 $this->parent->event_addres( $venue_id );
               echo '</div>';
             }

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Totals\Skins;
+namespace AloneAddons\Widgets\Give_Totals\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -26,7 +26,7 @@ class Skin_Taboche extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Taboche', 'bearsthemes-addons' );
+		return __( 'Taboche', 'alone-addons' );
 	}
 
 
@@ -41,42 +41,42 @@ class Skin_Taboche extends Skin_Base {
     $this->add_control(
 			'header_sub_title',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'We\'re Near to Our', 'bearsthemes-addons' ),
+				'default' => __( 'We\'re Near to Our', 'alone-addons' ),
 			]
 		);
 		$this->add_control(
 			'header_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Campaign', 'bearsthemes-addons' ),
+				'default' => __( 'Campaign', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'header_desc',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Raising money for clean water is twice as easy.', 'bearsthemes-addons' ),
+				'default' => __( 'Raising money for clean water is twice as easy.', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'time_remain',
 			[
-				'label' => __( 'Time Remain', 'bearsthemes-addons' ),
+				'label' => __( 'Time Remain', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( '397Days Left', 'bearsthemes-addons' ),
+				'default' => __( '397Days Left', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donatees',
 			[
-				'label' => __( 'Donatees', 'bearsthemes-addons' ),
+				'label' => __( 'Donatees', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5000,
 			]
@@ -85,9 +85,9 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_label',
 			[
-				'label' => __( 'Donation button Label', 'bearsthemes-addons' ),
+				'label' => __( 'Donation button Label', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Donate Now', 'bearsthemes-addons' ),
+				'default' => __( 'Donate Now', 'alone-addons' ),
 			]
 		);
 
@@ -102,7 +102,7 @@ class Skin_Taboche extends Skin_Base {
     $this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -110,7 +110,7 @@ class Skin_Taboche extends Skin_Base {
     $this->add_control(
 			'box_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -122,7 +122,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -145,7 +145,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_totals',
 			[
-				'label' => __( 'Give Total', 'bearsthemes-addons' ),
+				'label' => __( 'Give Total', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -153,7 +153,7 @@ class Skin_Taboche extends Skin_Base {
     $this->add_control(
 			'heading_header_sub_title_style',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -161,7 +161,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'header_sub_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -174,7 +174,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_sub_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__sub-title',
 			]
@@ -183,7 +183,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'heading_header_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -191,7 +191,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'header_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -204,7 +204,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_title_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__title',
 			]
@@ -213,7 +213,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'heading_header_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -221,7 +221,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'header_desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -234,7 +234,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'header_desc_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-gt-header__desc',
 			]
@@ -243,7 +243,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'heading_goal_progress_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -251,7 +251,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'goal_progress_primary_color',
 			[
-				'label' => __( 'Primary Color', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -265,7 +265,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_primary_typography',
-				'label' => __( 'Primary Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .goal-progress .income,
 				 							 {{WRAPPER}} .goal-progress .goal-text',
@@ -275,7 +275,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'goal_progress_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -288,7 +288,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .goal-progress',
 			]
@@ -297,7 +297,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'heading_goal_remain_style',
 			[
-				'label' => __( 'Goal Remain', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Remain', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -305,7 +305,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'goal_remain_primary_color',
 			[
-				'label' => __( 'Primary Color', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -319,7 +319,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_remain_primary_typography',
-				'label' => __( 'Primary Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Primary Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .gt-remain .item-remain .gt-remain__remain-value,
 											 {{WRAPPER}} .gt-remain .item-donate .gt-remain__donate-value',
@@ -329,7 +329,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'goal_remain_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -343,7 +343,7 @@ class Skin_Taboche extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_remain_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .gt-remain .item-remain .gt-remain__remain-title,
 											 {{WRAPPER}} .gt-remain .item-donate .gt-remain__donate-title',
@@ -353,7 +353,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'heading_donation_button_style',
 			[
-				'label' => __( 'Donation Button', 'bearsthemes-addons' ),
+				'label' => __( 'Donation Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -371,7 +371,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -390,7 +390,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -409,7 +409,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -429,14 +429,14 @@ class Skin_Taboche extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donation_button_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -449,7 +449,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal,
@@ -461,7 +461,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal,
@@ -474,14 +474,14 @@ class Skin_Taboche extends Skin_Base {
 
 		$this->start_controls_tab( 'donation_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'donation_button_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -494,7 +494,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal:hover,
@@ -506,7 +506,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'donation_button_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-btn-modal:hover,
@@ -528,7 +528,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_give_form',
 			[
-				'label' => __( 'Give Form (Apply On Legacy)', 'bearsthemes-addons' ),
+				'label' => __( 'Give Form (Apply On Legacy)', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -536,7 +536,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_main_color',
 			[
-				'label' => __( 'Main Color', 'bearsthemes-addons' ),
+				'label' => __( 'Main Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -570,7 +570,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -583,7 +583,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_typograph_heading',
 			[
-				'label' => esc_html__( 'Fonts', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Fonts', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -592,7 +592,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_typography',
 			[
-				'label' => esc_html__( 'Typography', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Typography', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -605,8 +605,8 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_main_typography',
 			[
-				'label' => esc_html__( 'Main Typography', 'bearsthemes-addons' ),
-				'description' => esc_html__( 'Used for heading, title, button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Main Typography', 'alone-addons' ),
+				'description' => esc_html__( 'Used for heading, title, button', 'alone-addons' ),
 				'type' => Controls_Manager::FONT,
 				'default' => '',
 				'selectors' => [
@@ -621,7 +621,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_button_heading',
 			[
-				'label' => esc_html__( 'Button', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Button', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -632,14 +632,14 @@ class Skin_Taboche extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -652,7 +652,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -667,14 +667,14 @@ class Skin_Taboche extends Skin_Base {
 		$this->start_controls_tab(
 			'tab_form_button_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'form_button_hover_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} form[id*=give-form] .give-btn-modal:hover,
@@ -686,7 +686,7 @@ class Skin_Taboche extends Skin_Base {
 		$this->add_control(
 			'form_button_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -717,14 +717,14 @@ class Skin_Taboche extends Skin_Base {
 			'ids'          => $settings['ids'], // integer|array.
 			'cats'         => $settings['category'], // integer|array.
 			'tags'         => 0, // integer|array.
-			'message'      => '', // apply_filters( 'give_totals_message', __( 'Hey! We\'ve raised {total} of the {total_goal} we are trying to raise for this campaign!', 'bearsthemes-addons' ) ),
+			'message'      => '', // apply_filters( 'give_totals_message', __( 'Hey! We\'ve raised {total} of the {total_goal} we are trying to raise for this campaign!', 'alone-addons' ) ),
 			'link'         => '', // URL.
-			'link_text'    => __( 'Donate Now', 'bearsthemes-addons' ), // string,
+			'link_text'    => __( 'Donate Now', 'alone-addons' ), // string,
 			'progress_bar' => true, // boolean.
 			'show_text' => true, // boolean.
 			'show_bar' => true, // boolean.
-			'income_text' => __( 'Raised:', 'bearsthemes-addons' ),
-			'goal_text' => __( 'Goal:', 'bearsthemes-addons' ),
+			'income_text' => __( 'Raised:', 'alone-addons' ),
+			'goal_text' => __( 'Goal:', 'alone-addons' ),
 			'custom_goal_progress' => $settings['custom_goal_progress'],
 		);
 
@@ -760,19 +760,19 @@ class Skin_Taboche extends Skin_Base {
 				?>
 			</div>
 			<div class="goal-progress">
-				<?php echo bearsthemes_addons_give_totals_circle ( $args, $bar_opts ); ?>
+				<?php echo alone_addons_give_totals_circle ( $args, $bar_opts ); ?>
 				<div class="gt-remain">
 					<?php
 					if( $this->parent->get_instance_value_skin('time_remain') ) {
 						echo '<div class="item-remain">';
-						echo '<h4 class="gt-remain__remain-title">' . esc_html__('Time Remain:', 'bearsthemes-addons') . '</h4>';
+						echo '<h4 class="gt-remain__remain-title">' . esc_html__('Time Remain:', 'alone-addons') . '</h4>';
 						echo '<span class="gt-remain__remain-value">' . $this->parent->get_instance_value_skin('time_remain') . '</span>';
 						echo '</div>';
 					} ?>
 					<?php
 					if( $this->parent->get_instance_value_skin('donatees') ) {
 						echo '<div class="item-donate">';
-						echo '<h4 class="gt-remain__donate-title">' . esc_html__('Donatees:', 'bearsthemes-addons') . '</h4>';
+						echo '<h4 class="gt-remain__donate-title">' . esc_html__('Donatees:', 'alone-addons') . '</h4>';
 						echo '<span class="gt-remain__donate-value">' . $this->parent->get_instance_value_skin('donatees') . '</span>';
 						echo '</div>';
 					} ?>

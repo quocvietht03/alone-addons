@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Testimonial_Carousel\Skins;
+namespace AloneAddons\Widgets\Testimonial_Carousel\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -27,7 +27,7 @@ class Skin_List_Changla extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'List Changla', 'bearsthemes-addons' );
+		return __( 'List Changla', 'alone-addons' );
 	}
 
 	public function register_layout_section_controls( Widget_Base $widget ) {
@@ -37,38 +37,38 @@ class Skin_List_Changla extends Skin_Base {
 
 		$repeater->add_control(
 			'list_content', [
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.' , 'bearsthemes-addons' ),
+				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_name', [
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Name' , 'bearsthemes-addons' ),
+				'default' => __( 'Name' , 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Slides', 'bearsthemes-addons' ),
+				'label' => __( 'Slides', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
-						'list_name' => __( 'Name #1', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
+						'list_name' => __( 'Name #1', 'alone-addons' ),
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
-						'list_name' => __( 'Name #2', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
+						'list_name' => __( 'Name #2', 'alone-addons' ),
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
-						'list_name' => __( 'Name #3', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
+						'list_name' => __( 'Name #3', 'alone-addons' ),
 					],
 				],
 				'title_field' => '{{{ list_name }}}',
@@ -84,19 +84,19 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -114,7 +114,7 @@ class Skin_List_Changla extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -122,7 +122,7 @@ class Skin_List_Changla extends Skin_Base {
     $this->add_control(
 			'heading_content_style',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -130,7 +130,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'content_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -151,7 +151,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'heading_name_style',
 			[
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -159,7 +159,7 @@ class Skin_List_Changla extends Skin_Base {
 		$this->add_control(
 			'name_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

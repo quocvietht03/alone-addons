@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Testimonial_Special;
+namespace AloneAddons\Widgets\Testimonial_Special;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -20,7 +20,7 @@ class Be_Testimonial_Special extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Testimonial Special', 'bearsthemes-addons' );
+		return __( 'Be Testimonial Special', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -28,18 +28,18 @@ class Be_Testimonial_Special extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_layout_section_controls() {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
@@ -47,7 +47,7 @@ class Be_Testimonial_Special extends Widget_Base {
 
     $repeater->add_control(
 			'list_image', [
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -57,39 +57,39 @@ class Be_Testimonial_Special extends Widget_Base {
 
 		$repeater->add_control(
 			'list_name', [
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Name' , 'bearsthemes-addons' ),
+				'default' => __( 'Name' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_job', [
-				'label' => __( 'Job', 'bearsthemes-addons' ),
+				'label' => __( 'Job', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Job' , 'bearsthemes-addons' ),
+				'default' => __( 'Job' , 'alone-addons' ),
 			]
 		);
 
     $repeater->add_control(
 			'list_quote_title', [
-				'label' => __( 'Quote Title', 'bearsthemes-addons' ),
+				'label' => __( 'Quote Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Jasmine\'s Journey to Confidence' , 'bearsthemes-addons' ),
+				'default' => __( 'Jasmine\'s Journey to Confidence' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_quote_content', [
-				'label' => __( 'Quote Content', 'bearsthemes-addons' ),
+				'label' => __( 'Quote Content', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Meet Jasmine, a young girl whose life took a remarkable turn when she joined our "Play for a Cause Football League." Struggling with self-confidence, Jasmine found solace and purpose on the football field. Through the guidance of our coaches and the camaraderie of her teammates, Jasmine blossomed into a confident team player and emerged as a leader both on and off the pitch. Her journey exemplifies how sports can empower young minds and nurture qualities that extend far beyond the game.' , 'bearsthemes-addons' ),
+				'default' => __( 'Meet Jasmine, a young girl whose life took a remarkable turn when she joined our "Play for a Cause Football League." Struggling with self-confidence, Jasmine found solace and purpose on the football field. Through the guidance of our coaches and the camaraderie of her teammates, Jasmine blossomed into a confident team player and emerged as a leader both on and off the pitch. Her journey exemplifies how sports can empower young minds and nurture qualities that extend far beyond the game.' , 'alone-addons' ),
 			]
 		);
 
     $repeater->add_control(
 			'list_quote_image', [
-				'label' => __( 'Quote Image', 'bearsthemes-addons' ),
+				'label' => __( 'Quote Image', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -100,7 +100,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Slides', 'bearsthemes-addons' ),
+				'label' => __( 'Slides', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
         'item_actions' => [
@@ -112,26 +112,26 @@ class Be_Testimonial_Special extends Widget_Base {
 				'default' => [
 					[
             'list_image' => Utils::get_placeholder_image_src(),
-            'list_name' => __( 'Jasmine Cohen', 'bearsthemes-addons' ),
+            'list_name' => __( 'Jasmine Cohen', 'alone-addons' ),
             'list_job' => 'Primary Teacher',
-            'list_quote_title' => __( 'Jasmine\'s Journey to Confidence', 'bearsthemes-addons' ),
-						'list_quote_content' => __( 'Meet Jasmine, a young girl whose life took a remarkable turn when she joined our "Play for a Cause Football League." Struggling with self-confidence, Jasmine found solace and purpose on the football field. Through the guidance of our coaches and the camaraderie of her teammates, Jasmine blossomed into a confident team player and emerged as a leader both on and off the pitch. Her journey exemplifies how sports can empower young minds and nurture qualities that extend far beyond the game.', 'bearsthemes-addons' ),
+            'list_quote_title' => __( 'Jasmine\'s Journey to Confidence', 'alone-addons' ),
+						'list_quote_content' => __( 'Meet Jasmine, a young girl whose life took a remarkable turn when she joined our "Play for a Cause Football League." Struggling with self-confidence, Jasmine found solace and purpose on the football field. Through the guidance of our coaches and the camaraderie of her teammates, Jasmine blossomed into a confident team player and emerged as a leader both on and off the pitch. Her journey exemplifies how sports can empower young minds and nurture qualities that extend far beyond the game.', 'alone-addons' ),
             'list_quote_image' => Utils::get_placeholder_image_src(),
 					],
           [
             'list_image' => Utils::get_placeholder_image_src(),
-            'list_name' => __( 'Brooklyn Simmons', 'bearsthemes-addons' ),
+            'list_name' => __( 'Brooklyn Simmons', 'alone-addons' ),
             'list_job' => 'Medical Assistant',
-            'list_quote_title' => __( 'From Struggles to Strides', 'bearsthemes-addons' ),
-						'list_quote_content' => __( 'Simmons\'s life was marked by adversity and challenges, but his determination remained unshaken. His participation in the "Running Miles of Hope" event became a turning point. Through months of training and preparation, Simmons not only conquered the physical challenge but also found a renewed sense of purpose. His story reflects the resilience of the human spirit and how the support of a community can propel an individual towards achieving the seemingly impossible.', 'bearsthemes-addons' ),
+            'list_quote_title' => __( 'From Struggles to Strides', 'alone-addons' ),
+						'list_quote_content' => __( 'Simmons\'s life was marked by adversity and challenges, but his determination remained unshaken. His participation in the "Running Miles of Hope" event became a turning point. Through months of training and preparation, Simmons not only conquered the physical challenge but also found a renewed sense of purpose. His story reflects the resilience of the human spirit and how the support of a community can propel an individual towards achieving the seemingly impossible.', 'alone-addons' ),
             'list_quote_image' => Utils::get_placeholder_image_src(),
 					],
           [
             'list_image' => Utils::get_placeholder_image_src(),
-            'list_name' => __( 'Maria Alexander', 'bearsthemes-addons' ),
+            'list_name' => __( 'Maria Alexander', 'alone-addons' ),
             'list_job' => 'Nursing Assistant',
-            'list_quote_title' => __( 'Swinging for Dreams: Maria\'s Triumph', 'bearsthemes-addons' ),
-						'list_quote_content' => __( 'Maria\'s dream of pursuing golf seemed distant due to financial constraints. However, her talent caught our attention during the "Swing for Dreams Golf Tournament." Through the support of event sponsors and our organization, Maria was granted a scholarship that opened doors to professional training and competitions. Today, Maria stands as a beacon of determination, demonstrating how sports can unlock opportunities and empower dreams.', 'bearsthemes-addons' ),
+            'list_quote_title' => __( 'Swinging for Dreams: Maria\'s Triumph', 'alone-addons' ),
+						'list_quote_content' => __( 'Maria\'s dream of pursuing golf seemed distant due to financial constraints. However, her talent caught our attention during the "Swing for Dreams Golf Tournament." Through the support of event sponsors and our organization, Maria was granted a scholarship that opened doors to professional training and competitions. Today, Maria stands as a beacon of determination, demonstrating how sports can unlock opportunities and empower dreams.', 'alone-addons' ),
             'list_quote_image' => Utils::get_placeholder_image_src(),
 					],
 				],
@@ -146,7 +146,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_tab',
 			[
-				'label' => __( 'Tab', 'bearsthemes-addons' ),
+				'label' => __( 'Tab', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -154,7 +154,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'tab_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -166,7 +166,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'tab_name_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -192,7 +192,7 @@ class Be_Testimonial_Special extends Widget_Base {
     $this->start_controls_section(
 			'section_design_panel',
 			[
-				'label' => __( 'Panel', 'bearsthemes-addons' ),
+				'label' => __( 'Panel', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -200,7 +200,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'panel_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -212,7 +212,7 @@ class Be_Testimonial_Special extends Widget_Base {
     $this->add_control(
 			'heading_Content_style',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -220,7 +220,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Title Color', 'bearsthemes-addons' ),
+				'label' => __( 'Title Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -233,7 +233,7 @@ class Be_Testimonial_Special extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'title_typography',
-				'label' => __( 'Title Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Title Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-test-special__panel-title',
 			]
@@ -242,7 +242,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Description Color', 'bearsthemes-addons' ),
+				'label' => __( 'Description Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -255,7 +255,7 @@ class Be_Testimonial_Special extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'desc_typography',
-				'label' => __( 'Description Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Description Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-test-special__panel-desc',
 			]
@@ -264,7 +264,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'heading_info_style',
 			[
-				'label' => __( 'Information', 'bearsthemes-addons' ),
+				'label' => __( 'Information', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -272,7 +272,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'name_color',
 			[
-				'label' => __( 'Name Color', 'bearsthemes-addons' ),
+				'label' => __( 'Name Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -285,7 +285,7 @@ class Be_Testimonial_Special extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'name_typography',
-				'label' => __( 'Name Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Name Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-test-special__info-name',
 			]
@@ -294,7 +294,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'job_color',
 			[
-				'label' => __( 'Job Color', 'bearsthemes-addons' ),
+				'label' => __( 'Job Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -307,7 +307,7 @@ class Be_Testimonial_Special extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'job_typography',
-				'label' => __( 'Job Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Job Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .elementor-test-special__info-job',
 			]
@@ -316,7 +316,7 @@ class Be_Testimonial_Special extends Widget_Base {
 		$this->add_control(
 			'info_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

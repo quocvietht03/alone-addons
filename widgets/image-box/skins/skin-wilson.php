@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Image_Box\Skins;
+namespace AloneAddons\Widgets\Image_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -25,7 +25,7 @@ class Skin_Wilson extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Wilson', 'bearsthemes-addons' );
+		return __( 'Wilson', 'alone-addons' );
 	}
 
 	public function register_layout_section_controls( Widget_Base $widget ) {
@@ -39,16 +39,16 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'sub_title',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'default' => __( 'Sub Title', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'read_more_link',
 			[
-				'label' => __( 'Read More Link', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '#',
 			]
@@ -64,7 +64,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -72,7 +72,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_responsive_control(
       'item_ratio',
       [
-        'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+        'label' => __( 'Image Ratio', 'alone-addons' ),
         'type' => Controls_Manager::SLIDER,
         'default' => [
           'size' => 0.9,
@@ -94,7 +94,7 @@ class Skin_Wilson extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -110,7 +110,7 @@ class Skin_Wilson extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -135,7 +135,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -143,7 +143,7 @@ class Skin_Wilson extends Skin_Base {
     $this->add_control(
 			'content_overlay_color',
 			[
-				'label' => __( 'Overlay Color', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -155,7 +155,7 @@ class Skin_Wilson extends Skin_Base {
     $this->add_control(
 			'content_overlay_color_hover',
 			[
-				'label' => __( 'Overlay Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -167,7 +167,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -176,7 +176,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -188,7 +188,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -209,7 +209,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'heading_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -217,7 +217,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -238,7 +238,7 @@ class Skin_Wilson extends Skin_Base {
 		$this->add_control(
 			'heading_sub_title_style',
 			[
-				'label' => __( 'Sub Title', 'bearsthemes-addons' ),
+				'label' => __( 'Sub Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -246,7 +246,7 @@ class Skin_Wilson extends Skin_Base {
     $this->add_control(
 			'sub_title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

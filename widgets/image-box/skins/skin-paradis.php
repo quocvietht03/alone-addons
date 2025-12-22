@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Image_Box\Skins;
+namespace AloneAddons\Widgets\Image_Box\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -25,7 +25,7 @@ class Skin_Paradis extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Paradis', 'bearsthemes-addons' );
+		return __( 'Paradis', 'alone-addons' );
 	}
 
 	public function register_layout_section_controls( Widget_Base $widget ) {
@@ -39,16 +39,16 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'read_more_text',
 			[
-				'label' => __( 'Read More Text', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Read More', 'bearsthemes-addons' ),
+				'default' => __( 'Read More', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'read_more_link',
 			[
-				'label' => __( 'Read More Link', 'bearsthemes-addons' ),
+				'label' => __( 'Read More Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '#',
 			]
@@ -64,7 +64,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -73,7 +73,7 @@ class Skin_Paradis extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -89,7 +89,7 @@ class Skin_Paradis extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -114,7 +114,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -122,7 +122,7 @@ class Skin_Paradis extends Skin_Base {
     $this->add_control(
 			'content_overlay_color',
 			[
-				'label' => __( 'Overlay Color', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -134,7 +134,7 @@ class Skin_Paradis extends Skin_Base {
     $this->add_control(
 			'content_overlay_color_hover',
 			[
-				'label' => __( 'Overlay Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -146,7 +146,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -155,7 +155,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -167,7 +167,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -188,7 +188,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'heading_desc_style',
 			[
-				'label' => __( 'Description', 'bearsthemes-addons' ),
+				'label' => __( 'Description', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -196,7 +196,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -217,7 +217,7 @@ class Skin_Paradis extends Skin_Base {
 		$this->add_control(
 			'heading_read_more_style',
 			[
-				'label' => __( 'Read More', 'bearsthemes-addons' ),
+				'label' => __( 'Read More', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -225,7 +225,7 @@ class Skin_Paradis extends Skin_Base {
     $this->add_control(
 			'read_more_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -237,7 +237,7 @@ class Skin_Paradis extends Skin_Base {
     $this->add_control(
 			'read_more_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -288,7 +288,7 @@ class Skin_Paradis extends Skin_Base {
 			if( $this->parent->get_instance_value_skin('read_more_text') ) {
 				echo '<a class="elementor-image-box__read-more" href="' . esc_url( $this->parent->get_instance_value_skin('read_more_link') ) . '">' .
 								$this->parent->get_instance_value_skin('read_more_text') .
-                bearsthemes_addons_get_icon_svg( 'chevron-right', 12 ) .
+                alone_addons_get_icon_svg( 'chevron-right', 12 ) .
 						 '</a>';
 			}
 

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Base_Carousel\Skins;
+namespace AloneAddons\Widgets\Base_Carousel\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -27,7 +27,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Pumori', 'bearsthemes-addons' );
+		return __( 'Pumori', 'alone-addons' );
 	}
 
 	public function register_layout_section_controls( Widget_Base $widget ) {
@@ -37,7 +37,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 
 		$repeater->add_control(
 			'list_image', [
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -47,7 +47,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 
 		$repeater->add_control(
 			'list_url', [
-				'label' => __( 'Url', 'bearsthemes-addons' ),
+				'label' => __( 'Url', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 			]
@@ -56,7 +56,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Slides', 'bearsthemes-addons' ),
+				'label' => __( 'Slides', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
@@ -87,7 +87,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_responsive_control(
 			'sliders_per_view',
 			[
-				'label' => __( 'Slides Per View', 'bearsthemes-addons' ),
+				'label' => __( 'Slides Per View', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '5',
 				'tablet_default' => '4',
@@ -117,7 +117,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -144,7 +144,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => __( 'Space Between', 'bearsthemes-addons' ),
+				'label' => __( 'Space Between', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -166,7 +166,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -174,7 +174,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -187,7 +187,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -203,7 +203,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -228,7 +228,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->start_controls_section(
 			'section_design_overlay',
 			[
-				'label' => __( 'Overlay', 'bearsthemes-addons' ),
+				'label' => __( 'Overlay', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -236,7 +236,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_control(
 			'overlay_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -248,7 +248,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_responsive_control(
 			'overlay_icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -265,7 +265,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_control(
 			'overlay_icon_color',
 			[
-				'label' => __( 'Icon Color', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -277,7 +277,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 		$this->add_control(
 			'overlay_icon_color_hover',
 			[
-				'label' => __( 'Icon Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -316,7 +316,7 @@ class Skin_Grid_Pumori extends Skin_Base {
 					<?php
 						if( !empty( $item['list_url'] ) ) {
 							echo '<div class="elementor-slide__overlay">
-											<a href="' . esc_url( $item['list_url'] ) . '">' . bearsthemes_addons_get_icon_svg('plus', 30) . '</a>
+											<a href="' . esc_url( $item['list_url'] ) . '">' . alone_addons_get_icon_svg('plus', 30) . '</a>
 										</div>';
 						}
 					?>

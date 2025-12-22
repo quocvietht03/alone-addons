@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons;
+namespace AloneAddons;
 
 /**
  * Class Plugin
@@ -212,7 +212,7 @@ class Plugin {
 		wp_register_script( 'jquery-progressbar', plugins_url( '/assets/js/progressbar.min.js', __FILE__ ), [ 'jquery' ], false, true );
 		wp_register_script( 'jquery-countdown-plugin', plugins_url( '/assets/js/jquery.countdown-plugin.min.js', __FILE__ ), [ 'jquery' ], false, true );
 		wp_register_script( 'jquery-countdown', plugins_url( '/assets/js/jquery.countdown.min.js', __FILE__ ), [ 'jquery' ], false, true );
-		wp_register_script( 'bearsthemes-addons', plugins_url( '/assets/js/frontend.js', __FILE__ ), [ 'jquery' ], false, true );
+		wp_register_script( 'alone-addons', plugins_url( '/assets/js/frontend.js', __FILE__ ), [ 'jquery' ], false, true );
 
 	}
 
@@ -246,9 +246,9 @@ class Plugin {
 	 */
 	public function add_category( $elements_manager ) {
 		$elements_manager->add_category(
-			'bearsthemes-addons',
+			'alone-addons',
 			[
-				'title' => esc_html__( 'Bearsthemes Addons', 'bearsthemes-addons' )
+				'title' => esc_html__( 'Alone Addons', 'alone-addons' )
 			]
 		);
 	}

@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Video_Play_Button;
+namespace AloneAddons\Widgets\Video_Play_Button;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -18,7 +18,7 @@ class Be_Video_Play_Button extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Video Play Button', 'bearsthemes-addons' );
+		return __( 'Be Video Play Button', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -26,25 +26,25 @@ class Be_Video_Play_Button extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'jquery-magnific-popup', 'bearsthemes-addons' ];
+		return [ 'jquery-magnific-popup', 'alone-addons' ];
 	}
 
 	protected function register_layout_section_controls() {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'select_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default' => [
@@ -57,13 +57,13 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_view',
 			[
-				'label' => __( 'View', 'bearsthemes-addons' ),
+				'label' => __( 'View', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '',
 				'options' => [
-					'' => __( 'Default', 'bearsthemes-addons' ),
-					'stacked' => __( 'Stacked', 'bearsthemes-addons' ),
-					'framed' => __( 'Framed', 'bearsthemes-addons' ),
+					'' => __( 'Default', 'alone-addons' ),
+					'stacked' => __( 'Stacked', 'alone-addons' ),
+					'framed' => __( 'Framed', 'alone-addons' ),
 				],
 				'prefix_class' => 'elementor-video-play-button--icon-view-',
 			]
@@ -72,12 +72,12 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_shape',
 			[
-				'label' => __( 'Shape', 'bearsthemes-addons' ),
+				'label' => __( 'Shape', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'circle',
 				'options' => [
-					'circle' => __( 'Circle', 'bearsthemes-addons' ),
-					'square' => __( 'Square', 'bearsthemes-addons' ),
+					'circle' => __( 'Circle', 'alone-addons' ),
+					'square' => __( 'Square', 'alone-addons' ),
 				],
 				'condition' => [
 					'icon_view!' => '',
@@ -513,7 +513,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -521,19 +521,19 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -546,7 +546,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -567,7 +567,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_size_wrap',
 			[
-				'label' => __( 'Wrap Size', 'bearsthemes-addons' ),
+				'label' => __( 'Wrap Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -591,7 +591,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border',
 			[
-				'label' => __( 'Border Size', 'bearsthemes-addons' ),
+				'label' => __( 'Border Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -614,7 +614,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'condition' => [
 					'icon_view!' => '',
@@ -631,14 +631,14 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -655,7 +655,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -672,7 +672,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -689,14 +689,14 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -713,7 +713,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_background_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -730,7 +730,7 @@ class Be_Video_Play_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [

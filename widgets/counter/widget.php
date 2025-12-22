@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Counter;
+namespace AloneAddons\Widgets\Counter;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -15,7 +15,7 @@ class Be_Counter extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Counter', 'bearsthemes-addons' );
+		return __( 'Be Counter', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -23,28 +23,28 @@ class Be_Counter extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'elementor-waypoints', 'jquery-numerator', 'bearsthemes-addons' ];
+		return [ 'elementor-waypoints', 'jquery-numerator', 'alone-addons' ];
 	}
 
 	protected function register_layout_section_controls() {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'show_icon',
 			[
-				'label' => __( 'Show Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Show Icon', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -53,7 +53,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'select_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default' => [
@@ -69,13 +69,13 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_view',
 			[
-				'label' => __( 'View', 'bearsthemes-addons' ),
+				'label' => __( 'View', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '',
 				'options' => [
-					'' => __( 'Default', 'bearsthemes-addons' ),
-					'stacked' => __( 'Stacked', 'bearsthemes-addons' ),
-					'framed' => __( 'Framed', 'bearsthemes-addons' ),
+					'' => __( 'Default', 'alone-addons' ),
+					'stacked' => __( 'Stacked', 'alone-addons' ),
+					'framed' => __( 'Framed', 'alone-addons' ),
 				],
 				'condition' => [
 					'show_icon!' => '',
@@ -87,12 +87,12 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_shape',
 			[
-				'label' => __( 'Shape', 'bearsthemes-addons' ),
+				'label' => __( 'Shape', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'circle',
 				'options' => [
-					'circle' => __( 'Circle', 'bearsthemes-addons' ),
-					'square' => __( 'Square', 'bearsthemes-addons' ),
+					'circle' => __( 'Circle', 'alone-addons' ),
+					'square' => __( 'Square', 'alone-addons' ),
 				],
 				'condition' => [
 					'show_icon!' => '',
@@ -105,20 +105,20 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_position',
 			[
-				'label' => __( 'Icon Position', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Position', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'default' => 'top',
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-h-align-left',
 					],
 					'top' => [
-						'title' => __( 'Top', 'bearsthemes-addons' ),
+						'title' => __( 'Top', 'alone-addons' ),
 						'icon' => 'eicon-v-align-top',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-h-align-right',
 					],
 				],
@@ -132,7 +132,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'starting_number',
 			[
-				'label' => __( 'Starting Number', 'bearsthemes-addons' ),
+				'label' => __( 'Starting Number', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 0,
 				'separator' => 'before',
@@ -142,7 +142,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'ending_number',
 			[
-				'label' => __( 'Ending Number', 'bearsthemes-addons' ),
+				'label' => __( 'Ending Number', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 100,
 			]
@@ -151,7 +151,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'prefix',
 			[
-				'label' => __( 'Number Prefix', 'bearsthemes-addons' ),
+				'label' => __( 'Number Prefix', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'placeholder' => 1,
@@ -161,17 +161,17 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'suffix',
 			[
-				'label' => __( 'Number Suffix', 'bearsthemes-addons' ),
+				'label' => __( 'Number Suffix', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'placeholder' => __( 'Plus', 'bearsthemes-addons' ),
+				'placeholder' => __( 'Plus', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'duration',
 			[
-				'label' => __( 'Animation Duration', 'bearsthemes-addons' ),
+				'label' => __( 'Animation Duration', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 2000,
 				'min' => 100,
@@ -182,18 +182,18 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'thousand_separator',
 			[
-				'label' => __( 'Thousand Separator', 'bearsthemes-addons' ),
+				'label' => __( 'Thousand Separator', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'thousand_separator_char',
 			[
-				'label' => __( 'Separator', 'bearsthemes-addons' ),
+				'label' => __( 'Separator', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'condition' => [
 					'thousand_separator' => 'yes',
@@ -209,10 +209,10 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Show Title', 'bearsthemes-addons' ),
+				'label' => __( 'Show Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -221,10 +221,10 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'This is the heading​', 'bearsthemes-addons' ),
+				'default' => __( 'This is the heading​', 'alone-addons' ),
 				'condition' => [
 					'show_title!' => '',
 				],
@@ -238,7 +238,7 @@ class Be_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -246,19 +246,19 @@ class Be_Counter extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -274,13 +274,13 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'vertical_ignment',
 			[
-				'label' => __( 'Vertical Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Vertical Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'top',
 				'options' => [
-					'top' => __( 'Top', 'bearsthemes-addons' ),
-					'middle' => __( 'Middle', 'bearsthemes-addons' ),
-					'bottom' => __( 'Bottom', 'bearsthemes-addons' ),
+					'top' => __( 'Top', 'alone-addons' ),
+					'middle' => __( 'Middle', 'alone-addons' ),
+					'bottom' => __( 'Bottom', 'alone-addons' ),
 				],
 				'condition' => [
 					'icon_position!' => ['', 'top'],
@@ -296,7 +296,7 @@ class Be_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_icon',
 			[
-				'label' => __( 'Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Icon', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_icon!' => '',
@@ -307,7 +307,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -328,7 +328,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_size_wrap',
 			[
-				'label' => __( 'Wrap Size', 'bearsthemes-addons' ),
+				'label' => __( 'Wrap Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -352,7 +352,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_border',
 			[
-				'label' => __( 'Border Size', 'bearsthemes-addons' ),
+				'label' => __( 'Border Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -375,7 +375,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'condition' => [
 					'icon_view!' => '',
@@ -392,14 +392,14 @@ class Be_Counter extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -416,7 +416,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -433,7 +433,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -450,14 +450,14 @@ class Be_Counter extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_icon_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'icon_color_hover',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -474,7 +474,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_background_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -491,7 +491,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'icon_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -514,7 +514,7 @@ class Be_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_number',
 			[
-				'label' => __( 'Number', 'bearsthemes-addons' ),
+				'label' => __( 'Number', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -522,7 +522,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'number_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -547,7 +547,7 @@ class Be_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_title!' => '',
@@ -558,7 +558,7 @@ class Be_Counter extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

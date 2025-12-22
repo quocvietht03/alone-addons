@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Testimonial_Carousel;
+namespace AloneAddons\Widgets\Testimonial_Carousel;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -20,7 +20,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Testimonial Carousel', 'bearsthemes-addons' );
+		return __( 'Be Testimonial Carousel', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -28,11 +28,11 @@ class Be_Testimonial_Carousel extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_skins() {
@@ -56,7 +56,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
@@ -64,15 +64,15 @@ class Be_Testimonial_Carousel extends Widget_Base {
 
 		$repeater->add_control(
 			'list_content', [
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.' , 'bearsthemes-addons' ),
+				'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_image', [
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -82,55 +82,55 @@ class Be_Testimonial_Carousel extends Widget_Base {
 
 		$repeater->add_control(
 			'list_name', [
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Name' , 'bearsthemes-addons' ),
+				'default' => __( 'Name' , 'alone-addons' ),
 			]
 		);
 
 		$repeater->add_control(
 			'list_job', [
-				'label' => __( 'Job', 'bearsthemes-addons' ),
+				'label' => __( 'Job', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Job' , 'bearsthemes-addons' ),
+				'default' => __( 'Job' , 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Slides', 'bearsthemes-addons' ),
+				'label' => __( 'Slides', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #1', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #1', 'alone-addons' ),
 						'list_job' => 'Job #1',
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #2', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #2', 'alone-addons' ),
 						'list_job' => 'Job #2',
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #3', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #3', 'alone-addons' ),
 						'list_job' => 'Job #3',
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #4', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #4', 'alone-addons' ),
 						'list_job' => 'Job #4',
 					],
 					[
-						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'bearsthemes-addons' ),
+						'list_content' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'alone-addons' ),
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_name' => __( 'Name #5', 'bearsthemes-addons' ),
+						'list_name' => __( 'Name #5', 'alone-addons' ),
 						'list_job' => 'Job #5',
 					],
 				],
@@ -144,7 +144,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'sliders_per_view',
 			[
-				'label' => __( 'Slides Per View', 'bearsthemes-addons' ),
+				'label' => __( 'Slides Per View', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -184,7 +184,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_additional_options',
 			[
-				'label' => __( 'Additional Options', 'bearsthemes-addons' ),
+				'label' => __( 'Additional Options', 'alone-addons' ),
 			]
 		);
 
@@ -192,13 +192,13 @@ class Be_Testimonial_Carousel extends Widget_Base {
 			'navigation',
 			[
 				'type' => Controls_Manager::SELECT,
-				'label' => __( 'Navigation', 'bearsthemes-addons' ),
+				'label' => __( 'Navigation', 'alone-addons' ),
 				'default' => 'icon',
 				'options' => [
-					'' => __( 'None', 'bearsthemes-addons' ),
-					'icon' => __( 'Icon', 'bearsthemes-addons' ),
-					'text' => __( 'Text', 'bearsthemes-addons' ),
-					'both' => __( 'Icon and Text', 'bearsthemes-addons' ),
+					'' => __( 'None', 'alone-addons' ),
+					'icon' => __( 'Icon', 'alone-addons' ),
+					'text' => __( 'Text', 'alone-addons' ),
+					'both' => __( 'Icon and Text', 'alone-addons' ),
 				],
 				'prefix_class' => 'elementor-navigation-type-',
 				'render_type' => 'template',
@@ -208,14 +208,14 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'pagination',
 			[
-				'label' => __( 'Pagination', 'bearsthemes-addons' ),
+				'label' => __( 'Pagination', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'bullets',
 				'options' => [
-					'' => __( 'None', 'bearsthemes-addons' ),
-					'bullets' => __( 'Dots', 'bearsthemes-addons' ),
-					'fraction' => __( 'Fraction', 'bearsthemes-addons' ),
-					'progressbar' => __( 'Progress', 'bearsthemes-addons' ),
+					'' => __( 'None', 'alone-addons' ),
+					'bullets' => __( 'Dots', 'alone-addons' ),
+					'fraction' => __( 'Fraction', 'alone-addons' ),
+					'progressbar' => __( 'Progress', 'alone-addons' ),
 				],
 				'prefix_class' => 'elementor-pagination-type-',
 				'render_type' => 'template',
@@ -225,7 +225,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'speed',
 			[
-				'label' => __( 'Transition Duration', 'bearsthemes-addons' ),
+				'label' => __( 'Transition Duration', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 500,
 			]
@@ -234,7 +234,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'autoplay',
 			[
-				'label' => __( 'Autoplay', 'bearsthemes-addons' ),
+				'label' => __( 'Autoplay', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 				'separator' => 'before',
@@ -244,7 +244,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'autoplay_speed',
 			[
-				'label' => __( 'Autoplay Speed', 'bearsthemes-addons' ),
+				'label' => __( 'Autoplay Speed', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5000,
 				'condition' => [
@@ -256,7 +256,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'loop',
 			[
-				'label' => __( 'Infinite Loop', 'bearsthemes-addons' ),
+				'label' => __( 'Infinite Loop', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			]
@@ -269,7 +269,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -277,7 +277,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => __( 'Space Between', 'bearsthemes-addons' ),
+				'label' => __( 'Space Between', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -298,19 +298,19 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -330,7 +330,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -341,7 +341,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -359,7 +359,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -377,7 +377,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -396,7 +396,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -411,7 +411,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-testimonial' => 'background-color: {{VALUE}}',
@@ -422,7 +422,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-testimonial' => 'border-color: {{VALUE}}',
@@ -434,7 +434,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -449,7 +449,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-testimonial:hover' => 'background-color: {{VALUE}}',
@@ -460,7 +460,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-testimonial:hover' => 'border-color: {{VALUE}}',
@@ -479,7 +479,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -490,7 +490,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -507,7 +507,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -518,7 +518,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
     $this->add_control(
 			'heading_content_style',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -526,7 +526,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'content_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -547,7 +547,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'heading_name_style',
 			[
-				'label' => __( 'Name', 'bearsthemes-addons' ),
+				'label' => __( 'Name', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -555,7 +555,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'name_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -576,7 +576,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'heading_job_style',
 			[
-				'label' => __( 'Job', 'bearsthemes-addons' ),
+				'label' => __( 'Job', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -584,7 +584,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'job_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -609,7 +609,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_navigation',
 			[
-				'label' => __( 'Navigation', 'bearsthemes-addons' ),
+				'label' => __( 'Navigation', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'navigation!' => '',
@@ -622,14 +622,14 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_tab(
 			'tabs_arrow_prev',
 			[
-				'label' => __( 'Previous', 'bearsthemes-addons' ),
+				'label' => __( 'Previous', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'arrow_prev_icon',
 			[
-				'label' => __( 'Previous Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Previous Icon', 'alone-addons' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default' => [
@@ -645,9 +645,9 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'arrow_prev_text',
 			[
-				'label' => __( 'Previous Text', 'bearsthemes-addons' ),
+				'label' => __( 'Previous Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Prev', 'bearsthemes-addons' ),
+				'default' => __( 'Prev', 'alone-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'navigation!' => 'icon',
@@ -660,14 +660,14 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_tab(
 			'tabs_arrow_next',
 			[
-				'label' => __( 'Next', 'bearsthemes-addons' ),
+				'label' => __( 'Next', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'arrow_next_icon',
 			[
-				'label' => __( 'Next Icon', 'bearsthemes-addons' ),
+				'label' => __( 'Next Icon', 'alone-addons' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default' => [
@@ -683,9 +683,9 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'arrow_next_text',
 			[
-				'label' => __( 'Next Text', 'bearsthemes-addons' ),
+				'label' => __( 'Next Text', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Next', 'bearsthemes-addons' ),
+				'default' => __( 'Next', 'alone-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'navigation!' => 'icon',
@@ -700,12 +700,12 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_position',
 			[
-				'label' => __( 'Position', 'bearsthemes-addons' ),
+				'label' => __( 'Position', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'inside',
 				'options' => [
-					'inside' => __( 'Inside', 'bearsthemes-addons' ),
-					'outside' => __( 'Outside', 'bearsthemes-addons' ),
+					'inside' => __( 'Inside', 'alone-addons' ),
+					'outside' => __( 'Outside', 'alone-addons' ),
 				],
 				'prefix_class' => 'elementor-navigation-position-',
 				'render_type' => 'template',
@@ -716,11 +716,11 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_show_always',
 			[
-				'label' => __( 'Show Always', 'bearsthemes-addons' ),
-				'description' => __( 'Check this to navigation show always.', 'bearsthemes-addons' ),
+				'label' => __( 'Show Always', 'alone-addons' ),
+				'description' => __( 'Check this to navigation show always.', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'On', 'bearsthemes-addons' ),
-				'label_off' => __( 'Off', 'bearsthemes-addons' ),
+				'label_on' => __( 'On', 'alone-addons' ),
+				'label_off' => __( 'Off', 'alone-addons' ),
 				'default' => 'yes',
 				'prefix_class' => 'elementor-navigation-always-',
 				'render_type' => 'template',
@@ -730,7 +730,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'navigation_space',
 			[
-				'label' => __( 'Spacing', 'bearsthemes-addons' ),
+				'label' => __( 'Spacing', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -751,7 +751,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_size',
 			[
-				'label' => __( 'Button Size', 'bearsthemes-addons' ),
+				'label' => __( 'Button Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -771,7 +771,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_icon_size',
 			[
-				'label' => __( 'Icon Size', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '',
@@ -796,7 +796,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'navigation_text_typography',
-				'label' => __( 'Text Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Text Typography', 'alone-addons' ),
 				'selector' => '{{WRAPPER}} .elementor-swiper-button span',
 				'condition' => [
 					'navigation!' => 'icon',
@@ -807,7 +807,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -825,7 +825,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
@@ -838,14 +838,14 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_tab(
 			'tabs_navigation_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'navigation_icon_color',
 			[
-				'label' => __( 'Icon Color', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button i' => 'color: {{VALUE}}',
@@ -860,7 +860,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_text_color',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button span' => 'color: {{VALUE}}',
@@ -874,7 +874,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_background',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button' => 'background-color: {{VALUE}}',
@@ -885,7 +885,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button' => 'border-color: {{VALUE}}',
@@ -898,7 +898,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_tab(
 			'tabs_navigation_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 				'condition' => [
 					'navigation!' => '',
 				],
@@ -908,7 +908,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_icon_color_hover',
 			[
-				'label' => __( 'Icon Color', 'bearsthemes-addons' ),
+				'label' => __( 'Icon Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button:hover i' => 'color: {{VALUE}}',
@@ -923,7 +923,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_text_color_hover',
 			[
-				'label' => __( 'Text Color', 'bearsthemes-addons' ),
+				'label' => __( 'Text Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button:hover span' => 'color: {{VALUE}}',
@@ -937,7 +937,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_background_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button:hover' => 'background-color: {{VALUE}}',
@@ -948,7 +948,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'navigation_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-swiper-button:hover' => 'border-color: {{VALUE}}',
@@ -967,7 +967,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_pagination',
 			[
-				'label' => __( 'Pagination', 'bearsthemes-addons' ),
+				'label' => __( 'Pagination', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'pagination!' => '',
@@ -978,12 +978,12 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'pagination_position',
 			[
-				'label' => __( 'Position', 'bearsthemes-addons' ),
+				'label' => __( 'Position', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'inside',
 				'options' => [
-					'inside' => __( 'Inside', 'bearsthemes-addons' ),
-					'outside' => __( 'Outside', 'bearsthemes-addons' ),
+					'inside' => __( 'Inside', 'alone-addons' ),
+					'outside' => __( 'Outside', 'alone-addons' ),
 				],
 				'prefix_class' => 'elementor-pagination-position-',
 				'render_type' => 'template',
@@ -993,7 +993,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'pagination_space',
 			[
-				'label' => __( 'Spacing', 'bearsthemes-addons' ),
+				'label' => __( 'Spacing', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1012,19 +1012,19 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'pagination_align',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left'    => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -1038,7 +1038,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'pagination_size',
 			[
-				'label' => __( 'Size', 'bearsthemes-addons' ),
+				'label' => __( 'Size', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 8,
@@ -1062,7 +1062,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'pagination_space_between',
 			[
-				'label' => __( 'Space Between', 'bearsthemes-addons' ),
+				'label' => __( 'Space Between', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 6,
@@ -1085,7 +1085,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'pagination_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .swiper-pagination-bullet' => 'background-color: {{VALUE}}',
@@ -1099,7 +1099,7 @@ class Be_Testimonial_Carousel extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'pagination_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'selector' => '{{WRAPPER}} .swiper-pagination-fraction',
 				'condition' => [
 					'pagination' => 'fraction',

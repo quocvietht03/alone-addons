@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Give_Forms_Carousel\Skins;
+namespace AloneAddons\Widgets\Give_Forms_Carousel\Skins;
 
 use Elementor\Widget_Base;
 use Elementor\Skin_Base;
@@ -28,7 +28,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 
 
 	public function get_title() {
-		return __( 'Grid Wilson', 'bearsthemes-addons' );
+		return __( 'Grid Wilson', 'alone-addons' );
 	}
 
 
@@ -38,7 +38,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_responsive_control(
 			'sliders_per_view',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -58,7 +58,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'posts_count',
 			[
-				'label' => __( 'Posts Count', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Count', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
@@ -67,10 +67,10 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
       'show_thumbnail',
       [
-        'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+        'label' => __( 'Thumbnail', 'alone-addons' ),
         'type'  => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons' ),
-        'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+        'label_on' => __( 'Show', 'alone-addons' ),
+        'label_off' => __( 'Hide', 'alone-addons' ),
         'default'  => 'yes',
         'separator' => 'before',
       ]
@@ -91,7 +91,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_responsive_control(
       'item_ratio',
       [
-        'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+        'label' => __( 'Image Ratio', 'alone-addons' ),
         'type' => Controls_Manager::SLIDER,
         'default' => [
           'size' => 0.66,
@@ -115,10 +115,10 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
       'show_title',
       [
-        'label' => __( 'Title', 'bearsthemes-addons'),
+        'label' => __( 'Title', 'alone-addons'),
         'type' => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons'),
-        'label_off' => __( 'Hide', 'bearsthemes-addons'),
+        'label_on' => __( 'Show', 'alone-addons'),
+        'label_off' => __( 'Hide', 'alone-addons'),
         'default' => 'yes',
       ]
     );
@@ -126,10 +126,10 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'show_category',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type'  => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons'),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -137,10 +137,10 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
       'show_goal_progress',
       [
-        'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+        'label' => __( 'Goal Progress', 'alone-addons' ),
         'type' => Controls_Manager::SWITCHER,
-        'label_on' => __( 'Show', 'bearsthemes-addons'),
-        'label_off' => __( 'Hide', 'bearsthemes-addons'),
+        'label_on' => __( 'Show', 'alone-addons'),
+        'label_off' => __( 'Hide', 'alone-addons'),
         'default' => 'yes',
       ]
     );
@@ -154,7 +154,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => __( 'Space Between', 'bearsthemes-addons' ),
+				'label' => __( 'Space Between', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -172,19 +172,19 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -202,7 +202,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->start_controls_section(
       'section_design_box',
       [
-        'label' => __( 'Box', 'bearsthemes-addons' ),
+        'label' => __( 'Box', 'alone-addons' ),
         'tab' => Controls_Manager::TAB_STYLE,
       ]
     );
@@ -210,7 +210,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -228,7 +228,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -246,7 +246,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -264,7 +264,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -284,7 +284,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -299,7 +299,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form,
@@ -311,7 +311,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form' => 'border-color: {{VALUE}}',
@@ -323,7 +323,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -338,7 +338,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form:hover,
@@ -350,7 +350,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-give-form:hover' => 'border-color: {{VALUE}}',
@@ -372,7 +372,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'skin_grid_wilson_show_thumbnail!' => '',
@@ -384,7 +384,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -400,7 +400,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -426,7 +426,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -434,7 +434,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'heading_category_style',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_wilson_show_category!' => '',
@@ -445,7 +445,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'category_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-card__category' => 'color: {{VALUE}};',
@@ -459,7 +459,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'category_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .give-card__category' => 'background-color: {{VALUE}};',
@@ -475,7 +475,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'category_typography',
-				'label' => __( 'Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-card__category',
 				'condition' => [
@@ -487,7 +487,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_wilson_show_title!' => '',
@@ -498,7 +498,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -513,7 +513,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -540,7 +540,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
 			'heading_goal_progress_style',
 			[
-				'label' => __( 'Goal Progress', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Progress', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_wilson_show_goal_progress!' => '',
@@ -551,7 +551,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
 			'goal_progress_primary_color',
 			[
-				'label' => __( 'Goal Color', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -564,7 +564,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_progress_primary_typography',
-				'label' => __( 'Goal Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Goal Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress .bt-price .bt-goal',
 			]
@@ -573,7 +573,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 		$this->add_control(
 			'goal_percent_color',
 			[
-				'label' => __( 'Collected Color', 'bearsthemes-addons' ),
+				'label' => __( 'Collected Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -586,7 +586,7 @@ class Skin_Grid_Wilson extends Skin_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'goal_percent_typography',
-				'label' => __( 'Collected Typography', 'bearsthemes-addons' ),
+				'label' => __( 'Collected Typography', 'alone-addons' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .give-goal-progress .bt-price .bt-collected',
 			]
@@ -595,7 +595,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
       'background_progress_color',
       [
-        'label' => __( 'Background Progress', 'bearsthemes-addons' ),
+        'label' => __( 'Background Progress', 'alone-addons' ),
         'type' => Controls_Manager::COLOR,
         'default' => '',
         'selectors' => [
@@ -608,7 +608,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
       'progress_color',
       [
-        'label' => __( 'Progress Color', 'bearsthemes-addons' ),
+        'label' => __( 'Progress Color', 'alone-addons' ),
         'type' => Controls_Manager::COLOR,
         'default' => '',
         'selectors' => [
@@ -620,7 +620,7 @@ class Skin_Grid_Wilson extends Skin_Base {
     $this->add_control(
       'border_progress_color',
       [
-        'label' => __( 'Border Progress Color', 'bearsthemes-addons' ),
+        'label' => __( 'Border Progress Color', 'alone-addons' ),
         'type' => Controls_Manager::COLOR,
         'default' => '',
         'selectors' => [
@@ -705,7 +705,7 @@ class Skin_Grid_Wilson extends Skin_Base {
                     <div class="bt-price">
                       <?php
                         echo '<div class="bt-goal">'.$total_goal.'</div>'.
-                          '<div class="bt-collected">'.$goal_percentage_completed.esc_html__('% Donation Collected', 'bearsthemes-addons').'</div>';
+                          '<div class="bt-collected">'.$goal_percentage_completed.esc_html__('% Donation Collected', 'alone-addons').'</div>';
                       ?>
                     </div>
                     <div class="bt-progress">

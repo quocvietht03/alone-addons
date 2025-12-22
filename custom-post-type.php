@@ -2,20 +2,20 @@
 /**
  * Register post types
  *
- * @package Bearsthemes
+ * @package Alone
  */
 
 /**
- * Class Bearsthemes_Custom_Post_Type
+ * Class Alone_Custom_Post_Type
  */
-class Bearsthemes_Custom_Post_Type {
+class Alone_Custom_Post_Type {
 
 	/**
 	 * Construction function
 	 *
 	 * @since 2.0.0
 	 *
-	 * @return Bearsthemes_Custom_Post_Type
+	 * @return Alone_Custom_Post_Type
 	 */
 
 	/**
@@ -61,15 +61,15 @@ class Bearsthemes_Custom_Post_Type {
 		if ( ( ! post_type_exists( 'give_posts' ) && ! get_option( $this->give_posts_option ) ) ) {
 			// Register post type
 			$labels = array(
-				"name" => __( "Give Posts", "bearsthemes-addons" ),
-				"singular_name" => __( "Give Post", "bearsthemes-addons" )
+				"name" => __( "Give Posts", "alone-addons" ),
+				"singular_name" => __( "Give Post", "alone-addons" )
 			);
 
 			$give_posts_permalinks = get_option( 'give_posts_permalinks' );
-			$give_posts_base = empty( $give_posts_permalinks['give_posts_base'] ) ? _x( 'give_posts', 'slug', 'bearsthemes-addons' ) : $give_posts_permalinks['give_posts_base'];
+			$give_posts_base = empty( $give_posts_permalinks['give_posts_base'] ) ? _x( 'give_posts', 'slug', 'alone-addons' ) : $give_posts_permalinks['give_posts_base'];
 
 			$args = array(
-				"label" => __( "Give Post", "bearsthemes-addons" ),
+				"label" => __( "Give Post", "alone-addons" ),
 				"labels" => $labels,
 				"description" => "",
 				"public" => true,
@@ -98,17 +98,17 @@ class Bearsthemes_Custom_Post_Type {
 
 			// Register category
 			$labels = array(
-				"name" => __( "Categories", "bearsthemes-addons" ),
-				"singular_name" => __( "Category", "bearsthemes-addons" ),
-				"menu_name" => __( "Categories", "bearsthemes-addons" ),
-				"all_items" => __( "All Categories", "bearsthemes-addons" ),
+				"name" => __( "Categories", "alone-addons" ),
+				"singular_name" => __( "Category", "alone-addons" ),
+				"menu_name" => __( "Categories", "alone-addons" ),
+				"all_items" => __( "All Categories", "alone-addons" ),
 			);
 
 			$give_posts_tax_permalinks = get_option( 'give_posts_taxt_permalinks' );
-			$give_posts_tax_base = empty( $give_posts_tax_permalinks['give_posts_tax_base'] ) ? _x( 'give_posts-category', 'slug', 'bearsthemes-addons' ) : $give_posts_tax_permalinks['give_posts_tax_base'];
+			$give_posts_tax_base = empty( $give_posts_tax_permalinks['give_posts_tax_base'] ) ? _x( 'give_posts-category', 'slug', 'alone-addons' ) : $give_posts_tax_permalinks['give_posts_tax_base'];
 
 			$args = array(
-				"label" => __( "Categories", "bearsthemes-addons" ),
+				"label" => __( "Categories", "alone-addons" ),
 				"labels" => $labels,
 				"public" => true,
 				"publicly_queryable" => true,
@@ -131,14 +131,14 @@ class Bearsthemes_Custom_Post_Type {
 
 			// Register tags
 			$labels = array(
-				"name" => __( "Tags", "bearsthemes-addons" ),
-				"singular_name" => __( "Tag", "bearsthemes-addons" ),
-				"menu_name" => __( "Tags", "bearsthemes-addons" ),
-				"all_items" => __( "All Tags", "bearsthemes-addons" ),
+				"name" => __( "Tags", "alone-addons" ),
+				"singular_name" => __( "Tag", "alone-addons" ),
+				"menu_name" => __( "Tags", "alone-addons" ),
+				"all_items" => __( "All Tags", "alone-addons" ),
 			);
 
 			$args = array(
-				"label" => __( "Tags", "bearsthemes-addons" ),
+				"label" => __( "Tags", "alone-addons" ),
 				"labels" => $labels,
 				"public" => true,
 				"publicly_queryable" => true,
@@ -163,15 +163,15 @@ class Bearsthemes_Custom_Post_Type {
 		if ( ( ! post_type_exists( 'project' ) && ! get_option( $this->project_option ) ) ) {
 			// Register post type
 			$labels = array(
-				"name" => __( "Projects", "bearsthemes-addons" ),
-				"singular_name" => __( "Project", "bearsthemes-addons" )
+				"name" => __( "Projects", "alone-addons" ),
+				"singular_name" => __( "Project", "alone-addons" )
 			);
 
 			$project_permalinks = get_option( 'project_permalinks' );
-			$project_base = empty( $project_permalinks['project_base'] ) ? _x( 'project', 'slug', 'bearsthemes-addons' ) : $project_permalinks['project_base'];
+			$project_base = empty( $project_permalinks['project_base'] ) ? _x( 'project', 'slug', 'alone-addons' ) : $project_permalinks['project_base'];
 
 			$args = array(
-				"label" => __( "Projects", "bearsthemes-addons" ),
+				"label" => __( "Projects", "alone-addons" ),
 				"labels" => $labels,
 				"description" => "",
 				"public" => true,
@@ -200,17 +200,17 @@ class Bearsthemes_Custom_Post_Type {
 
 			// Register category
 			$labels = array(
-				"name" => __( "Categories", "bearsthemes-addons" ),
-				"singular_name" => __( "Category", "bearsthemes-addons" ),
-				"menu_name" => __( "Categories", "bearsthemes-addons" ),
-				"all_items" => __( "All Categories", "bearsthemes-addons" ),
+				"name" => __( "Categories", "alone-addons" ),
+				"singular_name" => __( "Category", "alone-addons" ),
+				"menu_name" => __( "Categories", "alone-addons" ),
+				"all_items" => __( "All Categories", "alone-addons" ),
 			);
 
 			$project_tax_permalinks = get_option( 'project_taxt_permalinks' );
-			$project_tax_base = empty( $project_tax_permalinks['project_tax_base'] ) ? _x( 'project-category', 'slug', 'bearsthemes-addons' ) : $project_tax_permalinks['project_tax_base'];
+			$project_tax_base = empty( $project_tax_permalinks['project_tax_base'] ) ? _x( 'project-category', 'slug', 'alone-addons' ) : $project_tax_permalinks['project_tax_base'];
 
 			$args = array(
-				"label" => __( "Categories", "bearsthemes-addons" ),
+				"label" => __( "Categories", "alone-addons" ),
 				"labels" => $labels,
 				"public" => true,
 				"publicly_queryable" => true,
@@ -233,14 +233,14 @@ class Bearsthemes_Custom_Post_Type {
 
 			// Register tags
 			$labels = array(
-				"name" => __( "Tags", "bearsthemes-addons" ),
-				"singular_name" => __( "Tag", "bearsthemes-addons" ),
-				"menu_name" => __( "Tags", "bearsthemes-addons" ),
-				"all_items" => __( "All Tags", "bearsthemes-addons" ),
+				"name" => __( "Tags", "alone-addons" ),
+				"singular_name" => __( "Tag", "alone-addons" ),
+				"menu_name" => __( "Tags", "alone-addons" ),
+				"all_items" => __( "All Tags", "alone-addons" ),
 			);
 
 			$args = array(
-				"label" => __( "Tags", "bearsthemes-addons" ),
+				"label" => __( "Tags", "alone-addons" ),
 				"labels" => $labels,
 				"public" => true,
 				"publicly_queryable" => true,
@@ -266,15 +266,15 @@ class Bearsthemes_Custom_Post_Type {
 		if ( ( ! post_type_exists( 'team' ) && ! get_option( $this->team_option ) ) ) {
 			// Register post type
 			$labels = array(
-				"name" => __( "Teams", "bearsthemes-addons" ),
-				"singular_name" => __( "Team", "bearsthemes-addons" )
+				"name" => __( "Teams", "alone-addons" ),
+				"singular_name" => __( "Team", "alone-addons" )
 			);
 
 			$team_permalinks = get_option( 'team_permalinks' );
-			$team_base = empty( $team_permalinks['team_base'] ) ? _x( 'team', 'slug', 'bearsthemes-addons' ) : $team_permalinks['team_base'];
+			$team_base = empty( $team_permalinks['team_base'] ) ? _x( 'team', 'slug', 'alone-addons' ) : $team_permalinks['team_base'];
 
 			$args = array(
-				"label" => __( "Team", "bearsthemes-addons" ),
+				"label" => __( "Team", "alone-addons" ),
 				"labels" => $labels,
 				"description" => "",
 				"public" => true,
@@ -303,17 +303,17 @@ class Bearsthemes_Custom_Post_Type {
 
 			// Register category
 			$labels = array(
-				"name" => __( "Categories", "bearsthemes-addons" ),
-				"singular_name" => __( "Category", "bearsthemes-addons" ),
-				"menu_name" => __( "Categories", "bearsthemes-addons" ),
-				"all_items" => __( "All Categories", "bearsthemes-addons" ),
+				"name" => __( "Categories", "alone-addons" ),
+				"singular_name" => __( "Category", "alone-addons" ),
+				"menu_name" => __( "Categories", "alone-addons" ),
+				"all_items" => __( "All Categories", "alone-addons" ),
 			);
 
 			$team_tax_permalinks = get_option( 'team_taxt_permalinks' );
-			$team_tax_base = empty( $team_tax_permalinks['team_tax_base'] ) ? _x( 'team-category', 'slug', 'bearsthemes-addons' ) : $team_tax_permalinks['team_tax_base'];
+			$team_tax_base = empty( $team_tax_permalinks['team_tax_base'] ) ? _x( 'team-category', 'slug', 'alone-addons' ) : $team_tax_permalinks['team_tax_base'];
 
 			$args = array(
-				"label" => __( "Categories", "bearsthemes-addons" ),
+				"label" => __( "Categories", "alone-addons" ),
 				"labels" => $labels,
 				"public" => true,
 				"publicly_queryable" => true,
@@ -355,12 +355,12 @@ class Bearsthemes_Custom_Post_Type {
 				wp_enqueue_media();
 			}
 
-			wp_enqueue_script( 'bearsthemes-meta-field-gallery', plugins_url( '/assets/js/meta-field-gallery.js', __FILE__ ), [ 'jquery' ], false, true );
+			wp_enqueue_script( 'alone-meta-field-gallery', plugins_url( '/assets/js/meta-field-gallery.js', __FILE__ ), [ 'jquery' ], false, true );
 
 		}
 
 
-		wp_enqueue_style( 'bearsthemes-backend', plugins_url( '/assets/css/backend.css', __FILE__ ) );
+		wp_enqueue_style( 'alone-backend', plugins_url( '/assets/css/backend.css', __FILE__ ) );
 
 	}
 
@@ -478,7 +478,7 @@ class Bearsthemes_Custom_Post_Type {
 						<ul class="image-gallery mtf-image-gallery">' . $images_html . '</ul>
 						<div style="clear:both"></div>
 						<input type="hidden" name="'.$name.'" value="' . join(',',$hidden) . '" />
-						<a href="#" class="button btn-upload mtf-btn-upload">' . esc_html__( 'Add Images', 'bearsthemes-addons' ) . '</a>
+						<a href="#" class="button btn-upload mtf-btn-upload">' . esc_html__( 'Add Images', 'alone-addons' ) . '</a>
 						' . $desc_html . '
 					</div>
 				</div>';
@@ -518,16 +518,16 @@ class Bearsthemes_Custom_Post_Type {
 	 */
 	public function add_custom_fields() {
 		add_meta_box(
-			'bearsthemes_gallery_box',
-			esc_html__('Image Gallery', 'bearsthemes-addons'),
+			'alone_gallery_box',
+			esc_html__('Image Gallery', 'alone-addons'),
 			array( $this, 'gallery_box_field_html' ),
 			array( 'project' ),
 			'side'
 		);
 
 		add_meta_box(
-			'bearsthemes_give_posts_box',
-			esc_html__('Form Settings', 'bearsthemes-addons'),
+			'alone_give_posts_box',
+			esc_html__('Form Settings', 'alone-addons'),
 			array( $this, 'give_posts_box_field_html' ),
 			array( 'give_posts_forms' ),
 			'side'
@@ -549,7 +549,7 @@ class Bearsthemes_Custom_Post_Type {
 			),
 		);
 
-		return apply_filters( 'bearsthemes_meta_box_gallery_fields', $options );
+		return apply_filters( 'alone_meta_box_gallery_fields', $options );
 	}
 
 	public function gallery_box_field_html() {
@@ -568,21 +568,21 @@ class Bearsthemes_Custom_Post_Type {
 		$options = array(
 			array(
 				'type' => 'select',
-				'label' => esc_html__( 'Style', 'bearsthemes-addons' ),
+				'label' => esc_html__( 'Style', 'alone-addons' ),
 				'options' => array(
-					''  => esc_html__( 'Default', 'bearsthemes-addons' ),
-					'1' => esc_html__( 'Custom style 1', 'bearsthemes-addons' ),
-					'2' => esc_html__( 'Custom style 2', 'bearsthemes-addons' ),
-					'3' => esc_html__( 'Custom style 3', 'bearsthemes-addons' ),
-					'4' => esc_html__( 'Custom style 4', 'bearsthemes-addons' ),
-					'5' => esc_html__( 'Custom style 5', 'bearsthemes-addons' ),
+					''  => esc_html__( 'Default', 'alone-addons' ),
+					'1' => esc_html__( 'Custom style 1', 'alone-addons' ),
+					'2' => esc_html__( 'Custom style 2', 'alone-addons' ),
+					'3' => esc_html__( 'Custom style 3', 'alone-addons' ),
+					'4' => esc_html__( 'Custom style 4', 'alone-addons' ),
+					'5' => esc_html__( 'Custom style 5', 'alone-addons' ),
 				),
-				'desc' => esc_html__( 'Select style display.', 'bearsthemes-addons' ),
+				'desc' => esc_html__( 'Select style display.', 'alone-addons' ),
 				'meta_key' => 'give_posts_style_display_field'
 			),
 		);
 
-		return apply_filters( 'bearsthemes_meta_box_give_posts_fields', $options );
+		return apply_filters( 'alone_meta_box_give_posts_fields', $options );
 	}
 
 	public function give_posts_box_field_html() {
@@ -629,8 +629,8 @@ class Bearsthemes_Custom_Post_Type {
 	 */
 	public function settings_api_init() {
 		add_settings_section(
-			'bearsthemes_cpt_section',
-			'<span id="custom-post-type-options">' . esc_html__( 'Custom Post Type', 'bearsthemes-addons' ) . '</span>',
+			'alone_cpt_section',
+			'<span id="custom-post-type-options">' . esc_html__( 'Custom Post Type', 'alone-addons' ) . '</span>',
 			array( $this, 'writing_section_html' ),
 			'writing'
 		);
@@ -638,10 +638,10 @@ class Bearsthemes_Custom_Post_Type {
 		// Give CPT
 		add_settings_field(
 			$this->give_posts_option,
-			'<span class="project-options">' . esc_html__( 'Give Posts', 'bearsthemes-addons' ) . '</span>',
+			'<span class="project-options">' . esc_html__( 'Give Posts', 'alone-addons' ) . '</span>',
 			array( $this, 'disable_project_field_html' ),
 			'writing',
-			'bearsthemes_cpt_section'
+			'alone_cpt_section'
 		);
 		register_setting(
 			'writing',
@@ -651,7 +651,7 @@ class Bearsthemes_Custom_Post_Type {
 
 		add_settings_field(
 			'give_posts_tax_slug',
-			'<label for="give_posts_tax_slug">' . esc_html__( 'Give Post Category base', 'bearsthemes-addons' ) . '</label>',
+			'<label for="give_posts_tax_slug">' . esc_html__( 'Give Post Category base', 'alone-addons' ) . '</label>',
 			array( $this, 'give_posts_tax_slug_input' ),
 			'permalink',
 			'optional'
@@ -665,10 +665,10 @@ class Bearsthemes_Custom_Post_Type {
 		// Project CPT
 		add_settings_field(
 			$this->project_option,
-			'<span class="project-options">' . esc_html__( 'Projects', 'bearsthemes-addons' ) . '</span>',
+			'<span class="project-options">' . esc_html__( 'Projects', 'alone-addons' ) . '</span>',
 			array( $this, 'disable_project_field_html' ),
 			'writing',
-			'bearsthemes_cpt_section'
+			'alone_cpt_section'
 		);
 		register_setting(
 			'writing',
@@ -678,7 +678,7 @@ class Bearsthemes_Custom_Post_Type {
 
 		add_settings_field(
 			'project_tax_slug',
-			'<label for="project_tax_slug">' . esc_html__( 'Project Category base', 'bearsthemes-addons' ) . '</label>',
+			'<label for="project_tax_slug">' . esc_html__( 'Project Category base', 'alone-addons' ) . '</label>',
 			array( $this, 'project_tax_slug_input' ),
 			'permalink',
 			'optional'
@@ -692,10 +692,10 @@ class Bearsthemes_Custom_Post_Type {
 		// Team CPT
 		add_settings_field(
 			$this->team_option,
-			'<span class="team-options">' . esc_html__( 'Teams', 'bearsthemes-addons' ) . '</span>',
+			'<span class="team-options">' . esc_html__( 'Teams', 'alone-addons' ) . '</span>',
 			array( $this, 'disable_team_field_html' ),
 			'writing',
-			'bearsthemes_cpt_section'
+			'alone_cpt_section'
 		);
 		register_setting(
 			'writing',
@@ -705,7 +705,7 @@ class Bearsthemes_Custom_Post_Type {
 
 		add_settings_field(
 			'team_tax_slug',
-			'<label for="team_tax_slug">' . esc_html__( 'Team Category base', 'bearsthemes-addons' ) . '</label>',
+			'<label for="team_tax_slug">' . esc_html__( 'Team Category base', 'alone-addons' ) . '</label>',
 			array( $this, 'team_tax_slug_input' ),
 			'permalink',
 			'optional'
@@ -726,7 +726,7 @@ class Bearsthemes_Custom_Post_Type {
 		$give_posts_tax_base = isset( $give_posts_tax_permalinks['project_tax_base'] ) ? $give_posts_tax_permalinks['project_tax_base'] : '';
 
 		?>
-		<input name="give_posts_tax_slug" type="text" class="regular-text code" value="<?php echo esc_attr( $give_posts_tax_base ); ?>" placeholder="<?php echo esc_attr_x( 'give_posts-category', 'slug', 'bearsthemes-addons' ) ?>" />
+		<input name="give_posts_tax_slug" type="text" class="regular-text code" value="<?php echo esc_attr( $give_posts_tax_base ); ?>" placeholder="<?php echo esc_attr_x( 'give_posts-category', 'slug', 'alone-addons' ) ?>" />
 		<?php
 
 	}
@@ -739,7 +739,7 @@ class Bearsthemes_Custom_Post_Type {
 		$project_tax_base = isset( $project_tax_permalinks['project_tax_base'] ) ? $project_tax_permalinks['project_tax_base'] : '';
 
 		?>
-		<input name="project_tax_slug" type="text" class="regular-text code" value="<?php echo esc_attr( $project_tax_base ); ?>" placeholder="<?php echo esc_attr_x( 'project-category', 'slug', 'bearsthemes-addons' ) ?>" />
+		<input name="project_tax_slug" type="text" class="regular-text code" value="<?php echo esc_attr( $project_tax_base ); ?>" placeholder="<?php echo esc_attr_x( 'project-category', 'slug', 'alone-addons' ) ?>" />
 		<?php
 
 	}
@@ -752,7 +752,7 @@ class Bearsthemes_Custom_Post_Type {
 		$team_tax_base = isset( $team_tax_permalinks['team_tax_base'] ) ? $team_tax_permalinks['team_tax_base'] : '';
 
 		?>
-		<input name="team_tax_slug" type="text" class="regular-text code" value="<?php echo esc_attr( $team_tax_base ); ?>" placeholder="<?php echo esc_attr_x( 'team-category', 'slug', 'bearsthemes-addons' ) ?>" />
+		<input name="team_tax_slug" type="text" class="regular-text code" value="<?php echo esc_attr( $team_tax_base ); ?>" placeholder="<?php echo esc_attr_x( 'team-category', 'slug', 'alone-addons' ) ?>" />
 		<?php
 
 	}
@@ -829,7 +829,7 @@ class Bearsthemes_Custom_Post_Type {
 	public function writing_section_html() {
 		?>
 		<p>
-			<?php esc_html_e( 'Use these settings to disable custom types of content on your site', 'bearsthemes-addons' ); ?>
+			<?php esc_html_e( 'Use these settings to disable custom types of content on your site', 'alone-addons' ); ?>
 		</p>
 		<?php
 	}
@@ -845,7 +845,7 @@ class Bearsthemes_Custom_Post_Type {
 			<input name="<?php echo esc_attr( $this->give_posts_option ); ?>"
 				   id="<?php echo esc_attr( $this->give_posts_option ); ?>" <?php checked( get_option( $this->give_posts_option ), true ); ?>
 				   type="checkbox" value="1" />
-			<?php esc_html_e( 'Disable Give Post for this site.', 'bearsthemes-addons' ); ?>
+			<?php esc_html_e( 'Disable Give Post for this site.', 'alone-addons' ); ?>
 		</label>
 
 		<?php
@@ -862,7 +862,7 @@ class Bearsthemes_Custom_Post_Type {
 			<input name="<?php echo esc_attr( $this->project_option ); ?>"
 				   id="<?php echo esc_attr( $this->project_option ); ?>" <?php checked( get_option( $this->project_option ), true ); ?>
 				   type="checkbox" value="1" />
-			<?php esc_html_e( 'Disable Project for this site.', 'bearsthemes-addons' ); ?>
+			<?php esc_html_e( 'Disable Project for this site.', 'alone-addons' ); ?>
 		</label>
 
 		<?php
@@ -879,7 +879,7 @@ class Bearsthemes_Custom_Post_Type {
 			<input name="<?php echo esc_attr( $this->team_option ); ?>"
 				   id="<?php echo esc_attr( $this->team_option ); ?>" <?php checked( get_option( $this->team_option ), true ); ?>
 				   type="checkbox" value="1" />
-			<?php esc_html_e( 'Disable Team for this site.', 'bearsthemes-addons' ); ?>
+			<?php esc_html_e( 'Disable Team for this site.', 'alone-addons' ); ?>
 		</label>
 
 		<?php
@@ -887,4 +887,4 @@ class Bearsthemes_Custom_Post_Type {
 
 }
 
-new Bearsthemes_Custom_Post_Type;
+new Alone_Custom_Post_Type;

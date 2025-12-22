@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Donors;
+namespace AloneAddons\Widgets\Donors;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -20,7 +20,7 @@ class Be_Donors extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Donors', 'bearsthemes-addons' );
+		return __( 'Be Donors', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -28,7 +28,7 @@ class Be_Donors extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_skins() {
@@ -41,7 +41,7 @@ class Be_Donors extends Widget_Base {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
@@ -49,7 +49,7 @@ class Be_Donors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_image', [
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -59,16 +59,16 @@ class Be_Donors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_title', [
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'This is donor name' , 'bearsthemes-addons' ),
+				'default' => __( 'This is donor name' , 'alone-addons' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
 			'list_price', [
-				'label' => __( 'Price', 'bearsthemes-addons' ),
+				'label' => __( 'Price', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '$1,200',
 				'label_block' => true,
@@ -77,7 +77,7 @@ class Be_Donors extends Widget_Base {
 
 		$repeater->add_control(
 			'list_url', [
-				'label' => __( 'Custom Link', 'bearsthemes-addons' ),
+				'label' => __( 'Custom Link', 'alone-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '#',
 			]
@@ -86,43 +86,43 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'List of Donors', 'bearsthemes-addons' ),
+				'label' => __( 'List of Donors', 'alone-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'This is donor name #1', 'bearsthemes-addons' ),
+						'list_title' => __( 'This is donor name #1', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'This is donor name #2', 'bearsthemes-addons' ),
+						'list_title' => __( 'This is donor name #2', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'This is donor name #3', 'bearsthemes-addons' ),
+						'list_title' => __( 'This is donor name #3', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'This is donor name #4', 'bearsthemes-addons' ),
+						'list_title' => __( 'This is donor name #4', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'This is donor name #5', 'bearsthemes-addons' ),
+						'list_title' => __( 'This is donor name #5', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
 					[
 						'list_image' => Utils::get_placeholder_image_src(),
-						'list_title' => __( 'This is donor name #6', 'bearsthemes-addons' ),
+						'list_title' => __( 'This is donor name #6', 'alone-addons' ),
 						'list_price' => '$1,200',
 						'list_url' => '#',
 					],
@@ -137,7 +137,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -160,10 +160,10 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -187,7 +187,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -212,10 +212,10 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -225,10 +225,10 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'show_price',
 			[
-				'label' => __( 'Price', 'bearsthemes-addons' ),
+				'label' => __( 'Price', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -243,7 +243,7 @@ class Be_Donors extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -251,7 +251,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Columns Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 30,
@@ -271,7 +271,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -291,19 +291,19 @@ class Be_Donors extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -320,7 +320,7 @@ class Be_Donors extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -331,7 +331,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -349,7 +349,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -367,7 +367,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -385,7 +385,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -404,7 +404,7 @@ class Be_Donors extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -419,7 +419,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor' => 'background-color: {{VALUE}}',
@@ -430,7 +430,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor' => 'border-color: {{VALUE}}',
@@ -442,7 +442,7 @@ class Be_Donors extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -457,7 +457,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor:hover' => 'background-color: {{VALUE}}',
@@ -468,7 +468,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-donor:hover' => 'border-color: {{VALUE}}',
@@ -487,7 +487,7 @@ class Be_Donors extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -499,7 +499,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -512,7 +512,7 @@ class Be_Donors extends Widget_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -528,7 +528,7 @@ class Be_Donors extends Widget_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -552,7 +552,7 @@ class Be_Donors extends Widget_Base {
     $this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -563,7 +563,7 @@ class Be_Donors extends Widget_Base {
     $this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_title!' => '',
@@ -574,7 +574,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -589,7 +589,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -617,7 +617,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'heading_price_style',
 			[
-				'label' => __( 'Price', 'bearsthemes-addons' ),
+				'label' => __( 'Price', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_price!' => '',
@@ -628,7 +628,7 @@ class Be_Donors extends Widget_Base {
 		$this->add_control(
 			'price_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -735,7 +735,7 @@ class Be_Donors extends Widget_Base {
 						}
 
 						if( !empty( $item['list_price'] ) && '' !== $settings['show_price'] ) {
-							echo '<div class="elementor-donor__price"><span>' . esc_html__( 'Donated: ', 'bearsthemes-addons' ) . '</span> ' . $item['list_price'] . '</div>';
+							echo '<div class="elementor-donor__price"><span>' . esc_html__( 'Donated: ', 'alone-addons' ) . '</span> ' . $item['list_price'] . '</div>';
 						}
 					?>
 				</div>

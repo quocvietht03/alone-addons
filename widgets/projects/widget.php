@@ -1,5 +1,5 @@
 <?php
-namespace BearsthemesAddons\Widgets\Projects;
+namespace AloneAddons\Widgets\Projects;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -18,7 +18,7 @@ class Be_Projects extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Be Projects', 'bearsthemes-addons' );
+		return __( 'Be Projects', 'alone-addons' );
 	}
 
 	public function get_icon() {
@@ -26,11 +26,11 @@ class Be_Projects extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'bearsthemes-addons' ];
+		return [ 'alone-addons' ];
 	}
 
 	protected function register_skins() {
@@ -79,14 +79,14 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'bearsthemes-addons' ),
+				'label' => __( 'Columns', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '3',
 				'tablet_default' => '2',
@@ -109,7 +109,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __( 'Posts Per Page', 'bearsthemes-addons' ),
+				'label' => __( 'Posts Per Page', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 				'condition' => [
@@ -121,10 +121,10 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'bearsthemes-addons' ),
+				'label' => __( 'Thumbnail', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'separator' => 'before',
 				'condition' => [
@@ -149,7 +149,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'bearsthemes-addons' ),
+				'label' => __( 'Image Ratio', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.66,
@@ -174,10 +174,10 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -188,10 +188,10 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'show_category',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'bearsthemes-addons' ),
-				'label_off' => __( 'Hide', 'bearsthemes-addons' ),
+				'label_on' => __( 'Show', 'alone-addons' ),
+				'label_off' => __( 'Hide', 'alone-addons' ),
 				'default' => 'yes',
 				'condition' => [
 					'_skin' => '',
@@ -206,7 +206,7 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_section(
 			'section_query',
 			[
-				'label' => __( 'Query', 'bearsthemes-addons' ),
+				'label' => __( 'Query', 'alone-addons' ),
 			]
 		);
 
@@ -215,14 +215,14 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_query_include',
 			[
-				'label' => __( 'Include', 'bearsthemes-addons' ),
+				'label' => __( 'Include', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'ids',
 			[
-				'label' => __( 'Ids', 'bearsthemes-addons' ),
+				'label' => __( 'Ids', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_ids(),
 				'label_block' => true,
@@ -233,7 +233,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'category',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_taxonomies(),
 				'label_block' => true,
@@ -247,14 +247,14 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_query_exnlude',
 			[
-				'label' => __( 'Exclude', 'bearsthemes-addons' ),
+				'label' => __( 'Exclude', 'alone-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'ids_exclude',
 			[
-				'label' => __( 'Ids', 'bearsthemes-addons' ),
+				'label' => __( 'Ids', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_ids(),
 				'label_block' => true,
@@ -265,7 +265,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'category_exclude',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $this->get_supported_taxonomies(),
 				'label_block' => true,
@@ -276,10 +276,10 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'offset',
 			[
-				'label' => __( 'Offset', 'bearsthemes-addons' ),
+				'label' => __( 'Offset', 'alone-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 0,
-				'description' => __( 'Use this setting to skip over posts (e.g. \'2\' to skip over 2 posts).', 'bearsthemes-addons' ),
+				'description' => __( 'Use this setting to skip over posts (e.g. \'2\' to skip over 2 posts).', 'alone-addons' ),
 			]
 		);
 
@@ -290,14 +290,14 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'orderby',
 			[
-				'label' => __( 'Order By', 'bearsthemes-addons' ),
+				'label' => __( 'Order By', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'post_date',
 				'options' => [
-					'post_date' => __( 'Date', 'bearsthemes-addons' ),
-					'post_title' => __( 'Title', 'bearsthemes-addons' ),
-					'menu_order' => __( 'Menu Order', 'bearsthemes-addons' ),
-					'rand' => __( 'Random', 'bearsthemes-addons' ),
+					'post_date' => __( 'Date', 'alone-addons' ),
+					'post_title' => __( 'Title', 'alone-addons' ),
+					'menu_order' => __( 'Menu Order', 'alone-addons' ),
+					'rand' => __( 'Random', 'alone-addons' ),
 				],
 			]
 		);
@@ -305,12 +305,12 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'order',
 			[
-				'label' => __( 'Order', 'bearsthemes-addons' ),
+				'label' => __( 'Order', 'alone-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'desc',
 				'options' => [
-					'asc' => __( 'ASC', 'bearsthemes-addons' ),
-					'desc' => __( 'DESC', 'bearsthemes-addons' ),
+					'asc' => __( 'ASC', 'alone-addons' ),
+					'desc' => __( 'DESC', 'alone-addons' ),
 				],
 			]
 		);
@@ -323,7 +323,7 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_layout',
 			[
-				'label' => __( 'Layout', 'bearsthemes-addons' ),
+				'label' => __( 'Layout', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -331,7 +331,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Columns Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 30,
@@ -354,7 +354,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'bearsthemes-addons' ),
+				'label' => __( 'Rows Gap', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -377,19 +377,19 @@ class Be_Projects extends Widget_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'bearsthemes-addons' ),
+				'label' => __( 'Alignment', 'alone-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'bearsthemes-addons' ),
+						'title' => __( 'Left', 'alone-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'bearsthemes-addons' ),
+						'title' => __( 'Center', 'alone-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'bearsthemes-addons' ),
+						'title' => __( 'Right', 'alone-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -409,7 +409,7 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'bearsthemes-addons' ),
+				'label' => __( 'Box', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -420,7 +420,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'bearsthemes-addons' ),
+				'label' => __( 'Border Width', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -438,7 +438,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'bearsthemes-addons' ),
+				'label' => __( 'Border Radius', 'alone-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -456,7 +456,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -474,7 +474,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'bearsthemes-addons' ),
+				'label' => __( 'Content Padding', 'alone-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -493,7 +493,7 @@ class Be_Projects extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -508,7 +508,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-project' => 'background-color: {{VALUE}}',
@@ -519,7 +519,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-project' => 'border-color: {{VALUE}}',
@@ -531,7 +531,7 @@ class Be_Projects extends Widget_Base {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -546,7 +546,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'bearsthemes-addons' ),
+				'label' => __( 'Background Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-project:hover' => 'background-color: {{VALUE}}',
@@ -557,7 +557,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'bearsthemes-addons' ),
+				'label' => __( 'Border Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-project:hover' => 'border-color: {{VALUE}}',
@@ -576,7 +576,7 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'bearsthemes-addons' ),
+				'label' => __( 'Image', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -589,7 +589,7 @@ class Be_Projects extends Widget_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'bearsthemes-addons' ),
+				'label' => __( 'Normal', 'alone-addons' ),
 			]
 		);
 
@@ -605,7 +605,7 @@ class Be_Projects extends Widget_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Hover', 'alone-addons' ),
 			]
 		);
 
@@ -628,7 +628,7 @@ class Be_Projects extends Widget_Base {
 		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'bearsthemes-addons' ),
+				'label' => __( 'Content', 'alone-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'_skin' => '',
@@ -639,7 +639,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'bearsthemes-addons' ),
+				'label' => __( 'Title', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_title!' => '',
@@ -650,7 +650,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -677,7 +677,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'heading_category_style',
 			[
-				'label' => __( 'Category', 'bearsthemes-addons' ),
+				'label' => __( 'Category', 'alone-addons' ),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'show_category!' => '',
@@ -688,7 +688,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'category_color',
 			[
-				'label' => __( 'Color', 'bearsthemes-addons' ),
+				'label' => __( 'Color', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -703,7 +703,7 @@ class Be_Projects extends Widget_Base {
 		$this->add_control(
 			'category_color_hover',
 			[
-				'label' => __( 'Color Hover', 'bearsthemes-addons' ),
+				'label' => __( 'Color Hover', 'alone-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -850,37 +850,37 @@ class Be_Projects extends Widget_Base {
 		$socials = '';
 		if ( ! empty( $facebook_url ) ) {
 			$socials .= '<a class="social-item social-facebook" href="' . esc_url( $facebook_url ) . '">' .
-											bearsthemes_addons_get_social_icon_svg( 'facebook', 16 ) .
+											alone_addons_get_social_icon_svg( 'facebook', 16 ) .
 										'</a>';
 		}
 
 		if ( ! empty( $twitter_url ) ) {
 			$socials .= '<a class="social-item social-twitter" href="' . esc_url( $twitter_url ) . '">' .
-											bearsthemes_addons_get_social_icon_svg( 'twitter', 16 ) .
+											alone_addons_get_social_icon_svg( 'twitter', 16 ) .
 										'</a>';
 		}
 
 		if ( ! empty( $pinterest_url ) ) {
 			$socials .= '<a class="social-item social-pinterest" href="' . esc_url( $pinterest_url ) . '">' .
-											bearsthemes_addons_get_social_icon_svg( 'pinterest', 16 ) .
+											alone_addons_get_social_icon_svg( 'pinterest', 16 ) .
 										'</a>';
 		}
 
 		if ( ! empty( $linkedin_url ) ) {
 			$socials .= '<a class="social-item social-linkedin" href="' . esc_url( $linkedin_url ) . '">' .
-											bearsthemes_addons_get_social_icon_svg( 'linkedin', 16 ) .
+											alone_addons_get_social_icon_svg( 'linkedin', 16 ) .
 										'</a>';
 		}
 
 		if ( ! empty( $google_url ) ) {
 			$socials .= '<a class="social-item social-google" href="' . esc_url( $google_url ) . '">' .
-											bearsthemes_addons_get_social_icon_svg( 'google', 16 ) .
+											alone_addons_get_social_icon_svg( 'google', 16 ) .
 										'</a>';
 		}
 
 		if ( ! empty( $mail_url ) ) {
 			$socials .= '<a class="social-item social-mail" href="' . esc_url( $mail_url ) . '">' .
-											bearsthemes_addons_get_social_icon_svg( 'mail', 16 ) .
+											alone_addons_get_social_icon_svg( 'mail', 16 ) .
 										'</a>';
 		}
 
