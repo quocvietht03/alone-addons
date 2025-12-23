@@ -1,10 +1,10 @@
 .elementor-give-forms {
   &--default {
     .elementor-give-form {
-      background: #F9F7F5;
+      background: #f9f7f5;
       overflow: hidden;
       border-radius: 2px;
-    	.give-card {
+      .give-card {
         &__media {
           position: relative;
           overflow: hidden;
@@ -18,9 +18,9 @@
             height: 100%;
             object-fit: cover;
           }
-      	}
+        }
         &__body {
-      		padding: 24px 32px;
+          padding: 24px 32px;
           .give-goal-progress {
             margin-bottom: 24px;
             .raised {
@@ -31,7 +31,7 @@
               color: $main-color;
             }
           }
-      	}
+        }
         &__title {
           font-weight: 500;
           font-size: 20px;
@@ -52,7 +52,7 @@
           font-size: 14px;
           font-weight: 500;
           line-height: 24px;
-          color: #FFFFFF;
+          color: #ffffff;
           background: $main-color;
           padding: 12px 24px;
           border-radius: 2px;
@@ -61,20 +61,20 @@
           }
         }
       }
-    	@media( max-width: $break-xs - 0.02 ) {
-    		.give-card {
+      @media (max-width: $break-xs - 0.02) {
+        .give-card {
           &__body {
-      			padding: 24px 16px;
-      			.give-goal-progress {
-      				margin-bottom: 16px;
-      				.raised {
-      					font-size: 14px;
-      				}
-      				.income {
-      					font-size: 24px;
-      				}
-      			}
-      		}
+            padding: 24px 16px;
+            .give-goal-progress {
+              margin-bottom: 16px;
+              .raised {
+                font-size: 14px;
+              }
+              .income {
+                font-size: 24px;
+              }
+            }
+          }
           &__title {
             font-size: 18px;
             line-height: 28px;
@@ -89,7 +89,7 @@
             padding: 8px 16px;
           }
         }
-    	}
+      }
     }
   }
 
@@ -119,10 +119,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
-      	}
+        }
         &__overlay {
           position: absolute;
           top: 0;
@@ -131,7 +131,7 @@
           height: 100%;
           background: rgba(0, 40, 102, 0.5);
         }
-        &__category{
+        &__category {
           position: absolute;
           top: 30px;
           left: 0;
@@ -140,14 +140,14 @@
           line-height: 1;
           text-transform: uppercase;
           color: #002866;
-          background: #FFEE00;
+          background: #ffee00;
           padding: 10px 20px;
           z-index: 3;
           a {
             color: inherit;
           }
         }
-        &__body{
+        &__body {
           position: absolute;
           bottom: 0;
           left: 0;
@@ -155,11 +155,11 @@
           padding: 36px;
           z-index: 3;
         }
-        &__title{
+        &__title {
           font-size: 24px;
           font-weight: 500;
           line-height: 1.25;
-          color: #FFFFFF;
+          color: #ffffff;
           margin-bottom: 0;
           a {
             color: inherit;
@@ -171,13 +171,14 @@
         font-weight: 400;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 24px 0 0;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             flex-direction: column;
             text-align: left;
@@ -185,17 +186,18 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 600;
             line-height: 1.25;
-            color: #FFEE00;
+            color: #ffee00;
             margin-bottom: 4px;
           }
         }
       }
 
-      @media(min-width: $break-tl) and (max-width: $break-lg - 0.02) {
+      @media (min-width: $break-tl) and (max-width: $break-lg - 0.02) {
         .give-card {
           &__title {
             font-size: 20px;
@@ -208,14 +210,15 @@
           margin-top: 16px;
           .raised {
             margin-bottom: 12px;
-            .income, .goal-text {
+            .income,
+            .goal-text {
               font-size: 22px;
             }
           }
         }
       }
 
-      @media(min-width: $break-sm) and (max-width: $break-md - 0.02) {
+      @media (min-width: $break-sm) and (max-width: $break-md - 0.02) {
         .give-card {
           &__title {
             font-size: 22px;
@@ -226,7 +229,7 @@
         }
       }
 
-      @media(max-width: $break-xs - 0.02) {
+      @media (max-width: $break-xs - 0.02) {
         .give-card {
           &__title {
             font-size: 20px;
@@ -239,20 +242,19 @@
           margin-top: 16px;
           .raised {
             margin-bottom: 12px;
-            .income, .goal-text {
+            .income,
+            .goal-text {
               font-size: 22px;
             }
           }
         }
       }
-
     }
-
   }
 
   &--skin-grid-coropuna {
     .elementor-give-form {
-      background: #F5F5F5;
+      background: #f5f5f5;
       overflow: hidden;
       &:hover {
         .give-card {
@@ -282,8 +284,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__overlay {
@@ -293,8 +295,8 @@
           width: 100%;
           height: 100%;
           z-index: 1;
-          background: rgba(0,0,0,0.7);
-          background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+          background: rgba(0, 0, 0, 0.7);
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
         }
         &__body {
           position: relative;
@@ -309,7 +311,7 @@
           svg {
             display: inline-block;
             vertical-align: middle;
-            fill: #BFCC80;
+            fill: #bfcc80;
             margin: -3px 4px 0 1px;
           }
           a {
@@ -320,7 +322,7 @@
           font-weight: 500;
           font-size: 22px;
           line-height: 125%;
-          color: #4E3629;
+          color: #4e3629;
           margin: 0;
           a {
             color: inherit;
@@ -338,23 +340,23 @@
         font-size: 14px;
         line-height: 20px;
         text-transform: uppercase;
-        color: #4E3629;
-        background: #BFCC80;
+        color: #4e3629;
+        background: #bfcc80;
         margin-top: -22px;
         padding: 12px 20px;
         &:hover {
-          color: #FFFFFF;
-          background: #4E3629;
+          color: #ffffff;
+          background: #4e3629;
         }
       }
       .givewp-donation-form-modal__open {
         font-weight: 500 !important;
         padding: 12px 20px !important;
-        color: #4E3629 !important;
-        background: #BFCC80 !important;
+        color: #4e3629 !important;
+        background: #bfcc80 !important;
         &:hover {
-          color: #FFFFFF !important;
-          background: #4E3629 !important;
+          color: #ffffff !important;
+          background: #4e3629 !important;
         }
       }
       .give-goal-progress {
@@ -366,29 +368,31 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
-        color: #BFCC80;
+        color: #bfcc80;
         margin-bottom: 0;
         padding: 30px 40px;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-bottom: 12px;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             flex-direction: row-reverse;
             align-items: baseline;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 20px;
             font-weight: 500;
             line-height: 1.25;
-            color: #BFCC80;
+            color: #bfcc80;
             margin-left: 4px;
           }
         }
       }
 
-      @media( max-width: $break-md - 0.02 ) {
+      @media (max-width: $break-md - 0.02) {
         &.has-btn-donation {
           .give-card {
             &__body {
@@ -409,10 +413,9 @@
         .give-goal-progress {
           padding: 30px;
         }
-
       }
 
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         &.has-btn-donation {
           .give-card {
             &__body {
@@ -429,15 +432,14 @@
           font-size: 12px;
           padding: 24px 16px;
           .raised {
-            .income, .goal-text {
+            .income,
+            .goal-text {
               font-size: 16px;
             }
           }
         }
       }
-
     }
-
   }
 
   &--skin-list-andrus {
@@ -459,11 +461,11 @@
     }
     .elementor-give-form-feature {
       position: relative;
-      background: #FFFFFF;
+      background: #ffffff;
       overflow: hidden;
       border-radius: 5px;
-      -webkit-box-shadow: 0 5px 35px rgba(0,0,0,.1);
-      box-shadow: 0 5px 35px rgba(0,0,0,.1);
+      -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
       .give-card {
         &__media {
           position: relative;
@@ -478,8 +480,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all .3s;
-            transition: all .3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
           }
         }
         &__overlay {
@@ -495,7 +497,7 @@
           bottom: 60px;
           left: 0;
           max-width: 370px;
-          background: rgba(0,0,0,.87);
+          background: rgba(0, 0, 0, 0.87);
           padding: 30px 30px 50px;
           z-index: 3;
           border-top-right-radius: 5px;
@@ -537,7 +539,7 @@
         padding: 13px 20px;
         border-radius: 3px;
         &:hover {
-          background: #F1CD08;
+          background: #f1cd08;
         }
       }
       .givewp-donation-form-modal__open {
@@ -546,7 +548,7 @@
         color: #333333 !important;
         background: #fed700 !important;
         &:hover {
-          background: #F1CD08 !important;
+          background: #f1cd08 !important;
         }
       }
       .give-goal-progress {
@@ -558,7 +560,8 @@
         .raised {
           margin-bottom: 0;
         }
-        .income, .goal-text {
+        .income,
+        .goal-text {
           font-size: 24px;
           font-weight: 700;
           line-height: 1.25;
@@ -569,11 +572,11 @@
     .elementor-give-form {
       display: flex;
       align-items: center;
-      background: #FFFFFF;
+      background: #ffffff;
       overflow: hidden;
       border-radius: 5px;
-      -webkit-box-shadow: 0 5px 35px rgba(0,0,0,.1);
-      box-shadow: 0 5px 35px rgba(0,0,0,.1);
+      -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
       .give-card {
         &__media {
           position: relative;
@@ -592,8 +595,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all .3s;
-            transition: all .3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
           }
         }
         &__overlay {
@@ -639,7 +642,7 @@
         height: 40px;
         font-size: 0;
         background-color: #fed700;
-        background-image: url('../images/heart-dark.svg');
+        background-image: url("../images/heart-dark.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 16px;
@@ -649,7 +652,7 @@
         z-index: 3;
         border-radius: 5px;
         &:hover {
-          background-color: #F1CD08;
+          background-color: #f1cd08;
         }
       }
       .givewp-donation-form-modal__open {
@@ -664,23 +667,23 @@
         .raised {
           margin-bottom: 0;
         }
-        .income, .goal-text {
+        .income,
+        .goal-text {
           font-size: 18px;
           font-weight: 700;
           line-height: 1.25;
           color: #fed700;
         }
       }
-
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       .elementor-post-wrap {
         width: 100%;
         float: none;
       }
     }
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       .elementor-give-form-feature .give-card__body {
         max-width: 85%;
         padding: 24px 16px 40px;
@@ -699,7 +702,6 @@
         }
       }
     }
-
   }
 
   &--skin-grid-changtse {
@@ -729,10 +731,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
-      	}
+        }
         &__overlay {
           position: absolute;
           top: 0;
@@ -741,7 +743,7 @@
           height: 100%;
           background: rgba(0, 40, 102, 0.5);
         }
-        &__body{
+        &__body {
           position: relative;
           bottom: 0;
           left: 0;
@@ -764,41 +766,41 @@
             color: inherit;
           }
         }
-        &__date{
+        &__date {
           font-size: 14px;
           font-weight: 400;
           line-height: 1.5;
           color: #e05d41;
           margin-bottom: 15px;
-          svg{
+          svg {
             margin-right: 4px;
             fill: #e05d41;
           }
-          a{
+          a {
             color: inherit;
           }
         }
-        &__set-goal{
+        &__set-goal {
           padding: 0;
           list-style-type: none;
           margin-top: 0px;
           margin-bottom: 0;
           position: relative;
           font-size: 14px;
-          .bt-give-goal{
+          .bt-give-goal {
             font-size: 32px;
             font-weight: 600;
             color: #333;
             line-height: 1;
-            sub{
+            sub {
               bottom: 0;
             }
             span {
-                display: block;
-                font-size: 16px;
-                font-weight: 400;
-                margin-top: 0px;
-                color: #666;
+              display: block;
+              font-size: 16px;
+              font-weight: 400;
+              margin-top: 0px;
+              color: #666;
             }
           }
         }
@@ -812,7 +814,7 @@
         height: 40px;
         font-size: 0;
         background-color: #e05d41;
-        background-image: url('../images/heart-light.svg');
+        background-image: url("../images/heart-light.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 16px;
@@ -822,18 +824,18 @@
         z-index: 3;
         border-radius: 5px;
         &:hover {
-          background-color: #667A62;
+          background-color: #667a62;
         }
       }
       .givewp-donation-form-modal__open {
         padding: 0 !important;
         background-color: #e05d41 !important;
         &:hover {
-          background-color: #667A62 !important;
+          background-color: #667a62 !important;
         }
       }
 
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         .give-card {
           &__title {
             font-size: 24px;
@@ -847,9 +849,7 @@
           margin-top: 16px;
         }
       }
-
     }
-
   }
 
   &--skin-list-saltoro {
@@ -870,7 +870,7 @@
             right: 0;
             width: 353px;
             height: 371px;
-            background-image: url('../images/bg-pattern.jpg');
+            background-image: url("../images/bg-pattern.jpg");
             z-index: -1;
           }
         }
@@ -888,7 +888,7 @@
             height: 100%;
             object-fit: cover;
           }
-      	}
+        }
         &__overlay {
           position: absolute;
           top: 0;
@@ -896,7 +896,7 @@
           width: 100%;
           height: 100%;
         }
-        &__category{
+        &__category {
           position: absolute;
           top: 30px;
           left: 30px;
@@ -921,11 +921,11 @@
             color: inherit;
           }
         }
-        &__body{
+        &__body {
           width: 45%;
           padding-left: 30px;
         }
-        &__title{
+        &__title {
           font-size: 36px;
           font-weight: 600;
           line-height: 1.25;
@@ -976,7 +976,8 @@
         margin: 0;
         .raised {
           margin-bottom: 40px;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: inline-flex;
             flex-direction: column-reverse;
           }
@@ -995,7 +996,8 @@
               margin-top: -20px;
             }
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 28px;
             font-weight: 700;
             line-height: 1.25;
@@ -1005,7 +1007,7 @@
         }
       }
 
-      @media( max-width: $break-md - 0.02 ) {
+      @media (max-width: $break-md - 0.02) {
         flex-direction: column;
         text-align: center;
         background: #fff;
@@ -1016,8 +1018,8 @@
         border-radius: 4px;
         .give-card {
           &__header {
-              width: 100%;
-              padding: 0;
+            width: 100%;
+            padding: 0;
           }
           &__body {
             width: 100%;
@@ -1030,7 +1032,7 @@
         }
       }
 
-      @media( max-width: $break-sm - 0.02 ) {
+      @media (max-width: $break-sm - 0.02) {
         flex-direction: column;
         .give-card {
           &__title {
@@ -1047,7 +1049,7 @@
         }
       }
 
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         margin: 0;
         &__body {
           padding: 20px;
@@ -1058,16 +1060,15 @@
         }
       }
     }
-
   }
 
   &--skin-grid-hardeol {
     .elementor-give-form {
       position: relative;
-      background: #F5F5F5;
+      background: #f5f5f5;
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &.has-thumbnail {
         .give-card {
           &__body {
@@ -1085,8 +1086,8 @@
           padding: 0 30px;
           visibility: hidden;
           opacity: 0;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
 
         &:hover {
@@ -1127,7 +1128,7 @@
           line-height: 20px;
           letter-spacing: 1px;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           background: #638c1c;
           padding: 8px 20px;
           z-index: 3;
@@ -1137,11 +1138,11 @@
         }
         &__body {
           position: relative;
-          background: #F5F5F5;
+          background: #f5f5f5;
           padding: 66px 30px 30px;
           border-top: 8px solid #638c1c;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
         &__title {
           font-weight: 700;
@@ -1172,20 +1173,20 @@
         line-height: 20px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         background: #638c1c;
         margin: 0;
         padding: 12px 30px;
         &:hover {
-          background: #4C691A;
+          background: #4c691a;
         }
       }
       .givewp-donation-form-modal__open {
         padding: 12px 30px !important;
-        color: #FFFFFF !important;
+        color: #ffffff !important;
         background: #638c1c !important;
         &:hover {
-          background: #4C691A !important;
+          background: #4c691a !important;
         }
       }
       .give-goal-progress {
@@ -1199,7 +1200,8 @@
           .raised-goal {
             display: none;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 30px;
             font-weight: 700;
             line-height: 1.25;
@@ -1209,7 +1211,7 @@
         }
       }
 
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         &.has-thumbnail {
           .give-card {
             &__body {
@@ -1218,16 +1220,14 @@
           }
         }
       }
-
     }
-
   }
 
   &--skin-grid-nevado {
     .elementor-give-form {
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -1252,8 +1252,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__category {
@@ -1274,7 +1274,7 @@
           line-height: 1.25;
           color: #002f6c;
           margin-bottom: 20px;
-          @media(max-width: $break-sm - 0.02) {
+          @media (max-width: $break-sm - 0.02) {
             font-size: 20px;
           }
           a {
@@ -1314,7 +1314,8 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 12px;
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 600;
             line-height: 1.25;
@@ -1325,19 +1326,17 @@
           border-radius: 10px;
         }
       }
-
     }
-
   }
   &--skin-grid-taboche {
     .elementor-give-form {
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       margin-bottom: 15px;
-      -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.31);
-      -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.31);
-      box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.31);
+      -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.31);
+      -moz-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.31);
+      box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.31);
       &:hover {
         .give-card {
           &__media img {
@@ -1359,11 +1358,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
-        &__body{
+        &__body {
           padding: 24px;
           background: #fff;
         }
@@ -1392,7 +1391,7 @@
           }
         }
         @media (max-width: $break-xs - 0.02) {
-          &__body{
+          &__body {
             padding: 20px;
           }
           &__title {
@@ -1400,9 +1399,9 @@
           }
         }
       }
-      .give-card__progress-bar{
+      .give-card__progress-bar {
         position: relative;
-        .give-card__completed{
+        .give-card__completed {
           position: absolute;
           top: 16px;
           font-size: 14px;
@@ -1418,7 +1417,7 @@
         margin-bottom: 0;
         display: flex;
         flex-direction: column-reverse;
-        svg{
+        svg {
           height: 6px !important;
           border-radius: 2px;
         }
@@ -1428,14 +1427,15 @@
           margin-top: 50px;
           border-top: #ebebeb solid 1px;
           margin-bottom: 0;
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 25px;
             line-height: 1;
             letter-spacing: 0;
             color: #303030;
             display: block;
           }
-          .raised-income{
+          .raised-income {
             width: 45%;
             float: left;
             text-align: center;
@@ -1445,7 +1445,7 @@
             display: flex;
             flex-direction: column-reverse;
           }
-          .raised-goal{
+          .raised-goal {
             width: 55%;
             float: left;
             color: #777;
@@ -1457,20 +1457,18 @@
             flex-direction: column-reverse;
           }
         }
-        .give-progress-bar{
+        .give-progress-bar {
           height: 6px !important;
         }
       }
-
     }
-
   }
 
   &--skin-grid-galloway {
     .elementor-give-form {
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -1492,7 +1490,6 @@
               z-index: -1;
               border: solid 10px transparent;
               border-right-color: #333;
-
             }
           }
         }
@@ -1504,7 +1501,7 @@
           font-size: 13px;
           font-weight: 400;
           line-height: 20px;
-          color: #FFFFFF;
+          color: #ffffff;
           background: #333333;
           margin: 0 0 20px;
           padding: 4px 8px;
@@ -1524,8 +1521,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__title {
@@ -1543,7 +1540,7 @@
           font-size: 14px;
           font-weight: 400;
           line-height: 1.5;
-          color: #7A7A7A;
+          color: #7a7a7a;
         }
         &__footer {
           display: flex;
@@ -1568,11 +1565,12 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 1.25;
-        color: #7A7A7A;
+        color: #7a7a7a;
         margin-bottom: 20px;
         .raised {
           margin-bottom: 8px;
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 22px;
             font-weight: 7600;
             line-height: 1.25;
@@ -1580,9 +1578,7 @@
           }
         }
       }
-
     }
-
   }
 
   &--skin-grid-havsula {
@@ -1590,8 +1586,8 @@
       position: relative;
       overflow: hidden;
       text-align: center;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -1607,12 +1603,13 @@
           left: 15px;
           width: 100%;
           text-align: left;
-          color: #FFFFFF;
+          color: #ffffff;
           margin-bottom: 0;
           z-index: 3;
           .raised {
-            .income, .goal-text {
-              color: #FFFFFF;
+            .income,
+            .goal-text {
+              color: #ffffff;
             }
           }
           .progressbar-text {
@@ -1629,8 +1626,8 @@
           height: 100%;
           background: rgba(#000000, 0.43);
           z-index: 1;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
         &__media {
           position: relative;
@@ -1646,8 +1643,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__donors-count {
@@ -1657,7 +1654,7 @@
           line-height: 20px;
           letter-spacing: 1px;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           background: #ec2127;
           padding: 4px 8px;
           border-radius: 2px;
@@ -1711,7 +1708,8 @@
           width: calc(100% - 50px);
           margin-bottom: 0;
           padding-left: 10px;
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 22px;
             font-weight: 500;
             line-height: 1.25;
@@ -1722,9 +1720,7 @@
           display: none;
         }
       }
-
     }
-
   }
 
   &--skin-cobble-paradis {
@@ -1745,7 +1741,7 @@
           width: 55%;
         }
       }
-      @media( max-width: $break-sm - 0.02 ) {
+      @media (max-width: $break-sm - 0.02) {
         flex-direction: column !important;
         .elementor-col {
           width: 100% !important;
@@ -1756,22 +1752,22 @@
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &.has-thumbnail {
         .give-card {
           &__body {
             position: relative;
             max-width: 350px;
-            background: #FFFFFF;
+            background: #ffffff;
             margin: -50px 0 0 30px;
             padding: 25px 30px 10px;
             z-index: 5;
-            @media( max-width: $break-md - 0.02 ) {
+            @media (max-width: $break-md - 0.02) {
               margin: -40px 0 0 30px;
               padding: 20px 15px 10px;
             }
-            @media( max-width: $break-xs - 0.02 ) {
+            @media (max-width: $break-xs - 0.02) {
               margin: -50px 0 0 15px;
             }
           }
@@ -1787,8 +1783,8 @@
           background: rgba(#000000, 0.43);
           opacity: 0;
           z-index: 1;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
         &__media {
           position: relative;
@@ -1810,7 +1806,7 @@
           line-height: 1.25;
           color: #367978;
           margin-bottom: 24px;
-          @media( max-width: $break-xs - 0.02 ) {
+          @media (max-width: $break-xs - 0.02) {
             font-size: 20px;
           }
           a {
@@ -1824,7 +1820,7 @@
           width: 60px;
           height: 60px;
           background: #ef2853;
-          color: #FFFFFF;
+          color: #ffffff;
           text-align: center;
           line-height: 60px;
           font-size: 22px;
@@ -1832,10 +1828,10 @@
           margin: -30px 0 0 -30px;
           opacity: 0;
           z-index: 3;
-          -webkit-transition: .3s ease;
-          transition: .3s ease;
-          transform: scale(.3);
-          -webkit-transform: scale(.3);
+          -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+          transform: scale(0.3);
+          -webkit-transform: scale(0.3);
           svg {
             fill: currentColor;
           }
@@ -1843,7 +1839,6 @@
             background: #367978;
           }
         }
-
       }
       .give-goal-progress {
         display: flex;
@@ -1855,7 +1850,8 @@
         margin-bottom: 0;
         .raised {
           margin: 12px 0 0 0;
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 22px;
             font-weight: 600;
             line-height: 1.25;
@@ -1880,44 +1876,54 @@
 
   &--skin-cobble-castor {
     grid-template-areas:
-    'item1 item1 item2 item3'
-    'item1 item1 item4 item5';
-    @media( max-width: $break-md - 0.02 ) {
+      "item1 item1 item2 item3"
+      "item1 item1 item4 item5";
+    @media (max-width: $break-md - 0.02) {
       grid-template-areas:
-      'item1 item1'
-      'item2 item3'
-      'item4 item5';
+        "item1 item1"
+        "item2 item3"
+        "item4 item5";
     }
-    @media( max-width: $break-sm - 0.02 ) {
+    @media (max-width: $break-sm - 0.02) {
       grid-template-areas:
-      'item1'
-      'item2'
-      'item3'
-      'item4'
-      'item5';
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
     }
     .elementor-give-form {
       position: relative;
-      background: #FFFFFF;
+      background: #ffffff;
       overflow: hidden;
       border: 1px solid #eaeaea;
       border-radius: 15px;
       -webkit-box-shadow: 0 2px 4px rgba(#000000, 0.1);
       box-shadow: 0 2px 4px rgba(#000000, 0.1);
-      -webkit-transition: all .3s;
-      transition: all .3s;
-      &--1 { grid-area: item1; }
-      &--2 { grid-area: item2; }
-      &--3 { grid-area: item3; }
-      &--4 { grid-area: item4; }
-      &--5 { grid-area: item5; }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      &--1 {
+        grid-area: item1;
+      }
+      &--2 {
+        grid-area: item2;
+      }
+      &--3 {
+        grid-area: item3;
+      }
+      &--4 {
+        grid-area: item4;
+      }
+      &--5 {
+        grid-area: item5;
+      }
 
       &.elementor-give-form-feature {
         .give-card {
           &__title {
             margin-bottom: 20px;
           }
-          @media( min-width: $break-sm) {
+          @media (min-width: $break-sm) {
             &__body {
               padding: 30px;
             }
@@ -1936,7 +1942,7 @@
           height: 100%;
           background: #e7e6e4;
           overflow: hidden;
-          @media( max-width: $break-md - 0.02 ) {
+          @media (max-width: $break-md - 0.02) {
             min-height: unset;
             padding-bottom: 66%;
           }
@@ -1947,8 +1953,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all .3s;
-            transition: all .3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
           }
         }
         &__overlay {
@@ -1960,19 +1966,19 @@
           background: rgba(#000000, 0.5);
           z-index: 1;
           opacity: 0;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
         &__body {
           position: absolute;
           bottom: 0;
           left: 0;
           width: 100%;
-          background: rgba(#FFFFFF, 0.97);
+          background: rgba(#ffffff, 0.97);
           padding: 15px;
           z-index: 3;
-          -webkit-transition: all .5s;
-          transition: all .5s;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
         }
         &__title {
           font-size: 20px;
@@ -1991,7 +1997,7 @@
           width: 60px;
           height: 60px;
           background: #4892da;
-          color: #FFFFFF;
+          color: #ffffff;
           text-align: center;
           line-height: 60px;
           font-size: 22px;
@@ -1999,10 +2005,10 @@
           margin: -30px 0 0 -30px;
           opacity: 0;
           z-index: 3;
-          -webkit-transition: .3s ease;
-          transition: .3s ease;
-          transform: scale(.3);
-          -webkit-transform: scale(.3);
+          -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+          transform: scale(0.3);
+          -webkit-transform: scale(0.3);
           svg {
             fill: currentColor;
           }
@@ -2018,7 +2024,8 @@
         margin-bottom: 0;
         .raised {
           margin: 12px 0 0 0;
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 22px;
             font-weight: 700;
             line-height: 1.25;
@@ -2043,15 +2050,14 @@
         }
       }
     }
-
   }
 
   &--skin-grid-wilson {
     .elementor-give-form {
       padding-top: 18px;
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       position: relative;
       &:hover {
         .give-card {
@@ -2081,8 +2087,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__category {
@@ -2104,8 +2110,8 @@
           position: relative;
           background: #fff;
           padding: 25px 30px 30px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
         &__title {
           font-weight: 600;
@@ -2118,29 +2124,29 @@
           }
         }
       }
-      .give-goal-progress{
+      .give-goal-progress {
         margin-bottom: 0;
-        .bt-price{
-          .bt-goal{
+        .bt-price {
+          .bt-goal {
             line-height: 1.5;
             font-size: 32px;
             font-weight: 700;
             color: #a08958;
           }
-          .bt-collected{
+          .bt-collected {
             line-height: 1.5;
             font-size: 15px;
             color: #333;
             margin-bottom: 20px;
           }
         }
-        .bt-progress{
+        .bt-progress {
           position: relative;
           width: 100%;
           height: 23px;
           background: #fff;
           border: 2px solid #a08958;
-          span{
+          span {
             float: left;
             display: inline-block;
             width: 10%;
@@ -2149,7 +2155,7 @@
             position: relative;
             z-index: 3;
           }
-          .bt-percent{
+          .bt-percent {
             position: absolute;
             top: 0;
             left: 0;
@@ -2161,20 +2167,18 @@
         }
       }
 
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         .give-card {
           &__body {
             padding: 24px 16px;
           }
         }
       }
-
     }
-
   }
   &--skin-grid-cholatse {
     .elementor-give-form {
-      background: #FCEFF9;
+      background: #fceff9;
       margin-bottom: 55px;
       border-radius: 40px;
       &:hover {
@@ -2199,15 +2203,15 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
-        &__body{
+        &__body {
           padding: 44px 40px 56px 40px;
           position: relative;
           .give-card__goal {
-            background: #AB3493;
+            background: #ab3493;
             box-sizing: border-box;
             border-radius: 10px;
             padding: 11px 30px;
@@ -2219,7 +2223,7 @@
             display: inline-block;
             position: absolute;
             top: -25px;
-            span{
+            span {
               font-weight: 700;
               font-size: 18px;
               color: #fff;
@@ -2236,7 +2240,7 @@
             color: inherit;
           }
         }
-        &__excerpt{
+        &__excerpt {
           font-size: 16px;
           line-height: 1.75;
           color: #555555;
@@ -2244,30 +2248,30 @@
         &__category {
           font-size: 13px;
           text-transform: uppercase;
-          color: #AB3493;
+          color: #ab3493;
           font-weight: 400;
           a {
             color: inherit;
           }
           svg {
             display: inline-block;
-            fill: #AB3493;
+            fill: #ab3493;
             margin-right: 6px;
             vertical-align: middle;
             margin-top: -5px;
           }
         }
       }
-      .give-card__bottom-progress{
+      .give-card__bottom-progress {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: absolute;
         bottom: -44px;
         width: calc(100% - 80px);
-        .give-card__raised{
-          background: #FFFFFF;
-          border: 1px solid #CACACA;
+        .give-card__raised {
+          background: #ffffff;
+          border: 1px solid #cacaca;
           box-sizing: border-box;
           border-radius: 10px;
           padding: 10px 30px;
@@ -2275,14 +2279,14 @@
           font-size: 14px;
           line-height: 26px;
           text-transform: uppercase;
-          color: #6C6C6C;
-          span{
+          color: #6c6c6c;
+          span {
             font-weight: 600;
             font-size: 18px;
-            color: #AB3493;
+            color: #ab3493;
           }
         }
-        .give-card__progress-bar{
+        .give-card__progress-bar {
           position: relative;
           height: 88px;
           border-radius: 50%;
@@ -2293,25 +2297,25 @@
       .give-goal-progress {
         width: 88px;
         height: 88px;
-        svg{
+        svg {
           height: 88px !important;
           overflow: visible;
         }
         .raised {
-          display: none
+          display: none;
         }
         .progressbar-text {
-            font-weight: 400;
+          font-weight: 400;
         }
-        .give-progress-bar{
+        .give-progress-bar {
           height: 6px !important;
         }
       }
     }
-    @media( max-width: $break-tl - 0.02 ) {
+    @media (max-width: $break-tl - 0.02) {
       .elementor-give-form {
         .give-card {
-          &__body{
+          &__body {
             padding: 44px 24px 56px 24px;
           }
           &__title {
@@ -2320,28 +2324,28 @@
         }
       }
     }
-    @media( max-width: $break-sm - 0.02 ) {
+    @media (max-width: $break-sm - 0.02) {
       .elementor-give-form {
         .give-card {
-          &__body{
+          &__body {
             padding: 44px 16px 56px 16px;
             position: relative;
           }
         }
-        .give-card__bottom-progress{
+        .give-card__bottom-progress {
           width: calc(100% - 40px);
           bottom: -30px;
-          .give-card__raised{
+          .give-card__raised {
             padding: 10px;
           }
-          .give-card__progress-bar{
+          .give-card__progress-bar {
             height: 65px;
           }
         }
         .give-goal-progress {
           width: 65px;
           height: 65px;
-          svg{
+          svg {
             height: 65px !important;
             overflow: visible;
           }
@@ -2375,18 +2379,18 @@
             &.active,
             &:hover {
               color: #fff;
-              background: #4B915A
+              background: #4b915a;
             }
           }
         }
-        @media( max-width: $break-md - 0.02 ) {
+        @media (max-width: $break-md - 0.02) {
           li {
             a {
               padding: 20px 30px;
             }
           }
         }
-        @media( max-width: $break-sm - 0.02 ) {
+        @media (max-width: $break-sm - 0.02) {
           li {
             font-size: 14px;
             a {
@@ -2403,28 +2407,28 @@
       position: relative;
       overflow: hidden;
       text-align: center;
-      -webkit-transition: all .3s;
-      transition: all .3s;
-      border: 1px solid #EAE7E7;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: 1px solid #eae7e7;
       &.animate__show {
-       -webkit-animation-duration: 1s;
-       animation-duration: 1s;
-       -webkit-animation-duration: 1s;
-       animation-duration: 1s;
-       -webkit-animation-fill-mode: both;
-       animation-fill-mode: both;
-       -webkit-animation-name: zoomIn;
-       animation-name: zoomIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
       }
       &.animate__hide {
-       -webkit-animation-duration: 0.5s;
-       animation-duration: 0.5s;
-       -webkit-animation-duration: 0.5s;
-       animation-duration: 0.5s;
-       -webkit-animation-fill-mode: both;
-       animation-fill-mode: both;
-       -webkit-animation-name: zoomOut;
-       animation-name: zoomOut;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: zoomOut;
+        animation-name: zoomOut;
       }
       .give-card {
         &__media {
@@ -2441,7 +2445,7 @@
             object-fit: cover;
           }
         }
-        &__body{
+        &__body {
           background: #fff;
         }
         &__title {
@@ -2461,47 +2465,47 @@
           font-size: 13px;
           line-height: 1.6;
           letter-spacing: 0;
-          color: #4B915A;
+          color: #4b915a;
           text-align: left;
           margin-top: 30px;
           padding: 0 40px;
           font-weight: 500;
           svg {
             display: inline-block;
-            fill: #4B915A;
+            fill: #4b915a;
             margin-right: 6px;
             margin-top: -3px;
             vertical-align: middle;
           }
         }
       }
-      ul.give-card__total{
+      ul.give-card__total {
         list-style-type: none;
         display: flex;
         padding: 0;
         align-items: center;
-        border-top: 1px solid #EAE7E7;
+        border-top: 1px solid #eae7e7;
         margin: 0;
         li.give-card__100 {
-            width: 30%;
-            border-right: 1px solid #EAE7E7;
-            padding: 7px 0;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 26px;
-            color: #4B915A;
+          width: 30%;
+          border-right: 1px solid #eae7e7;
+          padding: 7px 0;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+          color: #4b915a;
         }
         li.give-card__goal {
-            width: 60%;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 26px;
-            color: #555555;
+          width: 60%;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 26px;
+          color: #555555;
         }
       }
       .give-card__raised {
         padding: 15px 0;
-        color: #4B915A;
+        color: #4b915a;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.5;
@@ -2510,7 +2514,7 @@
           font-size: 18px;
         }
       }
-      .give-card__progress-bar{
+      .give-card__progress-bar {
         position: relative;
       }
       .give-goal-progress {
@@ -2521,18 +2525,18 @@
         margin-bottom: 0;
         display: flex;
         flex-direction: column-reverse;
-        svg{
+        svg {
           border-radius: 0px;
         }
         .raised {
           display: none;
         }
-        .give-progress-bar{
+        .give-progress-bar {
           height: 9px !important;
           border-radius: 0px;
         }
       }
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         .give-card {
           &__meta-date {
             margin-top: 20px;
@@ -2550,12 +2554,12 @@
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      background: #FFFFFF;
+      background: #ffffff;
       padding: 24px;
-      border: 1px solid #E3E3E3;
+      border: 1px solid #e3e3e3;
       border-radius: 10px;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -2579,8 +2583,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__category {
@@ -2591,16 +2595,16 @@
             display: inline-block;
             color: inherit;
             padding: 1px 12px;
-            color: #009E74;
-            background: #FFFFFF;
-            border: 1px solid #009E74;
+            color: #009e74;
+            background: #ffffff;
+            border: 1px solid #009e74;
             border-radius: 8px;
             &:not(:last-child) {
               margin-right: 8px;
             }
             &:hover {
-              color: #FFFFFF;
-              background: #009E74;
+              color: #ffffff;
+              background: #009e74;
             }
           }
         }
@@ -2618,14 +2622,14 @@
           a {
             color: inherit;
             &:hover {
-              color: #25A5F4;
+              color: #25a5f4;
             }
           }
         }
         &__date {
           font-size: 18px;
           line-height: 1.67;
-          color: #9B9B9B;
+          color: #9b9b9b;
           margin-bottom: 24px;
         }
       }
@@ -2636,20 +2640,20 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 30px;
-        color: #FFFFFF;
+        color: #ffffff;
         padding: 10px 30px;
-        background: #25A5F4;
+        background: #25a5f4;
         border-radius: 10px;
         &:hover {
-          background: #0052B5;
+          background: #0052b5;
         }
       }
       .givewp-donation-form-modal__open {
         padding: 10px 30px !important;
-        color: #FFFFFF !important;
-        background: #25A5F4 !important;
+        color: #ffffff !important;
+        background: #25a5f4 !important;
         &:hover {
-          background: #0052B5 !important;
+          background: #0052b5 !important;
         }
       }
       .give-goal-progress {
@@ -2666,15 +2670,15 @@
         .income {
           font-size: 24px;
           font-weight: 700;
-          color: #25A5F4;
+          color: #25a5f4;
         }
         .goal-text {
           font-weight: 700;
-          color: #25A5F4;
+          color: #25a5f4;
         }
       }
 
-      @media( max-width: 1440px ) {
+      @media (max-width: 1440px) {
         padding: 16px;
         .give-card {
           &__category,
@@ -2687,19 +2691,18 @@
           font-size: 16px;
         }
       }
-
     }
   }
   &--skin-grid-yutmaru {
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      background: #FFFFFF;
+      background: #ffffff;
       padding: 24px;
-      border: 1px solid #E3E3E3;
+      border: 1px solid #e3e3e3;
       border-radius: 30px;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -2722,8 +2725,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__body {
@@ -2738,8 +2741,8 @@
           font-weight: 600;
           line-height: 1.67;
           white-space: nowrap;
-          color: #FFFFFF;
-          background: #009E74;
+          color: #ffffff;
+          background: #009e74;
           padding: 5px 20px;
           border-radius: 30px;
           -webkit-box-shadow: 0px 10px 20px rgba(0, 158, 116, 0.3);
@@ -2770,7 +2773,7 @@
           a {
             color: inherit;
             &:hover {
-              color: #F4B03E;
+              color: #f4b03e;
             }
           }
         }
@@ -2785,22 +2788,22 @@
         font-weight: 600;
         line-height: 24px;
         text-transform: unset;
-        color: #FFFFFF;
+        color: #ffffff;
         float: right;
         margin-top: -40px;
         padding: 10px 20px;
         background: #151515;
         border-radius: 30px;
         &:hover {
-          background: #F4B03E;
+          background: #f4b03e;
         }
       }
       .givewp-donation-form-modal__open {
         padding: 10px 20px !important;
-        color: #FFFFFF !important;
+        color: #ffffff !important;
         background: #151515 !important;
         &:hover {
-          background: #F4B03E !important;
+          background: #f4b03e !important;
         }
       }
       .give-goal-progress {
@@ -2820,15 +2823,15 @@
         .income {
           font-size: 24px;
           font-weight: 600;
-          color: #F4B03E;
+          color: #f4b03e;
         }
         .goal-text {
           font-weight: 600;
-          color: #F4B03E;
+          color: #f4b03e;
         }
       }
 
-      @media( max-width: 1440px ) {
+      @media (max-width: 1440px) {
         padding: 16px;
         .give-card {
           &__body {
@@ -2855,7 +2858,6 @@
           }
         }
       }
-
     }
   }
   &--skin-grid-platons {
@@ -2863,12 +2865,12 @@
       position: relative;
       overflow: hidden;
       text-align: center;
-      background: #FDEBAF;
+      background: #fdebaf;
       padding: 20px 20px 0;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
-        background: #FCD755;
+        background: #fcd755;
         .give-card {
           &__media img {
             -webkit-transform: scale(1.1);
@@ -2890,12 +2892,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__body {
-          background: #3D7C71;
+          background: #3d7c71;
           margin: 0 -20px;
           padding: 20px 20px 30px;
         }
@@ -2903,7 +2905,7 @@
           font-size: 22px;
           font-weight: 600;
           line-height: 1.25;
-          color: #032F27;
+          color: #032f27;
           margin-bottom: 20px;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -2930,23 +2932,23 @@
         line-height: 24px;
         color: #206155;
         padding: 10px 30px;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 3px;
         -webkit-box-shadow: 10px 10px 0px 0px #206155;
         box-shadow: 10px 10px 0px 0px #206155;
         &:hover {
-          background: #FFFFFF;
+          background: #ffffff;
         }
       }
       .givewp-donation-form-modal__open {
         color: #206155 !important;
-        background: #FFFFFF !important;
+        background: #ffffff !important;
         padding: 10px 30px !important;
       }
       .give-goal-progress {
         font-size: 14px;
         line-height: 1.5;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 8px;
         svg {
           border-radius: 3px;
@@ -2957,11 +2959,11 @@
         .income {
           font-size: 20px;
           font-weight: 600;
-          color: #FCD755;
+          color: #fcd755;
         }
         .goal-text {
           font-weight: 600;
-          color: #FCD755;
+          color: #fcd755;
         }
       }
     }
@@ -2971,13 +2973,13 @@
       position: relative;
       overflow: hidden;
       text-align: center;
-      background: #FFFFFF;
+      background: #ffffff;
       padding: 30px;
       border-radius: 14px;
       -webkit-box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.05);
       box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.05);
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -3001,8 +3003,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__title {
@@ -3021,12 +3023,12 @@
           }
         }
         &__completed {
-            float: right;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 1.5;
-            color: #3F86ED;
-            margin-top: -40px;
+          float: right;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #3f86ed;
+          margin-top: -40px;
         }
       }
       .givewp-donation-form-modal__open,
@@ -3036,23 +3038,23 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 24px;
-        color: #011F51;
+        color: #011f51;
         margin-top: 20px;
         padding: 10px 30px;
-        background: #7CF2AD;
+        background: #7cf2ad;
         border-radius: 30px;
         &:hover {
-          color: #FFFFFF;
-          background: #011F51;
+          color: #ffffff;
+          background: #011f51;
         }
       }
       .givewp-donation-form-modal__open {
-        color: #011F51 !important;
-        background: #7CF2AD !important;
+        color: #011f51 !important;
+        background: #7cf2ad !important;
         padding: 10px 30px !important;
         &:hover {
-          color: #FFFFFF !important;
-          background: #011F51 !important;
+          color: #ffffff !important;
+          background: #011f51 !important;
         }
       }
       .give-goal-progress {
@@ -3077,7 +3079,7 @@
           color: #151515;
         }
       }
-      @media( max-width: $break-xs - 0.02 ) {
+      @media (max-width: $break-xs - 0.02) {
         padding: 24px 16px;
         .givewp-donation-form-modal__open,
         .give-btn-modal {
@@ -3091,10 +3093,10 @@
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      background: #FFFFFF;
+      background: #ffffff;
       border: 2px solid #171717;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -3116,13 +3118,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__progress-wrap {
           position: relative;
-          background: #ECE8F4;
+          background: #ece8f4;
           padding: 15px 30px;
         }
         &__progress {
@@ -3138,7 +3140,7 @@
           font-size: 46px;
           font-weight: 600;
           line-height: 1.4;
-          color: #846DB7;
+          color: #846db7;
         }
         &__goal {
           font-size: 16px;
@@ -3182,7 +3184,7 @@
           justify-content: center;
           width: 44px;
           height: 44px;
-          background: #846DB7;
+          background: #846db7;
         }
       }
       .givewp-donation-form-modal__open,
@@ -3193,20 +3195,20 @@
         font-size: 0;
         width: 24px;
         height: 24px;
-        background-color: #FFFFFF;
-        background-image: url('../images/heart-dark.svg');
+        background-color: #ffffff;
+        background-image: url("../images/heart-dark.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
         margin: 0;
         padding: 0;
         &:hover {
-          background-color: #FFFFFF;
+          background-color: #ffffff;
         }
       }
       .givewp-donation-form-modal__open {
-        background-color: #FFFFFF !important;
-        padding: 0 !important; 
+        background-color: #ffffff !important;
+        padding: 0 !important;
       }
     }
   }
@@ -3214,10 +3216,10 @@
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      background: #F8F8FF;
+      background: #f8f8ff;
       border-radius: 10px;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -3239,13 +3241,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__body {
           padding: 30px;
-          @media( max-width: $break-xs - 0.02 ) {
+          @media (max-width: $break-xs - 0.02) {
             padding: 15px;
           }
         }
@@ -3253,20 +3255,20 @@
           font-weight: 600;
           font-size: 28px;
           line-height: 1.3;
-          color: #011E41;
+          color: #011e41;
           margin-bottom: 10px;
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
-          @media( max-width: $break-tl - 0.02 ) {
+          @media (max-width: $break-tl - 0.02) {
             font-size: 24px;
           }
           a {
             color: inherit;
             &:hover {
-              color: #BFB170;
+              color: #bfb170;
             }
           }
         }
@@ -3285,8 +3287,8 @@
           font-size: 12px;
           line-height: 20px;
           text-transform: uppercase;
-          color: #FFFFFF;
-          background: #BFB170;
+          color: #ffffff;
+          background: #bfb170;
           padding: 6px 15px;
           border-radius: 5px;
           a {
@@ -3298,7 +3300,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
-            color: #19697C;
+            color: #19697c;
             margin: 0;
             .income,
             .goal-text {
@@ -3306,7 +3308,7 @@
               font-weight: 600;
               font-size: 26px;
               line-height: 30px;
-              color: #BFB170;
+              color: #bfb170;
               margin-bottom: 8px;
             }
           }
@@ -3316,7 +3318,7 @@
             margin: 0;
             > span {
               width: calc(50% - 5px);
-              background: #FFFFFF;
+              background: #ffffff;
               padding: 12px 15px;
               border-radius: 10px;
             }
@@ -3329,8 +3331,8 @@
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -3354,12 +3356,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__body {
-          
         }
         &__title {
           font-weight: 600;
@@ -3375,7 +3376,7 @@
           a {
             color: inherit;
             &:hover {
-              color: #4D5EF6;
+              color: #4d5ef6;
             }
           }
         }
@@ -3385,7 +3386,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 1.5;
-            color: #4D4D4D;
+            color: #4d4d4d;
             margin-bottom: 0;
           }
           .raised {
@@ -3393,7 +3394,7 @@
           }
           .income {
             font-size: 20px;
-            color: #4D5EF6;
+            color: #4d5ef6;
           }
           .goal-text {
             font-size: inherit;
@@ -3406,16 +3407,16 @@
       .give-btn-modal {
         font-size: 16px;
         font-weight: 600;
-        line-height: 24px; 
+        line-height: 24px;
         text-transform: capitalize;
         color: #111111;
         background: #ffffff;
         padding: 8px 20px;
         border-radius: 50px;
-        border: 1px solid rgba(17, 17, 17, 0.40);
+        border: 1px solid rgba(17, 17, 17, 0.4);
         &:hover {
           color: #ffffff;
-          background: #4D5EF6;
+          background: #4d5ef6;
         }
       }
       .givewp-donation-form-modal__open {
@@ -3425,7 +3426,7 @@
         width: auto;
         &:hover {
           color: #ffffff !important;
-          background: #4D5EF6 !important;
+          background: #4d5ef6 !important;
         }
       }
     }
@@ -3434,8 +3435,8 @@
     .elementor-give-form {
       position: relative;
       overflow: hidden;
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
       &:hover {
         .give-card {
           &__media img {
@@ -3458,13 +3459,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
-            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
           }
         }
         &__body {
           position: relative;
-          background: #FFFFFF;
+          background: #ffffff;
           margin: -50px 30px 0;
           padding: 48px 40px 0;
           border-radius: 20px;
@@ -3481,12 +3482,12 @@
           a {
             color: inherit;
             &:hover {
-              color: #DD3B32;
+              color: #dd3b32;
             }
           }
         }
         &__progress {
-          background: #FDF0DD;
+          background: #fdf0dd;
           margin: 25px -40px 0;
           padding: 25px 40px;
           border-radius: 0 0 20px 20px;
@@ -3513,7 +3514,7 @@
         line-height: 150%;
         text-transform: capitalize;
         color: #ffffff;
-        background: #DD3B32;
+        background: #dd3b32;
         padding: 12px 35px;
         border-radius: 24px;
         transform: translateY(-50%);
@@ -3526,12 +3527,12 @@
         padding: 12px 35px !important;
         width: auto;
         color: #ffffff !important;
-        background: #DD3B32 !important;
+        background: #dd3b32 !important;
         &:hover {
           background: #d33128 !important;
         }
       }
-      @media(max-width: $break-xs - 0.02) {
+      @media (max-width: $break-xs - 0.02) {
         .give-card {
           &__body {
             margin: -50px 20px 0;
@@ -3540,6 +3541,316 @@
           &__progress {
             margin: 25px -20px 0;
             padding: 25px 20px;
+          }
+        }
+      }
+    }
+  }
+  &--skin-grid-together {
+    .elementor-give-form {
+      font-family: "Inter", Sans-serif;
+      overflow: hidden;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      &.has-btn-donation {
+        &:hover {
+          .give-card {
+            &__body {
+              padding-bottom: 130px;
+            }
+          }
+          .givewp-donation-form-modal__open,
+          .give-btn-modal {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+            transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+          }
+        }
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background: linear-gradient(36deg, #2e2e2e 17.76%, rgba(33, 33, 33, 0) 59.83%);
+        }
+        &__body {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 40px;
+          z-index: 3;
+          -webkit-transition: padding 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition: padding 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        &__category {
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          color: #252525;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.48px;
+          padding: 10px 15px;
+          background: #fff;
+          border-radius: 30px;
+          z-index: 3;
+          a {
+            color: inherit;
+          }
+        }
+        &__title {
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.3;
+          color: #fff;
+          margin: 0;
+          a {
+            color: inherit;
+          }
+        }
+      }
+      .givewp-donation-form-modal__open,
+      .give-btn-modal {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        width: auto;
+        display: inline-block;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        color: #252525;
+        background: #ffd757;
+        padding: 20px;
+        min-width: 260px;
+        text-align: center;
+        border-radius: 30px;
+        margin-top: 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-transition:
+          opacity 0.5s ease-in-out,
+          visibility 0.5s ease-in-out,
+          transform 0.6s ease-out;
+        transition:
+          opacity 0.5s ease-in-out,
+          visibility 0.5s ease-in-out,
+          transform 0.6s ease-out;
+        z-index: 4;
+        &:hover {
+          color: #252525;
+          background: #ffd757;
+        }
+      }
+      .givewp-donation-form-modal__open {
+        font-weight: 700 !important;
+        padding: 20px !important;
+        color: #252525 !important;
+        background: #ffd757 !important;
+        &:hover {
+          color: #252525 !important;
+          background: #ffd757 !important;
+        }
+      }
+      .give-goal-progress {
+        width: 100%;
+        z-index: 3;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.3;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        .raised {
+          display: flex;
+          margin: 22px 0 0 0;
+          gap: 12px;
+          .raised-income,
+          .raised-goal {
+            display: flex;
+            align-items: baseline;
+          }
+          .income,
+          .goal-text {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.3;
+            color: #ffd757;
+            margin-right: 4px;
+          }
+        }
+      }
+      @media (max-width: $break-lg - 0.02) and (min-width: $break-tl) {
+        .give-card {
+          &__body { 
+            padding: 30px;
+          }
+          &__category {
+            top: 30px;
+            left: 30px;
+            font-size: 14px;
+            padding: 8px 12px;
+          }
+          &__title {
+            font-size: 28px;
+          }
+        }
+        .givewp-donation-form-modal__open,
+        .give-btn-modal {
+          bottom: 30px;
+          left: 30px;
+          font-size: 14px;
+          padding: 16px;
+          min-width: 220px;
+        }
+        &.has-btn-donation {
+          &:hover {
+            .give-card {
+              &__body {
+                padding-bottom: 110px;
+              }
+            }
+          }
+        }
+        .give-goal-progress {
+          margin-top: 20px;
+          font-size: 14px;
+          .raised {
+            margin-top: 18px;
+            gap: 10px;
+            .income,
+            .goal-text {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: $break-tl - 0.02) {
+        .give-card {
+          &__body {
+            padding: 30px;
+          }
+          &__category {
+            top: 30px;
+            left: 30px;
+            font-size: 14px;
+            padding: 8px 12px;
+          }
+          &__title {
+            font-size: 28px;
+          }
+        }
+        .givewp-donation-form-modal__open,
+        .give-btn-modal {
+          bottom: 30px;
+          left: 30px;
+          font-size: 14px;
+          padding: 16px;
+          min-width: 220px;
+        }
+        &.has-btn-donation {
+          &:hover {
+            .give-card {
+              &__body {
+                padding-bottom: 110px;
+              }
+            }
+          }
+        }
+        .give-goal-progress {
+          margin-top: 20px;
+          font-size: 14px;
+          .raised {
+            margin-top: 18px;
+            gap: 10px;
+            .income,
+            .goal-text {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: $break-xs - 0.02) {
+        .give-card {
+          &__body {
+            padding: 20px;
+          }
+          &__category {
+            top: 20px;
+            left: 20px;
+            font-size: 12px;
+            padding: 6px 10px;
+          }
+          &__title {
+            font-size: 22px;
+          }
+        }
+        .givewp-donation-form-modal__open,
+        .give-btn-modal {
+          bottom: 20px;
+          left: 20px;
+          font-size: 13px;
+          padding: 14px;
+          min-width: 180px;
+        }
+        &.has-btn-donation {
+          &:hover {
+            .give-card {
+              &__body {
+                padding-bottom: 90px;
+              }
+            }
+          }
+        }
+        .give-goal-progress {
+          margin-top: 16px;
+          font-size: 12px;
+          .raised {
+            margin-top: 16px;
+            gap: 8px;
+            .income,
+            .goal-text {
+              font-size: 18px;
+            }
           }
         }
       }

@@ -1944,7 +1944,7 @@ body .mfp-active {
     font-size: 28px; } }
 
 .elementor-give-forms--default .elementor-give-form {
-  background: #F9F7F5;
+  background: #f9f7f5;
   overflow: hidden;
   border-radius: 2px; }
   .elementor-give-forms--default .elementor-give-form .give-card__media {
@@ -1984,7 +1984,7 @@ body .mfp-active {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #0073a8;
     padding: 12px 24px;
     border-radius: 2px; }
@@ -2046,7 +2046,7 @@ body .mfp-active {
     line-height: 1;
     text-transform: uppercase;
     color: #002866;
-    background: #FFEE00;
+    background: #ffee00;
     padding: 10px 20px;
     z-index: 3; }
     .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-card__category a {
@@ -2062,7 +2062,7 @@ body .mfp-active {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.25;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 0; }
     .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-card__title a {
       color: inherit; }
@@ -2071,23 +2071,25 @@ body .mfp-active {
     font-weight: 400;
     line-height: 1.25;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 24px 0 0; }
     .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px; }
-      .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .raised-income, .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .raised-goal {
+      .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .raised-income,
+      .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .raised-goal {
         display: flex;
         flex-direction: column;
         text-align: left; }
       .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .raised-goal {
         text-align: right; }
-      .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 24px;
         font-weight: 600;
         line-height: 1.25;
-        color: #FFEE00;
+        color: #ffee00;
         margin-bottom: 4px; }
   @media (min-width: 1025px) and (max-width: 1199.98px) {
     .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-card__title {
@@ -2098,7 +2100,8 @@ body .mfp-active {
       margin-top: 16px; }
       .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised {
         margin-bottom: 12px; }
-        .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .goal-text {
+        .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .income,
+        .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .goal-text {
           font-size: 22px; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-card__title {
@@ -2114,10 +2117,11 @@ body .mfp-active {
       margin-top: 16px; }
       .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised {
         margin-bottom: 12px; }
-        .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .goal-text {
+        .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .income,
+        .elementor-give-forms--skin-grid-pumori .elementor-give-form .give-goal-progress .raised .goal-text {
           font-size: 22px; } }
 .elementor-give-forms--skin-grid-coropuna .elementor-give-form {
-  background: #F5F5F5;
+  background: #f5f5f5;
   overflow: hidden; }
   .elementor-give-forms--skin-grid-coropuna .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
@@ -2159,7 +2163,7 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-card__category svg {
       display: inline-block;
       vertical-align: middle;
-      fill: #BFCC80;
+      fill: #bfcc80;
       margin: -3px 4px 0 1px; }
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-card__category a {
       color: inherit; }
@@ -2167,7 +2171,7 @@ body .mfp-active {
     font-weight: 500;
     font-size: 22px;
     line-height: 125%;
-    color: #4E3629;
+    color: #4e3629;
     margin: 0; }
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-card__title a {
       color: inherit; }
@@ -2182,22 +2186,22 @@ body .mfp-active {
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #4E3629;
-    background: #BFCC80;
+    color: #4e3629;
+    background: #bfcc80;
     margin-top: -22px;
     padding: 12px 20px; }
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-btn-modal:hover {
-      color: #FFFFFF;
-      background: #4E3629; }
+      color: #ffffff;
+      background: #4e3629; }
   .elementor-give-forms--skin-grid-coropuna .elementor-give-form .givewp-donation-form-modal__open {
     font-weight: 500 !important;
     padding: 12px 20px !important;
-    color: #4E3629 !important;
-    background: #BFCC80 !important; }
+    color: #4e3629 !important;
+    background: #bfcc80 !important; }
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .givewp-donation-form-modal__open:hover {
-      color: #FFFFFF !important;
-      background: #4E3629 !important; }
+      color: #ffffff !important;
+      background: #4e3629 !important; }
   .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress {
     position: absolute;
     bottom: 0;
@@ -2207,22 +2211,24 @@ body .mfp-active {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
-    color: #BFCC80;
+    color: #bfcc80;
     margin-bottom: 0;
     padding: 30px 40px; }
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised {
       display: flex;
       justify-content: space-between;
       margin-bottom: 12px; }
-      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .raised-income, .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .raised-goal {
+      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .raised-income,
+      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .raised-goal {
         display: flex;
         flex-direction: row-reverse;
         align-items: baseline; }
-      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.25;
-        color: #BFCC80;
+        color: #bfcc80;
         margin-left: 4px; }
   @media (max-width: 991.98px) {
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form.has-btn-donation .give-card__body {
@@ -2243,7 +2249,8 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress {
       font-size: 12px;
       padding: 24px 16px; }
-      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-coropuna .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 16px; } }
 .elementor-give-forms--skin-list-andrus.elementor-grid {
   display: block;
@@ -2260,7 +2267,7 @@ body .mfp-active {
   padding-right: 15px; }
 .elementor-give-forms--skin-list-andrus .elementor-give-form-feature {
   position: relative;
-  background: #FFFFFF;
+  background: #ffffff;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
@@ -2278,8 +2285,8 @@ body .mfp-active {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      -webkit-transition: all .3s;
-      transition: all .3s; }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
   .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-card__overlay {
     position: absolute;
     top: 0;
@@ -2329,14 +2336,14 @@ body .mfp-active {
     border-radius: 3px; }
     .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-btn-modal:hover {
-      background: #F1CD08; }
+      background: #f1cd08; }
   .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .givewp-donation-form-modal__open {
     font-weight: 700 !important;
     padding: 13px 20px !important;
     color: #333333 !important;
     background: #fed700 !important; }
     .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .givewp-donation-form-modal__open:hover {
-      background: #F1CD08 !important; }
+      background: #f1cd08 !important; }
   .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-goal-progress {
     font-size: 14px;
     font-weight: 400;
@@ -2345,7 +2352,8 @@ body .mfp-active {
     margin-bottom: 0; }
     .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-goal-progress .raised {
       margin-bottom: 0; }
-    .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-goal-progress .income, .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-goal-progress .goal-text {
+    .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-goal-progress .income,
+    .elementor-give-forms--skin-list-andrus .elementor-give-form-feature .give-goal-progress .goal-text {
       font-size: 24px;
       font-weight: 700;
       line-height: 1.25;
@@ -2353,7 +2361,7 @@ body .mfp-active {
 .elementor-give-forms--skin-list-andrus .elementor-give-form {
   display: flex;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
@@ -2374,8 +2382,8 @@ body .mfp-active {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      -webkit-transition: all .3s;
-      transition: all .3s; }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
   .elementor-give-forms--skin-list-andrus .elementor-give-form .give-card__overlay {
     position: absolute;
     top: 0;
@@ -2423,7 +2431,7 @@ body .mfp-active {
     border-radius: 5px; }
     .elementor-give-forms--skin-list-andrus .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-list-andrus .elementor-give-form .give-btn-modal:hover {
-      background-color: #F1CD08; }
+      background-color: #f1cd08; }
   .elementor-give-forms--skin-list-andrus .elementor-give-form .givewp-donation-form-modal__open {
     padding: 0 !important; }
   .elementor-give-forms--skin-list-andrus .elementor-give-form .give-goal-progress {
@@ -2434,7 +2442,8 @@ body .mfp-active {
     margin-bottom: 0; }
     .elementor-give-forms--skin-list-andrus .elementor-give-form .give-goal-progress .raised {
       margin-bottom: 0; }
-    .elementor-give-forms--skin-list-andrus .elementor-give-form .give-goal-progress .income, .elementor-give-forms--skin-list-andrus .elementor-give-form .give-goal-progress .goal-text {
+    .elementor-give-forms--skin-list-andrus .elementor-give-form .give-goal-progress .income,
+    .elementor-give-forms--skin-list-andrus .elementor-give-form .give-goal-progress .goal-text {
       font-size: 18px;
       font-weight: 700;
       line-height: 1.25;
@@ -2555,12 +2564,12 @@ body .mfp-active {
     border-radius: 5px; }
     .elementor-give-forms--skin-grid-changtse .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-changtse .elementor-give-form .give-btn-modal:hover {
-      background-color: #667A62; }
+      background-color: #667a62; }
   .elementor-give-forms--skin-grid-changtse .elementor-give-form .givewp-donation-form-modal__open {
     padding: 0 !important;
     background-color: #e05d41 !important; }
     .elementor-give-forms--skin-grid-changtse .elementor-give-form .givewp-donation-form-modal__open:hover {
-      background-color: #667A62 !important; }
+      background-color: #667a62 !important; }
   @media (max-width: 575.98px) {
     .elementor-give-forms--skin-grid-changtse .elementor-give-form .give-card__title {
       font-size: 24px; }
@@ -2675,7 +2684,8 @@ body .mfp-active {
     margin: 0; }
     .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised {
       margin-bottom: 40px; }
-      .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .raised-income, .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .raised-goal {
+      .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .raised-income,
+      .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .raised-goal {
         display: inline-flex;
         flex-direction: column-reverse; }
       .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .raised-income {
@@ -2691,7 +2701,8 @@ body .mfp-active {
           height: 40px;
           background: #c5bfd2;
           margin-top: -20px; }
-      .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-list-saltoro .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 28px;
         font-weight: 700;
         line-height: 1.25;
@@ -2737,10 +2748,10 @@ body .mfp-active {
         padding: 14px 30px !important; } }
 .elementor-give-forms--skin-grid-hardeol .elementor-give-form {
   position: relative;
-  background: #F5F5F5;
+  background: #f5f5f5;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form.has-thumbnail .give-card__body {
     padding: 30px;
     border: none; }
@@ -2754,8 +2765,8 @@ body .mfp-active {
     padding: 0 30px;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form.has-thumbnail:hover .give-card__body {
     transform: translateY(-64px); }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form.has-thumbnail:hover .root-data-givewp-embed,
@@ -2784,7 +2795,7 @@ body .mfp-active {
     line-height: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #638c1c;
     padding: 8px 20px;
     z-index: 3; }
@@ -2792,11 +2803,11 @@ body .mfp-active {
       color: inherit; }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-card__body {
     position: relative;
-    background: #F5F5F5;
+    background: #f5f5f5;
     padding: 66px 30px 30px;
     border-top: 8px solid #638c1c;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-card__title {
     font-weight: 700;
     font-size: 24px;
@@ -2821,19 +2832,19 @@ body .mfp-active {
     line-height: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #638c1c;
     margin: 0;
     padding: 12px 30px; }
     .elementor-give-forms--skin-grid-hardeol .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-btn-modal:hover {
-      background: #4C691A; }
+      background: #4c691a; }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form .givewp-donation-form-modal__open {
     padding: 12px 30px !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
     background: #638c1c !important; }
     .elementor-give-forms--skin-grid-hardeol .elementor-give-form .givewp-donation-form-modal__open:hover {
-      background: #4C691A !important; }
+      background: #4c691a !important; }
   .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-goal-progress {
     font-size: 18px;
     font-weight: 400;
@@ -2844,7 +2855,8 @@ body .mfp-active {
       margin-bottom: 0; }
       .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-goal-progress .raised .raised-goal {
         display: none; }
-      .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-hardeol .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 30px;
         font-weight: 700;
         line-height: 1.25;
@@ -2855,8 +2867,8 @@ body .mfp-active {
       padding: 24px 16px; } }
 .elementor-give-forms--skin-grid-nevado .elementor-give-form {
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-nevado .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -2926,7 +2938,8 @@ body .mfp-active {
       display: flex;
       justify-content: space-between;
       margin-bottom: 12px; }
-      .elementor-give-forms--skin-grid-nevado .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-nevado .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-nevado .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-nevado .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 24px;
         font-weight: 600;
         line-height: 1.25;
@@ -2935,8 +2948,8 @@ body .mfp-active {
       border-radius: 10px; }
 .elementor-give-forms--skin-grid-taboche .elementor-give-form {
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   margin-bottom: 15px;
   -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.31);
@@ -3011,7 +3024,8 @@ body .mfp-active {
       margin-top: 50px;
       border-top: #ebebeb solid 1px;
       margin-bottom: 0; }
-      .elementor-give-forms--skin-grid-taboche .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-taboche .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-taboche .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-taboche .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 25px;
         line-height: 1;
         letter-spacing: 0;
@@ -3040,8 +3054,8 @@ body .mfp-active {
       height: 6px !important; }
 .elementor-give-forms--skin-grid-galloway .elementor-give-form {
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-galloway .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -3062,7 +3076,7 @@ body .mfp-active {
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #333333;
     margin: 0 0 20px;
     padding: 4px 8px;
@@ -3096,7 +3110,7 @@ body .mfp-active {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    color: #7A7A7A; }
+    color: #7a7a7a; }
   .elementor-give-forms--skin-grid-galloway .elementor-give-form .give-card__footer {
     display: flex;
     align-items: center;
@@ -3116,11 +3130,12 @@ body .mfp-active {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.25;
-    color: #7A7A7A;
+    color: #7a7a7a;
     margin-bottom: 20px; }
     .elementor-give-forms--skin-grid-galloway .elementor-give-form .give-goal-progress .raised {
       margin-bottom: 8px; }
-      .elementor-give-forms--skin-grid-galloway .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-galloway .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-galloway .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-galloway .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 22px;
         font-weight: 7600;
         line-height: 1.25;
@@ -3129,8 +3144,8 @@ body .mfp-active {
   position: relative;
   overflow: hidden;
   text-align: center;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-havsula .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -3140,11 +3155,12 @@ body .mfp-active {
     left: 15px;
     width: 100%;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 0;
     z-index: 3; }
-    .elementor-give-forms--skin-grid-havsula .elementor-give-form.has-thumbnail .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-havsula .elementor-give-form.has-thumbnail .give-goal-progress .raised .goal-text {
-      color: #FFFFFF; }
+    .elementor-give-forms--skin-grid-havsula .elementor-give-form.has-thumbnail .give-goal-progress .raised .income,
+    .elementor-give-forms--skin-grid-havsula .elementor-give-form.has-thumbnail .give-goal-progress .raised .goal-text {
+      color: #ffffff; }
     .elementor-give-forms--skin-grid-havsula .elementor-give-form.has-thumbnail .give-goal-progress .progressbar-text {
       display: none; }
   .elementor-give-forms--skin-grid-havsula .elementor-give-form .give-card__overlay {
@@ -3155,8 +3171,8 @@ body .mfp-active {
     height: 100%;
     background: rgba(0, 0, 0, 0.43);
     z-index: 1;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .elementor-give-forms--skin-grid-havsula .elementor-give-form .give-card__media {
     position: relative;
     overflow: hidden;
@@ -3180,7 +3196,7 @@ body .mfp-active {
     line-height: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #ec2127;
     padding: 4px 8px;
     border-radius: 2px;
@@ -3227,7 +3243,8 @@ body .mfp-active {
       width: calc(100% - 50px);
       margin-bottom: 0;
       padding-left: 10px; }
-      .elementor-give-forms--skin-grid-havsula .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-grid-havsula .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-grid-havsula .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-havsula .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 22px;
         font-weight: 500;
         line-height: 1.25;
@@ -3256,12 +3273,12 @@ body .mfp-active {
 .elementor-give-forms--skin-cobble-paradis .elementor-give-form {
   position: relative;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-cobble-paradis .elementor-give-form.has-thumbnail .give-card__body {
     position: relative;
     max-width: 350px;
-    background: #FFFFFF;
+    background: #ffffff;
     margin: -50px 0 0 30px;
     padding: 25px 30px 10px;
     z-index: 5; }
@@ -3281,8 +3298,8 @@ body .mfp-active {
     background: rgba(0, 0, 0, 0.43);
     opacity: 0;
     z-index: 1;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-card__media {
     position: relative;
     overflow: hidden;
@@ -3313,7 +3330,7 @@ body .mfp-active {
     width: 60px;
     height: 60px;
     background: #ef2853;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     line-height: 60px;
     font-size: 22px;
@@ -3321,8 +3338,8 @@ body .mfp-active {
     margin: -30px 0 0 -30px;
     opacity: 0;
     z-index: 3;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
     transform: scale(0.3);
     -webkit-transform: scale(0.3); }
     .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-card__read-more svg {
@@ -3339,7 +3356,8 @@ body .mfp-active {
     margin-bottom: 0; }
     .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-goal-progress .raised {
       margin: 12px 0 0 0; }
-      .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-goal-progress .raised .goal-text {
+      .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-cobble-paradis .elementor-give-form .give-goal-progress .raised .goal-text {
         font-size: 22px;
         font-weight: 600;
         line-height: 1.25;
@@ -3351,23 +3369,23 @@ body .mfp-active {
     transform: scale(1);
     -webkit-transform: scale(1); }
 .elementor-give-forms--skin-cobble-castor {
-  grid-template-areas: 'item1 item1 item2 item3' 'item1 item1 item4 item5'; }
+  grid-template-areas: "item1 item1 item2 item3" "item1 item1 item4 item5"; }
   @media (max-width: 991.98px) {
     .elementor-give-forms--skin-cobble-castor {
-      grid-template-areas: 'item1 item1' 'item2 item3' 'item4 item5'; } }
+      grid-template-areas: "item1 item1" "item2 item3" "item4 item5"; } }
   @media (max-width: 767.98px) {
     .elementor-give-forms--skin-cobble-castor {
-      grid-template-areas: 'item1' 'item2' 'item3' 'item4' 'item5'; } }
+      grid-template-areas: "item1" "item2" "item3" "item4" "item5"; } }
   .elementor-give-forms--skin-cobble-castor .elementor-give-form {
     position: relative;
-    background: #FFFFFF;
+    background: #ffffff;
     overflow: hidden;
     border: 1px solid #eaeaea;
     border-radius: 15px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
     .elementor-give-forms--skin-cobble-castor .elementor-give-form--1 {
       grid-area: item1; }
     .elementor-give-forms--skin-cobble-castor .elementor-give-form--2 {
@@ -3403,8 +3421,8 @@ body .mfp-active {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        -webkit-transition: all .3s;
-        transition: all .3s; }
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
     .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-card__overlay {
       position: absolute;
       top: 0;
@@ -3414,8 +3432,8 @@ body .mfp-active {
       background: rgba(0, 0, 0, 0.5);
       z-index: 1;
       opacity: 0;
-      -webkit-transition: all .3s;
-      transition: all .3s; }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
     .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-card__body {
       position: absolute;
       bottom: 0;
@@ -3424,8 +3442,8 @@ body .mfp-active {
       background: rgba(255, 255, 255, 0.97);
       padding: 15px;
       z-index: 3;
-      -webkit-transition: all .5s;
-      transition: all .5s; }
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
     .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-card__title {
       font-size: 20px;
       font-weight: 600;
@@ -3441,7 +3459,7 @@ body .mfp-active {
       width: 60px;
       height: 60px;
       background: #4892da;
-      color: #FFFFFF;
+      color: #ffffff;
       text-align: center;
       line-height: 60px;
       font-size: 22px;
@@ -3449,8 +3467,8 @@ body .mfp-active {
       margin: -30px 0 0 -30px;
       opacity: 0;
       z-index: 3;
-      -webkit-transition: .3s ease;
-      transition: .3s ease;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
       transform: scale(0.3);
       -webkit-transform: scale(0.3); }
       .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-card__read-more svg {
@@ -3465,7 +3483,8 @@ body .mfp-active {
       margin-bottom: 0; }
       .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-goal-progress .raised {
         margin: 12px 0 0 0; }
-        .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-goal-progress .raised .income, .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-goal-progress .raised .goal-text {
+        .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-goal-progress .raised .income,
+        .elementor-give-forms--skin-cobble-castor .elementor-give-form .give-goal-progress .raised .goal-text {
           font-size: 22px;
           font-weight: 700;
           line-height: 1.25;
@@ -3482,8 +3501,8 @@ body .mfp-active {
 .elementor-give-forms--skin-grid-wilson .elementor-give-form {
   padding-top: 18px;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: relative; }
   .elementor-give-forms--skin-grid-wilson .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
@@ -3521,8 +3540,8 @@ body .mfp-active {
     position: relative;
     background: #fff;
     padding: 25px 30px 30px;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .elementor-give-forms--skin-grid-wilson .elementor-give-form .give-card__title {
     font-weight: 600;
     font-size: 22px;
@@ -3569,7 +3588,7 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-wilson .elementor-give-form .give-card__body {
       padding: 24px 16px; } }
 .elementor-give-forms--skin-grid-cholatse .elementor-give-form {
-  background: #FCEFF9;
+  background: #fceff9;
   margin-bottom: 55px;
   border-radius: 40px; }
   .elementor-give-forms--skin-grid-cholatse .elementor-give-form:hover .give-card__media img {
@@ -3594,7 +3613,7 @@ body .mfp-active {
     padding: 44px 40px 56px 40px;
     position: relative; }
     .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__body .give-card__goal {
-      background: #AB3493;
+      background: #ab3493;
       box-sizing: border-box;
       border-radius: 10px;
       padding: 11px 30px;
@@ -3625,13 +3644,13 @@ body .mfp-active {
   .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__category {
     font-size: 13px;
     text-transform: uppercase;
-    color: #AB3493;
+    color: #ab3493;
     font-weight: 400; }
     .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__category a {
       color: inherit; }
     .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__category svg {
       display: inline-block;
-      fill: #AB3493;
+      fill: #ab3493;
       margin-right: 6px;
       vertical-align: middle;
       margin-top: -5px; }
@@ -3643,8 +3662,8 @@ body .mfp-active {
     bottom: -44px;
     width: calc(100% - 80px); }
     .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__bottom-progress .give-card__raised {
-      background: #FFFFFF;
-      border: 1px solid #CACACA;
+      background: #ffffff;
+      border: 1px solid #cacaca;
       box-sizing: border-box;
       border-radius: 10px;
       padding: 10px 30px;
@@ -3652,11 +3671,11 @@ body .mfp-active {
       font-size: 14px;
       line-height: 26px;
       text-transform: uppercase;
-      color: #6C6C6C; }
+      color: #6c6c6c; }
       .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__bottom-progress .give-card__raised span {
         font-weight: 600;
         font-size: 18px;
-        color: #AB3493; }
+        color: #ab3493; }
     .elementor-give-forms--skin-grid-cholatse .elementor-give-form .give-card__bottom-progress .give-card__progress-bar {
       position: relative;
       height: 88px;
@@ -3720,7 +3739,7 @@ body .mfp-active {
         border-radius: 25px; }
         .elementor-give-forms--skin-grid-tronador.elementor-filter-wrap .elementor-filter li a.active, .elementor-give-forms--skin-grid-tronador.elementor-filter-wrap .elementor-filter li a:hover {
           color: #fff;
-          background: #4B915A; }
+          background: #4b915a; }
     @media (max-width: 991.98px) {
       .elementor-give-forms--skin-grid-tronador.elementor-filter-wrap .elementor-filter li a {
         padding: 20px 30px; } }
@@ -3735,9 +3754,9 @@ body .mfp-active {
   position: relative;
   overflow: hidden;
   text-align: center;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border: 1px solid #EAE7E7; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #eae7e7; }
   .elementor-give-forms--skin-grid-tronador .elementor-give-form.animate__show {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -3785,14 +3804,14 @@ body .mfp-active {
     font-size: 13px;
     line-height: 1.6;
     letter-spacing: 0;
-    color: #4B915A;
+    color: #4b915a;
     text-align: left;
     margin-top: 30px;
     padding: 0 40px;
     font-weight: 500; }
     .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-card__meta-date svg {
       display: inline-block;
-      fill: #4B915A;
+      fill: #4b915a;
       margin-right: 6px;
       margin-top: -3px;
       vertical-align: middle; }
@@ -3801,16 +3820,16 @@ body .mfp-active {
     display: flex;
     padding: 0;
     align-items: center;
-    border-top: 1px solid #EAE7E7;
+    border-top: 1px solid #eae7e7;
     margin: 0; }
     .elementor-give-forms--skin-grid-tronador .elementor-give-form ul.give-card__total li.give-card__100 {
       width: 30%;
-      border-right: 1px solid #EAE7E7;
+      border-right: 1px solid #eae7e7;
       padding: 7px 0;
       font-weight: bold;
       font-size: 14px;
       line-height: 26px;
-      color: #4B915A; }
+      color: #4b915a; }
     .elementor-give-forms--skin-grid-tronador .elementor-give-form ul.give-card__total li.give-card__goal {
       width: 60%;
       font-weight: 600;
@@ -3819,7 +3838,7 @@ body .mfp-active {
       color: #555555; }
   .elementor-give-forms--skin-grid-tronador .elementor-give-form .give-card__raised {
     padding: 15px 0;
-    color: #4B915A;
+    color: #4b915a;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5; }
@@ -3853,12 +3872,12 @@ body .mfp-active {
 .elementor-give-forms--skin-grid-vaccine .elementor-give-form {
   position: relative;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 24px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   border-radius: 10px;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -3886,15 +3905,15 @@ body .mfp-active {
       display: inline-block;
       color: inherit;
       padding: 1px 12px;
-      color: #009E74;
-      background: #FFFFFF;
-      border: 1px solid #009E74;
+      color: #009e74;
+      background: #ffffff;
+      border: 1px solid #009e74;
       border-radius: 8px; }
       .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-card__category a:not(:last-child) {
         margin-right: 8px; }
       .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-card__category a:hover {
-        color: #FFFFFF;
-        background: #009E74; }
+        color: #ffffff;
+        background: #009e74; }
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-card__title {
     font-size: 24px;
     font-weight: 600;
@@ -3909,11 +3928,11 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-card__title a {
       color: inherit; }
       .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-card__title a:hover {
-        color: #25A5F4; }
+        color: #25a5f4; }
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-card__date {
     font-size: 18px;
     line-height: 1.67;
-    color: #9B9B9B;
+    color: #9b9b9b;
     margin-bottom: 24px; }
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form .givewp-donation-form-modal__open,
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-btn-modal {
@@ -3922,19 +3941,19 @@ body .mfp-active {
     font-size: 16px;
     font-weight: 600;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 10px 30px;
-    background: #25A5F4;
+    background: #25a5f4;
     border-radius: 10px; }
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-btn-modal:hover {
-      background: #0052B5; }
+      background: #0052b5; }
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form .givewp-donation-form-modal__open {
     padding: 10px 30px !important;
-    color: #FFFFFF !important;
-    background: #25A5F4 !important; }
+    color: #ffffff !important;
+    background: #25a5f4 !important; }
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form .givewp-donation-form-modal__open:hover {
-      background: #0052B5 !important; }
+      background: #0052b5 !important; }
   .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-goal-progress {
     font-size: 18px;
     line-height: 1.67;
@@ -3947,10 +3966,10 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-goal-progress .income {
       font-size: 24px;
       font-weight: 700;
-      color: #25A5F4; }
+      color: #25a5f4; }
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form .give-goal-progress .goal-text {
       font-weight: 700;
-      color: #25A5F4; }
+      color: #25a5f4; }
   @media (max-width: 1440px) {
     .elementor-give-forms--skin-grid-vaccine .elementor-give-form {
       padding: 16px; }
@@ -3961,12 +3980,12 @@ body .mfp-active {
 .elementor-give-forms--skin-grid-yutmaru .elementor-give-form {
   position: relative;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 24px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   border-radius: 30px;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-yutmaru .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -3996,8 +4015,8 @@ body .mfp-active {
     font-weight: 600;
     line-height: 1.67;
     white-space: nowrap;
-    color: #FFFFFF;
-    background: #009E74;
+    color: #ffffff;
+    background: #009e74;
     padding: 5px 20px;
     border-radius: 30px;
     -webkit-box-shadow: 0px 10px 20px rgba(0, 158, 116, 0.3);
@@ -4025,7 +4044,7 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-card__title a {
       color: inherit; }
       .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-card__title a:hover {
-        color: #F4B03E; }
+        color: #f4b03e; }
   .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .givewp-donation-form-modal__open,
   .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-btn-modal {
     position: relative;
@@ -4036,7 +4055,7 @@ body .mfp-active {
     font-weight: 600;
     line-height: 24px;
     text-transform: unset;
-    color: #FFFFFF;
+    color: #ffffff;
     float: right;
     margin-top: -40px;
     padding: 10px 20px;
@@ -4044,13 +4063,13 @@ body .mfp-active {
     border-radius: 30px; }
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-btn-modal:hover {
-      background: #F4B03E; }
+      background: #f4b03e; }
   .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .givewp-donation-form-modal__open {
     padding: 10px 20px !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
     background: #151515 !important; }
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .givewp-donation-form-modal__open:hover {
-      background: #F4B03E !important; }
+      background: #f4b03e !important; }
   .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-goal-progress {
     display: flex;
     flex-direction: column-reverse;
@@ -4066,10 +4085,10 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-goal-progress .income {
       font-size: 24px;
       font-weight: 600;
-      color: #F4B03E; }
+      color: #f4b03e; }
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form .give-goal-progress .goal-text {
       font-weight: 600;
-      color: #F4B03E; }
+      color: #f4b03e; }
   @media (max-width: 1440px) {
     .elementor-give-forms--skin-grid-yutmaru .elementor-give-form {
       padding: 16px; }
@@ -4090,12 +4109,12 @@ body .mfp-active {
   position: relative;
   overflow: hidden;
   text-align: center;
-  background: #FDEBAF;
+  background: #fdebaf;
   padding: 20px 20px 0;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-platons .elementor-give-form:hover {
-    background: #FCD755; }
+    background: #fcd755; }
     .elementor-give-forms--skin-grid-platons .elementor-give-form:hover .give-card__media img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
@@ -4115,14 +4134,14 @@ body .mfp-active {
       -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
       transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s; }
   .elementor-give-forms--skin-grid-platons .elementor-give-form .give-card__body {
-    background: #3D7C71;
+    background: #3d7c71;
     margin: 0 -20px;
     padding: 20px 20px 30px; }
   .elementor-give-forms--skin-grid-platons .elementor-give-form .give-card__title {
     font-size: 22px;
     font-weight: 600;
     line-height: 1.25;
-    color: #032F27;
+    color: #032f27;
     margin-bottom: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4145,21 +4164,21 @@ body .mfp-active {
     line-height: 24px;
     color: #206155;
     padding: 10px 30px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 3px;
     -webkit-box-shadow: 10px 10px 0px 0px #206155;
     box-shadow: 10px 10px 0px 0px #206155; }
     .elementor-give-forms--skin-grid-platons .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-platons .elementor-give-form .give-btn-modal:hover {
-      background: #FFFFFF; }
+      background: #ffffff; }
   .elementor-give-forms--skin-grid-platons .elementor-give-form .givewp-donation-form-modal__open {
     color: #206155 !important;
-    background: #FFFFFF !important;
+    background: #ffffff !important;
     padding: 10px 30px !important; }
   .elementor-give-forms--skin-grid-platons .elementor-give-form .give-goal-progress {
     font-size: 14px;
     line-height: 1.5;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 8px; }
     .elementor-give-forms--skin-grid-platons .elementor-give-form .give-goal-progress svg {
       border-radius: 3px; }
@@ -4168,21 +4187,21 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-platons .elementor-give-form .give-goal-progress .income {
       font-size: 20px;
       font-weight: 600;
-      color: #FCD755; }
+      color: #fcd755; }
     .elementor-give-forms--skin-grid-platons .elementor-give-form .give-goal-progress .goal-text {
       font-weight: 600;
-      color: #FCD755; }
+      color: #fcd755; }
 .elementor-give-forms--skin-grid-nuptse .elementor-give-form {
   position: relative;
   overflow: hidden;
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 30px;
   border-radius: 14px;
   -webkit-box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.05);
   box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.05);
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-nuptse .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -4220,7 +4239,7 @@ body .mfp-active {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
-    color: #3F86ED;
+    color: #3f86ed;
     margin-top: -40px; }
   .elementor-give-forms--skin-grid-nuptse .elementor-give-form .givewp-donation-form-modal__open,
   .elementor-give-forms--skin-grid-nuptse .elementor-give-form .give-btn-modal {
@@ -4229,22 +4248,22 @@ body .mfp-active {
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-    color: #011F51;
+    color: #011f51;
     margin-top: 20px;
     padding: 10px 30px;
-    background: #7CF2AD;
+    background: #7cf2ad;
     border-radius: 30px; }
     .elementor-give-forms--skin-grid-nuptse .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-nuptse .elementor-give-form .give-btn-modal:hover {
-      color: #FFFFFF;
-      background: #011F51; }
+      color: #ffffff;
+      background: #011f51; }
   .elementor-give-forms--skin-grid-nuptse .elementor-give-form .givewp-donation-form-modal__open {
-    color: #011F51 !important;
-    background: #7CF2AD !important;
+    color: #011f51 !important;
+    background: #7cf2ad !important;
     padding: 10px 30px !important; }
     .elementor-give-forms--skin-grid-nuptse .elementor-give-form .givewp-donation-form-modal__open:hover {
-      color: #FFFFFF !important;
-      background: #011F51 !important; }
+      color: #ffffff !important;
+      background: #011f51 !important; }
   .elementor-give-forms--skin-grid-nuptse .elementor-give-form .give-goal-progress {
     font-size: 16px;
     line-height: 1.5;
@@ -4271,10 +4290,10 @@ body .mfp-active {
 .elementor-give-forms--skin-grid-gamin .elementor-give-form {
   position: relative;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 2px solid #171717;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-gamin .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -4294,7 +4313,7 @@ body .mfp-active {
       transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s; }
   .elementor-give-forms--skin-grid-gamin .elementor-give-form .give-card__progress-wrap {
     position: relative;
-    background: #ECE8F4;
+    background: #ece8f4;
     padding: 15px 30px; }
   .elementor-give-forms--skin-grid-gamin .elementor-give-form .give-card__progress {
     position: absolute;
@@ -4307,7 +4326,7 @@ body .mfp-active {
     font-size: 46px;
     font-weight: 600;
     line-height: 1.4;
-    color: #846DB7; }
+    color: #846db7; }
   .elementor-give-forms--skin-grid-gamin .elementor-give-form .give-card__goal {
     font-size: 16px;
     font-weight: 400;
@@ -4344,7 +4363,7 @@ body .mfp-active {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background: #846DB7; }
+    background: #846db7; }
   .elementor-give-forms--skin-grid-gamin .elementor-give-form .givewp-donation-form-modal__open,
   .elementor-give-forms--skin-grid-gamin .elementor-give-form .give-btn-modal {
     position: relative;
@@ -4353,7 +4372,7 @@ body .mfp-active {
     font-size: 0;
     width: 24px;
     height: 24px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     background-image: url("../images/heart-dark.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -4362,17 +4381,17 @@ body .mfp-active {
     padding: 0; }
     .elementor-give-forms--skin-grid-gamin .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-gamin .elementor-give-form .give-btn-modal:hover {
-      background-color: #FFFFFF; }
+      background-color: #ffffff; }
   .elementor-give-forms--skin-grid-gamin .elementor-give-form .givewp-donation-form-modal__open {
-    background-color: #FFFFFF !important;
+    background-color: #ffffff !important;
     padding: 0 !important; }
 .elementor-give-forms--skin-grid-cruces .elementor-give-form {
   position: relative;
   overflow: hidden;
-  background: #F8F8FF;
+  background: #f8f8ff;
   border-radius: 10px;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-cruces .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -4399,7 +4418,7 @@ body .mfp-active {
     font-weight: 600;
     font-size: 28px;
     line-height: 1.3;
-    color: #011E41;
+    color: #011e41;
     margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4412,7 +4431,7 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__title a {
       color: inherit; }
       .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__title a:hover {
-        color: #BFB170; }
+        color: #bfb170; }
   .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__excerpt {
     font-weight: 400;
     font-size: 16px;
@@ -4427,8 +4446,8 @@ body .mfp-active {
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    background: #BFB170;
+    color: #ffffff;
+    background: #bfb170;
     padding: 6px 15px;
     border-radius: 5px; }
     .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__category a {
@@ -4437,7 +4456,7 @@ body .mfp-active {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #19697C;
+    color: #19697c;
     margin: 0; }
     .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__progress .give-goal-progress .income,
     .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__progress .give-goal-progress .goal-text {
@@ -4445,7 +4464,7 @@ body .mfp-active {
       font-weight: 600;
       font-size: 26px;
       line-height: 30px;
-      color: #BFB170;
+      color: #bfb170;
       margin-bottom: 8px; }
   .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__progress .raised {
     display: flex;
@@ -4453,14 +4472,14 @@ body .mfp-active {
     margin: 0; }
     .elementor-give-forms--skin-grid-cruces .elementor-give-form .give-card__progress .raised > span {
       width: calc(50% - 5px);
-      background: #FFFFFF;
+      background: #ffffff;
       padding: 12px 15px;
       border-radius: 10px; }
 .elementor-give-forms--skin-grid-swiss .elementor-give-form {
   position: relative;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-swiss .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -4494,20 +4513,20 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__title a {
       color: inherit; }
       .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__title a:hover {
-        color: #4D5EF6; }
+        color: #4d5ef6; }
   .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__progress {
     margin-bottom: 8px; }
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__progress .give-goal-progress {
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
-      color: #4D4D4D;
+      color: #4d4d4d;
       margin-bottom: 0; }
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__progress .raised {
       margin-bottom: 0; }
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__progress .income {
       font-size: 20px;
-      color: #4D5EF6; }
+      color: #4d5ef6; }
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-card__progress .goal-text {
       font-size: inherit;
       font-weight: inherit;
@@ -4526,7 +4545,7 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .givewp-donation-form-modal__open:hover,
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .give-btn-modal:hover {
       color: #ffffff;
-      background: #4D5EF6; }
+      background: #4d5ef6; }
   .elementor-give-forms--skin-grid-swiss .elementor-give-form .givewp-donation-form-modal__open {
     color: #111111 !important;
     background: #ffffff !important;
@@ -4534,12 +4553,12 @@ body .mfp-active {
     width: auto; }
     .elementor-give-forms--skin-grid-swiss .elementor-give-form .givewp-donation-form-modal__open:hover {
       color: #ffffff !important;
-      background: #4D5EF6 !important; }
+      background: #4d5ef6 !important; }
 .elementor-give-forms--skin-grid-toluca .elementor-give-form {
   position: relative;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .elementor-give-forms--skin-grid-toluca .elementor-give-form:hover .give-card__media img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -4560,7 +4579,7 @@ body .mfp-active {
       transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s; }
   .elementor-give-forms--skin-grid-toluca .elementor-give-form .give-card__body {
     position: relative;
-    background: #FFFFFF;
+    background: #ffffff;
     margin: -50px 30px 0;
     padding: 48px 40px 0;
     border-radius: 20px; }
@@ -4575,9 +4594,9 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-toluca .elementor-give-form .give-card__category a {
       color: inherit; }
       .elementor-give-forms--skin-grid-toluca .elementor-give-form .give-card__category a:hover {
-        color: #DD3B32; }
+        color: #dd3b32; }
   .elementor-give-forms--skin-grid-toluca .elementor-give-form .give-card__progress {
-    background: #FDF0DD;
+    background: #fdf0dd;
     margin: 25px -40px 0;
     padding: 25px 40px;
     border-radius: 0 0 20px 20px; }
@@ -4599,7 +4618,7 @@ body .mfp-active {
     line-height: 150%;
     text-transform: capitalize;
     color: #ffffff;
-    background: #DD3B32;
+    background: #dd3b32;
     padding: 12px 35px;
     border-radius: 24px;
     transform: translateY(-50%); }
@@ -4611,7 +4630,7 @@ body .mfp-active {
     padding: 12px 35px !important;
     width: auto;
     color: #ffffff !important;
-    background: #DD3B32 !important; }
+    background: #dd3b32 !important; }
     .elementor-give-forms--skin-grid-toluca .elementor-give-form .givewp-donation-form-modal__open:hover {
       background: #d33128 !important; }
   @media (max-width: 575.98px) {
@@ -4621,6 +4640,224 @@ body .mfp-active {
     .elementor-give-forms--skin-grid-toluca .elementor-give-form .give-card__progress {
       margin: 25px -20px 0;
       padding: 25px 20px; } }
+.elementor-give-forms--skin-grid-together .elementor-give-form {
+  font-family: "Inter", Sans-serif;
+  overflow: hidden; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form:hover .give-card__media img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .elementor-give-forms--skin-grid-together .elementor-give-form.has-btn-donation:hover .give-card__body {
+    padding-bottom: 130px; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form.has-btn-donation:hover .givewp-donation-form-modal__open,
+  .elementor-give-forms--skin-grid-together .elementor-give-form.has-btn-donation:hover .give-btn-modal {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__media {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 66%;
+    background: #e7e6e4; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__media img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+      transition: all 1.5s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(36deg, #2e2e2e 17.76%, rgba(33, 33, 33, 0) 59.83%); }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    z-index: 3;
+    -webkit-transition: padding 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: padding 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__category {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #252525;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 30px;
+    z-index: 3; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__category a {
+      color: inherit; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__title {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    margin: 0; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__title a {
+      color: inherit; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open,
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-btn-modal {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: auto;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    color: #252525;
+    background: #ffd757;
+    padding: 20px;
+    min-width: 260px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.6s ease-out;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.6s ease-out;
+    z-index: 4; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open:hover,
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-btn-modal:hover {
+      color: #252525;
+      background: #ffd757; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open {
+    font-weight: 700 !important;
+    padding: 20px !important;
+    color: #252525 !important;
+    background: #ffd757 !important; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open:hover {
+      color: #252525 !important;
+      background: #ffd757 !important; }
+  .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress {
+    width: 100%;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 30px;
+    flex-direction: column-reverse; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised {
+      display: flex;
+      margin: 22px 0 0 0;
+      gap: 12px; }
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .raised-income,
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .raised-goal {
+        display: flex;
+        align-items: baseline; }
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .income,
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .goal-text {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.3;
+        color: #ffd757;
+        margin-right: 4px; }
+  @media (max-width: 1199.98px) and (min-width: 1025px) {
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__body {
+      padding: 30px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__category {
+      top: 30px;
+      left: 30px;
+      font-size: 14px;
+      padding: 8px 12px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__title {
+      font-size: 28px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open,
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-btn-modal {
+      bottom: 30px;
+      left: 30px;
+      font-size: 14px;
+      padding: 16px;
+      min-width: 220px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form.has-btn-donation:hover .give-card__body {
+      padding-bottom: 110px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress {
+      margin-top: 20px;
+      font-size: 14px; }
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised {
+        margin-top: 18px;
+        gap: 10px; }
+        .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .income,
+        .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .goal-text {
+          font-size: 20px; } }
+  @media (max-width: 1024.98px) {
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__body {
+      padding: 30px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__category {
+      top: 30px;
+      left: 30px;
+      font-size: 14px;
+      padding: 8px 12px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__title {
+      font-size: 28px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open,
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-btn-modal {
+      bottom: 30px;
+      left: 30px;
+      font-size: 14px;
+      padding: 16px;
+      min-width: 220px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form.has-btn-donation:hover .give-card__body {
+      padding-bottom: 110px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress {
+      margin-top: 20px;
+      font-size: 14px; }
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised {
+        margin-top: 18px;
+        gap: 10px; }
+        .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .income,
+        .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .goal-text {
+          font-size: 24px; } }
+  @media (max-width: 575.98px) {
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__body {
+      padding: 20px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__category {
+      top: 20px;
+      left: 20px;
+      font-size: 12px;
+      padding: 6px 10px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-card__title {
+      font-size: 22px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .givewp-donation-form-modal__open,
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-btn-modal {
+      bottom: 20px;
+      left: 20px;
+      font-size: 13px;
+      padding: 14px;
+      min-width: 180px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form.has-btn-donation:hover .give-card__body {
+      padding-bottom: 90px; }
+    .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress {
+      margin-top: 16px;
+      font-size: 12px; }
+      .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised {
+        margin-top: 16px;
+        gap: 8px; }
+        .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .income,
+        .elementor-give-forms--skin-grid-together .elementor-give-form .give-goal-progress .raised .goal-text {
+          font-size: 18px; } }
 
 .elementor-donors--default .elementor-donor {
   position: relative;

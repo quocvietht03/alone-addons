@@ -54,6 +54,7 @@ class Be_Posts_Carousel extends Widget_Base {
 		$this->add_skin( new Skins\Skin_Grid_Jimara( $this ) );
 		$this->add_skin( new Skins\Skin_Grid_Somoni( $this ) );
 		$this->add_skin( new Skins\Skin_Grid_Swiss( $this ) );
+		$this->add_skin( new Skins\Skin_Grid_Together( $this ) );
 
 	}
 
