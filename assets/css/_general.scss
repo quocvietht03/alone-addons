@@ -138,3 +138,116 @@
     animation-delay: .8s;
   }
 }
+
+// GSAP Animation Styles
+
+// Title Animation (.bt-gsap-animation-title)
+.bt-gsap-animation-title {
+  overflow: visible !important;
+  position: relative;
+  
+  h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+    margin: 0;
+    line-height: 1.2;
+    overflow: hidden !important;
+    
+    .bt-gsap-title-line {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      will-change: transform, opacity;
+    }
+    
+    .bt-gsap-title-word {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: transform, opacity;
+      position: relative;
+      transform-origin: center bottom;
+      vertical-align: baseline;
+    }
+  }
+  
+  .bt-gsap-title-line {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    will-change: transform, opacity;
+  }
+  
+  .bt-gsap-title-word {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: transform, opacity;
+    position: relative;
+    transform-origin: center bottom;
+    vertical-align: baseline;
+  }
+}
+
+// Title Long Animation (.bt-gsap-animation-title-long) - Sharp line reveal
+.bt-gsap-animation-title-long {
+  overflow: visible !important;
+  position: relative;
+  
+  .bt-gsap-mask-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+    h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+      margin: 0;
+      line-height: 1.2;
+      position: relative;
+    }
+    
+    .bt-gsap-bright-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      will-change: clip-path;
+      pointer-events: none;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+    margin: 0;
+    line-height: 1.2;
+    overflow: hidden !important;
+    
+    .bt-gsap-title-long-char {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: color;
+      position: relative;
+      vertical-align: baseline;
+    }
+    
+    .bt-gsap-title-long-word {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: color;
+      position: relative;
+      vertical-align: baseline;
+    }
+  }
+  
+  .bt-gsap-title-long-char {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: color;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  .bt-gsap-title-long-word {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: color;
+    position: relative;
+    vertical-align: baseline;
+  }
+}
+

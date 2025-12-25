@@ -212,8 +212,35 @@ class Plugin {
 		wp_register_script( 'jquery-progressbar', plugins_url( '/assets/js/progressbar.min.js', __FILE__ ), [ 'jquery' ], false, true );
 		wp_register_script( 'jquery-countdown-plugin', plugins_url( '/assets/js/jquery.countdown-plugin.min.js', __FILE__ ), [ 'jquery' ], false, true );
 		wp_register_script( 'jquery-countdown', plugins_url( '/assets/js/jquery.countdown.min.js', __FILE__ ), [ 'jquery' ], false, true );
+		
+		// GSAP Core Library (now 100% free including all bonus plugins as of April 30, 2025)
+		wp_register_script( 'gsap', plugins_url( '/assets/js/gsap.min.js', __FILE__ ), [], '3.12.5', true );
+		
+		// GSAP ScrollTrigger Plugin
+		wp_register_script( 'gsap-scrolltrigger', plugins_url( '/assets/js/ScrollTrigger.min.js', __FILE__ ), [ 'gsap' ], '3.12.5', true );
+		
+		// GSAP SplitText Plugin
+		wp_register_script( 'gsap-splittext', plugins_url( '/assets/js/SplitText.min.js', __FILE__ ), [ 'gsap' ], '3.14.2', true );
+		
+		// GSAP Scroll Effects
+		wp_register_script( 'gsap-scroll-effects', plugins_url( '/assets/js/gsap-scroll-effects.js', __FILE__ ), [ 'gsap', 'gsap-scrolltrigger', 'gsap-splittext' ], '1.0.0', true );
+		
 		wp_register_script( 'alone-addons', plugins_url( '/assets/js/frontend.js', __FILE__ ), [ 'jquery' ], false, true );
 
+	}
+
+	/**
+	 * Enqueue GSAP scripts on frontend
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function enqueue_gsap_scripts() {
+		// Enqueue GSAP scripts on all frontend pages
+		wp_enqueue_script( 'gsap' );
+		wp_enqueue_script( 'gsap-scrolltrigger' );
+		wp_enqueue_script( 'gsap-splittext' );
+		wp_enqueue_script( 'gsap-scroll-effects' );
 	}
 
 	/**
@@ -344,6 +371,9 @@ class Plugin {
 
 		// Register widget scripts
 		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'widget_scripts' ] );
+
+		// Enqueue GSAP scripts on frontend
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_gsap_scripts' ] );
 
 		// Register category
 		add_action( 'elementor/elements/categories_registered', [ $this, 'add_category' ] );

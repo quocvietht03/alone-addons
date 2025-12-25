@@ -186,6 +186,86 @@
   .socials-animation-delay:nth-of-type(10), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(10) {
     animation-delay: .8s; }
 
+.bt-gsap-animation-title {
+  overflow: visible !important;
+  position: relative; }
+  .bt-gsap-animation-title h1, .bt-gsap-animation-title h2, .bt-gsap-animation-title h3, .bt-gsap-animation-title h4, .bt-gsap-animation-title h5, .bt-gsap-animation-title h6, .bt-gsap-animation-title .elementor-heading-title {
+    margin: 0;
+    line-height: 1.2;
+    overflow: hidden !important; }
+    .bt-gsap-animation-title h1 .bt-gsap-title-line, .bt-gsap-animation-title h2 .bt-gsap-title-line, .bt-gsap-animation-title h3 .bt-gsap-title-line, .bt-gsap-animation-title h4 .bt-gsap-title-line, .bt-gsap-animation-title h5 .bt-gsap-title-line, .bt-gsap-animation-title h6 .bt-gsap-title-line, .bt-gsap-animation-title .elementor-heading-title .bt-gsap-title-line {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      will-change: transform, opacity; }
+    .bt-gsap-animation-title h1 .bt-gsap-title-word, .bt-gsap-animation-title h2 .bt-gsap-title-word, .bt-gsap-animation-title h3 .bt-gsap-title-word, .bt-gsap-animation-title h4 .bt-gsap-title-word, .bt-gsap-animation-title h5 .bt-gsap-title-word, .bt-gsap-animation-title h6 .bt-gsap-title-word, .bt-gsap-animation-title .elementor-heading-title .bt-gsap-title-word {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: transform, opacity;
+      position: relative;
+      transform-origin: center bottom;
+      vertical-align: baseline; }
+  .bt-gsap-animation-title .bt-gsap-title-line {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    will-change: transform, opacity; }
+  .bt-gsap-animation-title .bt-gsap-title-word {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: transform, opacity;
+    position: relative;
+    transform-origin: center bottom;
+    vertical-align: baseline; }
+
+.bt-gsap-animation-title-long {
+  overflow: visible !important;
+  position: relative; }
+  .bt-gsap-animation-title-long .bt-gsap-mask-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .bt-gsap-animation-title-long .bt-gsap-mask-wrapper h1, .bt-gsap-animation-title-long .bt-gsap-mask-wrapper h2, .bt-gsap-animation-title-long .bt-gsap-mask-wrapper h3, .bt-gsap-animation-title-long .bt-gsap-mask-wrapper h4, .bt-gsap-animation-title-long .bt-gsap-mask-wrapper h5, .bt-gsap-animation-title-long .bt-gsap-mask-wrapper h6, .bt-gsap-animation-title-long .bt-gsap-mask-wrapper .elementor-heading-title {
+      margin: 0;
+      line-height: 1.2;
+      position: relative; }
+    .bt-gsap-animation-title-long .bt-gsap-mask-wrapper .bt-gsap-bright-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      will-change: clip-path;
+      pointer-events: none; }
+  .bt-gsap-animation-title-long h1, .bt-gsap-animation-title-long h2, .bt-gsap-animation-title-long h3, .bt-gsap-animation-title-long h4, .bt-gsap-animation-title-long h5, .bt-gsap-animation-title-long h6, .bt-gsap-animation-title-long .elementor-heading-title {
+    margin: 0;
+    line-height: 1.2;
+    overflow: hidden !important; }
+    .bt-gsap-animation-title-long h1 .bt-gsap-title-long-char, .bt-gsap-animation-title-long h2 .bt-gsap-title-long-char, .bt-gsap-animation-title-long h3 .bt-gsap-title-long-char, .bt-gsap-animation-title-long h4 .bt-gsap-title-long-char, .bt-gsap-animation-title-long h5 .bt-gsap-title-long-char, .bt-gsap-animation-title-long h6 .bt-gsap-title-long-char, .bt-gsap-animation-title-long .elementor-heading-title .bt-gsap-title-long-char {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: color;
+      position: relative;
+      vertical-align: baseline; }
+    .bt-gsap-animation-title-long h1 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h2 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h3 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h4 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h5 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h6 .bt-gsap-title-long-word, .bt-gsap-animation-title-long .elementor-heading-title .bt-gsap-title-long-word {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: color;
+      position: relative;
+      vertical-align: baseline; }
+  .bt-gsap-animation-title-long .bt-gsap-title-long-char {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: color;
+    position: relative;
+    vertical-align: baseline; }
+  .bt-gsap-animation-title-long .bt-gsap-title-long-word {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: color;
+    position: relative;
+    vertical-align: baseline; }
+
 .elementor-pagination {
   text-align: center;
   margin-top: 64px; }
