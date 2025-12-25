@@ -156,7 +156,7 @@
 
 							// Ensure all chars start with dim color
 							gsap.set(instance.chars, {
-								color: `rgba(${r}, ${g}, ${b}, 0.1)`
+								color: `rgba(${r}, ${g}, ${b}, 0.05)`
 							});
 
 							// Animate chars with scrub - text lights up character by character as you scroll
