@@ -242,6 +242,51 @@
   opacity: 0;
   will-change: transform, opacity; }
 
+.elementor-editor-active .bt-gsap-animation-box .elementor-column,
+.elementor-editor-preview .bt-gsap-animation-box .elementor-column {
+  opacity: 1 !important;
+  transform: none !important; }
+.elementor-editor-active .bt-gsap-animation-text p,
+.elementor-editor-preview .bt-gsap-animation-text p {
+  opacity: 1 !important;
+  transform: none !important; }
+.elementor-editor-active .bt-gsap-animation-title h1, .elementor-editor-active .bt-gsap-animation-title h2, .elementor-editor-active .bt-gsap-animation-title h3, .elementor-editor-active .bt-gsap-animation-title h4, .elementor-editor-active .bt-gsap-animation-title h5, .elementor-editor-active .bt-gsap-animation-title h6, .elementor-editor-active .bt-gsap-animation-title .elementor-heading-title,
+.elementor-editor-active .bt-gsap-animation-title-long h1,
+.elementor-editor-active .bt-gsap-animation-title-long h2,
+.elementor-editor-active .bt-gsap-animation-title-long h3,
+.elementor-editor-active .bt-gsap-animation-title-long h4,
+.elementor-editor-active .bt-gsap-animation-title-long h5,
+.elementor-editor-active .bt-gsap-animation-title-long h6,
+.elementor-editor-active .bt-gsap-animation-title-long .elementor-heading-title,
+.elementor-editor-preview .bt-gsap-animation-title h1,
+.elementor-editor-preview .bt-gsap-animation-title h2,
+.elementor-editor-preview .bt-gsap-animation-title h3,
+.elementor-editor-preview .bt-gsap-animation-title h4,
+.elementor-editor-preview .bt-gsap-animation-title h5,
+.elementor-editor-preview .bt-gsap-animation-title h6,
+.elementor-editor-preview .bt-gsap-animation-title .elementor-heading-title,
+.elementor-editor-preview .bt-gsap-animation-title-long h1,
+.elementor-editor-preview .bt-gsap-animation-title-long h2,
+.elementor-editor-preview .bt-gsap-animation-title-long h3,
+.elementor-editor-preview .bt-gsap-animation-title-long h4,
+.elementor-editor-preview .bt-gsap-animation-title-long h5,
+.elementor-editor-preview .bt-gsap-animation-title-long h6,
+.elementor-editor-preview .bt-gsap-animation-title-long .elementor-heading-title {
+  opacity: 1 !important;
+  transform: none !important;
+  color: inherit !important; }
+.elementor-editor-active .bt-gsap-animation-title .bt-gsap-title-word,
+.elementor-editor-active .bt-gsap-animation-title .bt-gsap-title-long-word,
+.elementor-editor-active .bt-gsap-animation-title-long .bt-gsap-title-word,
+.elementor-editor-active .bt-gsap-animation-title-long .bt-gsap-title-long-word,
+.elementor-editor-preview .bt-gsap-animation-title .bt-gsap-title-word,
+.elementor-editor-preview .bt-gsap-animation-title .bt-gsap-title-long-word,
+.elementor-editor-preview .bt-gsap-animation-title-long .bt-gsap-title-word,
+.elementor-editor-preview .bt-gsap-animation-title-long .bt-gsap-title-long-word {
+  opacity: 1 !important;
+  transform: none !important;
+  color: inherit !important; }
+
 .elementor-pagination {
   text-align: center;
   margin-top: 64px; }

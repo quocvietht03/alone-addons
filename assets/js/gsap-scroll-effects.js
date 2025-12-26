@@ -33,12 +33,33 @@
 	}
 
 	/**
+	 * Check if Elementor editor is active
+	 * @returns {boolean}
+	 */
+	function isElementorEditor() {
+		// Check multiple ways Elementor editor can be detected
+		if (typeof elementorFrontend !== 'undefined' && elementorFrontend.isEditMode && elementorFrontend.isEditMode()) {
+			return true;
+		}
+		if (document.body.classList.contains('elementor-editor-active')) {
+			return true;
+		}
+		if (window.location.href.indexOf('elementor-preview') !== -1) {
+			return true;
+		}
+		if (document.querySelector('.elementor-editor-preview')) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
 	 * Initialize title animation for .bt-gsap-animation-title
 	 * Stagger animation - animate words one by one
 	 */
 	function initTitleAnimation() {
-		// Disable on mobile
-		if (isMobile()) {
+		// Disable on mobile and in Elementor editor
+		if (isMobile() || isElementorEditor()) {
 			return;
 		}
 			document.fonts.ready.then(() => {
@@ -87,7 +108,7 @@
 									trigger: container,
 									start: 'top 85%', // Start animation when top reaches 85%
 									end: 'bottom top', // End when bottom leaves top of viewport (completely out of screen)
-									toggleActions: "play reverse play reverse" // Play when enter, reverse when completely out, play again when re-enter
+                                    toggleActions: "play none none none",
 								}
 							});
 
@@ -105,8 +126,8 @@
 	 * Stagger animation with random word appearance
 	 */
 	function initTitleLongAnimation() {
-		// Disable on mobile
-		if (isMobile()) {
+		// Disable on mobile and in Elementor editor
+		if (isMobile() || isElementorEditor()) {
 			return;
 		}
 			document.fonts.ready.then(() => {
@@ -190,8 +211,8 @@
 	 * Subtle animation - animate each paragraph as a whole, preserve margins
 	 */
 	function initTextAnimation() {
-		// Disable on mobile
-		if (isMobile()) {
+		// Disable on mobile and in Elementor editor
+		if (isMobile() || isElementorEditor()) {
 			return;
 		}
 			document.fonts.ready.then(() => {
@@ -253,8 +274,8 @@
 	 * Stagger animation - animate each .elementor-column one by one
 	 */
 	function initBoxAnimation() {
-		// Disable on mobile
-		if (isMobile()) {
+		// Disable on mobile and in Elementor editor
+		if (isMobile() || isElementorEditor()) {
 			return;
 		}
 
@@ -292,9 +313,9 @@
 					ease: 'power3.out',
 					scrollTrigger: {
 						trigger: container,
-						start: 'top 85%', // Start animation when top reaches 85%
+						start: 'top 40%', 
 						end: 'bottom 70%',
-						toggleActions: "play none none none" // Play once when enter, no reverse
+						toggleActions: "play none none none" 
 					}
 				});
 			});

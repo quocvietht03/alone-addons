@@ -220,3 +220,36 @@
   }
 }
 
+// Reset animations in Elementor editor
+.elementor-editor-active,
+.elementor-editor-preview {
+  .bt-gsap-animation-box {
+    .elementor-column {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+  
+  .bt-gsap-animation-text {
+    p {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+  
+  .bt-gsap-animation-title,
+  .bt-gsap-animation-title-long {
+    h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+      opacity: 1 !important;
+      transform: none !important;
+      color: inherit !important;
+    }
+    
+    .bt-gsap-title-word,
+    .bt-gsap-title-long-word {
+      opacity: 1 !important;
+      transform: none !important;
+      color: inherit !important;
+    }
+  }
+}
