@@ -199,8 +199,7 @@
   .bt-gsap-animation-title h6,
   .bt-gsap-animation-title .elementor-heading-title {
     margin: 0;
-    line-height: 1.2;
-    overflow: hidden !important; }
+    line-height: 1.2; }
     .bt-gsap-animation-title h1 .bt-gsap-title-line,
     .bt-gsap-animation-title h2 .bt-gsap-title-line,
     .bt-gsap-animation-title h3 .bt-gsap-title-line,
