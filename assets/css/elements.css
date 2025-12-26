@@ -105,7 +105,9 @@
   .elementor-widget-text-editor.elementor-element-edit-mode .elementor-text-editor > *:last-child {
     margin-bottom: 0; }
 
-.elementor-form input, .elementor-form select, .elementor-form textarea {
+.elementor-form input,
+.elementor-form select,
+.elementor-form textarea {
   margin: 0; }
 
 .elementor-select-wrapper.remove-before:before,
@@ -129,9 +131,9 @@
 .socials-offical-color.twitter, .elementor-members--skin-pumori .elementor-member__socials a.twitter, .elementor-members--skin-changla .elementor-member__socials a.twitter, .elementor-members--skin-cholatse .elementor-member__socials a.twitter {
   background: #000000; }
 .socials-offical-color.linkedin, .elementor-members--skin-pumori .elementor-member__socials a.linkedin, .elementor-members--skin-changla .elementor-member__socials a.linkedin, .elementor-members--skin-cholatse .elementor-member__socials a.linkedin {
-  background: #0077B5; }
+  background: #0077b5; }
 .socials-offical-color.skype, .elementor-members--skin-pumori .elementor-member__socials a.skype, .elementor-members--skin-changla .elementor-member__socials a.skype, .elementor-members--skin-cholatse .elementor-member__socials a.skype {
-  background: #00AFF0; }
+  background: #00aff0; }
 .socials-offical-color.dropbox, .elementor-members--skin-pumori .elementor-member__socials a.dropbox, .elementor-members--skin-changla .elementor-member__socials a.dropbox, .elementor-members--skin-cholatse .elementor-member__socials a.dropbox {
   background: #007ee5; }
 .socials-offical-color.wordpress, .elementor-members--skin-pumori .elementor-member__socials a.wordpress, .elementor-members--skin-changla .elementor-member__socials a.wordpress, .elementor-members--skin-cholatse .elementor-member__socials a.wordpress {
@@ -147,7 +149,7 @@
 .socials-offical-color.youtube, .elementor-members--skin-pumori .elementor-member__socials a.youtube, .elementor-members--skin-changla .elementor-member__socials a.youtube, .elementor-members--skin-cholatse .elementor-member__socials a.youtube {
   background: #cd201f; }
 .socials-offical-color.whatsapp, .elementor-members--skin-pumori .elementor-member__socials a.whatsapp, .elementor-members--skin-changla .elementor-member__socials a.whatsapp, .elementor-members--skin-cholatse .elementor-member__socials a.whatsapp {
-  background: #25D366; }
+  background: #25d366; }
 .socials-offical-color.wechat, .elementor-members--skin-pumori .elementor-member__socials a.wechat, .elementor-members--skin-changla .elementor-member__socials a.wechat, .elementor-members--skin-cholatse .elementor-member__socials a.wechat {
   background: #09b83e; }
 .socials-offical-color.slack, .elementor-members--skin-pumori .elementor-member__socials a.slack, .elementor-members--skin-changla .elementor-member__socials a.slack, .elementor-members--skin-cholatse .elementor-member__socials a.slack {
@@ -164,41 +166,59 @@
   background: #e8e60b; }
 
 .socials-animation-delay, .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a, .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a, .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a, .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a, .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a {
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  animation-delay: .35s; }
+  animation-delay: 0.35s; }
   .socials-animation-delay:nth-of-type(2), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(2), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(2), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(2), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(2), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(2) {
-    animation-delay: .4s; }
+    animation-delay: 0.4s; }
   .socials-animation-delay:nth-of-type(3), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(3), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(3), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(3), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(3), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(3) {
-    animation-delay: .45s; }
+    animation-delay: 0.45s; }
   .socials-animation-delay:nth-of-type(4), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(4), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(4), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(4), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(4), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(4) {
-    animation-delay: .5s; }
+    animation-delay: 0.5s; }
   .socials-animation-delay:nth-of-type(5), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(5), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(5), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(5), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(5), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(5) {
-    animation-delay: .55s; }
+    animation-delay: 0.55s; }
   .socials-animation-delay:nth-of-type(6), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(6), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(6), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(6), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(6), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(6) {
-    animation-delay: .6s; }
+    animation-delay: 0.6s; }
   .socials-animation-delay:nth-of-type(7), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(7), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(7), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(7), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(7), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(7) {
-    animation-delay: .65s; }
+    animation-delay: 0.65s; }
   .socials-animation-delay:nth-of-type(8), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(8), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(8), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(8), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(8), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(8) {
-    animation-delay: .7s; }
+    animation-delay: 0.7s; }
   .socials-animation-delay:nth-of-type(9), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(9), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(9), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(9), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(9), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(9) {
-    animation-delay: .75s; }
+    animation-delay: 0.75s; }
   .socials-animation-delay:nth-of-type(10), .elementor-members--skin-pumori .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-batura .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-changla .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-cerredo .elementor-member:hover .elementor-member__socials a:nth-of-type(10), .elementor-members--skin-nuptse .elementor-member:hover .elementor-member__socials a:nth-of-type(10) {
-    animation-delay: .8s; }
+    animation-delay: 0.8s; }
 
 .bt-gsap-animation-title {
   overflow: visible !important;
   position: relative; }
-  .bt-gsap-animation-title h1, .bt-gsap-animation-title h2, .bt-gsap-animation-title h3, .bt-gsap-animation-title h4, .bt-gsap-animation-title h5, .bt-gsap-animation-title h6, .bt-gsap-animation-title .elementor-heading-title {
+  .bt-gsap-animation-title h1,
+  .bt-gsap-animation-title h2,
+  .bt-gsap-animation-title h3,
+  .bt-gsap-animation-title h4,
+  .bt-gsap-animation-title h5,
+  .bt-gsap-animation-title h6,
+  .bt-gsap-animation-title .elementor-heading-title {
     margin: 0;
     line-height: 1.2;
     overflow: hidden !important; }
-    .bt-gsap-animation-title h1 .bt-gsap-title-line, .bt-gsap-animation-title h2 .bt-gsap-title-line, .bt-gsap-animation-title h3 .bt-gsap-title-line, .bt-gsap-animation-title h4 .bt-gsap-title-line, .bt-gsap-animation-title h5 .bt-gsap-title-line, .bt-gsap-animation-title h6 .bt-gsap-title-line, .bt-gsap-animation-title .elementor-heading-title .bt-gsap-title-line {
+    .bt-gsap-animation-title h1 .bt-gsap-title-line,
+    .bt-gsap-animation-title h2 .bt-gsap-title-line,
+    .bt-gsap-animation-title h3 .bt-gsap-title-line,
+    .bt-gsap-animation-title h4 .bt-gsap-title-line,
+    .bt-gsap-animation-title h5 .bt-gsap-title-line,
+    .bt-gsap-animation-title h6 .bt-gsap-title-line,
+    .bt-gsap-animation-title .elementor-heading-title .bt-gsap-title-line {
       display: block;
       overflow: hidden;
       position: relative;
       will-change: transform, opacity; }
-    .bt-gsap-animation-title h1 .bt-gsap-title-word, .bt-gsap-animation-title h2 .bt-gsap-title-word, .bt-gsap-animation-title h3 .bt-gsap-title-word, .bt-gsap-animation-title h4 .bt-gsap-title-word, .bt-gsap-animation-title h5 .bt-gsap-title-word, .bt-gsap-animation-title h6 .bt-gsap-title-word, .bt-gsap-animation-title .elementor-heading-title .bt-gsap-title-word {
+    .bt-gsap-animation-title h1 .bt-gsap-title-word,
+    .bt-gsap-animation-title h2 .bt-gsap-title-word,
+    .bt-gsap-animation-title h3 .bt-gsap-title-word,
+    .bt-gsap-animation-title h4 .bt-gsap-title-word,
+    .bt-gsap-animation-title h5 .bt-gsap-title-word,
+    .bt-gsap-animation-title h6 .bt-gsap-title-word,
+    .bt-gsap-animation-title .elementor-heading-title .bt-gsap-title-word {
       display: inline-block;
       white-space: nowrap;
       will-change: transform, opacity;
@@ -221,11 +241,23 @@
 .bt-gsap-animation-title-long {
   overflow: visible !important;
   position: relative; }
-  .bt-gsap-animation-title-long h1, .bt-gsap-animation-title-long h2, .bt-gsap-animation-title-long h3, .bt-gsap-animation-title-long h4, .bt-gsap-animation-title-long h5, .bt-gsap-animation-title-long h6, .bt-gsap-animation-title-long .elementor-heading-title {
+  .bt-gsap-animation-title-long h1,
+  .bt-gsap-animation-title-long h2,
+  .bt-gsap-animation-title-long h3,
+  .bt-gsap-animation-title-long h4,
+  .bt-gsap-animation-title-long h5,
+  .bt-gsap-animation-title-long h6,
+  .bt-gsap-animation-title-long .elementor-heading-title {
     margin: 0;
     line-height: 1.2;
     overflow: visible !important; }
-    .bt-gsap-animation-title-long h1 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h2 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h3 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h4 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h5 .bt-gsap-title-long-word, .bt-gsap-animation-title-long h6 .bt-gsap-title-long-word, .bt-gsap-animation-title-long .elementor-heading-title .bt-gsap-title-long-word {
+    .bt-gsap-animation-title-long h1 .bt-gsap-title-long-word,
+    .bt-gsap-animation-title-long h2 .bt-gsap-title-long-word,
+    .bt-gsap-animation-title-long h3 .bt-gsap-title-long-word,
+    .bt-gsap-animation-title-long h4 .bt-gsap-title-long-word,
+    .bt-gsap-animation-title-long h5 .bt-gsap-title-long-word,
+    .bt-gsap-animation-title-long h6 .bt-gsap-title-long-word,
+    .bt-gsap-animation-title-long .elementor-heading-title .bt-gsap-title-long-word {
       display: inline-block;
       white-space: nowrap;
       will-change: color;
@@ -238,9 +270,10 @@
     position: relative;
     vertical-align: baseline; }
 
-.bt-gsap-animation-box .elementor-column {
-  opacity: 0;
-  will-change: transform, opacity; }
+@media (min-width: 769px) {
+  .bt-gsap-animation-box .elementor-column {
+    opacity: 0;
+    will-change: transform, opacity; } }
 
 .elementor-editor-active .bt-gsap-animation-box .elementor-column,
 .elementor-editor-preview .bt-gsap-animation-box .elementor-column {
@@ -250,7 +283,13 @@
 .elementor-editor-preview .bt-gsap-animation-text p {
   opacity: 1 !important;
   transform: none !important; }
-.elementor-editor-active .bt-gsap-animation-title h1, .elementor-editor-active .bt-gsap-animation-title h2, .elementor-editor-active .bt-gsap-animation-title h3, .elementor-editor-active .bt-gsap-animation-title h4, .elementor-editor-active .bt-gsap-animation-title h5, .elementor-editor-active .bt-gsap-animation-title h6, .elementor-editor-active .bt-gsap-animation-title .elementor-heading-title,
+.elementor-editor-active .bt-gsap-animation-title h1,
+.elementor-editor-active .bt-gsap-animation-title h2,
+.elementor-editor-active .bt-gsap-animation-title h3,
+.elementor-editor-active .bt-gsap-animation-title h4,
+.elementor-editor-active .bt-gsap-animation-title h5,
+.elementor-editor-active .bt-gsap-animation-title h6,
+.elementor-editor-active .bt-gsap-animation-title .elementor-heading-title,
 .elementor-editor-active .bt-gsap-animation-title-long h1,
 .elementor-editor-active .bt-gsap-animation-title-long h2,
 .elementor-editor-active .bt-gsap-animation-title-long h3,
@@ -273,8 +312,7 @@
 .elementor-editor-preview .bt-gsap-animation-title-long h6,
 .elementor-editor-preview .bt-gsap-animation-title-long .elementor-heading-title {
   opacity: 1 !important;
-  transform: none !important;
-  color: inherit !important; }
+  transform: none !important; }
 .elementor-editor-active .bt-gsap-animation-title .bt-gsap-title-word,
 .elementor-editor-active .bt-gsap-animation-title .bt-gsap-title-long-word,
 .elementor-editor-active .bt-gsap-animation-title-long .bt-gsap-title-word,
@@ -284,8 +322,7 @@
 .elementor-editor-preview .bt-gsap-animation-title-long .bt-gsap-title-word,
 .elementor-editor-preview .bt-gsap-animation-title-long .bt-gsap-title-long-word {
   opacity: 1 !important;
-  transform: none !important;
-  color: inherit !important; }
+  transform: none !important; }
 
 .elementor-pagination {
   text-align: center;

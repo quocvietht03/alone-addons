@@ -21,7 +21,9 @@
 }
 
 .elementor-form {
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     margin: 0;
   }
 }
@@ -54,10 +56,10 @@
     background: #000000;
   }
   &.linkedin {
-    background: #0077B5;
+    background: #0077b5;
   }
   &.skype {
-    background: #00AFF0;
+    background: #00aff0;
   }
   &.dropbox {
     background: #007ee5;
@@ -81,7 +83,7 @@
     background: #cd201f;
   }
   &.whatsapp {
-    background: #25D366;
+    background: #25d366;
   }
   &.wechat {
     background: #09b83e;
@@ -107,35 +109,35 @@
 }
 
 .socials-animation-delay {
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  animation-delay: .35s;
+  animation-delay: 0.35s;
   &:nth-of-type(2) {
-    animation-delay: .4s;
+    animation-delay: 0.4s;
   }
   &:nth-of-type(3) {
-    animation-delay: .45s;
+    animation-delay: 0.45s;
   }
   &:nth-of-type(4) {
-    animation-delay: .5s;
+    animation-delay: 0.5s;
   }
   &:nth-of-type(5) {
-    animation-delay: .55s;
+    animation-delay: 0.55s;
   }
   &:nth-of-type(6) {
-    animation-delay: .6s;
+    animation-delay: 0.6s;
   }
   &:nth-of-type(7) {
-    animation-delay: .65s;
+    animation-delay: 0.65s;
   }
   &:nth-of-type(8) {
-    animation-delay: .7s;
+    animation-delay: 0.7s;
   }
   &:nth-of-type(9) {
-    animation-delay: .75s;
+    animation-delay: 0.75s;
   }
   &:nth-of-type(10) {
-    animation-delay: .8s;
+    animation-delay: 0.8s;
   }
 }
 
@@ -145,19 +147,25 @@
 .bt-gsap-animation-title {
   overflow: visible !important;
   position: relative;
-  
-  h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .elementor-heading-title {
     margin: 0;
     line-height: 1.2;
     overflow: hidden !important;
-    
+
     .bt-gsap-title-line {
       display: block;
       overflow: hidden;
       position: relative;
       will-change: transform, opacity;
     }
-    
+
     .bt-gsap-title-word {
       display: inline-block;
       white-space: nowrap;
@@ -167,14 +175,14 @@
       vertical-align: baseline;
     }
   }
-  
+
   .bt-gsap-title-line {
     display: block;
     overflow: hidden;
     position: relative;
     will-change: transform, opacity;
   }
-  
+
   .bt-gsap-title-word {
     display: inline-block;
     white-space: nowrap;
@@ -189,12 +197,18 @@
 .bt-gsap-animation-title-long {
   overflow: visible !important;
   position: relative;
-  
-  h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .elementor-heading-title {
     margin: 0;
     line-height: 1.2;
     overflow: visible !important;
-    
+
     .bt-gsap-title-long-word {
       display: inline-block;
       white-space: nowrap;
@@ -203,7 +217,7 @@
       vertical-align: baseline;
     }
   }
-  
+
   .bt-gsap-title-long-word {
     display: inline-block;
     white-space: nowrap;
@@ -215,8 +229,10 @@
 // Box Animation (.bt-gsap-animation-box) - Stagger column animation
 .bt-gsap-animation-box {
   .elementor-column {
-    opacity: 0;
-    will-change: transform, opacity;
+    @media (min-width: 769px) {
+      opacity: 0;
+      will-change: transform, opacity;
+    }
   }
 }
 
@@ -229,27 +245,31 @@
       transform: none !important;
     }
   }
-  
+
   .bt-gsap-animation-text {
     p {
       opacity: 1 !important;
       transform: none !important;
     }
   }
-  
+
   .bt-gsap-animation-title,
   .bt-gsap-animation-title-long {
-    h1, h2, h3, h4, h5, h6, .elementor-heading-title {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .elementor-heading-title {
       opacity: 1 !important;
       transform: none !important;
-      color: inherit !important;
     }
-    
+
     .bt-gsap-title-word,
     .bt-gsap-title-long-word {
       opacity: 1 !important;
       transform: none !important;
-      color: inherit !important;
     }
   }
 }
