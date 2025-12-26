@@ -405,6 +405,248 @@
 		});
 	};
 
+	var BeTogetherHandler = function ($scope, $) {
+		//console.log($scope);
+		var $widget = $scope.find('.be-together-wrapper');
+		
+		if (!$widget.length || $widget.attr('data-initialized') === 'true') {
+			return;
+		}
+
+		// Check if GSAP is loaded
+		if (typeof gsap === 'undefined') {
+			console.warn('GSAP is not loaded for Be Together widget');
+			return;
+		}
+
+		$widget.attr('data-initialized', 'true');
+
+		// Animate SVG arrow on load
+		var $arrow = $widget.find('.be-together-arrow');
+		var $arrowPaths = $widget.find('.be-together-arrow-path');
+		
+		if ($arrow.length && $arrowPaths.length) {
+			// Set initial state - hide all paths
+			gsap.set($arrowPaths, {
+				opacity: 0,
+				scale: 0.8,
+				transformOrigin: 'center center'
+			});
+
+			// Animate paths one by one
+			gsap.to($arrowPaths, {
+				opacity: 1,
+				scale: 1,
+				duration: 0.6,
+				stagger: 0.1,
+				ease: 'back.out(1.7)',
+				delay: 0.3
+			});
+		}
+
+		var headingListJson = $widget.attr('data-heading-list');
+		var animationInterval = parseFloat($widget.attr('data-animation-interval')) || 3000;
+
+		if (!headingListJson) {
+			return;
+		}
+
+		var headingList;
+		try {
+			headingList = JSON.parse(headingListJson);
+		} catch (e) {
+			console.error('Error parsing heading list:', e);
+			return;
+		}
+
+		// Need at least 2 items to animate
+		if (headingList.length < 2) {
+			return;
+		}
+
+		// Get elements
+		var $highlightElement = $widget.find('.be-together-heading-highlight');
+		var $descriptionElement = $widget.find('.be-together-description');
+		var $arrowPaths = $widget.find('.be-together-arrow-path');
+
+		if (!$highlightElement.length || !$descriptionElement.length) {
+			return;
+		}
+
+		var currentIndex = 0;
+		var animationTimeline = null;
+
+		/**
+		 * Wrap text into spans for wave animation
+		 */
+		function wrapTextInSpans($element) {
+			var text = $element.text();
+			var wrapped = '';
+			for (var i = 0; i < text.length; i++) {
+				var char = text[i];
+				if (char === ' ') {
+					wrapped += '<span class="be-together-char" style="display: inline-block;">&nbsp;</span>';
+				} else {
+					wrapped += '<span class="be-together-char" style="display: inline-block;">' + char + '</span>';
+				}
+			}
+			$element.html(wrapped);
+		}
+
+		/**
+		 * Initialize wave effect for heading highlight
+		 */
+		function initWaveEffect() {
+			wrapTextInSpans($highlightElement);
+		}
+
+		// Initialize wave effect on load
+		initWaveEffect();
+
+		/**
+		 * Change to next item
+		 */
+		function changeToNext() {
+			// Calculate next index
+			currentIndex = (currentIndex + 1) % headingList.length;
+			var nextItem = headingList[currentIndex];
+
+			// Create animation timeline
+			if (animationTimeline) {
+				animationTimeline.kill();
+			}
+
+			animationTimeline = gsap.timeline();
+
+			// Hide SVG arrow at the start (reverse direction)
+			if ($arrowPaths.length) {
+				animationTimeline.to($arrowPaths, {
+					opacity: 0,
+					scale: 0.8,
+					duration: 0.3,
+					ease: 'power2.in',
+					stagger: -0.1 // Reverse stagger (from last to first)
+				});
+			}
+
+			// Get current characters
+			var $currentChars = $highlightElement.find('.be-together-char');
+
+			// Fade out heading highlight characters with wave effect
+			if ($currentChars.length) {
+				animationTimeline.to($currentChars, {
+					opacity: 0,
+					y: -30,
+					scale: 0.8,
+					duration: 0.3,
+					ease: 'power2.in',
+					stagger: 0.03,
+					onComplete: function() {
+						// Update heading highlight text
+						$highlightElement.text(nextItem.heading_highlight || '');
+						wrapTextInSpans($highlightElement);
+						
+						// Get new characters
+						var $newChars = $highlightElement.find('.be-together-char');
+						
+						// Set initial state for new characters
+						gsap.set($newChars, {
+							opacity: 0,
+							y: 30,
+							scale: 0.8
+						});
+						
+						// Animate new characters in with wave effect
+						var waveAnimation = gsap.to($newChars, {
+							opacity: 1,
+							y: 0,
+							scale: 1,
+							duration: 0.5,
+							ease: 'back.out(1.2)',
+							stagger: 0.05,
+							onComplete: function() {
+								// Show SVG arrow again after wave animation completes
+								if ($arrowPaths.length) {
+									gsap.to($arrowPaths, {
+										opacity: 1,
+										scale: 1,
+										duration: 0.4,
+										ease: 'back.out(1.7)',
+										stagger: 0.1
+									});
+								}
+							}
+						});
+					}
+				});
+			} else {
+				// Fallback if no characters found
+				animationTimeline.to($highlightElement, {
+					opacity: 0,
+					y: -20,
+					duration: 0.3,
+					ease: 'power2.in',
+					onComplete: function() {
+						$highlightElement.text(nextItem.heading_highlight || '');
+						wrapTextInSpans($highlightElement);
+						var $newChars = $highlightElement.find('.be-together-char');
+						gsap.set($newChars, { opacity: 0, y: 30, scale: 0.8 });
+						gsap.to($newChars, {
+							opacity: 1,
+							y: 0,
+							scale: 1,
+							duration: 0.5,
+							ease: 'back.out(1.2)',
+							stagger: 0.05,
+							onComplete: function() {
+								// Show SVG arrow again after wave animation completes
+								if ($arrowPaths.length) {
+									gsap.to($arrowPaths, {
+										opacity: 1,
+										scale: 1,
+										duration: 0.4,
+										ease: 'back.out(1.7)',
+										stagger: 0.1
+									});
+								}
+							}
+						});
+					}
+				});
+			}
+
+			// Fade out description with light effect
+			animationTimeline.to($descriptionElement, {
+				opacity: 0,
+				y: -10,
+				duration: 0.3,
+				ease: 'power2.in'
+			}, '-=0.2');
+
+			// Update description text
+			animationTimeline.call(function() {
+				$descriptionElement.text(nextItem.description || '');
+			});
+
+			// Fade in description with light effect
+			animationTimeline.fromTo($descriptionElement, {
+				opacity: 0,
+				y: 10
+			}, {
+				opacity: 1,
+				y: 0,
+				duration: 0.4,
+				ease: 'power2.out'
+			});
+		}
+
+		// Start interval
+		var intervalId = setInterval(changeToNext, animationInterval);
+
+		// Store interval ID for cleanup
+		$widget.attr('data-interval-id', intervalId);
+	};
+
 	// Make sure you run this code under Elementor.
 	$(window).on('elementor/frontend/init', function () {
 
@@ -622,6 +864,9 @@
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-sermone-carousel.skin-grid-michelson', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-sermone-carousel.skin-grid-gangri', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-sermone-carousel.skin-grid-sankar', SwiperSliderHandler);
+
+		// Be Together
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-together.default', BeTogetherHandler);
 
 	});
 

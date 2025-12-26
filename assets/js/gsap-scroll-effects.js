@@ -138,15 +138,15 @@
 					const g = rgbMatch ? rgbMatch[1] : 0;
 					const b = rgbMatch ? rgbMatch[2] : 0;
 
-					// Set initial dim color immediately - before SplitText creates chars
+					// Set initial dim color immediately - before SplitText creates words
 					gsap.set(textElement, {
 						color: `rgba(${r}, ${g}, ${b}, 0.1)`
 					});
 
-					// Create SplitText instance with chars (for smooth character-by-character lighting)
+					// Create SplitText instance with words (for smooth word-by-word lighting)
 					SplitText.create(textElement, {
-						type: "chars",
-						charsClass: "bt-gsap-title-long-char",
+						type: "words",
+						wordsClass: "bt-gsap-title-long-word",
 						autoSplit: true,
 						onSplit: (instance) => {
 							// Kill existing animation if any
@@ -154,13 +154,13 @@
 								animation.kill();
 							}
 
-							// Ensure all chars start with dim color
-							gsap.set(instance.chars, {
+							// Ensure all words start with dim color
+							gsap.set(instance.words, {
 								color: `rgba(${r}, ${g}, ${b}, 0.05)`
 							});
 
-							// Animate chars with scrub - text lights up character by character as you scroll
-							animation = gsap.to(instance.chars, {
+							// Animate words with scrub - text lights up word by word as you scroll
+							animation = gsap.to(instance.words, {
 								color: `rgba(${r}, ${g}, ${b}, 1)`,
 								duration: 1,
 								stagger: {
@@ -170,8 +170,8 @@
 								ease: 'none', // Linear for smooth scrub
 								scrollTrigger: {
 									trigger: container,
-                                    start: 'top 92%',
-                                    end: 'bottom 40%',
+									start: 'top 92%',
+									end: 'bottom 40%',
 									scrub: 0.5 // Smoother scrub for better performance
 								}
 							});
@@ -248,10 +248,66 @@
 			});
 		}
 
+	/**
+	 * Initialize box animation for .bt-gsap-animation-box
+	 * Stagger animation - animate each .elementor-column one by one
+	 */
+	function initBoxAnimation() {
+		// Disable on mobile
+		if (isMobile()) {
+			return;
+		}
+
+		document.fonts.ready.then(() => {
+			const containers = document.querySelectorAll('.bt-gsap-animation-box:not([data-gsap-box-initialized])');
+
+			if (containers.length === 0) {
+				return;
+			}
+
+			containers.forEach((container) => {
+				container.setAttribute('data-gsap-box-initialized', 'true');
+
+				// Find all column elements
+				const columns = container.querySelectorAll('.elementor-column');
+				
+				if (columns.length === 0) {
+					return;
+				}
+
+				// Set initial state for all columns
+				gsap.set(columns, {
+					opacity: 0,
+					y: 80,
+					scale: 0.9
+				});
+
+				// Stagger animation: animate columns one by one
+				gsap.to(columns, {
+					opacity: 1,
+					y: 0,
+					scale: 1,
+					duration: 1,
+					stagger: 0.2, // Delay between each column
+					ease: 'power3.out',
+					scrollTrigger: {
+						trigger: container,
+						start: 'top 85%', // Start animation when top reaches 85%
+						end: 'bottom 70%',
+						toggleActions: "play none none none" // Play once when enter, no reverse
+					}
+				});
+			});
+
+			ScrollTrigger.refresh();
+		});
+	}
+
 		// Initialize all animations
 		initTitleAnimation();
 		initTitleLongAnimation();
 		initTextAnimation();
+		initBoxAnimation();
 
 		// Support for Elementor
 		if (typeof elementorFrontend !== 'undefined') {
@@ -267,9 +323,13 @@
 					document.querySelectorAll('.bt-gsap-animation-text[data-gsap-text-initialized]').forEach((el) => {
 						el.removeAttribute('data-gsap-text-initialized');
 					});
+					document.querySelectorAll('.bt-gsap-animation-box[data-gsap-box-initialized]').forEach((el) => {
+						el.removeAttribute('data-gsap-box-initialized');
+					});
 					initTitleAnimation();
 					initTitleLongAnimation();
 					initTextAnimation();
+					initBoxAnimation();
 					ScrollTrigger.refresh();
 				}, 300);
 			});
@@ -290,9 +350,13 @@
 				document.querySelectorAll('.bt-gsap-animation-text[data-gsap-text-initialized]').forEach((el) => {
 					el.removeAttribute('data-gsap-text-initialized');
 				});
+				document.querySelectorAll('.bt-gsap-animation-box[data-gsap-box-initialized]').forEach((el) => {
+					el.removeAttribute('data-gsap-box-initialized');
+				});
 				initTitleAnimation();
 				initTitleLongAnimation();
 				initTextAnimation();
+				initBoxAnimation();
 				ScrollTrigger.refresh();
 			}, 300);
 		});

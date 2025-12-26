@@ -111,6 +111,7 @@ class Plugin {
 			'members-carousel',
 			'projects',
 			'projects-carousel',
+			'be-together',
 
 		);
 
@@ -312,6 +313,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Members_Carousel\Be_Members_Carousel() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Projects\Be_Projects() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Projects_Carousel\Be_Projects_Carousel() );
+		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Be_Together\Be_Together() );
 
 		// WooCommerce.
 		if ( $this->woocommerce_status() ) {
