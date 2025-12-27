@@ -8678,19 +8678,35 @@
       .elementor-section.elementor-element.bt-section-hero-bottom > .elementor-container > .elementor-column:nth-child(2) > .elementor-widget-wrap .elementor-inner-section {
         margin-top: 30px; } }
 
+.elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie > .elementor-widget-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 @media (max-width: 1200px) and (min-width: 1025px) {
   .elementor-section.elementor-element.bt-section-icon-box {
     padding: 90px 15px 100px 15px; }
     .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-be-icon-box .elementor-icon-box__icon {
       width: 170px;
-      height: 170px; } }
+      height: 170px; }
+    .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie {
+      --lottie-container-width: 125px; }
+      .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie > .elementor-widget-container {
+        width: 170px;
+        height: 170px; } }
 @media (max-width: 1024px) {
   .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-be-icon-box .elementor-icon-box__icon {
     width: 120px;
     height: 120px;
     border-width: 3px; }
     .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-be-icon-box .elementor-icon-box__icon svg {
-      width: 70px; } }
+      width: 70px; }
+  .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie {
+    --lottie-container-width: 88px; }
+    .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie > .elementor-widget-container {
+      width: 120px;
+      height: 120px; } }
 @media (max-width: 1200px) and (min-width: 1025px) {
   .elementor-section.elementor-element.bt-section-who-we-are .elementor-widget-heading.bt-heading .elementor-heading-title {
     font-size: 88px; } }
