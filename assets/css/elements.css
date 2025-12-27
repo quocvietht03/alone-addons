@@ -8702,11 +8702,9 @@
     border-width: 3px; }
     .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-be-icon-box .elementor-icon-box__icon svg {
       width: 70px; }
-  .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie {
-    --lottie-container-width: 88px; }
-    .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie > .elementor-widget-container {
-      width: 120px;
-      height: 120px; } }
+  .elementor-section.elementor-element.bt-section-icon-box .elementor-widget-lottie > .elementor-widget-container {
+    width: 120px;
+    height: 120px; } }
 @media (max-width: 1200px) and (min-width: 1025px) {
   .elementor-section.elementor-element.bt-section-who-we-are .elementor-widget-heading.bt-heading .elementor-heading-title {
     font-size: 88px; } }
