@@ -640,11 +640,19 @@
 			});
 		}
 
-		// Start interval
-		var intervalId = setInterval(changeToNext, animationInterval);
+		// Start first transition after half interval, then continue with full interval
+		var firstTimeoutId = setTimeout(function() {
+			changeToNext();
+			
+			// Start interval for subsequent transitions
+			var intervalId = setInterval(changeToNext, animationInterval);
+			
+			// Store interval ID for cleanup
+			$widget.attr('data-interval-id', intervalId);
+		}, animationInterval / 2);
 
-		// Store interval ID for cleanup
-		$widget.attr('data-interval-id', intervalId);
+		// Store first timeout ID for cleanup
+		$widget.attr('data-first-timeout-id', firstTimeoutId);
 	};
 
 	// Make sure you run this code under Elementor.
