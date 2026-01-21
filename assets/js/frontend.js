@@ -363,6 +363,505 @@
 		var mainSwiper = new Swiper($selector, $dataSwiper);
 	};
 
+	var SaladoSliderHandler = function ($scope, $) {
+		var $widget = $scope.find('.be-salado-slider-wrapper');
+
+		if (!$widget.length || $widget.attr('data-initialized') === 'true') {
+			return;
+		}
+
+		// Check if GSAP is loaded
+		if (typeof gsap === 'undefined') {
+			console.warn('GSAP is not loaded for Salado Slider widget');
+			// Fallback to regular Swiper handler with fade effect
+			var $selector = $scope.find('.swiper-container'),
+				$dataSwiper = $selector.data('swiper');
+
+			// Parse swiper data if it's a string, otherwise use as is
+			var swiperConfig = typeof $dataSwiper === 'string' ? JSON.parse($dataSwiper) : $dataSwiper;
+
+			// Add fade effect to Swiper config
+			swiperConfig.effect = 'fade';
+			swiperConfig.fadeEffect = {
+				crossFade: true
+			};
+
+			var mySwiper = new Swiper($selector, swiperConfig);
+			return;
+		}
+
+		$widget.attr('data-initialized', 'true');
+
+		var $selector = $scope.find('.swiper-container'),
+			$dataSwiper = $selector.data('swiper');
+
+		// Parse swiper data if it's a string, otherwise use as is
+		var swiperConfig = typeof $dataSwiper === 'string' ? JSON.parse($dataSwiper) : $dataSwiper;
+
+		// Add fade effect to Swiper config
+		swiperConfig.effect = 'fade';
+		swiperConfig.fadeEffect = {
+			crossFade: true
+		};
+
+		// Initialize Swiper with fade effect
+		var mySwiper = new Swiper($selector, swiperConfig);
+		var previousIndex = 0;
+
+		/**
+		 * Animate slide content with GSAP
+		 * @param {jQuery} $slide - jQuery slide element
+		 * @param {boolean} isInitial - Is this the initial load animation
+		 */
+		function animateSlideContent($slide, isInitial) {
+			if (!$slide.length) {
+				return;
+			}
+
+			var $subHeading = $slide.find('.be-salado-slider--sub-heading');
+			var $heading = $slide.find('.be-salado-slider--heading');
+			var $description = $slide.find('.be-salado-slider--description');
+			var $buttonWrapper = $slide.find('.be-salado-slider--button-wrapper');
+			var $button = $slide.find('.be-salado-slider--button');
+			var $peopleDonation = $slide.find('.be-salado-slider--people-donation');
+			var $imageInner = $slide.find('.be-salado-slider--image-inner img');
+			var $imageContainer = $slide.find('.be-salado-slider--image-inner');
+
+			// Create timeline for slide animation
+			var tl = gsap.timeline();
+
+			// Collect elements that exist for initial state
+			// Note: people-donation is inside button-wrapper, so we don't add it separately
+			var elementsToAnimate = [];
+			if ($subHeading.length) elementsToAnimate.push($subHeading[0]);
+			if ($description.length) elementsToAnimate.push($description[0]);
+			if ($buttonWrapper.length) elementsToAnimate.push($buttonWrapper[0]);
+
+			// Set initial states only for elements that exist
+			// CSS already sets initial hidden state, GSAP will override and animate
+			if (isInitial) {
+				// Initial load - CSS already hides elements, GSAP will animate from CSS state
+				if (elementsToAnimate.length > 0) {
+					gsap.set(elementsToAnimate, {
+						opacity: 0,
+						y: 50
+					});
+				}
+				if ($imageContainer.length && $imageInner.length) {
+					// Set perspective for 3D effect
+					gsap.set($imageContainer[0], {
+						perspective: 1000
+					});
+					gsap.set($imageInner[0], {
+						opacity: 0,
+						scale: 1.2,
+						filter: 'blur(8px) brightness(0.7)',
+						transformOrigin: 'center center'
+					});
+				}
+			} else {
+				// Slide transition - set elements based on direction
+				var slideDirection = mySwiper.activeIndex > previousIndex ? 1 : -1;
+
+				if (elementsToAnimate.length > 0) {
+					gsap.set(elementsToAnimate, {
+						opacity: 0,
+						y: 50 * slideDirection
+					});
+				}
+				if ($imageContainer.length && $imageInner.length) {
+					// Set perspective for 3D effect
+					gsap.set($imageContainer[0], {
+						perspective: 1000
+					});
+					gsap.set($imageInner[0], {
+						opacity: 0,
+						scale: 1.2,
+						x: 30 * slideDirection,
+						filter: 'blur(8px) brightness(0.7)',
+						rotationY: 10 * slideDirection,
+						transformOrigin: 'center center'
+					});
+				}
+			}
+
+			// Animate image with beautiful effect - zoom + fade + blur + subtle 3D rotation
+			if ($imageInner.length) {
+				tl.to($imageInner[0], {
+					opacity: 1,
+					scale: 1,
+					x: 0,
+					rotationY: 0,
+					filter: 'blur(0px) brightness(1)',
+					duration: 1.4,
+					ease: 'power3.out'
+				}, 0);
+			}
+
+			// Animate sub heading
+			if ($subHeading.length) {
+				tl.to($subHeading[0], {
+					opacity: 1,
+					y: 0,
+					duration: 0.8,
+					ease: 'power3.out'
+				}, 0.2);
+			}
+
+			// Animate heading with stagger effect for words
+			if ($heading.length) {
+				var headingElement = $heading[0];
+				var headingText = $heading.text().trim();
+
+				// First, ensure heading container is visible (override CSS opacity: 0)
+				gsap.set(headingElement, {
+					opacity: 1,
+					clearProps: 'transform' // Clear CSS transform so GSAP can control it
+				});
+
+				if (headingText && headingText.length > 0) {
+					// Check if already wrapped
+					var $words = $heading.find('.gsap-word');
+
+					if ($words.length === 0) {
+						// Wrap words in spans for stagger animation
+						var words = headingText.split(/\s+/).filter(function (word) {
+							return word && word.length > 0;
+						});
+
+						if (words.length > 0) {
+							var wrappedText = '';
+							words.forEach(function (word, index) {
+								wrappedText += '<span class="gsap-word" style="display: inline-block;">' + word + '</span>';
+								if (index < words.length - 1) {
+									wrappedText += ' ';
+								}
+							});
+							$heading.html(wrappedText);
+							$words = $heading.find('.gsap-word');
+						}
+					}
+
+					if ($words.length > 0) {
+						// Animate words with stagger
+						gsap.set($words.toArray(), {
+							opacity: 0,
+							y: 30,
+							rotationX: -90
+						});
+
+						tl.to($words.toArray(), {
+							opacity: 1,
+							y: 0,
+							rotationX: 0,
+							duration: 0.6,
+							stagger: 0.08,
+							ease: 'back.out(1.2)'
+						}, 0.4);
+					} else {
+						// Fallback: animate heading as whole if word wrapping failed
+						gsap.set(headingElement, { opacity: 0, y: 50 });
+						tl.to(headingElement, {
+							opacity: 1,
+							y: 0,
+							duration: 0.8,
+							ease: 'power3.out'
+						}, 0.4);
+					}
+				} else {
+					// If heading has no text, just ensure it's visible
+					gsap.set(headingElement, { opacity: 1, y: 0 });
+				}
+			}
+
+			// Animate description
+			if ($description.length) {
+				tl.to($description[0], {
+					opacity: 1,
+					y: 0,
+					duration: 0.8,
+					ease: 'power3.out'
+				}, 0.6);
+			}
+
+			// Animate button wrapper (button + people donation)
+			if ($buttonWrapper.length) {
+				// First, ensure people-donation is visible (it's inside button-wrapper)
+				if ($peopleDonation.length) {
+					// Set people-donation initial state separately
+					var $peopleImages = $peopleDonation.find('.be-salado-slider--people-images img');
+					var $peopleText = $peopleDonation.find('.be-salado-slider--people-donation-text');
+
+					// Set initial states for people donation elements - simple fade in for images
+					if ($peopleImages.length) {
+						gsap.set($peopleImages.toArray(), {
+							opacity: 0
+						});
+					}
+					if ($peopleText.length) {
+						gsap.set($peopleText[0], { opacity: 0, x: -20 });
+					}
+					// Ensure the container itself is visible
+					gsap.set($peopleDonation[0], { opacity: 1 });
+				}
+
+				// Animate button wrapper
+				tl.to($buttonWrapper[0], {
+					opacity: 1,
+					y: 0,
+					duration: 0.8,
+					ease: 'power3.out'
+				}, 0.8);
+
+				// Animate button with gentle fade in
+				if ($button.length) {
+					gsap.set($button[0], { opacity: 0, y: 10 });
+					tl.to($button[0], {
+						opacity: 1,
+						y: 0,
+						duration: 0.8,
+						ease: 'power2.out'
+					}, 0.9);
+				}
+
+				// Animate people donation elements
+				if ($peopleDonation.length) {
+					var $peopleImages = $peopleDonation.find('.be-salado-slider--people-images img');
+					var $peopleText = $peopleDonation.find('.be-salado-slider--people-donation-text');
+
+					// Ensure people-donation container is visible first (after button-wrapper is visible)
+					tl.set($peopleDonation[0], {
+						opacity: 1
+					}, 0.8);
+
+					if ($peopleImages.length) {
+						// Simple fade in for people images - no complex animations
+						tl.to($peopleImages.toArray(), {
+							opacity: 1,
+							duration: 0.5,
+							ease: 'power2.out'
+						}, 1);
+					} else {
+						// If no images, ensure container is still visible
+						tl.set($peopleDonation[0], {
+							opacity: 1
+						}, 1);
+					}
+
+					if ($peopleText.length) {
+						tl.to($peopleText[0], {
+							opacity: 1,
+							x: 0,
+							duration: 0.5,
+							ease: 'power2.out'
+						}, 1.1);
+					} else {
+						// If no text but container exists, ensure it's visible
+						if (!$peopleImages.length) {
+							tl.set($peopleDonation[0], {
+								opacity: 1
+							}, 1);
+						}
+					}
+
+					// Final safety: ensure people-donation is always visible at the end
+					tl.set($peopleDonation[0], {
+						opacity: 1
+					}, 1.5);
+				}
+			} else {
+				// If button-wrapper doesn't exist but people-donation does, animate it separately
+				if ($peopleDonation.length) {
+					var $peopleImages = $peopleDonation.find('.be-salado-slider--people-images img');
+					var $peopleText = $peopleDonation.find('.be-salado-slider--people-donation-text');
+
+					gsap.set($peopleDonation[0], { opacity: 0, y: 50 });
+
+					if ($peopleImages.length) {
+						// Simple fade in for people images
+						gsap.set($peopleImages.toArray(), {
+							opacity: 0
+						});
+					}
+					if ($peopleText.length) {
+						gsap.set($peopleText[0], { opacity: 0, x: -20 });
+					}
+
+					tl.to($peopleDonation[0], {
+						opacity: 1,
+						y: 0,
+						duration: 0.8,
+						ease: 'power3.out'
+					}, 0.8);
+
+					if ($peopleImages.length) {
+						// Simple fade in for people images - no complex animations
+						tl.to($peopleImages.toArray(), {
+							opacity: 1,
+							duration: 0.5,
+							ease: 'power2.out'
+						}, 1);
+					}
+
+					if ($peopleText.length) {
+						tl.to($peopleText[0], {
+							opacity: 1,
+							x: 0,
+							duration: 0.5,
+							ease: 'power2.out'
+						}, 1.1);
+					}
+				}
+			}
+
+			return tl;
+		}
+
+		// Animate first slide on initial load
+		function initFirstSlide() {
+			var $firstSlide = $widget.find('.swiper-slide-active');
+			if ($firstSlide.length) {
+				// Check if elements exist
+				var hasContent = $firstSlide.find('.be-salado-slider--content').length > 0;
+				if (hasContent) {
+					// Use requestAnimationFrame to ensure DOM is ready
+					requestAnimationFrame(function () {
+						try {
+							animateSlideContent($firstSlide, true);
+						} catch (e) {
+							console.error('Error animating slide:', e);
+							// Fallback: show all elements if animation fails
+							$firstSlide.find('.be-salado-slider--sub-heading, .be-salado-slider--heading, .be-salado-slider--description, .be-salado-slider--button-wrapper, .be-salado-slider--people-donation').each(function () {
+								gsap.set(this, { opacity: 1, y: 0, x: 0, scale: 1 });
+							});
+							// Handle image separately with filter reset
+							$firstSlide.find('.be-salado-slider--image-inner img').each(function () {
+								gsap.set(this, {
+									opacity: 1,
+									y: 0,
+									x: 0,
+									scale: 1,
+									rotationY: 0,
+									filter: 'blur(0px) brightness(1)'
+								});
+							});
+						}
+					});
+
+					// Safety fallback: ensure elements are visible after 3 seconds
+					setTimeout(function () {
+						$firstSlide.find('.be-salado-slider--sub-heading, .be-salado-slider--heading, .be-salado-slider--description, .be-salado-slider--button-wrapper, .be-salado-slider--people-donation').each(function () {
+							if (this && gsap.getProperty(this, 'opacity') < 0.5) {
+								gsap.set(this, { opacity: 1, y: 0 });
+							}
+						});
+
+						// Specifically ensure people-donation and its children are visible
+						var $peopleDonation = $firstSlide.find('.be-salado-slider--people-donation');
+						if ($peopleDonation.length) {
+							gsap.set($peopleDonation[0], { opacity: 1, y: 0 });
+							$peopleDonation.find('.be-salado-slider--people-images img').each(function () {
+								if (this && gsap.getProperty(this, 'opacity') < 0.5) {
+									gsap.set(this, { opacity: 1 });
+								}
+							});
+							var $peopleText = $peopleDonation.find('.be-salado-slider--people-donation-text');
+							if ($peopleText.length && $peopleText[0] && gsap.getProperty($peopleText[0], 'opacity') < 0.5) {
+								gsap.set($peopleText[0], { opacity: 1, x: 0 });
+							}
+						}
+
+						var $img = $firstSlide.find('.be-salado-slider--image-inner img');
+						if ($img.length && $img[0] && gsap.getProperty($img[0], 'opacity') < 0.5) {
+							gsap.set($img[0], {
+								opacity: 1,
+								scale: 1,
+								x: 0,
+								rotationY: 0,
+								filter: 'blur(0px) brightness(1)'
+							});
+						}
+					}, 3000);
+				}
+			}
+		}
+
+		// Start animation immediately after setting initial state
+		// Use minimal delay just to ensure Swiper is ready
+		setTimeout(function () {
+			initFirstSlide();
+		}, 50); // Reduced delay to prevent FOUC
+
+		// Track slide changes and animate
+		mySwiper.on('slideChange', function () {
+			previousIndex = mySwiper.previousIndex;
+		});
+
+		mySwiper.on('slideChangeTransitionStart', function () {
+			var $activeSlide = $widget.find('.swiper-slide-active');
+			if ($activeSlide.length) {
+				try {
+					animateSlideContent($activeSlide, false);
+				} catch (e) {
+					console.error('Error animating slide transition:', e);
+					// Fallback: show all elements if animation fails
+					$activeSlide.find('.be-salado-slider--sub-heading, .be-salado-slider--heading, .be-salado-slider--description, .be-salado-slider--button-wrapper, .be-salado-slider--people-donation').each(function () {
+						gsap.set(this, { opacity: 1, y: 0, x: 0, scale: 1 });
+					});
+					// Handle image separately with filter reset
+					$activeSlide.find('.be-salado-slider--image-inner img').each(function () {
+						gsap.set(this, {
+							opacity: 1,
+							y: 0,
+							x: 0,
+							scale: 1,
+							rotationY: 0,
+							filter: 'blur(0px) brightness(1)'
+						});
+					});
+				}
+
+				// Safety fallback: ensure elements are visible after 2 seconds
+				setTimeout(function () {
+					$activeSlide.find('.be-salado-slider--sub-heading, .be-salado-slider--heading, .be-salado-slider--description, .be-salado-slider--button-wrapper, .be-salado-slider--people-donation').each(function () {
+						if (this && gsap.getProperty(this, 'opacity') < 0.5) {
+							gsap.set(this, { opacity: 1, y: 0 });
+						}
+					});
+
+					// Specifically ensure people-donation and its children are visible
+					var $peopleDonation = $activeSlide.find('.be-salado-slider--people-donation');
+					if ($peopleDonation.length) {
+						gsap.set($peopleDonation[0], { opacity: 1, y: 0 });
+						$peopleDonation.find('.be-salado-slider--people-images img').each(function () {
+							if (this && gsap.getProperty(this, 'opacity') < 0.5) {
+								gsap.set(this, { opacity: 1 });
+							}
+						});
+						var $peopleText = $peopleDonation.find('.be-salado-slider--people-donation-text');
+						if ($peopleText.length && $peopleText[0] && gsap.getProperty($peopleText[0], 'opacity') < 0.5) {
+							gsap.set($peopleText[0], { opacity: 1, x: 0 });
+						}
+					}
+
+					var $img = $activeSlide.find('.be-salado-slider--image-inner img');
+					if ($img.length && $img[0] && gsap.getProperty($img[0], 'opacity') < 0.5) {
+						gsap.set($img[0], {
+							opacity: 1,
+							scale: 1,
+							x: 0,
+							rotationY: 0,
+							filter: 'blur(0px) brightness(1)'
+						});
+					}
+				}, 2000);
+			}
+		});
+
+		// Store swiper instance for cleanup if needed
+		$widget.data('swiper-instance', mySwiper);
+	};
+
 	var GivePopupHandler = function ($scope, $) {
 		//console.log($scope);
 		var form_id = $scope.find('form').attr('id');
@@ -408,7 +907,7 @@
 	var BeTogetherHandler = function ($scope, $) {
 		//console.log($scope);
 		var $widget = $scope.find('.be-together-wrapper');
-		
+
 		if (!$widget.length || $widget.attr('data-initialized') === 'true') {
 			return;
 		}
@@ -424,7 +923,7 @@
 		// Animate SVG arrow on load
 		var $arrow = $widget.find('.be-together-arrow');
 		var $arrowPaths = $widget.find('.be-together-arrow-path');
-		
+
 		if ($arrow.length && $arrowPaths.length) {
 			// Set initial state - hide all paths
 			gsap.set($arrowPaths, {
@@ -541,21 +1040,21 @@
 					duration: 0.3,
 					ease: 'power2.in',
 					stagger: 0.03,
-					onComplete: function() {
+					onComplete: function () {
 						// Update heading highlight text
 						$highlightElement.text(nextItem.heading_highlight || '');
 						wrapTextInSpans($highlightElement);
-						
+
 						// Get new characters
 						var $newChars = $highlightElement.find('.be-together-char');
-						
+
 						// Set initial state for new characters
 						gsap.set($newChars, {
 							opacity: 0,
 							y: 30,
 							scale: 0.8
 						});
-						
+
 						// Animate new characters in with wave effect
 						var waveAnimation = gsap.to($newChars, {
 							opacity: 1,
@@ -564,7 +1063,7 @@
 							duration: 0.5,
 							ease: 'back.out(1.2)',
 							stagger: 0.05,
-							onComplete: function() {
+							onComplete: function () {
 								// Show SVG arrow again after wave animation completes
 								if ($arrowPaths.length) {
 									gsap.to($arrowPaths, {
@@ -586,7 +1085,7 @@
 					y: -20,
 					duration: 0.3,
 					ease: 'power2.in',
-					onComplete: function() {
+					onComplete: function () {
 						$highlightElement.text(nextItem.heading_highlight || '');
 						wrapTextInSpans($highlightElement);
 						var $newChars = $highlightElement.find('.be-together-char');
@@ -598,7 +1097,7 @@
 							duration: 0.5,
 							ease: 'back.out(1.2)',
 							stagger: 0.05,
-							onComplete: function() {
+							onComplete: function () {
 								// Show SVG arrow again after wave animation completes
 								if ($arrowPaths.length) {
 									gsap.to($arrowPaths, {
@@ -624,7 +1123,7 @@
 			}, '-=0.2');
 
 			// Update description text
-			animationTimeline.call(function() {
+			animationTimeline.call(function () {
 				$descriptionElement.text(nextItem.description || '');
 			});
 
@@ -641,12 +1140,12 @@
 		}
 
 		// Start first transition after half interval, then continue with full interval
-		var firstTimeoutId = setTimeout(function() {
+		var firstTimeoutId = setTimeout(function () {
 			changeToNext();
-			
+
 			// Start interval for subsequent transitions
 			var intervalId = setInterval(changeToNext, animationInterval);
-			
+
 			// Store interval ID for cleanup
 			$widget.attr('data-interval-id', intervalId);
 		}, animationInterval / 2);
@@ -654,7 +1153,114 @@
 		// Store first timeout ID for cleanup
 		$widget.attr('data-first-timeout-id', firstTimeoutId);
 	};
+	// List Circle Rotation Handler with GSAP
+	var ListCircleHandler = function ($scope, $) {
+		// Check if GSAP is available
+		if (typeof gsap === 'undefined') {
+			console.warn('GSAP is not loaded. List Circle widget requires GSAP.');
+			return;
+		}
 
+		var $wrapper = $scope.find('.be-list-circle-wrapper');
+		if ($wrapper.length === 0) {
+			return;
+		}
+
+		var $itemsWrapper = $wrapper.find('.be-list-circle-items-wrapper');
+		var $items = $itemsWrapper.find('.be-list-circle-item');
+		var itemsCount = $items.length;
+
+		if (itemsCount === 0) {
+			return;
+		}
+
+		var enableRotationValue = $wrapper.attr('data-enable-rotation');
+		var enableRotation = enableRotationValue === 'yes';
+		var rotationSpeed = parseFloat($wrapper.data('rotation-speed')) || 60;
+
+		// Set items initial state (scale 0, already in position)
+		gsap.set($items, {
+			scale: 0,
+			opacity: 0
+		});
+
+		// Animate items zoom in
+		var itemsTimeline = gsap.timeline();
+		$items.each(function (index) {
+			itemsTimeline.to(this, {
+				scale: 1,
+				opacity: 1,
+				duration: 0.6,
+				ease: 'back.out(1.7)'
+			}, index * 0.1);
+		});
+
+		// Start rotation animation after items appear (only if enabled)
+		if (enableRotation) {
+			itemsTimeline.call(function () {
+				// Rotate wrapper clockwise
+				gsap.to($itemsWrapper[0], {
+					rotation: 360,
+					duration: rotationSpeed,
+					ease: 'none',
+					repeat: -1
+				});
+
+				// Rotate items counter-clockwise to keep text straight
+				gsap.to($items, {
+					rotation: -360,
+					duration: rotationSpeed,
+					ease: 'none',
+					repeat: -1
+				});
+			});
+		}
+	};
+	// Waves Animation Handler
+	var WavesHandler = function ($scope, $) {
+		var processWaves = function () {
+			if ($scope.hasClass('bt-wave-animation--yes')) {
+				// Check if waves SVG already exists
+				if ($scope.find('.waves').length === 0) {
+					var sectionId = $scope.attr('data-id') || $scope.attr('id') || Math.random().toString(36).substr(2, 9);
+					var wavesSVG = '<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">' +
+						'<defs>' +
+						'<path id="gentle-wave-' + sectionId + '" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>' +
+						'</defs>' +
+						'<g class="parallax">' +
+						'<use xlink:href="#gentle-wave-' + sectionId + '" x="48" y="7" fill="#000"></use>' +
+						'</g>' +
+						'</svg>';
+					$scope.prepend(wavesSVG);
+				}
+			} else {
+				// Remove waves SVG if class is not present
+				$scope.find('.waves').remove();
+			}
+		};
+
+		// Run initially
+		processWaves();
+
+		// Watch for class changes (for Elementor editor live updates)
+		if (window.elementorFrontend && window.elementorFrontend.isEditMode()) {
+			var observer = new MutationObserver(function (mutations) {
+				mutations.forEach(function (mutation) {
+					if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+						processWaves();
+					}
+				});
+			});
+
+			observer.observe($scope[0], {
+				attributes: true,
+				attributeFilter: ['class']
+			});
+
+			// Store observer for cleanup if needed
+			$scope.data('waves-observer', observer);
+		}
+	};
 	// Make sure you run this code under Elementor.
 	$(window).on('elementor/frontend/init', function () {
 
@@ -671,6 +1277,8 @@
 
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-base-carousel.default', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-base-carousel.skin-grid-pumori', SwiperSliderHandler);
+
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-salado-slider.default', SaladoSliderHandler);
 
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-logo-carousel.default', SwiperSliderHandler);
 
@@ -726,6 +1334,7 @@
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-posts-carousel.skin-grid-tronador', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-posts-carousel.skin-grid-jimara', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-posts-carousel.skin-grid-somoni', SwiperSliderHandler);
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-posts-carousel.skin-grid-salado', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-posts-carousel.skin-grid-swiss', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-posts-carousel.skin-grid-together', SwiperSliderHandler);
 
@@ -814,6 +1423,9 @@
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-together', SwiperSliderHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-together', ProgressbarHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-together', GivePopupHandler);
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-salado', SwiperSliderHandler);
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-salado', ProgressbarHandler);
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-salado', GivePopupHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-changtse', ProgressbarHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-changtse', GivePopupHandler);
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-give-forms-carousel.skin-grid-changtse', SwiperSliderHandler);
@@ -875,6 +1487,11 @@
 
 		// Be Together
 		elementorFrontend.hooks.addAction('frontend/element_ready/be-together.default', BeTogetherHandler);
+
+		elementorFrontend.hooks.addAction('frontend/element_ready/be-list-circle.default', ListCircleHandler);
+
+		// Initialize waves for sections
+		elementorFrontend.hooks.addAction('frontend/element_ready/section', WavesHandler);
 
 	});
 

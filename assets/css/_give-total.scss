@@ -6,7 +6,7 @@
   }
   &--skin-pumori {
     display: flex;
-    background: #FFFFFF;
+    background: #ffffff;
     -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     .elementor-gt-header {
@@ -17,25 +17,26 @@
         font-size: 36px;
         font-weight: 600;
         line-height: 1.25;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 12px;
       }
       &__desc {
         font-size: 16px;
         line-height: 1.75;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 24px;
       }
       .give-goal-progress {
         font-size: 16px;
         line-height: 1.25;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 0;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-bottom: 16px;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             flex-direction: column-reverse;
             text-align: left;
@@ -43,11 +44,12 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 26px;
             font-weight: 600;
             line-height: 1.25;
-            color: #FFEE00;
+            color: #ffee00;
             margin-top: 4px;
           }
         }
@@ -77,10 +79,10 @@
       &__desc {
         font-size: 16px;
         line-height: 1.75;
-        color: #4D6995;
-        margin-bottom: 32px
+        color: #4d6995;
+        margin-bottom: 32px;
       }
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin-bottom: 0;
         .give-total-wrap {
@@ -100,35 +102,35 @@
           }
         }
         #give-donation-level-button-wrap {
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            .give-btn {
-              font-size: 16px;
-              font-weight: 600;
-              color: #002866;
-              &.give-default-level {
-                color: #FFFFFF;
-                background: #002866;
-                border-color: #002866;
-              }
+          grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+          .give-btn {
+            font-size: 16px;
+            font-weight: 600;
+            color: #002866;
+            &.give-default-level {
+              color: #ffffff;
+              background: #002866;
+              border-color: #002866;
             }
+          }
         }
         .give-btn-modal {
           font-size: 14px;
           font-weight: 600;
           text-transform: uppercase;
           color: #002866;
-          background: #FFEE00;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          background: #ffee00;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #002866;
           }
         }
       }
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       flex-direction: column;
       .elementor-gt-header,
       .elementor-gt-form {
@@ -136,19 +138,19 @@
       }
     }
 
-    @media( max-width: $break-sm - 0.02 ) {
+    @media (max-width: $break-sm - 0.02) {
       .elementor-gt-form {
         &__text {
           padding-right: 0;
         }
-        form[id*=give-form] .give-total-wrap {
+        form[id*="give-form"] .give-total-wrap {
           position: static;
           width: 100%;
         }
       }
     }
 
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       .elementor-gt-header {
         padding: 30px 16px;
         &__title {
@@ -162,7 +164,8 @@
           font-size: 16px;
           .raised {
             margin-bottom: 12px;
-            .income, .goal-text {
+            .income,
+            .goal-text {
               font-size: 22px;
             }
           }
@@ -180,41 +183,41 @@
           font-size: 14px;
           line-height: 1.5;
         }
-        form[id*=give-form] .give-btn-modal {
+        form[id*="give-form"] .give-btn-modal {
           font-size: 14px;
         }
       }
     }
-
   }
 
   &--skin-baruntse {
     max-width: 460px;
-    background: #FFFFFF;
+    background: #ffffff;
     -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
     .elementor-gt-header {
       position: relative;
-      background: #004A99;
+      background: #004a99;
       padding: 60px 50px;
       &__title {
         font-size: 36px;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 32px;
       }
       .give-goal-progress {
         font-size: 18px;
         font-weight: 500;
         line-height: 1.25;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 0;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-bottom: 37px;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             flex-direction: column-reverse;
             width: 50%;
@@ -222,13 +225,14 @@
           }
           .raised-goal {
             text-align: right;
-            border-left: 1px solid #FFFFFF;
+            border-left: 1px solid #ffffff;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 30px;
             font-weight: 700;
             line-height: 1.25;
-            color: #FFEE00;
+            color: #ffee00;
             margin-top: 4px;
           }
         }
@@ -266,9 +270,9 @@
         font-size: 18px;
         line-height: 1.75;
         color: #002866;
-        margin-bottom: 32px
+        margin-bottom: 32px;
       }
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin-bottom: 0;
         .give-total-wrap {
@@ -284,38 +288,38 @@
           }
         }
         #give-donation-level-button-wrap {
-            grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-            .give-btn {
-              font-size: 16px;
-              font-weight: 700;
-              color: #002866;
-              &:hover {
-                border-color: #002866;
-              }
-              &.give-default-level {
-                color: #FFFFFF;
-                background: #002866;
-                border-color: #002866;
-              }
+          grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+          .give-btn {
+            font-size: 16px;
+            font-weight: 700;
+            color: #002866;
+            &:hover {
+              border-color: #002866;
             }
+            &.give-default-level {
+              color: #ffffff;
+              background: #002866;
+              border-color: #002866;
+            }
+          }
         }
         .give-btn-modal {
           font-size: 14px;
           font-weight: 600;
           text-transform: uppercase;
           color: #002866;
-          background: #FFEE00;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          background: #ffee00;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #002866;
           }
         }
       }
     }
 
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       .elementor-gt-header {
         padding: 30px 16px;
         &__title {
@@ -329,7 +333,8 @@
           font-size: 16px;
           .raised {
             margin-bottom: 37px;
-            .income, .goal-text {
+            .income,
+            .goal-text {
               font-size: 22px;
             }
           }
@@ -347,17 +352,16 @@
           font-size: 14px;
           line-height: 1.5;
         }
-        form[id*=give-form] .give-btn-modal {
+        form[id*="give-form"] .give-btn-modal {
           font-size: 16px;
         }
       }
     }
-
   }
 
   &--skin-coropuna {
     max-width: 470px;
-    background: #4E3629;
+    background: #4e3629;
     padding: 50px 60px 35px;
     overflow: hidden;
     .elementor-gt-header {
@@ -366,20 +370,20 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 1.5;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 4px;
       }
       &__title {
         font-size: 48px;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 8px;
       }
       &__desc {
         font-size: 18px;
         line-height: 1.75;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 35px;
       }
       .give-goal-progress {
@@ -387,13 +391,14 @@
         font-weight: 400;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #BFCC80;
+        color: #bfcc80;
         margin: 0;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             flex-direction: column-reverse;
             text-align: left;
@@ -401,20 +406,20 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 500;
             line-height: 1.25;
-            color: #BFCC80;
+            color: #bfcc80;
             margin-top: 4px;
           }
         }
       }
-
     }
     .elementor-gt-form {
       margin-bottom: 35px;
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin-bottom: 0;
         .give-total-wrap {
@@ -430,31 +435,31 @@
           }
         }
         #give-donation-level-button-wrap {
-            grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-            .give-btn {
-              font-size: 16px;
-              font-weight: 500;
-              color: #215732;
-              &:hover {
-                border-color: #215732;
-              }
-              &.give-default-level {
-                color: #FFFFFF;
-                background: #215732;
-                border-color: #215732;
-              }
+          grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+          .give-btn {
+            font-size: 16px;
+            font-weight: 500;
+            color: #215732;
+            &:hover {
+              border-color: #215732;
             }
+            &.give-default-level {
+              color: #ffffff;
+              background: #215732;
+              border-color: #215732;
+            }
+          }
         }
         .give-btn-modal {
           font-size: 14px;
           font-weight: 500;
           text-transform: uppercase;
-          color: #4E3629;
-          background: #BFCC80;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          color: #4e3629;
+          background: #bfcc80;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #111111;
           }
         }
@@ -469,7 +474,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 0;
       }
       &__list {
@@ -479,8 +484,8 @@
           justify-content: center;
           width: 34px;
           height: 34px;
-          color: #4E3629;
-          background: #FFFFFF;
+          color: #4e3629;
+          background: #ffffff;
           &:not(:last-child) {
             margin-right: 4px;
           }
@@ -488,23 +493,22 @@
             fill: currentColor;
           }
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #111111;
           }
         }
       }
-
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       max-width: 420px;
       padding: 40px 30px 35px;
     }
 
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 30px 16px 30px;
       .elementor-gt-header {
-        &__sub-title, 
+        &__sub-title,
         &__desc {
           font-size: 16px;
         }
@@ -513,12 +517,11 @@
         }
       }
     }
-
   }
 
   &--skin-saltoro {
     max-width: 370px;
-    background: #4b3381;;
+    background: #4b3381;
     padding: 40px;
     overflow: hidden;
     border-radius: 5px;
@@ -528,20 +531,20 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 1.5;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 4px;
       }
       &__title {
         font-size: 36px;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 8px;
       }
       &__desc {
         font-size: 18px;
         line-height: 1.75;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 30px;
       }
       .give-goal-progress {
@@ -551,14 +554,15 @@
         font-weight: 400;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 0;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-top: 20px;
           margin-bottom: 0;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             flex-direction: column-reverse;
             text-align: left;
@@ -566,19 +570,19 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 600;
             line-height: 1.25;
-            color: #FFFFFF;
+            color: #ffffff;
             margin-top: 4px;
           }
         }
       }
-
     }
     .elementor-gt-form {
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin-bottom: 0;
         .give-total-wrap {
@@ -594,36 +598,35 @@
           }
         }
         #give-donation-level-button-wrap {
-            grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-            .give-btn {
-              font-size: 16px;
-              font-weight: 600;
-              color: #f97a60;
-              background: #FFFFFF;
-              border-color: #FFFFFF;
-              &.give-default-level {
-                color: #FFFFFF;
-                background: #f97a60;
-                border-color: #f97a60;
-              }
+          grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+          .give-btn {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f97a60;
+            background: #ffffff;
+            border-color: #ffffff;
+            &.give-default-level {
+              color: #ffffff;
+              background: #f97a60;
+              border-color: #f97a60;
             }
+          }
         }
         .give-btn-modal {
           font-size: 14px;
           font-weight: 600;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           background: #f97a60;
           border-radius: 30px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #f7544f;
           }
         }
       }
-
     }
     @media (max-width: $break-sm - 0.02) {
       padding: 20px;
@@ -669,7 +672,8 @@
           justify-content: space-between;
           margin-top: 20px;
           margin-bottom: 0;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
@@ -678,7 +682,8 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 700;
             line-height: 1.25;
@@ -697,15 +702,15 @@
         line-height: 20px;
         text-transform: uppercase;
         color: #1f3ddc;
-        background: #FFFFFF;
+        background: #ffffff;
         width: auto;
         margin: 0;
         padding: 15px 35px;
         border: 2px solid #1f3ddc;
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         &:hover {
-          color: #FFFFFF;
+          color: #ffffff;
           background: #1f3ddc;
         }
       }
@@ -713,11 +718,11 @@
         color: #1f3ddc !important;
         padding: 15px 35px !important;
         &:hover {
-          color: #FFFFFF !important;
+          color: #ffffff !important;
         }
       }
     }
-    @media(max-width: $break-tl - 0.02) {
+    @media (max-width: $break-tl - 0.02) {
       .elementor-gt-header {
         &__title {
           font-size: 32px;
@@ -726,13 +731,14 @@
       .give-goal-progress {
         font-size: 16px;
         .raised {
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 20px;
           }
         }
       }
     }
-    @media(max-width: $break-sm - 0.02) {
+    @media (max-width: $break-sm - 0.02) {
       .elementor-gt-header {
         &__title {
           font-size: 24px;
@@ -772,7 +778,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.75;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 40px;
       }
       .give-goal-progress {
@@ -781,7 +787,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 0;
         .raised {
           margin-top: 20px;
@@ -789,7 +795,8 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 22px;
             font-weight: 700;
             line-height: 1.25;
@@ -798,7 +805,6 @@
           }
         }
       }
-
     }
     .elementor-gt-form {
       position: relative;
@@ -810,16 +816,16 @@
         font-weight: 600;
         line-height: 20px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         background: #ffba00;
         width: auto;
         margin: 0;
         padding: 16px 30px;
         border-radius: 5px;
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         &:hover {
-          color: #FFFFFF;
+          color: #ffffff;
           background: #eba53a;
         }
       }
@@ -832,10 +838,9 @@
       }
     }
 
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 24px 16px;
     }
-
   }
   &--skin-taboche {
     display: flex;
@@ -854,20 +859,19 @@
         line-height: 1.5;
         color: #222;
       }
-      &__sub-title{
+      &__sub-title {
         font-size: 18px;
         color: #222222;
         line-height: 1.5;
         margin-bottom: 4px;
       }
-
     }
-    .goal-progress{
+    .goal-progress {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 60px;
-      .give-card__progress{
+      .give-card__progress {
         display: flex;
         align-items: center;
         gap: 60px;
@@ -881,17 +885,19 @@
         }
         .raised {
           margin-bottom: 0;
-          .raised-income{
+          .raised-income {
             margin-bottom: 20px;
           }
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             text-align: left;
             display: block;
             font-size: 14px;
             line-height: 1.5;
             color: #777;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 600;
             color: #303030;
@@ -902,34 +908,34 @@
         }
       }
     }
-    .gt-remain{
-      .item-remain{
+    .gt-remain {
+      .item-remain {
         margin-bottom: 20px;
         text-align: left;
         h4.gt-remain__remain-title {
-            margin-bottom: 0;
-            font-size: 14px;
-            line-height: 20px;
-            color: #777;
-            font-weight: 400;
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 20px;
+          color: #777;
+          font-weight: 400;
         }
-        span.gt-remain__remain-value{
+        span.gt-remain__remain-value {
           font-size: 24px;
           font-weight: 600;
           color: #303030;
           line-height: 1.5;
         }
       }
-      .item-donate{
+      .item-donate {
         text-align: left;
         h4.gt-remain__donate-title {
-            margin-bottom: 0;
-            font-size: 14px;
-            line-height: 20px;
-            color: #777;
-            font-weight: 400;
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 20px;
+          color: #777;
+          font-weight: 400;
         }
-        span.gt-remain__donate-value{
+        span.gt-remain__donate-value {
           font-size: 24px;
           font-weight: 600;
           color: #303030;
@@ -951,8 +957,8 @@
         margin: 0;
         padding: 15px 35px;
         border-radius: 5px;
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         &:hover {
           color: #000;
           background: #f7db07;
@@ -966,7 +972,7 @@
         }
       }
     }
-    @media( max-width: $break-lg - 0.02 ) {
+    @media (max-width: $break-lg - 0.02) {
       gap: 30px;
       .goal-progress,
       .goal-progress .give-card__progress {
@@ -976,10 +982,10 @@
         font-size: 40px;
       }
     }
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       flex-wrap: wrap;
       justify-content: space-evenly;
-      .elementor-gt-header{
+      .elementor-gt-header {
         &__sub-title {
           font-size: 16px;
         }
@@ -996,10 +1002,9 @@
       .gt-remain .item-donate span.gt-remain__donate-value {
         font-size: 20px;
       }
-      
     }
-    @media( max-width: $break-sm - 0.02 ) {
-      .elementor-gt-header{
+    @media (max-width: $break-sm - 0.02) {
+      .elementor-gt-header {
         &__title {
           font-size: 32px;
         }
@@ -1008,7 +1013,7 @@
         }
       }
     }
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       flex-direction: column;
       .goal-progress,
       .goal-progress .give-card__progress {
@@ -1030,7 +1035,7 @@
     }
   }
   &--skin-wilson {
-    .elementor-gt-header{
+    .elementor-gt-header {
       &__title {
         font-size: 24px;
         line-height: 34px;
@@ -1040,28 +1045,28 @@
         margin-bottom: 30px;
         font-weight: 400;
       }
-      .give-goal-progress{
-        .bt-price{
-          .bt-goal{
+      .give-goal-progress {
+        .bt-price {
+          .bt-goal {
             font-size: 40px;
             font-weight: 700;
             line-height: 55px;
             color: #fff;
           }
-          .bt-collected{
+          .bt-collected {
             font-size: 15px;
             line-height: 26px;
             color: #f1f1f1;
             margin-bottom: 15px;
           }
         }
-        .bt-progress{
+        .bt-progress {
           position: relative;
           width: 100%;
           height: 23px;
           background: #a08958;
           border: 2px solid #ffffff;
-          span{
+          span {
             float: left;
             display: inline-block;
             width: 10%;
@@ -1070,7 +1075,7 @@
             position: relative;
             z-index: 3;
           }
-          .bt-percent{
+          .bt-percent {
             position: absolute;
             top: 0;
             left: 0;
@@ -1116,13 +1121,13 @@
   &--skin-jorasses {
     background: #ea0028;
     padding: 60px 40px;
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 24px 16px;
     }
     .elementor-gt-header {
       margin-bottom: 40px;
       &__icon {
-        color: #FFFFFF;
+        color: #ffffff;
         opacity: 0.5;
         margin-bottom: 15px;
         svg {
@@ -1134,14 +1139,14 @@
         font-weight: 600;
         line-height: 1.25;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 12px;
       }
       &__desc {
         font-size: 18px;
         font-weight: 400;
         line-height: 1.75;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 40px;
       }
       .give-goal-progress {
@@ -1150,14 +1155,15 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 1.25;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 0;
         .raised {
           display: flex;
           justify-content: space-between;
           margin-top: 20px;
           margin-bottom: 0;
-          .raised-income, .raised-goal {
+          .raised-income,
+          .raised-goal {
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
@@ -1166,16 +1172,16 @@
           .raised-goal {
             text-align: right;
           }
-          .income, .goal-text {
+          .income,
+          .goal-text {
             font-size: 24px;
             font-weight: 600;
             line-height: 1.25;
-            color: #FFFFFF;
+            color: #ffffff;
             margin-left: 4px;
           }
         }
       }
-
     }
     .elementor-gt-form {
       .givewp-donation-form-modal__open,
@@ -1186,18 +1192,18 @@
         line-height: 20px;
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         background: transparent;
         width: 100%;
         margin: 0;
         padding: 15px 30px;
-        border: 2px solid #FFFFFF;
+        border: 2px solid #ffffff;
         border-radius: 2px;
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         &:hover {
           color: #ea0028;
-          background: #FFFFFF;
+          background: #ffffff;
         }
       }
       .givewp-donation-form-modal__open {
@@ -1207,12 +1213,11 @@
         }
       }
     }
-
   }
 
   &--skin-swiss {
     max-width: 576px;
-    background: #FAF8ED;
+    background: #faf8ed;
     padding: 50px 40px;
     overflow: hidden;
     border-radius: 40px;
@@ -1229,7 +1234,7 @@
             font-size: 20px;
             font-weight: 600;
             line-height: 1.25;
-            color: #4D5EF6;
+            color: #4d5ef6;
             margin-top: 4px;
           }
           .goal-text {
@@ -1250,51 +1255,51 @@
     }
     .elementor-gt-form {
       margin-bottom: 30px;
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin-bottom: 0;
         .give-total-wrap {
           .give-currency-symbol {
             font-size: 20px;
             font-weight: 600;
-            color: #FFFFFF;
-            background: #4D5EF6;
+            color: #ffffff;
+            background: #4d5ef6;
             border-radius: 100px 0 0 100px;
           }
           #give-amount {
             font-size: 20px;
             font-weight: 600;
-            color: #4D5EF6;
+            color: #4d5ef6;
             border-radius: 0 100px 100px 0;
           }
         }
         #give-donation-level-button-wrap {
-            grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-            .give-btn {
-              font-size: 16px;
-              font-weight: 600;
-              color: #4D5EF6;
-              border-color: rgba(0, 0, 0, 0.1);
-              border-radius: 100px;
-              &:hover {
-                border-color: #4D5EF6;
-              }
-              &.give-default-level {
-                color: #FFFFFF;
-                background: #4D5EF6;
-                border-color: #4D5EF6;
-              }
+          grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+          .give-btn {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4d5ef6;
+            border-color: rgba(0, 0, 0, 0.1);
+            border-radius: 100px;
+            &:hover {
+              border-color: #4d5ef6;
             }
+            &.give-default-level {
+              color: #ffffff;
+              background: #4d5ef6;
+              border-color: #4d5ef6;
+            }
+          }
         }
         .give-btn-modal {
           font-size: 16px;
           font-weight: 600;
           text-transform: capitalize;
-          color: #FFFFFF;
-          background: #4D5EF6;
+          color: #ffffff;
+          background: #4d5ef6;
           border-radius: 100px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
         }
       }
     }
@@ -1308,33 +1313,32 @@
           font-weight: 600;
           text-decoration: underline;
           text-underline-offset: 3px;
-          color: #4D5EF6;
+          color: #4d5ef6;
         }
       }
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       padding: 40px 30px;
     }
 
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 30px 16px;
     }
-
   }
 
   &--skin-toluca {
-    background: #DD3B32;
+    background: #dd3b32;
     padding: 30px;
     border-radius: 20px;
     .elementor-gt-header {
-      color: #FFFFFF;
+      color: #ffffff;
       text-align: center;
       &__title {
         font-size: 28px;
         font-weight: 600;
         line-height: 1.4;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 20px;
         span {
           font-family: "Edu NSW ACT Foundation", Sans-serif;
@@ -1350,17 +1354,17 @@
         margin-bottom: 30px;
       }
       .give-goal-progress {
-        color: #FFFFFF;
+        color: #ffffff;
         .income,
         .goal-text {
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
       form.give-form {
         margin: 0;
       }
     }
-    @media(max-width: $break-xs - 0.02) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 30px 20px;
       .elementor-gt-form {
         padding: 30px 20px;
@@ -1369,15 +1373,13 @@
   }
 }
 
-
 .elementor-give-form {
   &--default {
-
   }
 
   &--skin-andrus {
     display: flex;
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 40px;
     border: 10px solid #e1e1e1;
     border-radius: 15px;
@@ -1402,7 +1404,7 @@
       width: 72%;
       padding-left: 30px;
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
@@ -1460,11 +1462,11 @@
               margin: -7px -7px 0 0;
               -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
-              -webkit-transition: all .3s;
-              transition: all .3s;
+              -webkit-transition: all 0.3s;
+              transition: all 0.3s;
             }
             &.give-default-level {
-              color: #FFFFFF;
+              color: #ffffff;
               background: #111111;
               &:after {
                 background: #111111;
@@ -1487,13 +1489,13 @@
           border-radius: 2px;
           &:hover {
             color: #333333;
-            background: #F1CD08;
+            background: #f1cd08;
           }
         }
       }
     }
 
-    @media( max-width: $break-lg - 0.02 ) {
+    @media (max-width: $break-lg - 0.02) {
       padding: 32px 16px;
       .elementor-gf-header {
         width: 30%;
@@ -1509,7 +1511,7 @@
       }
     }
 
-    @media( max-width: $break-tl - 0.02 ) {
+    @media (max-width: $break-tl - 0.02) {
       padding: 32px 16px;
       .elementor-gf-header {
         &__title {
@@ -1518,18 +1520,17 @@
       }
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       flex-direction: column;
       .elementor-gf-header {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
-
       }
       .elementor-gf-form {
         width: 100%;
         padding: 0;
-        form[id*=give-form] {
+        form[id*="give-form"] {
           .give-total-wrap {
             position: static;
             width: auto;
@@ -1542,10 +1543,9 @@
         }
       }
     }
-
   }
   &--skin-changtse {
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 40px;
     border: 10px solid #e1e1e1;
     border-radius: 15px;
@@ -1567,7 +1567,7 @@
     .elementor-gf-form {
       width: 100%;
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
@@ -1629,20 +1629,20 @@
           line-height: 18px;
           letter-spacing: 0;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           background: #e05d41;
           margin: 0;
           padding: 20px 30px;
           outline: none;
           border-radius: 2px;
           &:hover {
-            background: #667A62;
+            background: #667a62;
           }
         }
       }
     }
 
-    @media( max-width: $break-lg - 0.02 ) {
+    @media (max-width: $break-lg - 0.02) {
       padding: 32px 16px;
       .elementor-gf-header {
         width: 100%;
@@ -1658,18 +1658,17 @@
       }
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       flex-direction: column;
       .elementor-gf-header {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
-
       }
       .elementor-gf-form {
         width: 100%;
         padding: 0;
-        form[id*=give-form] {
+        form[id*="give-form"] {
           .give-total-wrap {
             position: static;
             width: auto;
@@ -1708,7 +1707,7 @@
     .elementor-gf-form {
       width: 100%;
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
@@ -1722,7 +1721,7 @@
           }
           .give-currency-symbol {
             font-weight: 700;
-            background: #4B915A;
+            background: #4b915a;
             height: 54px;
             line-height: 54px;
             font-size: 20px;
@@ -1732,7 +1731,7 @@
           }
           #give-amount {
             font-weight: 700;
-            color: #4B915A;
+            color: #4b915a;
             background: #fff;
             border-color: #fff;
             height: 54px;
@@ -1749,21 +1748,21 @@
             font-size: 16px;
             font-weight: 700;
             color: #222222;
-            background: #FFFFFF;
+            background: #ffffff;
             overflow: unset;
-            border-color: #FFFFFF;
+            border-color: #ffffff;
             padding: 10px;
             height: 54px;
             border-radius: 30px;
             &:hover {
-              border-color: #4B915A;
+              border-color: #4b915a;
             }
             &.give-default-level {
-              background: #4B915A;
-              border-color: #4B915A;
+              background: #4b915a;
+              border-color: #4b915a;
               color: #fff;
               &:after {
-                background: #4B915A;
+                background: #4b915a;
               }
             }
             &.give-btn-level-custom {
@@ -1778,7 +1777,7 @@
           line-height: 24px;
           letter-spacing: 0;
           text-transform: uppercase;
-          background: #4B915A;
+          background: #4b915a;
           border-radius: 30px;
           margin: 0;
           padding: 15px 30px;
@@ -1787,7 +1786,7 @@
       }
     }
 
-    @media( max-width: $break-lg - 0.02 ) {
+    @media (max-width: $break-lg - 0.02) {
       padding: 32px 16px;
       .elementor-gf-header {
         width: 100%;
@@ -1803,18 +1802,17 @@
       }
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       flex-direction: column;
       .elementor-gf-header {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
-
       }
       .elementor-gf-form {
         width: 100%;
         padding: 0;
-        form[id*=give-form] {
+        form[id*="give-form"] {
           .give-total-wrap {
             position: static;
             width: auto;
@@ -1827,16 +1825,15 @@
         }
       }
     }
-
   }
 
   &--skin-yutmaru {
     display: flex;
-    background-color: #F4B03E;
+    background-color: #f4b03e;
     padding: 40px;
     border-radius: 30px;
-    -webkit-box-shadow: 0px 20px 50px rgba(#F4B03E, 0.15);
-    box-shadow: 0px 20px 50px rgba(#F4B03E, 0.15);
+    -webkit-box-shadow: 0px 20px 50px rgba(#f4b03e, 0.15);
+    box-shadow: 0px 20px 50px rgba(#f4b03e, 0.15);
     .elementor-gf-header {
       width: 28%;
       &__title {
@@ -1858,7 +1855,7 @@
       width: 72%;
       padding-left: 30px;
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
@@ -1874,10 +1871,10 @@
             font-size: 18px;
             font-weight: 700;
             color: #151515;
-            background: #FFFFFF;
+            background: #ffffff;
             height: 54px;
             line-height: 54px;
-            border-radius: 25px 0 0 25px
+            border-radius: 25px 0 0 25px;
           }
           #give-amount {
             font-size: 18px;
@@ -1905,7 +1902,7 @@
             background: transparent;
             overflow: unset;
             padding: 10px;
-            border: 2px solid #FFFFFF;
+            border: 2px solid #ffffff;
             border-radius: 25px;
             &.give-btn-level-custom {
               font-size: 14px;
@@ -1915,7 +1912,7 @@
             &:hover,
             &.give-default-level {
               color: #151515;
-              background: #FFFFFF;
+              background: #ffffff;
             }
           }
         }
@@ -1926,21 +1923,21 @@
           line-height: 20px;
           letter-spacing: 0;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           background: #151515;
           margin: 0 0 0 calc(50% + 7.5px);
           padding: 17px 30px;
           outline: none;
           border-radius: 25px;
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #151515;
           }
         }
       }
     }
 
-    @media( max-width: 1440px ) {
+    @media (max-width: 1440px) {
       .elementor-gf-header {
         &__title {
           font-size: 30px;
@@ -1951,7 +1948,7 @@
       }
     }
 
-    @media( max-width: $break-lg - 0.02 ) {
+    @media (max-width: $break-lg - 0.02) {
       padding: 32px 16px;
       .elementor-gf-header {
         width: 30%;
@@ -1964,18 +1961,17 @@
       }
     }
 
-    @media( max-width: $break-md - 0.02 ) {
+    @media (max-width: $break-md - 0.02) {
       flex-direction: column;
       .elementor-gf-header {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
-
       }
       .elementor-gf-form {
         width: 100%;
         padding: 0;
-        form[id*=give-form] {
+        form[id*="give-form"] {
           .give-total-wrap {
             position: static;
             width: auto;
@@ -1998,7 +1994,7 @@
         font-size: 1.2vw;
         font-weight: 400;
         line-height: 1.58em;
-        color: #FFFFFF;
+        color: #ffffff;
         background: rgba(255, 255, 255, 0.12);
         padding: 1px 12px;
         border-radius: 8px;
@@ -2007,13 +2003,13 @@
         font-size: 3.6vw;
         font-weight: 700;
         line-height: 1.29em;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 15px 0 0;
       }
     }
     .elementor-gf-form {
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
@@ -2023,21 +2019,21 @@
           width: calc(50% - 7.5px);
           margin: 0;
           .give-donation-amount {
-              margin: 0;
+            margin: 0;
           }
           .give-currency-symbol {
             height: 54px;
             line-height: 54px;
             color: #151515;
-            background: #FFFFFF;
+            background: #ffffff;
             border-radius: 10px 0 0 10px;
           }
           #give-amount {
             font-weight: 700;
-            color: #FFFFFF;
+            color: #ffffff;
             background: transparent;
             height: 54px;
-            border: 2px solid #FFFFFF;
+            border: 2px solid #ffffff;
             border-left: none;
             border-radius: 0 10px 10px 0;
           }
@@ -2046,15 +2042,15 @@
           font-size: 18px;
           font-weight: 400;
           line-height: 1.67em;
-          color: #FFFFFF;
+          color: #ffffff;
           background: transparent;
           padding: 10px 12px;
-          border: 2px solid #FFFFFF;
+          border: 2px solid #ffffff;
           border-radius: 10px;
           &.give-default-level {
             font-weight: 700;
             color: #151515;
-            background: #FFFFFF;
+            background: #ffffff;
           }
         }
         .give-btn-modal {
@@ -2063,19 +2059,19 @@
           font-weight: 700;
           line-height: 54px;
           color: #151515;
-          background: #FFFFFF;
+          background: #ffffff;
           border-radius: 10px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            color: #FFFFFF;
+            color: #ffffff;
             background: #151515;
           }
         }
       }
     }
 
-    @media( max-width: $break-tl - 0.02 ) {
+    @media (max-width: $break-tl - 0.02) {
       .elementor-gf-header {
         &__sub-title {
           font-size: 18px;
@@ -2086,7 +2082,7 @@
       }
     }
 
-    @media( max-width: $break-sm - 0.02 ) {
+    @media (max-width: $break-sm - 0.02) {
       .elementor-gf-header {
         text-align: center;
         &__sub-title {
@@ -2098,7 +2094,7 @@
       }
       .elementor-gf-form {
         form.give-form,
-        form[id*=give-form] {
+        form[id*="give-form"] {
           .give-total-wrap {
             position: static;
             width: 100%;
@@ -2113,7 +2109,7 @@
   }
 
   &--skin-jimara {
-    background-color: #F8F5E9;
+    background-color: #f8f5e9;
     padding: 50px;
     border-radius: 20px;
     .elementor-gf-header {
@@ -2123,7 +2119,7 @@
         font-weight: 400;
         font-style: italic;
         line-height: 1.25em;
-        color: #306F5E;
+        color: #306f5e;
       }
       &__title {
         font-size: 3.2vw;
@@ -2154,7 +2150,7 @@
               left: 0;
               width: 12px;
               height: 3px;
-              background: #53BB9F;
+              background: #53bb9f;
             }
           }
         }
@@ -2162,17 +2158,17 @@
     }
     .elementor-gf-form {
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
           .give-currency-symbol {
-            color: #FFFFFF;
-            background: #53BB9F;
+            color: #ffffff;
+            background: #53bb9f;
             border-radius: 30px 0 0 30px;
           }
           #give-amount {
-            color: #53BB9F;
+            color: #53bb9f;
             border-radius: 0 30px 30px 0;
           }
         }
@@ -2181,31 +2177,31 @@
           font-weight: 700;
           border-radius: 30px;
           &:not(.give-default-level):hover {
-            color: #53BB9F;
-            border-color: #53BB9F;
+            color: #53bb9f;
+            border-color: #53bb9f;
           }
           &.give-default-level {
-            color: #FFFFFF;
-            background: #53BB9F;
-            border-color: #53BB9F;
+            color: #ffffff;
+            background: #53bb9f;
+            border-color: #53bb9f;
           }
         }
         .give-btn-modal {
           font-size: 16px;
           font-weight: 700;
-          color: #FFFFFF;
-          background: #53BB9F;
+          color: #ffffff;
+          background: #53bb9f;
           border-radius: 30px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            background: #306F5E;
+            background: #306f5e;
           }
         }
       }
     }
 
-    @media( max-width: $break-tl - 0.02 ) {
+    @media (max-width: $break-tl - 0.02) {
       .elementor-gf-header {
         &__sub-title {
           font-size: 20px;
@@ -2219,11 +2215,11 @@
       }
     }
 
-    @media( max-width: $break-sm - 0.02 ) {
+    @media (max-width: $break-sm - 0.02) {
       padding: 30px;
     }
 
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 30px 15px;
       .elementor-gf-header__desc ul {
         column-count: 1;
@@ -2233,10 +2229,10 @@
 
   &--skin-nuptse {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 50px 30px;
     border-radius: 14px;
-    @media( max-width: $break-xs - 0.02 ) {
+    @media (max-width: $break-xs - 0.02) {
       padding: 24px 15px;
     }
     &:before {
@@ -2246,7 +2242,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 14px;
       z-index: 3;
     }
@@ -2257,7 +2253,7 @@
       left: 25px;
       width: 100%;
       height: 100%;
-      background: #7CF2AD;
+      background: #7cf2ad;
       border-radius: 14px;
       z-index: 1;
       -webkit-transform: rotate(5deg);
@@ -2272,7 +2268,7 @@
         font-weight: 400;
         font-style: italic;
         line-height: 1.5;
-        color: #3F86ED;
+        color: #3f86ed;
         margin-bottom: 12px;
       }
       &__title {
@@ -2294,51 +2290,51 @@
       position: relative;
       z-index: 5;
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
           .give-currency-symbol {
-            color: #FFFFFF;
-            background: #7CF2AD;
+            color: #ffffff;
+            background: #7cf2ad;
             border-radius: 30px 0 0 30px;
           }
           #give-amount {
-            color: #7CF2AD;
+            color: #7cf2ad;
             border-radius: 0 30px 30px 0;
           }
         }
         #give-donation-level-button-wrap {
-          @media( min-width: $break-sm ) {
+          @media (min-width: $break-sm) {
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
           }
           .give-btn {
             font-size: 16px;
             font-weight: 700;
-            color: #011F51;
+            color: #011f51;
             border-radius: 30px;
             &:not(.give-default-level):hover {
-              color: #7CF2AD;
-              border-color: #7CF2AD;
+              color: #7cf2ad;
+              border-color: #7cf2ad;
             }
             &.give-default-level {
-              color: #FFFFFF;
-              background: #7CF2AD;
-              border-color: #7CF2AD;
+              color: #ffffff;
+              background: #7cf2ad;
+              border-color: #7cf2ad;
             }
           }
         }
         .give-btn-modal {
           font-size: 16px;
           font-weight: 700;
-          color: #FFFFFF;
-          background: #7CF2AD;
+          color: #ffffff;
+          background: #7cf2ad;
           border-radius: 30px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            color: #FFFFFF;
-            background: #011F51;
+            color: #ffffff;
+            background: #011f51;
           }
         }
       }
@@ -2353,32 +2349,32 @@
         font-weight: 600;
         line-height: 1.5;
         letter-spacing: 1px;
-        color: #BD3C2B;
+        color: #bd3c2b;
       }
       &__title {
         font-size: 42px;
         font-weight: 600;
         line-height: 1.2;
-        color: #0A0A0A;
+        color: #0a0a0a;
         margin: 4px 0 0 0;
-        @media( max-width: $break-xs - 0.02 ) {
+        @media (max-width: $break-xs - 0.02) {
           font-size: 36px;
         }
       }
     }
     .elementor-gf-form {
       form.give-form,
-      form[id*=give-form] {
+      form[id*="give-form"] {
         position: relative;
         margin: 0;
         .give-total-wrap {
           .give-currency-symbol {
-            color: #FFFFFF;
-            background: #3E8959;
+            color: #ffffff;
+            background: #3e8959;
             border-radius: 10px 0 0 10px;
           }
           #give-amount {
-            color: #3E8959;
+            color: #3e8959;
             border-radius: 0 10px 10px 0;
           }
         }
@@ -2387,26 +2383,26 @@
           font-weight: 600;
           border-radius: 10px;
           &:not(.give-default-level):hover {
-            color: #3E8959;
-            border-color: #3E8959;
+            color: #3e8959;
+            border-color: #3e8959;
           }
           &.give-default-level {
-            color: #FFFFFF;
-            background: #3E8959;
-            border-color: #3E8959;
+            color: #ffffff;
+            background: #3e8959;
+            border-color: #3e8959;
           }
         }
         .give-btn-modal {
           font-size: 16px;
           font-weight: 600;
           text-transform: capitalize;
-          color: #FFFFFF;
-          background: #3E8959;
+          color: #ffffff;
+          background: #3e8959;
           border-radius: 10px;
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
           &:hover {
-            background: #BD3C2B;
+            background: #bd3c2b;
           }
         }
       }
@@ -2414,14 +2410,14 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 1.5;
-        color: #0A0A0A;
+        color: #0a0a0a;
         margin-top: 20px;
         a {
-          color: #3E8959;
+          color: #3e8959;
         }
       }
     }
-    @media(max-width: $break-md - 0.02) {
+    @media (max-width: $break-md - 0.02) {
       .elementor-gf-header {
         margin-bottom: 30px;
         &__sub-title {
@@ -2432,13 +2428,156 @@
         }
       }
     }
-    @media(max-width: $break-sm - 0.02) {
+    @media (max-width: $break-sm - 0.02) {
       .elementor-gf-header {
         &__sub-title {
           font-size: 14px;
         }
         &__title {
           font-size: 28px;
+        }
+      }
+    }
+  }
+  &--skin-salado {
+    border-radius: 20px;
+    background: #fcf8f4;
+    padding: 52px 60px;
+    font-family: "Montserrat Alternates", sans-serif;
+    .elementor-gf-header {
+      margin-bottom: 28px;
+      text-align: center;
+      &__title {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 120% */
+        text-transform: capitalize;
+        color: #3c322f;
+        margin: 0 0 8px 0;
+        font-family: "Montserrat Alternates", sans-serif;
+        @media (max-width: $break-xs - 0.02) {
+          font-size: 36px;
+        }
+      }
+      &__sub-title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        color: #6b7280;
+        margin: 0;
+      }
+    }
+    .elementor-gf-form {
+      form.give-form,
+      form[id*="give-form"] {
+        position: relative;
+        margin: 0;
+        .give-total-wrap {
+          .give-currency-symbol {
+            color: #3c322f;
+            background: #feb83d;
+            border-radius: 100px 0 0 100px;
+          }
+          #give-amount {
+            color: #3c322f;
+            border-radius: 0 100px 100px 0;
+            border: 1px solid #e9e9e9;
+            border-left: none;
+          }
+        }
+        #give-donation-level-button-wrap {
+          grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+          .give-btn {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            border-radius: 100px;
+            border: 1px solid #e9e9e9;
+            color: #3c322f;
+            text-transform: capitalize;
+            &:not(.give-default-level):hover {
+              color: #3c322f;
+              border-color: #feb83d;
+            }
+            &.give-default-level {
+              color: #3c322f;
+              background: #feb83d;
+              border-color: #feb83d;
+            }
+          }
+        }
+        .give-btn-modal {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px; /* 162.5% */
+          text-transform: uppercase;
+          color: #ffffff;
+          background: #3c322f;
+          border-radius: 100px;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          padding: 16px 36px;
+          width: 100%;
+          text-align: center;
+          &:hover {
+            background: #feb83d;
+          }
+        }
+      }
+      &__desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        color: #6b7280;
+        margin-top: 28px;
+        a {
+          color: #3c322f;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-skip-ink: auto;
+          text-decoration-thickness: auto;
+          text-underline-offset: auto;
+          text-underline-position: from-font;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+    @media (max-width: $break-md - 0.02) {
+      padding: 40px 30px;
+      .elementor-gf-header {
+        margin-bottom: 20px;
+        &__title {
+          font-size: 32px;
+          line-height: 1.3;
+          margin-bottom: 4px;
+        }
+        &__sub-title {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+    @media (max-width: $break-sm - 0.02) {
+      padding: 30px 20px;
+      .elementor-gf-header {
+        margin-bottom: 16px;
+        &__title {
+          font-size: 28px;
+        }
+        &__sub-title {
+          font-size: 15px;
         }
       }
     }

@@ -94,6 +94,7 @@ class Plugin {
 		$this->widgets = array(
 			'icon-box',
 			'image-box',
+			'featured-box',
 			'video-play-button',
 			'video-box',
 			'counter',
@@ -112,6 +113,9 @@ class Plugin {
 			'projects',
 			'projects-carousel',
 			'be-together',
+			'salado-slider',
+			'list-circle',
+			'list-image-marquee',
 
 		);
 
@@ -296,6 +300,7 @@ class Plugin {
 		// Register Widgets
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Icon_Box\Be_Icon_Box() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Image_Box\Be_Image_Box() );
+		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Featured_Box\Be_Featured_Box() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Video_Play_Button\Be_Video_Play_Button() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Video_Box\Be_Video_Box() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Counter\Be_Counter() );
@@ -314,6 +319,9 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Projects\Be_Projects() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Projects_Carousel\Be_Projects_Carousel() );
 		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Be_Together\Be_Together() );
+		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Salado_Slider\Be_Salado_Slider() );
+		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\List_Circle\Be_List_Circle() );
+		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\List_Image_Marquee\Be_List_Image_Marquee() );
 
 		// WooCommerce.
 		if ( $this->woocommerce_status() ) {

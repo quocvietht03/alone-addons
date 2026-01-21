@@ -1,4 +1,5 @@
 <?php
+
 namespace AloneAddons\Widgets\Posts_Carousel\Skins;
 
 use Elementor\Widget_Base;
@@ -9,36 +10,40 @@ use Elementor\Group_Control_Css_Filter;
 use Elementor\Group_Control_Box_Shadow;
 use Elementor\Group_Control_Typography;
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if (! defined('ABSPATH')) exit; // Exit if accessed directly
 
-class Skin_Grid_Together extends Skin_Base {
+class Skin_Grid_Together extends Skin_Base
+{
 
-	protected function _register_controls_actions() {
-		add_action( 'elementor/element/be-posts-carousel/section_layout/before_section_end', [ $this, 'register_layout_controls' ] );
-		add_action( 'elementor/element/be-posts-carousel/section_design_layout/before_section_end', [ $this, 'registerd_design_layout_controls' ] );
-		add_action( 'elementor/element/be-posts-carousel/section_design_layout/after_section_end', [ $this, 'register_design_box_section_controls' ] );
-		add_action( 'elementor/element/be-posts-carousel/section_design_layout/after_section_end', [ $this, 'register_design_image_section_controls' ] );
-		add_action( 'elementor/element/be-posts-carousel/section_design_layout/after_section_end', [ $this, 'register_design_content_section_controls' ] );
-
+	protected function _register_controls_actions()
+	{
+		add_action('elementor/element/be-posts-carousel/section_layout/before_section_end', [$this, 'register_layout_controls']);
+		add_action('elementor/element/be-posts-carousel/section_design_layout/before_section_end', [$this, 'registerd_design_layout_controls']);
+		add_action('elementor/element/be-posts-carousel/section_design_layout/after_section_end', [$this, 'register_design_box_section_controls']);
+		add_action('elementor/element/be-posts-carousel/section_design_layout/after_section_end', [$this, 'register_design_image_section_controls']);
+		add_action('elementor/element/be-posts-carousel/section_design_layout/after_section_end', [$this, 'register_design_content_section_controls']);
 	}
 
-	public function get_id() {
+	public function get_id()
+	{
 		return 'skin-grid-together';
 	}
 
 
-	public function get_title() {
-		return __( 'Grid Together', 'alone-addons' );
+	public function get_title()
+	{
+		return __('Grid Together', 'alone-addons');
 	}
 
 
-	public function register_layout_controls( Widget_Base $widget ) {
+	public function register_layout_controls(Widget_Base $widget)
+	{
 		$this->parent = $widget;
 
 		$this->add_responsive_control(
 			'sliders_per_view',
 			[
-				'label' => __( 'Slides Per View', 'alone-addons' ),
+				'label' => __('Slides Per View', 'alone-addons'),
 				'type' => Controls_Manager::SELECT,
 				'default' => '2',
 				'tablet_default' => '2',
@@ -58,19 +63,19 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'posts_count',
 			[
-				'label' => __( 'Posts Count', 'alone-addons' ),
+				'label' => __('Posts Count', 'alone-addons'),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 6,
 			]
 		);
 
-        $this->add_control(
+		$this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Thumbnail', 'alone-addons' ),
+				'label' => __('Thumbnail', 'alone-addons'),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'alone-addons' ),
-				'label_off' => __( 'Hide', 'alone-addons' ),
+				'label_on' => __('Show', 'alone-addons'),
+				'label_off' => __('Hide', 'alone-addons'),
 				'default' => 'yes',
 				'separator' => 'before',
 			]
@@ -81,9 +86,9 @@ class Skin_Grid_Together extends Skin_Base {
 			[
 				'name' => 'thumbnail',
 				'default' => 'medium',
-				'exclude' => [ 'custom' ],
+				'exclude' => ['custom'],
 				'condition' => [
-					'skin_grid_together_show_thumbnail!'=> '',
+					'skin_grid_together_show_thumbnail!' => '',
 				],
 			]
 		);
@@ -91,7 +96,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'alone-addons' ),
+				'label' => __('Image Ratio', 'alone-addons'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.66,
@@ -107,18 +112,18 @@ class Skin_Grid_Together extends Skin_Base {
 					'{{WRAPPER}} .elementor-post__thumbnail' => 'padding-bottom: calc( {{SIZE}} * 100% );',
 				],
 				'condition' => [
-					'skin_grid_together_show_thumbnail!'=> '',
+					'skin_grid_together_show_thumbnail!' => '',
 				],
 			]
 		);
 
-    $this->add_control(
+		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Title', 'alone-addons' ),
+				'label' => __('Title', 'alone-addons'),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'alone-addons' ),
-				'label_off' => __( 'Hide', 'alone-addons' ),
+				'label_on' => __('Show', 'alone-addons'),
+				'label_off' => __('Hide', 'alone-addons'),
 				'default' => 'yes',
 			]
 		);
@@ -126,21 +131,21 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'show_date',
 			[
-				'label' => __( 'Date', 'alone-addons' ),
+				'label' => __('Date', 'alone-addons'),
 				'type' 	=> Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'alone-addons' ),
-				'label_off' => __( 'Hide', 'alone-addons' ),
+				'label_on' => __('Show', 'alone-addons'),
+				'label_off' => __('Hide', 'alone-addons'),
 				'default'  => 'yes',
 			]
 		);
 
-        $this->add_control(
+		$this->add_control(
 			'show_read_more',
 			[
-				'label' => __( 'Read More', 'alone-addons' ),
+				'label' => __('Read More', 'alone-addons'),
 				'type' 	=> Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'alone-addons' ),
-				'label_off' => __( 'Hide', 'alone-addons' ),
+				'label_on' => __('Show', 'alone-addons'),
+				'label_off' => __('Hide', 'alone-addons'),
 				'default'  => 'yes',
 			]
 		);
@@ -148,24 +153,24 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'read_more_text',
 			[
-				'label' => __( 'Read More Text', 'alone-addons' ),
+				'label' => __('Read More Text', 'alone-addons'),
 				'type' 	=> Controls_Manager::TEXT,
-				'default' => __( 'Read More', 'alone-addons' ),
+				'default' => __('Read More', 'alone-addons'),
 				'condition' => [
 					'skin_grid_together_show_read_more!' => '',
 				],
 			]
 		);
-
 	}
 
-	public function registerd_design_layout_controls( Widget_Base $widget ) {
+	public function registerd_design_layout_controls(Widget_Base $widget)
+	{
 		$this->parent = $widget;
 
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => __( 'Space Between', 'alone-addons' ),
+				'label' => __('Space Between', 'alone-addons'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -183,19 +188,19 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'alone-addons' ),
+				'label' => __('Alignment', 'alone-addons'),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'alone-addons' ),
+						'title' => __('Left', 'alone-addons'),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'alone-addons' ),
+						'title' => __('Center', 'alone-addons'),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'alone-addons' ),
+						'title' => __('Right', 'alone-addons'),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -204,16 +209,16 @@ class Skin_Grid_Together extends Skin_Base {
 				],
 			]
 		);
-
 	}
 
-  public function register_design_box_section_controls( Widget_Base $widget ) {
+	public function register_design_box_section_controls(Widget_Base $widget)
+	{
 		$this->parent = $widget;
 
-    $this->start_controls_section(
+		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'alone-addons' ),
+				'label' => __('Box', 'alone-addons'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -221,9 +226,9 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'alone-addons' ),
+				'label' => __('Border Width', 'alone-addons'),
 				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px' ],
+				'size_units' => ['px'],
 				'range' => [
 					'px' => [
 						'min' => 0,
@@ -239,9 +244,9 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'alone-addons' ),
+				'label' => __('Border Radius', 'alone-addons'),
 				'type' => Controls_Manager::SLIDER,
-				'size_units' => [ 'px', '%' ],
+				'size_units' => ['px', '%'],
 				'range' => [
 					'px' => [
 						'min' => 0,
@@ -257,9 +262,9 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'alone-addons' ),
+				'label' => __('Padding', 'alone-addons'),
 				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px' ],
+				'size_units' => ['px'],
 				'range' => [
 					'px' => [
 						'min' => 0,
@@ -275,9 +280,9 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => __( 'Content Padding', 'alone-addons' ),
+				'label' => __('Content Padding', 'alone-addons'),
 				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px' ],
+				'size_units' => ['px'],
 				'range' => [
 					'px' => [
 						'min' => 0,
@@ -290,11 +295,12 @@ class Skin_Grid_Together extends Skin_Base {
 			]
 		);
 
-		$this->start_controls_tabs( 'bg_effects_tabs' );
+		$this->start_controls_tabs('bg_effects_tabs');
 
-		$this->start_controls_tab( 'classic_style_normal',
+		$this->start_controls_tab(
+			'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'alone-addons' ),
+				'label' => __('Normal', 'alone-addons'),
 			]
 		);
 
@@ -309,7 +315,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'alone-addons' ),
+				'label' => __('Background Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-post' => 'background-color: {{VALUE}}',
@@ -320,7 +326,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'alone-addons' ),
+				'label' => __('Border Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-post' => 'border-color: {{VALUE}}',
@@ -330,9 +336,10 @@ class Skin_Grid_Together extends Skin_Base {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'classic_style_hover',
+		$this->start_controls_tab(
+			'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'alone-addons' ),
+				'label' => __('Hover', 'alone-addons'),
 			]
 		);
 
@@ -347,7 +354,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'alone-addons' ),
+				'label' => __('Background Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-post:hover' => 'background-color: {{VALUE}}',
@@ -358,7 +365,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'alone-addons' ),
+				'label' => __('Border Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-post:hover' => 'border-color: {{VALUE}}',
@@ -371,19 +378,19 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->end_controls_tabs();
 
 		$this->end_controls_section();
+	}
 
-  }
-
-	public function register_design_image_section_controls( Widget_Base $widget ) {
+	public function register_design_image_section_controls(Widget_Base $widget)
+	{
 		$this->parent = $widget;
 
 		$this->start_controls_section(
 			'section_design_image',
 			[
-				'label' => __( 'Image', 'alone-addons' ),
+				'label' => __('Image', 'alone-addons'),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
-					'skin_grid_together_show_thumbnail!'=> '',
+					'skin_grid_together_show_thumbnail!' => '',
 				],
 			]
 		);
@@ -391,20 +398,21 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'img_border_radius',
 			[
-				'label' => __( 'Border Radius', 'alone-addons' ),
+				'label' => __('Border Radius', 'alone-addons'),
 				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%' ],
+				'size_units' => ['px', '%'],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-post__thumbnail' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
 
-		$this->start_controls_tabs( 'thumbnail_effects_tabs' );
+		$this->start_controls_tabs('thumbnail_effects_tabs');
 
-		$this->start_controls_tab( 'normal',
+		$this->start_controls_tab(
+			'normal',
 			[
-				'label' => __( 'Normal', 'alone-addons' ),
+				'label' => __('Normal', 'alone-addons'),
 			]
 		);
 
@@ -418,9 +426,10 @@ class Skin_Grid_Together extends Skin_Base {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'hover',
+		$this->start_controls_tab(
+			'hover',
 			[
-				'label' => __( 'Hover', 'alone-addons' ),
+				'label' => __('Hover', 'alone-addons'),
 			]
 		);
 
@@ -439,21 +448,22 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->end_controls_section();
 	}
 
-  public function register_design_content_section_controls( Widget_Base $widget ) {
+	public function register_design_content_section_controls(Widget_Base $widget)
+	{
 		$this->parent = $widget;
 
-        $this->start_controls_section(
+		$this->start_controls_section(
 			'section_design_content',
 			[
-				'label' => __( 'Content', 'alone-addons' ),
+				'label' => __('Content', 'alone-addons'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 
-    $this->add_control(
+		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'alone-addons' ),
+				'label' => __('Title', 'alone-addons'),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_together_show_title!' => '',
@@ -464,7 +474,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'alone-addons' ),
+				'label' => __('Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -479,7 +489,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color Hover', 'alone-addons' ),
+				'label' => __('Color Hover', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -506,7 +516,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'heading_date_style',
 			[
-				'label' => __( 'Date', 'alone-addons' ),
+				'label' => __('Date', 'alone-addons'),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_together_show_date!' => '',
@@ -517,7 +527,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'date_color',
 			[
-				'label' => __( 'Color Text', 'alone-addons' ),
+				'label' => __('Color Text', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -541,10 +551,10 @@ class Skin_Grid_Together extends Skin_Base {
 			]
 		);
 
-    	$this->add_control(
+		$this->add_control(
 			'heading_readmore_style',
 			[
-				'label' => __( 'Read More', 'alone-addons' ),
+				'label' => __('Read More', 'alone-addons'),
 				'type' => Controls_Manager::HEADING,
 				'condition' => [
 					'skin_grid_together_show_read_more!' => '',
@@ -555,7 +565,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'readmore_color',
 			[
-				'label' => __( 'Color', 'alone-addons' ),
+				'label' => __('Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -570,7 +580,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'readmore_color_hover',
 			[
-				'label' => __( 'Color Hover', 'alone-addons' ),
+				'label' => __('Color Hover', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -584,7 +594,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'readmore_background_color',
 			[
-				'label' => __( 'Background Color', 'alone-addons' ),
+				'label' => __('Background Color', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -599,7 +609,7 @@ class Skin_Grid_Together extends Skin_Base {
 		$this->add_control(
 			'readmore_background_color_hover',
 			[
-				'label' => __( 'Background Color Hover', 'alone-addons' ),
+				'label' => __('Background Color Hover', 'alone-addons'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -623,72 +633,69 @@ class Skin_Grid_Together extends Skin_Base {
 			]
 		);
 
-    $this->end_controls_section();
-  }
-
-	protected function render_post() {
-
-		?>
-		<div class="swiper-slide">
-        <article id="post-<?php the_ID();  ?>" <?php post_class( 'elementor-post' ); ?> >
-                <?php if( '' !== $this->parent->get_instance_value_skin('show_thumbnail') ) { ?>
-                            <div class="elementor-post__thumbnail">
-                                <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail( $this->parent->get_instance_value_skin('thumbnail_size') ); ?>
-                                </a>
-                            </div>
-                <?php } ?>
-                <div class="elementor-post__content">
-                    <?php if( '' !== $this->parent->get_instance_value_skin('show_date') ) { ?>
-                        <div class="elementor-post__date">
-                            <?php
-                                echo '<time class="entry-date published" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' . esc_html( get_the_date() ) . '</time>';
-                            ?>
-                        </div>
-                    <?php } ?>
-
-                    <?php
-                        if( '' !== $this->parent->get_instance_value_skin('show_title') ) {
-                            the_title( '<h3 class="elementor-post__title __max-2-line"><a href="' . get_the_permalink() . '">', '</a></h3>' );
-                        }
-                    
-                        if( '' !== $this->parent->get_instance_value_skin('show_read_more' ) ){
-                            echo '<a class="elementor-post__read-more" href="' . get_the_permalink() . '">' . 
-                                $this->parent->get_instance_value_skin('read_more_text') . '</a>';
-                        }
-                    ?>
-                </div>
-			</article>
-		</div>
-		<?php
+		$this->end_controls_section();
 	}
 
-	public function render() {
+	protected function render_post()
+	{
+
+?>
+		<div class="swiper-slide">
+			<article id="post-<?php the_ID();  ?>" <?php post_class('elementor-post'); ?>>
+				<?php if ('' !== $this->parent->get_instance_value_skin('show_thumbnail')) { ?>
+					<div class="elementor-post__thumbnail">
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail($this->parent->get_instance_value_skin('thumbnail_size')); ?>
+						</a>
+					</div>
+				<?php } ?>
+				<div class="elementor-post__content">
+					<?php if ('' !== $this->parent->get_instance_value_skin('show_date')) { ?>
+						<div class="elementor-post__date">
+							<?php
+							echo '<time class="entry-date published" datetime="' . esc_attr(get_the_date(DATE_W3C)) . '">' . esc_html(get_the_date()) . '</time>';
+							?>
+						</div>
+					<?php } ?>
+
+					<?php
+					if ('' !== $this->parent->get_instance_value_skin('show_title')) {
+						the_title('<h3 class="elementor-post__title __max-2-line"><a href="' . get_the_permalink() . '">', '</a></h3>');
+					}
+
+					if ('' !== $this->parent->get_instance_value_skin('show_read_more')) {
+						echo '<a class="elementor-post__read-more" href="' . get_the_permalink() . '">' .
+							$this->parent->get_instance_value_skin('read_more_text') . '</a>';
+					}
+					?>
+				</div>
+			</article>
+		</div>
+<?php
+	}
+
+	public function render()
+	{
 
 		$query = $this->parent->query_posts();
 
-		if ( $query->have_posts() ) {
+		if ($query->have_posts()) {
 
 			$this->parent->render_loop_header();
 
-				while ( $query->have_posts() ) {
-					$query->the_post();
+			while ($query->have_posts()) {
+				$query->the_post();
 
-					$this->render_post();
-
-				}
+				$this->render_post();
+			}
 
 			$this->parent->render_loop_footer();
-
 		} else {
-		    // no posts found
+			// no posts found
 		}
 
 		wp_reset_postdata();
 	}
 
-	protected function content_template() {
-
-	}
-
+	protected function content_template() {}
 }

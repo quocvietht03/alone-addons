@@ -54,6 +54,7 @@ class Be_Give_Forms_Carousel extends Widget_Base {
 		$this->add_skin( new Skins\Skin_Grid_Cruces( $this ) );
 		$this->add_skin( new Skins\Skin_Grid_Swiss( $this ) );
 		$this->add_skin( new Skins\Skin_Grid_Together( $this ) );
+		$this->add_skin( new Skins\Skin_Grid_Salado( $this ) );
 		$this->add_skin( new Skins\Skin_List_Saltoro( $this ) );
 	}
 

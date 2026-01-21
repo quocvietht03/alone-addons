@@ -215,3 +215,132 @@ add_action( 'elementor/element/slides/section_slides/before_section_end', functi
 	);
 
 }, 10, 2 );
+
+// Section Waves Animation
+add_action( 'elementor/element/section/section_advanced/after_section_end', function( $element, $args ) {
+
+	$element->start_controls_section(
+		'waves_animation_section',
+		[
+			'tab' => \Elementor\Controls_Manager::TAB_ADVANCED,
+			'label' => esc_html__( 'Waves Animation Styles', 'alone-addons' ),
+		]
+	);
+
+	$element->add_control(
+		'enable_custom_waves',
+		[
+			'label' => esc_html__( 'Enable Custom Wave', 'alone-addons' ),
+			'type' => \Elementor\Controls_Manager::SWITCHER,
+			'label_on' => esc_html__( 'Yes', 'alone-addons' ),
+			'label_off' => esc_html__( 'No', 'alone-addons' ),
+			'return_value' => 'yes',
+			'prefix_class' => 'bt-wave-animation--',
+			'default' => '',
+			'description' => esc_html__( 'Enable animated waves at the top of this section. Note: You must add the class "bt-wave-animation" to the section for the settings below to work.', 'alone-addons' ),
+		]
+	);
+	$element->add_control(
+		'wave_color',
+		[
+			'label' => esc_html__( 'Wave Color', 'alone-addons' ),
+			'type' => \Elementor\Controls_Manager::COLOR,
+			'default' => '#000000',
+			'condition' => [
+				'enable_custom_waves' => 'yes',
+			],
+			'selectors' => [
+				'{{WRAPPER}} .waves use' => 'fill: {{VALUE}};',
+			],
+		]
+	);
+
+	$element->add_responsive_control(
+		'wave_height',
+		[
+			'label' => esc_html__( 'Wave Height', 'alone-addons' ),
+			'type' => \Elementor\Controls_Manager::SLIDER,
+			'size_units' => [ 'px', 'vh' ],
+			'range' => [
+				'px' => [
+					'min' => 10,
+					'max' => 200,
+					'step' => 1,
+				],
+				'vh' => [
+					'min' => 1,
+					'max' => 20,
+					'step' => 0.1,
+				],
+			],
+			'default' => [
+				'unit' => 'px',
+				'size' => 30,
+			],
+			'condition' => [
+				'enable_custom_waves' => 'yes',
+			],
+			'selectors' => [
+				'{{WRAPPER}} .waves' => 'height: {{SIZE}}{{UNIT}};',
+			],
+		]
+	);
+	$element->add_responsive_control(
+		'wave_offset',
+		[
+			'label' => esc_html__( 'Wave Offset', 'alone-addons' ),
+			'type' => \Elementor\Controls_Manager::SLIDER,
+			'size_units' => [ 'px', '%' ],
+			'range' => [
+				'px' => [
+					'min' => -200,
+					'max' => 200,
+					'step' => 1,
+				],
+				'%' => [
+					'min' => -100,
+					'max' => 100,
+					'step' => 1,
+				],
+			],
+			'default' => [
+				'unit' => 'px',
+				'size' => 0,
+			],
+			'condition' => [
+				'enable_custom_waves' => 'yes',
+			],
+			'selectors' => [
+				'{{WRAPPER}} .waves' => 'top: {{SIZE}}{{UNIT}};',
+			],
+		]
+	);
+	$element->add_control(
+		'wave_reverse',
+		[
+			'label' => esc_html__( 'Reverse Wave Direction', 'alone-addons' ),
+			'type' => \Elementor\Controls_Manager::SWITCHER,
+			'label_on' => esc_html__( 'Yes', 'alone-addons' ),
+			'label_off' => esc_html__( 'No', 'alone-addons' ),
+			'return_value' => 'yes',
+			'default' => '',
+			'condition' => [
+				'enable_custom_waves' => 'yes',
+			],
+			'selectors' => [
+				'{{WRAPPER}} .waves' => 'transform: rotate(0deg);',
+			],
+		]
+	);
+
+	$element->end_controls_section();
+
+}, 10, 2 );
+
+
+
+
+
+
+
+

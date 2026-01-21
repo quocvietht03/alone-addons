@@ -39,6 +39,7 @@ class Be_Give_Form extends Widget_Base {
 		$this->add_skin( new Skins\Skin_Jimara( $this ) );
 		$this->add_skin( new Skins\Skin_Nuptse( $this ) );
 		$this->add_skin( new Skins\Skin_Somoni( $this ) );
+		$this->add_skin( new Skins\Skin_Salado( $this ) );
 
 	}
 
