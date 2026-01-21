@@ -2477,7 +2477,7 @@
         .give-total-wrap {
           .give-currency-symbol {
             color: #3c322f;
-            background: #feb83d;
+            background: #feb83d !important;
             border-radius: 100px 0 0 100px;
           }
           #give-amount {
@@ -2505,8 +2505,8 @@
             }
             &.give-default-level {
               color: #3c322f;
-              background: #feb83d;
-              border-color: #feb83d;
+              background: #feb83d !important;
+              border-color: #feb83d !important;
             }
           }
         }

@@ -1995,7 +1995,7 @@ body .mfp-active {
     .elementor-give-form--skin-salado .elementor-gf-form form.give-form .give-total-wrap .give-currency-symbol,
     .elementor-give-form--skin-salado .elementor-gf-form form[id*="give-form"] .give-total-wrap .give-currency-symbol {
       color: #3c322f;
-      background: #feb83d;
+      background: #feb83d !important;
       border-radius: 100px 0 0 100px; }
     .elementor-give-form--skin-salado .elementor-gf-form form.give-form .give-total-wrap #give-amount,
     .elementor-give-form--skin-salado .elementor-gf-form form[id*="give-form"] .give-total-wrap #give-amount {
@@ -2024,8 +2024,8 @@ body .mfp-active {
         .elementor-give-form--skin-salado .elementor-gf-form form.give-form #give-donation-level-button-wrap .give-btn.give-default-level,
         .elementor-give-form--skin-salado .elementor-gf-form form[id*="give-form"] #give-donation-level-button-wrap .give-btn.give-default-level {
           color: #3c322f;
-          background: #feb83d;
-          border-color: #feb83d; }
+          background: #feb83d !important;
+          border-color: #feb83d !important; }
     .elementor-give-form--skin-salado .elementor-gf-form form.give-form .give-btn-modal,
     .elementor-give-form--skin-salado .elementor-gf-form form[id*="give-form"] .give-btn-modal {
       font-size: 16px;
