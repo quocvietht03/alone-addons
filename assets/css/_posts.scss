@@ -1879,7 +1879,23 @@
         margin: 0;
       }
     }
-    @media(max-width:520px){
+    @media(max-width:1024px) and (min-width:768px){
+      .elementor-post{
+        padding: 20px;
+        &__content{
+          padding: 20px 0 0 0;
+        }
+        &__title{
+          font-size: 24px;
+          line-height: 32px;
+        }
+        &__excerpt{ 
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    @media(max-width:580px){
       .elementor-post{
         padding: 20px;
         &__content{

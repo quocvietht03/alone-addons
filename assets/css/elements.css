@@ -1883,7 +1883,18 @@
     line-height: 28px;
     color: #6B7280;
     margin: 0; }
-@media (max-width: 520px) {
+@media (max-width: 1024px) and (min-width: 768px) {
+  .elementor-posts--skin-grid-salado .elementor-post {
+    padding: 20px; }
+    .elementor-posts--skin-grid-salado .elementor-post__content {
+      padding: 20px 0 0 0; }
+    .elementor-posts--skin-grid-salado .elementor-post__title {
+      font-size: 24px;
+      line-height: 32px; }
+    .elementor-posts--skin-grid-salado .elementor-post__excerpt {
+      font-size: 16px;
+      line-height: 24px; } }
+@media (max-width: 580px) {
   .elementor-posts--skin-grid-salado .elementor-post {
     padding: 20px; }
     .elementor-posts--skin-grid-salado .elementor-post__content {
