@@ -2538,16 +2538,15 @@
         margin-top: 28px;
         a {
           color: #3c322f;
-          font-size: 16px;
           font-style: normal;
-          font-weight: 700;
-          line-height: 26px;
+          font-weight: 600;
           text-decoration-line: underline;
           text-decoration-style: solid;
           text-decoration-skip-ink: auto;
           text-decoration-thickness: auto;
           text-underline-offset: auto;
           text-underline-position: from-font;
+          display: inline-block;
         }
         p {
           margin: 0;
