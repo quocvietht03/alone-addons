@@ -3,7 +3,7 @@
  * Plugin Name: Alone Addons
  * Description: Extra custom post type and elements for Elementor.
  * Plugin URI:  https://alonethemes.com/
- * Version:     3.4.0
+ * Version:     3.4.1
  * Author:      Beplusthemes
  * Author URI:  https://beplusthemes.com/
  * Text Domain: alone-addons
